@@ -39,14 +39,14 @@ body {
 #logo_link {
   margin-right: 10px;
   text-decoration: none;
-  color: #9e37ff;
+  color: #f62bfd;
   text-shadow: 3px 3px black;
 }
 
 #logo_link:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #9e37ffd8;
+  color: #ee37ffd8;
   text-shadow: 3px 3px black;
   transition: 0.4s;
   transform: scale(1.1);
