@@ -75,17 +75,44 @@ body {
   right: 10px;
 }
 
-a > img:not(.alura-logo, #play_button) {
+.poster:not(.alura-logo, #play_button) {
   margin: 10px;
   border: 2px solid white;
   border-radius: 3px;
 }
 
-a > img:hover:not(.alura-logo, #play_button) {
+.poster:hover:not(.alura-logo, #play_button) {
   cursor: pointer;
   transition: 0.4s;
   transform: scale(1.1);
   border-color: #3cb371;
+}
+
+#divMenu {
+  font:normal 20pt Calibri;
+  border:1px dotted blue;
+  width:200px;
+  padding:0;
+  position:absolute;
+  background:rgba(133, 192, 242, 0.54);
+  background-position:-1100px -200px;
+  visibility:hidden;
+}
+
+#divMenu ul{
+  list-style-type:none;
+  margin:0;
+  line-height:50px;
+  padding:0;
+  text-align:center;
+}
+
+#divMenu > ul > li {
+  cursor:pointer;
+}
+
+#divMenu > ul > li:hover {
+  background-color:rgba(133, 192, 242, 0.7);
 }
 
 .fixar_rodape {

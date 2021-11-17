@@ -1,3 +1,49 @@
+function MudarEstado(el) {
+  var display = document.getElementById(el).style.display;
+  if (display == "none")
+    document.getElementById(el).style.display = 'block';
+  else
+    document.getElementById(el).style.display = 'none';
+}
+
+function mostrarMenu() {
+  var X = event.clientX;
+  var Y = event.clientY;
+
+  var menu = document.getElementById("divMenu");
+
+  menu.style.top = Y.toString() + "px";
+  menu.style.left = X.toString() + "px";
+  menu.style.visibility = "visible";
+
+  var lis = document.querySelectorAll("#divMenu > ul > li");
+  for (var i = 0; i < lis.length; i++) {
+      lis.item(i).addEventListener("click", function () {
+          menu.style.visibility = "hidden";
+      });
+  }
+}
+
+window.onload = function () {
+  document.addEventListener("click",
+      function () {
+          document.getElementById("divMenu").style.visibility = "hidden";
+      }
+  );
+
+  document.querySelector("#divMenu > ul > li:nth-child(1)").addEventListener("click",
+      function () {
+          alert("Trailer...");
+      }
+  );
+
+  document.querySelector("#divMenu > ul > li:nth-child(2)").addEventListener("click",
+      function () {
+          alert("Detalhes detalhes...");
+      }
+  );
+}
+
 class Filme {
   constructor(nome, imagem) {
     this.nome = nome;
@@ -25,7 +71,10 @@ let filme14 = new Filme("Bob Esponja: O Filme", "https://m.media-amazon.com/imag
 
 var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
 
-//precisa consertar o bug dos links
+//<button type="button" onclick="Mudarestado('aba-2')">Mostrar / Esconder</button>
+//Mudar o menu para ser mostrado quando for clicado com o botão esquerdo
 for(i = 0; i < filmes.length; i++) {
-  document.write("<a href=https://www.google.com.br/>" + "<img src=" + filmes[i].imagem + "></a>")
+  //document.write("<a href=https://www.google.com.br/>" + "<img src=" + filmes[i].imagem + "></a>")
+  //document.write("<input type='image' src=" + filmes[i].imagem + " oncontextmenu='mostrarMenu(); return false;'" +  " onclick=" + "MudarEstado('play_button') class=" + "'poster'>")
+  document.write("<input type='image' src=" + filmes[i].imagem + " oncontextmenu='mostrarMenu(); return false;'" + " class=" + "'poster'>")
 }
