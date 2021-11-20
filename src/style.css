@@ -75,6 +75,60 @@ body {
   right: 10px;
 }
 
+.div_poster {
+  display:inline-block;
+  position:relative;
+}
+
+.button_poster {
+  position:absolute;
+  border: none;
+  top:50%;
+  left:35%;
+  -webkit-transform:translate3d(-50%, -50%, 0);
+  -moz-transform:translate3d(-50%, -50%, 0);
+  transform:translate3d(-50%, -50%, 0);
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: Brush Script MT;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 20px;
+  background-color: #0086B200;
+  text-shadow: 6px 1px 4px #000000;
+  cursor: pointer;
+}
+
+.button_more {
+  position:absolute;
+  top:47%;
+  left:65%;
+  -webkit-transform:translate3d(-50%, -50%, 0);
+  -moz-transform:translate3d(-50%, -50%, 0);
+  transform:translate3d(-50%, -50%, 0);
+  border: none;
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: Brush Script MT;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 10px;
+  background-color: #0086B200;
+  text-shadow: 6px 1px 4px #000000;
+  cursor: pointer;
+}
+
+.button_poster:hover, .button_more:hover {
+  opacity: 1.0;
+  font-size: 43px;
+  background-color: #ff1df433;
+  padding: 15px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 15px;
+}
+
+
 .poster:not(.alura-logo, #play_button) {
   margin: 10px;
   border: 2px solid white;
