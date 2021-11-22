@@ -28,6 +28,6 @@ var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, fi
 
 for(i = 0; i < filmes.length; i++) {
   document.write("<div class='div_poster'><input type='image' src=" + filmes[i].imagem + 
-  " class='poster'><button class='button_poster' onclick=" + "\"window.open('" + filmes[i].trailer + "')\">▶</button>" +
-  "<button class='button_more'>...</button></div>")
+  " class='poster'><button class='button_poster' onclick=" + "\"window.open('" + filmes[i].trailer + "')\">▶ Trailer</button>" +
+  "<button class='button_more'>∙∙∙ More</button></div>")
 }

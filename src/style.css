@@ -81,65 +81,74 @@ body {
 }
 
 .button_poster {
+  visibility:hidden;
   position:absolute;
-  border: none;
-  top:50%;
-  left:35%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  top:45%;
+  left:50%;
   -webkit-transform:translate3d(-50%, -50%, 0);
   -moz-transform:translate3d(-50%, -50%, 0);
   transform:translate3d(-50%, -50%, 0);
   color: #FFFFFF;
   opacity: 0.6;
   font-family: Brush Script MT;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 100;
-  padding: 20px;
-  background-color: #0086B200;
+  padding: 5px;
+  background-color: #20282b86;
   text-shadow: 6px 1px 4px #000000;
   cursor: pointer;
 }
 
 .button_more {
+  visibility:hidden;
   position:absolute;
-  top:47%;
-  left:65%;
+  top:60%;
+  left:50%;
   -webkit-transform:translate3d(-50%, -50%, 0);
   -moz-transform:translate3d(-50%, -50%, 0);
   transform:translate3d(-50%, -50%, 0);
-  border: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
   color: #FFFFFF;
   opacity: 0.6;
   font-family: Brush Script MT;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 100;
-  padding: 10px;
-  background-color: #0086B200;
+  padding: 5px;
+  background-color: #20282b86;
   text-shadow: 6px 1px 4px #000000;
   cursor: pointer;
 }
 
 .button_poster:hover, .button_more:hover {
   opacity: 1.0;
-  font-size: 43px;
-  background-color: #ff1df433;
-  padding: 15px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 15px;
+  font-size: 27px;
+  background-color: #ffffff93;
+  text-shadow: none;
+  color:rgb(0, 13, 71);
+  padding: 7px;
 }
 
 
-.poster:not(.alura-logo, #play_button) {
+.poster {
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 3px;
 }
 
-.poster:hover:not(.alura-logo, #play_button) {
+.div_poster:hover > .poster {
   cursor: pointer;
   transition: 0.4s;
-  transform: scale(1.1);
+  transform: scale(1.08);
   border-color: #3cb371;
+}
+
+.div_poster:hover button  {
+  visibility: visible;
 }
 
 #divMenu {
