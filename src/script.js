@@ -1,11 +1,20 @@
+var idFilmes = 0;
+
 class Filme {
   constructor(nome, imagem, trailer) {
+    this.id = idFilmes;
+    console.log(idFilmes)
     this.nome = nome;
     //this.lancamento = lancamento;
     this.imagem = imagem;
     this.trailer = trailer;
     //this.genero = genero;
+    idFilmes++;
   } 
+}
+
+function abrirDetalhes(filme) {
+  
 }
 
 let filme0 = new Filme("O Rei do Show", "https://m.media-amazon.com/images/I/A10dWOrYXFL._AC_UY327_FMwebp_QL65_.jpg", "https://www.youtube.com/watch?v=r5R6CVp_JzU");
@@ -26,8 +35,10 @@ let filme14 = new Filme("Bob Esponja: O Filme", "https://m.media-amazon.com/imag
 
 var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
 
+
+
 for(i = 0; i < filmes.length; i++) {
   document.write("<div class='div_poster'><input type='image' src=" + filmes[i].imagem + 
   " class='poster'><button class='button_poster' onclick=" + "\"window.open('" + filmes[i].trailer + "')\">▶ Trailer</button>" +
-  "<button class='button_more'>∙∙∙ More</button></div>")
+  "<button class='button_more' onclick='abrirDetalhes(" + filmes[i] + ")'>∙∙∙ More</button></div>")
 }
