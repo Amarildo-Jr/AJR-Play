@@ -75,6 +75,47 @@ body {
   right: 10px;
 }
 
+
+.popUp {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 250px;
+  top:0;
+  left:0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #000000bd; 
+}
+
+/* Modal Content */
+.popUp-content {
+  color: #FFFFFF;
+  background-color: #030d2ee1;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(102, 1, 1);
+  border-radius: 3px;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: left;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(168, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .div_poster {
   display:inline-block;
   position:relative;
@@ -136,7 +177,7 @@ body {
 
 .poster {
   margin: 10px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #FFFFFF;
   border-radius: 3px;
 }
 
