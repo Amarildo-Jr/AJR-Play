@@ -80,7 +80,7 @@ body {
   display: none;
   position: fixed; 
   z-index: 1; 
-  padding-top: 250px;
+  padding-top: 100px;
   top:0;
   left:0;
   width: 100%; 
@@ -94,7 +94,7 @@ body {
   color: #FFFFFF;
   background-color: #030d2ee1;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid rgb(102, 1, 1);
   border-radius: 3px;
   width: 80%;
