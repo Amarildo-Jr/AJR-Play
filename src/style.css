@@ -41,12 +41,9 @@ body {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  /* fundo gradiente */
   background-image: linear-gradient(#001fff, #8406d6);
-  /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
   background-clip: text;
   -webkit-background-clip: text;
-  /* a cor do texto deve estar como transparent */
   color: transparent;
 }
 
@@ -116,7 +113,6 @@ body {
   width: 80%;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: left;

@@ -51,7 +51,6 @@ function abrirDetalhes(opcao, id) {
   id = parseInt(id);
   
   opcao = parseInt(opcao);//1 para o trailer, 2 para detalhes completos
-  console.log(opcao);
   var filme;
 
   for(i = 0; i < filmes.length; i++) {
