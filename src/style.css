@@ -53,12 +53,9 @@ body {
 #logo_link {
   margin-right: 10px;
   text-decoration: none;
-  /* fundo gradiente */
   background-image: linear-gradient(#12025a, #ff0080);
-  /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
   background-clip: text;
   -webkit-background-clip: text;
-  /* a cor do texto deve estar como transparent */
   color: transparent;
   
 }
