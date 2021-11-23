@@ -12,7 +12,7 @@ class Filme {
   } 
 }
 
-let filme0 = new Filme("O Rei do Show", "https://m.media-amazon.com/images/I/A10dWOrYXFL._AC_UY327_FMwebp_QL65_.jpg", "https://www.youtube.com/embed/r5R6CVp_JzU", "2017");
+let filme0 = new Filme("O Rei do Show", "img/posters/reiDoShow.jpg", "https://www.youtube.com/embed/r5R6CVp_JzU", "2017");
 let filme1 = new Filme("Homem-aranha: Longe de Casa", "https://m.media-amazon.com/images/I/91o7Lbsa8GL._AC_UY327_QL65_.jpg", "https://youtube.com/embed/MqQdHaBtvGs", "2019");
 let filme2 = new Filme("O Jogo da Imitação", "https://m.media-amazon.com/images/I/91QWbCKNSoL._AC_UY327_FMwebp_QL65_.jpg", "https://youtube.com/embed/YIkKbMcJL_4", "2014");
 let filme3 = new Filme("Your name", "https://m.media-amazon.com/images/I/71zhsQyBmLL._AC_UY327_QL65_.jpg", "https://youtube.com/embed/soQXM3XVvIU", "2016");
