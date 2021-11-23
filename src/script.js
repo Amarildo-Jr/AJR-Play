@@ -64,11 +64,13 @@ function abrirDetalhes(opcao, id) {
   var popUp_content = document.getElementsByClassName("details");
   if(opcao === 1) {
     popUp_content[0].innerHTML = "<h2>" + filme.nome + " 🎬 </h2>" +
-    "<iframe width='700' height='400' src=\"" + filme.trailer + "\" title='" + filme.nome + 
-      "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+    "<iframe class='video' width='700' height='400' src=\"" + filme.trailer + "\" title='" + filme.nome + 
+      "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
+      "<style>.video {margin-bottom: 25px;}</style>";
   } else if(opcao === 2) {
-    popUp_content[0].innerHTML = "<h2>" + filme.nome + " 🎬 </h2><h4>" + filme.lancamento + "</h4><img src='" + filme.imagem + "'class='banner'>" +
-    "<style>.banner{float: right;display: block;}</style>";
+    popUp_content[0].innerHTML = "<h2>" + filme.nome + " </h2><h4>" + filme.lancamento + "</h4><div id='details'><img src='" + filme.imagem + "'>" +
+    "<p>Isso é uma descrição do filme e tudo mais, aqui deve ter todas as informações como: sinopse, principais atores e avaliação</p></div>" +
+    "<div id='clear'></div><style> #details img {float: left; margin-right: 20px;} #details p {text-align: left;} #clear{clear:both;} </style>";
   }
 }
 
