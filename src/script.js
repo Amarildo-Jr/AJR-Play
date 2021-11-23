@@ -65,8 +65,8 @@ function abrirDetalhes(opcao, id) {
   var popUp_content = document.getElementsByClassName("details");
   if(opcao === 1) {
     popUp_content[0].innerHTML = "<h2>" + filme.nome + "</h2>" +
-    "<iframe width='700' height='400' src=\"" + filme.trailer + "\" title='YouTube video player'" + 
-      "frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+    "<iframe width='700' height='400' src=\"" + filme.trailer + "\" title='" + filme.nome + 
+      "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
   } else if(opcao === 2) {
     popUp_content[0].innerHTML = "<h2>" + filme.nome + "</h2>";
   }
