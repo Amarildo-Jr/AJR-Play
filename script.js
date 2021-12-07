@@ -1,7 +1,7 @@
 var idFilmes = 0;
 
 class Filme {
-  constructor(nome, imagem, trailer, lancamento) {
+  constructor(nome, imagem, trailer, lancamento, banner) {
     this.id = idFilmes;
     this.nome = nome;
     this.lancamento = lancamento;
@@ -47,10 +47,8 @@ window.onclick = function(event) {
   }
 }
 
-function abrirDetalhes(opcao, id) {
+function abrirDetalhes(id) {
   id = parseInt(id);
-  
-  opcao = parseInt(opcao);//1 para o trailer, 2 para detalhes completos
   var filme;
 
   for(i = 0; i < filmes.length; i++) {
@@ -59,24 +57,20 @@ function abrirDetalhes(opcao, id) {
       break;
     }
   }
+
   var popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "block";
   var popUp_content = document.getElementsByClassName("details");
-  if(opcao === 1) {
-    popUp_content[0].innerHTML = "<h2>" + filme.nome + " 🎬 </h2>" +
-    "<iframe class='video' width='700' height='400' src=\"" + filme.trailer + "\" title='" + filme.nome + 
-      "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-      "<style>.video {margin-bottom: 25px;}</style>";
-  } else if(opcao === 2) {
-    popUp_content[0].innerHTML = "<h2>" + filme.nome + " </h2><h4>" + filme.lancamento + "</h4><div id='details'><img src='" + filme.imagem + "'>" +
-    "<p>Isso é uma descrição do filme e tudo mais, aqui deve ter todas as informações como: sinopse, principais atores e avaliação</p></div>" +
-    "<div id='clear'></div><style> #details img {float: left; margin-right: 20px;} #details p {text-align: left;} #clear{clear:both;} </style>";
-  }
+  popUp_content[0].innerHTML = "<h2>" + filme.nome + " 🎬 </h2>" +
+  "<iframe class='video' width='700' height='400' src=\"" + filme.trailer + "\" title='" + filme.nome + 
+  "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
+  "<div id='details'><h4>" + filme.lancamento + "</h4><img src='" + filme.imagem + "'>" +
+  "<p class='descricao_filme'>Isso é uma descrição do filme e tudo mais, aqui deve ter todas as informações como: sinopse, principais atores e avaliação</p></div>" +
+  "<style>.video {margin-bottom: 25px; display: inline;} #details img {float: left; margin-right: 20px;} #details p {text-align: left;} </style>";
 }
 
 for(i = 0; i < filmes.length; i++) {
   document.write("<div class='div_poster'><input type='image' src=" + filmes[i].imagem + 
-  " class='poster'><button class='button_poster' onclick=\"abrirDetalhes('1','" + filmes[i].id + "')\">▶ Trailer</button>" +
-  "<button class='button_more' onclick=\"abrirDetalhes('2','" + filmes[i].id + "')\">∙∙∙ More</button></div>")
+  " class='poster' onclick=\"abrirDetalhes('" + filmes[i].id + "')\"></div>")
 }
 
