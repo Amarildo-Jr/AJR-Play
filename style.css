@@ -1,3 +1,26 @@
+@media only screen and (max-width:768px) {
+  .wrapper span a, .strip-carousel .frames { margin: 10px 0 0 10%; }
+  .strip-carousel .arrow-left, .strip-carousel .arrow-right { width: 10%; }
+}
+
+/* Tablets (potrait) */
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .wrapper span a, .strip-carousel .frames { margin: 10px 0 0 5%; }
+  .strip-carousel .arrow-left, .strip-carousel .arrow-right { width: 5%; }
+}
+
+/* Tablets (landscape) */
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+  .wrapper span a, .strip-carousel .frames { margin: 10px 0 0 5%; }
+  .strip-carousel .arrow-left, .strip-carousel .arrow-right { width: 5%; }
+}
+
+/* Desktop and above */
+@media only screen and (min-width:1440px) {
+  .wrapper span a, .strip-carousel .frames { margin: 10px 0 0 5%; }
+  .strip-carousel .arrow-left, .strip-carousel .arrow-right { width: 5%; }
+}
+
 @font-face {
 	font-family: Resolute-nf;
 	src: url('./font/Resolute-NF.ttf');
@@ -129,7 +152,7 @@ body {
 
 .details {
   display: flex;
-  align-items: row;
+  justify-content: center;
 }
 
 .div_categorias {

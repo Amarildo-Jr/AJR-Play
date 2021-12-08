@@ -67,15 +67,17 @@ function abrirDetalhes(id) {
   var popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "flex";
   var popUp_content = document.getElementsByClassName("details");
-  popUp_content[0].innerHTML = "<iframe class='video' width='700' height='400' src=\"" + filme.trailer + "\" title='" + filme.nome + 
-  "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-  "<h2>" + filme.nome + " 🎬 </h2>" +
-  "<div id='details'><h4>" + filme.lancamento + "</h4>" +
-  "<p class='descricao_filme'>Isso é uma descrição do filme e tudo mais, aqui deve ter todas as informações como: sinopse, principais atores e avaliação</p></div>" +
-  "<style> body {overflow: hidden;} iframe {border: 2px solid #fff;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {margin-bottom: 25px;z-index: 2;} " +
-  ".details {background: url('" + filme.banner + "'); background-repeat: no-repeat;background-position: top;background-size: 100% auto;} #details {margin-top: 50px}" +
-  "#details img {float: left;} #details {margin-top: 300px;}" +
-  "#details p {text-align: left;} </style>";
+  popUp_content[0].innerHTML = "<iframe class='video' width='1200' height='420' src=\"" + filme.trailer + "\" title='" + filme.nome + 
+  "' frameborder='0' allow='accelerometer; clipboard-write; allow=autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
+  "<div id='details'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+  "<p class='descricao_filme'>Isso é uma descrição do filme e tudo mais, aqui deve ter todas as informações como: sinopse, principais atores e avaliação</p>" +
+  "<div class='tabela_descricao'><table width='60%' style='font-size: 18px'>" +
+  "<tr><td><span style='color: grey;'>Gênero </span> </td><td><span style='color: lightblue;'>Comedia, Drama</span></td></tr>" +
+  "<tr><td><span style='color: grey;'>Ano de Lançamento </span> </td><td><span style='color: lightblue;'>" + filme.lancamento + "</span></td></tr></table></div></div>" +
+  "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; position: relative; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {margin-bottom: 25px;z-index: 2;} " +
+  ".details #details {margin-top: 50px; text-align:center;} .details #details .descricao_filme {text-align: center; margin: 30px 0;}" +
+  "#details img {float: left;} #details {margin-top: 300px;} " +
+  ".tabela_descricao {display: flex;justify-content: center;} .details table td {padding: 10px 30px;} </style>";
 }
 
 document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Top 10 Brasil</h2></div><section id='section0'><a href='#section2' class='arrow_btn'>‹</a>")
