@@ -58,6 +58,7 @@ header ul li button {
   color:rgb(255, 255, 255);
   background-color: #00000055;
   padding: 15px 25px;
+  border-radius: 2px;
   color:rgba(255, 255, 255, 0.521);
 }
 

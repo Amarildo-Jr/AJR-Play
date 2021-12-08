@@ -1,7 +1,7 @@
 var idFilmes = 0;
 
 class Filme {
-  constructor(nome, imagem, trailer, lancamento, genero, duracao, descricao) {
+  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, descricao) {
     this.id = idFilmes;
     this.nome = nome;
     this.lancamento = lancamento;
@@ -9,6 +9,7 @@ class Filme {
     this.trailer = trailer;
     //this.banner = banner;
     this.genero = genero;
+    this.categoria = categoria;
     this.duracao = duracao;
     this.descricao = descricao;
     idFilmes++;
@@ -21,6 +22,7 @@ let filme0 = new Filme(
   "https://www.youtube.com/embed/r5R6CVp_JzU", 
   "2017",
   "Drama, Comédia, Musical",
+  "filme",
   "1h 44min",
   "De origem humilde e desde a infância sonhando com um mundo mágico, P.T. Barnum (Hugh Jackman) desafia as barreiras sociais se casando com a filha do patrão do pai e dá o pontapé inicial na realização de seu maior desejo abrindo uma espécie de museu de curiosidades. O empreendimento fracassa, mas ele logo vislumbra uma ousada saída: produzir um grande show estrelado por freaks, fraudes, bizarrices e rejeitados de todos os tipos.");
 
@@ -30,6 +32,7 @@ let filme0 = new Filme(
   "https://youtube.com/embed/rzOvXvBNzMc", 
   "2021", 
   "Ação, Aventura, Fantasia", 
+  "filme",
   "2h 28min",
   "Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências da sua identidade como aracnídeo ter sido revelada pela reportagem do Clarim Diário. Incapaz de separar sua vida normal das aventuras de ser um super-herói, Parker pede ao Doutor Estranho (Benedict Cumberbatch) para que todos esqueçam sua verdeira identidade. Entretanto, o feitiço não sai como planejado e a situação torna-se ainda mais perigosa, forçando-o a descobrir o que realmente significa ser o Homem-Aranha.");
 
@@ -39,6 +42,7 @@ let filme2 = new Filme(
   "https://youtube.com/embed/YIkKbMcJL_4", 
   "2014",
   "Biografia, Drama",
+  "filme",
   "1h 55min",
   "Durante a Segunda Guerra Mundial, o governo britânico monta uma equipe que tem por objetivo quebrar o Enigma, o famoso código que os alemães usam para enviar mensagens aos submarinos. Um de seus integrantes é Alan Turing (Benedict Cumberbatch), um matemático de 27 anos estritamente lógico e focado no trabalho, que tem problemas de relacionamento com praticamente todos à sua volta. Não demora muito para que Turing, apesar de sua intransigência, lidere a equipe. Seu grande projeto é construir uma máquina que permita analisar todas as possibilidades de codificação do Enigma em apenas 18 horas, de forma que os ingleses conheçam as ordens enviadas antes que elas sejam executadas. Entretanto, para que o projeto dê certo, Turing terá que aprender a trabalhar em equipe e tem Joan Clarke (Keira Knightley) sua grande incentivadora."
 );
@@ -49,6 +53,7 @@ let filme3 = new Filme(
   "https://youtube.com/embed/soQXM3XVvIU", 
   "2016",
   "Animação, Fantasia",
+  "filme",
   "1h 50min",
   "Mitsuha Miyamizu (Mone Kamishiraishi) é uma jovem que mora no interior do Japão e que deseja deixar sua pequena cidade para trás para tentar a sorte em Tóquio. Enquanto isso, Taki Tachibana (Ryûnosuke Kamiki), um jovem que trabalha em um restaurante italiano em Tóquio, deseja largar o seu emprego para tentar se tornar um arquiteto. Os dois não se conhecem, mas estão direta e misteriosamente conectados pelas imagens de seus sonhos."
 );
@@ -59,6 +64,7 @@ let filme4 = new Filme(
   "https://youtube.com/embed/UFY8vW5IedY", 
   "2009",
   "Drama, Família",
+  "filme",
   "1h 33min",
   "Parker Wilson (Richard Gere) é um professor universitário que, ao retornar do trabalho, encontra na estação de trem um filhote de cachorro da raça akita, conhecido por sua lealdade. Sem ter como deixá-lo na estação, Parker o leva para casa mesmo sabendo que Cate (Joan Allen), sua esposa, é contra a presença de um cachorro. Aos poucos Parker se afeiçoa ao filhote, que tem o nome Hachi escrito na coleira, em japonês. Cate cede e aceita sua permanência. Hachi cresce e passa a acompanhar Parker até a estação de trem, retornando ao local no horário em que o professor está de volta. Até que um acontecimento inesperado altera sua vida."
 );
@@ -69,6 +75,7 @@ let filme5 = new Filme(
   "https://www.youtube.com/embed/4QRdB4RAQMs", 
   "2019",
   "Ação, Fantasia, Aventura",
+  "filme",
   "3h 01min",
   "Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando perdido no espaço sem água nem comida, o Capitão América/Steve Rogers (Chris Evans) e a Viúva Negra/Natasha Romanov (Scarlett Johansson) precisam liderar a resistência contra o titã louco."
 );
@@ -213,6 +220,8 @@ var filmes0 = [filme15, filme19, filme16, filme18, filme17, filme20,filme21, fil
 
 var popUp = document.getElementsByClassName("popUp");
 
+var filmes_all = [filmes, filmes0]
+
 var close = document.getElementsByClassName("close");
 close[0].onclick = function() {
   popUp[0].style.display = "none";
@@ -228,10 +237,21 @@ window.onclick = function(event) {
   }
 }
 
+function alterarBackgroundBtn(num) {
+  num = parseInt(num);
+  var elemento = document.getElementsByClassName("btn-nav");
+  for (i = 0; i < elemento.length; i++) {
+    if (i != num && elemento[i].classList) {
+      elemento[i].classList.remove('active');
+    } else {
+      elemento[i].classList.add("active");
+    }
+  }
+}
+
 function abrirDetalhes(id) {
   id = parseInt(id);
   var filme;
-  filmes_all = [filmes, filmes0]
 
   for(x = 0; x < filmes_all.length; x++) {
     for(i = 0; i < filmes_all[x].length; i++) {
@@ -277,18 +297,6 @@ while(i <= filmes.length) {
   }
 
   i++;
-}
-
-function alterarBackgroundBtn(num) {
-  num = parseInt(num);
-  var elemento = document.getElementsByClassName("btn-nav");
-  for (i = 0; i < elemento.length; i++) {
-    if (i != num && elemento[i].classList) {
-      elemento[i].classList.remove('active');
-    } else {
-      elemento[i].classList.add("active");
-    }
-  }
 }
 
 document.write("</div>")
