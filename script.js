@@ -29,7 +29,12 @@ let filme12 = new Filme("Interstellar", "img/posters/interstellar.jpg", "https:/
 let filme13 = new Filme("Velozes e Furiosos 7", "img/posters/fast7.jpeg", "https://www.youtube.com/embed/hujU0dw6Erk", "2015");
 let filme14 = new Filme("Bob Esponja: O Filme", "img/posters/bobEsponja.jpg", "https://www.youtube.com/embed/Sfbtp2sCP2E", "2004");
 
+let filme15 = new Filme("Viva - A Vida é uma Festa", "https://br.web.img3.acsta.net/c_310_420/pictures/17/12/07/11/33/0502209.jpg", "https://www.youtube.com/embed/iLmZZV-Nkuk", "2017");
+
+
 var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
+var filmes0 = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme15]
+
 
 var popUp = document.getElementsByClassName("popUp");
 
@@ -60,22 +65,23 @@ function abrirDetalhes(id) {
   }
 
   var popUp = document.getElementsByClassName("popUp");
-  popUp[0].style.display = "block";
+  popUp[0].style.display = "flex";
   var popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "<iframe class='video' width='700' height='400' src=\"" + filme.trailer + "\" title='" + filme.nome + 
   "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
   "<h2>" + filme.nome + " 🎬 </h2>" +
   "<div id='details'><h4>" + filme.lancamento + "</h4>" +
   "<p class='descricao_filme'>Isso é uma descrição do filme e tudo mais, aqui deve ter todas as informações como: sinopse, principais atores e avaliação</p></div>" +
-  "<style> .video {margin-bottom: 25px;z-index: 2;} " +
+  "<style> body {overflow: hidden;} iframe {border: 2px solid #fff;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {margin-bottom: 25px;z-index: 2;} " +
   ".details {background: url('" + filme.banner + "'); background-repeat: no-repeat;background-position: top;background-size: 100% auto;} #details {margin-top: 50px}" +
   "#details img {float: left;} #details {margin-top: 300px;}" +
   "#details p {text-align: left;} </style>";
 }
 
-document.write("<div class='filmes'><section id='section0'><a href='#section2' class='arrow_btn'>‹</a>")
+document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Top 10 Brasil</h2></div><section id='section0'><a href='#section2' class='arrow_btn'>‹</a>")
 j = 0;
-for(i = 1; i <= filmes.length; i++) {
+i = 1;
+while(i <= filmes.length) {
   document.write("<div class='div_poster'><input type='image' src=" + filmes[i-1].imagem + 
   " class='poster' onclick=\"abrirDetalhes('" + filmes[i-1].id + "')\"></div>")
 
@@ -88,7 +94,29 @@ for(i = 1; i <= filmes.length; i++) {
     document.write("<a href='#section" + (j + 1) + "' class='arrow_btn'>›</a></section><section id='section" + (j + 1) + "'><a href='#section" + j + "' class='arrow_btn'>‹</a>");
     j++;
   }
-  
+
+  i++;
+}
+
+document.write("</div>")
+
+document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Minha Lista</h2></div><section id='section3'><a href='#section5' class='arrow_btn'>‹</a>")
+i = 1;
+while(i <= filmes0.length) {
+  document.write("<div class='div_poster'><input type='image' src=" + filmes0[i-1].imagem + 
+  " class='poster' onclick=\"abrirDetalhes('" + filmes0[i-1].id + "')\"></div>")
+
+  if (j == 5 && i == filmes0.length){
+    document.write("<a href='#section3' class='arrow_btn'>›</a></section>");
+    j++;
+  }
+
+  else if(i % 5 == 0 && i > 1){
+    document.write("<a href='#section" + (j + 1) + "' class='arrow_btn'>›</a></section><section id='section" + (j + 1) + "'><a href='#section" + j + "' class='arrow_btn'>‹</a>");
+    j++;
+  }
+
+  i++;
 }
 
 document.write("</div>")
