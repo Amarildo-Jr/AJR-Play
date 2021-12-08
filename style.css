@@ -163,6 +163,7 @@ body {
   display: grid;
   justify-content: baseline;
   grid-template-columns: repeat(5, auto);
+  padding-top: 25px;
   margin: 20px 0;
 }
 
