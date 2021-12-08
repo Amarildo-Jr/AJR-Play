@@ -254,7 +254,7 @@ function abrirDetalhes(id) {
   "<tr><td class='info_table'>Gênero</td><td class='text_table'>" + filme.genero + "</td></tr>" +
   "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div></div>" +
   "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
-  ".details #details {margin: 45px auto; text-align:center;} .details #details .descricao_filme {text-align: center; max-width: 505px; margin-top: 30px;}" +
+  ".details #details {margin: 45px auto; text-align:center;} .details #details .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
   "#details img {float: left;} #details {margin-top: 300px;} .titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
   ".details table td {padding: 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6}</style>";
 }
@@ -277,6 +277,18 @@ while(i <= filmes.length) {
   }
 
   i++;
+}
+
+function alterarBackgroundBtn(num) {
+  num = parseInt(num);
+  var elemento = document.getElementsByClassName("btn-nav");
+  for (i = 0; i < elemento.length; i++) {
+    if (i != num && elemento[i].classList) {
+      elemento[i].classList.remove('active');
+    } else {
+      elemento[i].classList.add("active");
+    }
+  }
 }
 
 document.write("</div>")
