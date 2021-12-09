@@ -16,38 +16,33 @@
 
 <body>
     <div class="container">
+      <header>
+        <div id="page-title">
+          <h1 class="page-title">
+            <a href="index.html" id="logo_link">AJR Play<img src ="./img/icons/play_button.ico" id="play_button"></a>
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <li><button class='btn-nav active' href='www.youtube.com' onclick='alterarBackgroundBtn(0)'>Filmes</li>
+            <li><button class='btn-nav' onclick='alterarBackgroundBtn(1)'>Séries</li>
+            <li><button class='btn-nav' onclick='alterarBackgroundBtn(2)'>Jogos</li>
+          </ul>
+        </nav>
+      </header>
       <div class="body-content">
-        <h1 class="page-title">
-          <a href="" id="logo_link">AJR Play<img src ="./img/icons/play_button.ico" id="play_button"></a>
-         <!-- <nav>
-            <ul>
-              <li>Séries</li>
-              <li>Filmes</li>
-              <li>Jogos</li>
-            </ul>
-          </nav>
-            -->
-        </h1>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-      
-        <a href="https://alura.com.br/" target="_blank">
-            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-        </a>
         <div class="popUp">
           <div class="popUp-content">
             <span class="close">←</span>
-            <div class="details">
-            </div>
+            <div class="details"></div>
           </div>
         </div>
       </div>
       <script  src="./script.js"></script>
-      <div class="fixar_rodape">
-        <footer>
-          <p class="copyright">	&copy; Copyright Amarildo Junior - 2021</p>
-        </footer>
-      </div>
     </div>
+    <footer>
+      <p class="copyright">	&copy; Copyright Amarildo Junior - 2021</p>
+    </footer>
 </body>
 
 </html>
