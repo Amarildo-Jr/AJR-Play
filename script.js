@@ -454,7 +454,7 @@ while(i <= filmes.length) {
   document.write("<div class='div_poster'><input type='image' src=" + filmes[i-1].imagem + " onmouseover=\"focarNoFilme('" + filmes[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes[i-1].id + "')\"" +
   " class='poster' onclick=\"abrirDetalhes('" + filmes[i-1].id + "')\"></div>")
 
-  if (j == 2 && i == filmes.length){
+  if (j == Math.floor(filmes.length/5) - 1 && i == filmes.length){
     document.write("<a href='#section0' class='arrow_btn'>›</a></section>");
     j++;
   }

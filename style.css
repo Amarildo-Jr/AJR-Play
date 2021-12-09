@@ -125,8 +125,8 @@ header ul li button:first-child{
   cursor: pointer;
   text-decoration: none;
   cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.5s;
+  transform: scale(1.03);
+  transition: 0.4s;
   background-image: linear-gradient(#18027c, #ff359a);
 }
 
