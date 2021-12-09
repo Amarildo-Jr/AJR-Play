@@ -152,17 +152,17 @@ let filme15 = new Filme(
 );
 
 let filme16 = new Filme(
+  "Kung Fu Panda 3", 
+  "https://play-lh.googleusercontent.com/Yfr1oZ-9p7hkhJeV7WxCY_45it949SLgqu4RyE1whUuZW9oNEaOoNFAYY1pnnoIzgrbmig", 
+  "https://www.youtube.com/embed/q75bGipJzIg", 
+  "2016"
+);
+
+let filme17 = new Filme(
   "Viva - A Vida é uma Festa", 
   "https://br.web.img3.acsta.net/c_310_420/pictures/17/12/07/11/33/0502209.jpg", 
   "https://www.youtube.com/embed/iLmZZV-Nkuk", 
   "2017"
-);
-
-let filme17 = new Filme(
-  "Carros", 
-  "https://upload.wikimedia.org/wikipedia/pt/9/9b/Carros_p%C3%B4ster.jpg", 
-  "https://www.youtube.com/embed/0I1x9ew1OZU", 
-  "2006"
 );
 
 let filme18 = new Filme(
@@ -173,10 +173,10 @@ let filme18 = new Filme(
 );
 
 let filme19 = new Filme(
-  "Kung Fu Panda 3", 
-  "https://play-lh.googleusercontent.com/Yfr1oZ-9p7hkhJeV7WxCY_45it949SLgqu4RyE1whUuZW9oNEaOoNFAYY1pnnoIzgrbmig", 
-  "https://www.youtube.com/embed/q75bGipJzIg", 
-  "2016"
+  "Carros", 
+  "https://upload.wikimedia.org/wikipedia/pt/9/9b/Carros_p%C3%B4ster.jpg", 
+  "https://www.youtube.com/embed/0I1x9ew1OZU", 
+  "2006"
 );
 
 let filme20 = new Filme(
@@ -215,7 +215,7 @@ let filme24 = new Filme(
 );
 
 var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
-var filmes0 = [filme15, filme19, filme16, filme18, filme17, filme20,filme21, filme22, filme23, filme24]
+var filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24]
 
 
 var popUp = document.getElementsByClassName("popUp");
@@ -245,6 +245,65 @@ function alterarBackgroundBtn(num) {
       elemento[i].classList.remove('active');
     } else {
       elemento[i].classList.add("active");
+    }
+  }
+}
+
+function focarNoFilme(id) {
+  id = parseInt(id)
+  var posters = document.getElementsByClassName('poster');
+  var num_lista = -1;
+  for(x = 0; x < filmes_all.length; x++) {
+    if(num_lista != -1) {
+      break;
+    }
+    for(i = 0; i < filmes_all[x].length; i++) {
+      if(id === filmes_all[x][i].id) {
+        num_lista = x;
+        break;
+      }
+    }
+  }
+  
+  if(num_lista === 0) {
+    for(i = 0; i < filmes_all[num_lista].length; i++) {
+      if(i != id) {
+        posters[i].style = 'opacity: 35%;';
+      }
+    }
+  }
+  if(num_lista === 1) {
+    for(i = 0; i < (filmes_all[num_lista].length); i++) {
+      if(i + 15 != id) {
+        posters[i + 15].style = 'opacity: 35%;';
+      }
+    }
+  }
+}
+
+function desfocarNoFilme(id) {
+  id = parseInt(id)
+  var posters = document.getElementsByClassName('poster');
+  var num_lista = -1;
+  for(x = 0; x < filmes_all.length; x++) {
+    if(num_lista != -1) {
+      break;
+    }
+    for(i = 0; i < filmes_all[x].length; i++) {
+      if(id === filmes_all[x][i].id) {
+        num_lista = x;
+        break;
+      }
+    }
+  }
+  if(num_lista === 0) {
+    for(i = 0; i < filmes_all[num_lista].length; i++) {
+      posters[i].style = 'opacity: 100%;';
+    }
+  }
+  if(num_lista === 1) {
+    for(i = 0; i < (filmes_all[num_lista].length); i++) {
+      posters[i + 15].style = 'opacity: 100%;';
     }
   }
 }
@@ -283,7 +342,7 @@ document.write("<div class='filmes'><section id='section0'><div class='div_categ
 j = 0;
 i = 1;
 while(i <= filmes.length) {
-  document.write("<div class='div_poster'><input type='image' src=" + filmes[i-1].imagem + 
+  document.write("<div class='div_poster' onmouseover=\"focarNoFilme('" + filmes[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes[i-1].id + "')\"><input type='image' src=" + filmes[i-1].imagem + 
   " class='poster' onclick=\"abrirDetalhes('" + filmes[i-1].id + "')\"></div>")
 
   if (j == 2 && i == filmes.length){
@@ -304,7 +363,7 @@ document.write("</div>")
 document.write("<div class='filmes'><section id='section3'><div class='div_categorias'><h2 class='categorias'>Animação</h2></div><a href='#section4' class='arrow_btn'>‹</a>")
 i = 1;
 while(i <= filmes0.length) {
-  document.write("<div class='div_poster'><input type='image' src=" + filmes0[i-1].imagem + 
+  document.write("<div class='div_poster' onmouseover=\"focarNoFilme('" + filmes0[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes0[i-1].id + "')\"><input type='image' src=" + filmes0[i-1].imagem + 
   " class='poster' onclick=\"abrirDetalhes('" + filmes0[i-1].id + "')\"></div>")
 
   if (j == 4 && i == filmes0.length){
