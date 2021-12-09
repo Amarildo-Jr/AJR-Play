@@ -115,49 +115,84 @@ let filme8 = new Filme(
   "A Teoria de Tudo", 
   "img/posters/aTeoriaDeTudo.jpeg", 
   "https://youtube.com/embed/SbUVNHdPE4w", 
-  "2014"
+  "2014",
+  "Biografia, Romance, Drama",
+  "filme",
+  "2h 03min",
+  "img/icons/classificacao/10anos.png",
+  "Baseado na biografia de Stephen Hawking, o filme mostra como o jovem astrofísico (Eddie Redmayne) fez descobertas importantes sobre o tempo, além de retratar o seu romance com a aluna de Cambridge Jane Wide (Felicity Jones) e a descoberta de uma doença motora degenerativa quando tinha apenas 21 anos."
 );
 
 let filme9 = new Filme(
   "Coringa", 
   "img/posters/joker.jpeg", 
   "https://www.youtube.com/embed/ntSvI2qaRxU", 
-  "2019"
+  "2019",
+  "Drama",
+  "filme",
+  "2h 02min",
+  "img/icons/classificacao/16anos.png",
+  "Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante."
 );
 
 let filme10 = new Filme(
   "Lucy", 
   "img/posters/lucy.jpeg", 
   "https://www.youtube.com/embed/hI8TuEc45zw", 
-  "2014"
+  "2014",
+  "Ficção Científica, Ação",
+  "filme",
+  "1h 29min",  
+  "img/icons/classificacao/14anos.png",
+  "Quando a inocente jovem Lucy (Scarlett Johansson) aceita transportar drogas dentro do seu estômago, ela não conhece muito bem os riscos que corre. Por acaso, ela acaba absorvendo as drogas, e um efeito inesperado acontece: Lucy ganha poderes sobre-humanos, incluindo a telecinesia, a ausência de dor e a capacidade de adquirir conhecimento instantaneamente."
 );
 
 let filme11 = new Filme(
   "Animais fantásticos e onde habitam", 
   "img/posters/animaisFantasticos.jpg", 
   "https://www.youtube.com/embed/TiaxfJ7QrIo", 
-  "2016"
+  "2016",
+  "Fantasia, Aventura",
+  "filme",
+  "2h 13min",
+  "img/icons/classificacao/12anos.png",
+  "O excêntrico magizoologista Newt Scamander (Eddie Redmayne) chega à cidade de Nova York levando com muito zelo sua preciosa maleta, um objeto mágico onde ele carrega fantásticos animais do mundo da magia que coletou durante as suas viagens. Em meio a comunidade bruxa norte-americana, que teme muito mais a exposição aos trouxas do que seus colegas ingleses, Newt precisará usar todas suas habilidades e conhecimentos para capturar uma variedade de criaturas que acabam fugindo."
 );
 
 let filme12 = new Filme(
   "Interstellar", 
   "img/posters/interstellar.jpg", 
   "https://www.youtube.com/embed/frD_IiY_A3E", 
-  "2014"
+  "2014",
+  "Ficção Científica, Drama",
+  "filme",
+  "2h 49min",
+  "img/icons/classificacao/10anos.png",
+  "Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta."
 );
 
 let filme13 = new Filme(
   "Velozes e Furiosos 7", 
   "img/posters/fast7.jpeg", 
   "https://www.youtube.com/embed/hujU0dw6Erk", 
-  "2015"
+  "2015",
+  "Ação",
+  "filme",
+  "2h 17min",
+  "img/icons/classificacao/14anos.png",
+  "Velozes e Furiosos 7 acompanha Dom (Vin Diesel), Brian (Paul Walker), Letty (Michelle Rodriguez) e o resto da equipe após os acontecimentos em Londres. Apesar de terem suas chances de voltar para os Estados Unidos e recomeçarem suas vidas, a tranquilidade do grupo é destruída quando Deckard Shaw (Jason Statham), um assassino profissional, quer vingança pela morte de seu irmão. Agora, a equipe tem que se reunir para impedir este novo vilão. Mas dessa vez, não é só sobre ser veloz. A luta é pela sobrevivência."
 );
 
 let filme14 = new Filme(
   "Sky High: Super Escola de Heróis", 
-  "https://www.themoviedb.org/t/p/w500/mUVPAWrszwEy1TNblitVkuYyb7I.jpg",
+  "img/posters/skyHigh.jpg",
   "https://www.youtube.com/embed/I82ZaHx0PWk", 
-  "2005"
+  "2005",
+  "Comédia, Fantasia, Família",
+  "filme",
+  "1h 42min",
+  "img/icons/classificacao/livre.png",
+  "Will Stronghold (Michael Angarano) é um adolescente comum, que se preocupa com os amigos, as notas do colégio e garotas. Ele é também a 3ª geração de sua família a estudar na conceituada Sky High, uma escola de elite que tem por meta transformar jovens superdotados em super-heróis do futuro. Só que há um problema: Will está começando o 1º ano sem ter manifestado nenhum superpoder, o que faz com que seja apelidado de \"parceiro coadjuvante\" pelos colegas de escola. Humilhado constantemente na Sky High, Will ainda precisa esconder o fato de seus pais, os famosos super-heróis Commander (Kurt Russell) e Jetstream (Kelly Preston)."
 );
 
 
@@ -165,70 +200,120 @@ let filme15 = new Filme(
   "Toy Story 4", 
   "img/posters/toyStory4.jpg",
   "https://www.youtube.com/embed/76CslX-q5C4", 
-  "2019"
+  "2019",
+  "Animação, Aventura, Família",
+  "filme",
+  "1h 40min",
+  "img/icons/classificacao/livre.png",
+  "Agora morando na casa da pequena Bonnie, Woody apresenta aos amigos o novo brinquedo construído por ela: Forky, baseado em um garfo de verdade. O novo posto de brinquedo não o agrada nem um pouco, o que faz com que Forky fuja de casa. Decidido a trazer de volta o atual brinquedo favorito de Bonnie, Woody parte em seu encalço e, no caminho, reencontra Bo Peep, que agora vive em um parque de diversões."
 );
 
 let filme16 = new Filme(
   "Kung Fu Panda 3", 
-  "https://play-lh.googleusercontent.com/Yfr1oZ-9p7hkhJeV7WxCY_45it949SLgqu4RyE1whUuZW9oNEaOoNFAYY1pnnoIzgrbmig", 
+  "img/posters/kungFuPanda3.jpeg",
   "https://www.youtube.com/embed/q75bGipJzIg", 
-  "2016"
+  "2016",
+  "Animação, Aventura, Comédia, Família",
+  "filme",
+  "1h 35min",
+  "img/icons/classificacao/livre.png",
+  "Desta vez, Mestre Shifu tem como principal ensinamento fazer com que Po aprenda a técnica de dominação do Chi, uma espécie de “energia vital”. Porém, o atrapalhado panda acaba se desconcentrando com a chegada do pai de sangue, o panda Li, que o carrega para a vila secreta dos pandas – aguçando o ciúme do Sr Ping, o “pai” ganso de Po. Em paralelo, o poderoso touro Kai, O Coletor, um centenário inimigo do Mestre Oogway, reúne forças para voltar para o mundo dos vivos e tomar o que ele acha que é dele por direito. Caberá a Po e seus amigos impedir o maléfico plano do vilão."
 );
 
 let filme17 = new Filme(
   "Viva - A Vida é uma Festa", 
-  "https://br.web.img3.acsta.net/c_310_420/pictures/17/12/07/11/33/0502209.jpg", 
+  "img/posters/vivaAvida.jpg", 
   "https://www.youtube.com/embed/iLmZZV-Nkuk", 
-  "2017"
+  "2017",
+  "Animação, Fantasia, Família",
+  "filme",
+  "1h 45min",
+  "img/icons/classificacao/livre.png",
+  "Em Viva - A Vida é uma Festa, Miguel é um menino de 12 anos que quer muito ser um músico famoso, mas ele precisa lidar com sua família que desaprova seu sonho. Determinado a virar o jogo, ele acaba desencadeando uma série de eventos ligados a um mistério de 100 anos. A aventura, com inspiração no feriado mexicano do Dia dos Mortos, acaba gerando uma extraordinária reunião familiar."
 );
 
 let filme18 = new Filme(
   "Como Treinar o seu Dragão 3", 
-  "https://lojasaraiva.vteximg.com.br/arquivos/ids/404535/1007263065.jpg?v=636966025467900000", 
+  "img/posters/comoTreinarSeuDragao.jpg", 
   "https://www.youtube.com/embed/P5GAg92efK0", 
-  "2019"
+  "2019",
+  "Animação, Aventura, Família",
+  "filme",
+  "1h 44min",
+  "img/icons/classificacao/livre.png",
+  "Decidido a fazer de Berk um verdadeiro libelo ao ideal da convivência pacífica entre homens e dragões, Soluço e seus amigos seguem atrás de caçadores, para não só libertar suas presas mas também impedir a matança desenfreada dos animais. O esforço do grupo desperta a atenção de Grimmel ao descobrir que entre eles está Banguela, um legítimo Fúria da Noite. O vilão então desenvolve um plano para capturá-lo a todo custo, usando como arma uma fêmea capturada, da mesma espécie."
 );
 
 let filme19 = new Filme(
   "Carros", 
   "https://upload.wikimedia.org/wikipedia/pt/9/9b/Carros_p%C3%B4ster.jpg", 
   "https://www.youtube.com/embed/0I1x9ew1OZU", 
-  "2006"
+  "2006",
+  "Animação, Comédia, Ação, Fantasia",
+  "filme",
+  "1h 36min",
+  "img/icons/classificacao/livre.png",
+  "Ao viajar para a Califórnia, o famoso carro de corridas Relâmpago McQueen se perde e vai parar em Radiator Springs, uma cidadezinha na Rota 66. Ele conhece novos amigos e aprende lições que mudam sua forma de encarar a vida."
 );
 
 let filme20 = new Filme(
   "Bob Esponja: O Filme", 
   "img/posters/bobEsponja.jpg", 
   "https://www.youtube.com/embed/Sfbtp2sCP2E", 
-  "2004"
+  "2004",
+  "Animação, Comédia, Família",
+  "filme",
+  "1h 22min",
+  "img/icons/classificacao/livre.png",
+  "Após a coroa do Rei Netuno ser roubada, Bob Esponja e seu melhor amigo Patrick partem em uma viagem pela Fenda do Bikini para reencontrá-la. No caminho eles precisam enfrentar monstros marinhos, vilões perigosos e vários bandidos."
 );
 
 let filme21 = new Filme(
   "Moana: Um Mar de Aventuras", 
   "https://f001.backblazeb2.com/file/papocine/2016/12/20200306-poster.jpg", 
   "https://www.youtube.com/embed/XL4Tf1Eohv8", 
-  "2018"
+  "2017",
+  "Animação, Família",
+  "filme",
+  "1h 47min",
+  "img/icons/classificacao/livre.png",
+  "Moana Waialiki é uma corajosa jovem, filha do chefe de uma tribo na Oceania, vinda de uma longa linhagem de navegadores. Querendo descobrir mais sobre seu passado e ajudar a família, ela resolve partir em busca de seus ancestrais, habitantes de uma ilha mítica que ninguém sabe onde é. Acompanhada pelo lendário semideus Maui, Moana começa sua jornada em mar aberto, onde enfrenta terríveis criaturas marinhas e descobre histórias do submundo."
 );
 
 let filme22 = new Filme(
   "Shrek 2", 
   "img/posters/shrek2.jpg", 
   "https://www.youtube.com/embed/6SKf944GNig", 
-  "2018"
+  "2004",
+  "Animação, Comédia, Família, Aventura",
+  "filme",
+  "1h 30min",
+  "img/icons/classificacao/livre.png",
+  "Após se casar com a Princesa Fiona (Cameron Diaz), Shrek (Mike Myers) vive feliz em seu pântano. Ao retornar de sua lua-de-mel Fiona recebe uma carta de seus pais, que não sabem que ela agora é um ogro, convidando-a para um jantar juntamente com seu grande amor, na intenção de conhecê-lo. A muito custo Fiona consegue convencer Shrek a ir visitá-los, tendo ainda a companhia do Burro (Eddie Murphy). Porém os problemas começam quando os pais de Fiona descobrem que ela não se casou com o Príncipe (Rupert Everett), a quem havia sido prometida, e enviam o Gato de Botas (Antonio Banderas) para separá-los."
 );
 
 let filme23 = new Filme(
   "Homem-Aranha no Aranhaverso", 
   "img/posters/aranhaverso.jpg", 
   "https://www.youtube.com/embed/SS6ABPkfmBE", 
-  "2018"
+  "2019",
+  "Animação, Ação, Família",
+  "filme",
+  "1h 57min",
+  "img/icons/classificacao/10anos.png",
+  "Em Homem-Aranha no Aranhaverso, Miles Morales é um jovem negro do Brooklyn que se tornou o Homem-Aranha inspirado no legado de Peter Parker, já falecido. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói aracnídeo sob um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha."
 );
 
 let filme24 = new Filme(
   "Procurando Dory", 
   "https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/3/4/342520210407-uau-posters-procurando-dory-filmes-infantil-1.jpg", 
   "https://www.youtube.com/embed/BGNvbWeASbA", 
-  "2016"
+  "2016",
+  "Animação, Comédia, Aventura",
+  "filme",
+  "1h 37min",
+  "img/icons/classificacao/livre.png",
+  "Um ano após ajudar Marlin (Albert Brooks) a reencontrar seu filho Nemo, Dory (Ellen DeGeneres) tem um insight e lembra de sua amada família. Com saudades, ela decide fazer de tudo para reencontrá-los e na desenfreada busca esbarra com amigos do passado e vai parar nas perigosas mãos de humanos."
 );
 
 var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
@@ -285,14 +370,14 @@ function focarNoFilme(id) {
   if(num_lista === 0) {
     for(i = 0; i < filmes_all[num_lista].length; i++) {
       if(i != id) {
-        posters[i].style = 'opacity: 35%;';
+        posters[i].style = 'opacity: 35%; transition: 0.4s;';
       }
     }
   }
   if(num_lista === 1) {
     for(i = 0; i < (filmes_all[num_lista].length); i++) {
       if(i + 15 != id) {
-        posters[i + 15].style = 'opacity: 35%;';
+        posters[i + 15].style = 'opacity: 35%; transition: 0.4s;';
       }
     }
   }
@@ -315,12 +400,12 @@ function desfocarNoFilme(id) {
   }
   if(num_lista === 0) {
     for(i = 0; i < filmes_all[num_lista].length; i++) {
-      posters[i].style = 'opacity: 100%;';
+      posters[i].style = 'opacity: 100%; transition: 0.4s;';
     }
   }
   if(num_lista === 1) {
     for(i = 0; i < (filmes_all[num_lista].length); i++) {
-      posters[i + 15].style = 'opacity: 100%;';
+      posters[i + 15].style = 'opacity: 100%; transition: 0.4s;';
     }
   }
 }
@@ -351,7 +436,7 @@ function abrirDetalhes(id) {
   "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><img src='" + filme.classificacao + "' class='classificacao_indicativa'</div>" +
   "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
   ".details #details {margin: 45px auto; text-align:center;} .details #details .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
-  "#details img {float: left;} #details {margin-top: 300px;} .titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
+  "#details {margin-top: 300px; display: flex; align-itens: center;} .titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
   ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:70px;height: 70px;margin-top: 20px}</style>";
 }
 
