@@ -267,7 +267,7 @@ header ul li button:first-child{
   height: 347px;
 }
 
-.div_poster:hover > .poster {
+.poster:hover {
   cursor: pointer;
   transition: 0.4s;
   transform: scale(1.04);

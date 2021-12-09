@@ -1,7 +1,7 @@
 var idFilmes = 0;
 
 class Filme {
-  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, descricao) {
+  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao) {
     this.id = idFilmes;
     this.nome = nome;
     this.lancamento = lancamento;
@@ -11,6 +11,7 @@ class Filme {
     this.genero = genero;
     this.categoria = categoria;
     this.duracao = duracao;
+    this.classificacao = classificacao;
     this.descricao = descricao;
     idFilmes++;
   } 
@@ -24,6 +25,7 @@ let filme0 = new Filme(
   "Drama, Comédia, Musical",
   "filme",
   "1h 44min",
+  "img/icons/classificacao/12anos.png",
   "De origem humilde e desde a infância sonhando com um mundo mágico, P.T. Barnum (Hugh Jackman) desafia as barreiras sociais se casando com a filha do patrão do pai e dá o pontapé inicial na realização de seu maior desejo abrindo uma espécie de museu de curiosidades. O empreendimento fracassa, mas ele logo vislumbra uma ousada saída: produzir um grande show estrelado por freaks, fraudes, bizarrices e rejeitados de todos os tipos.");
 
   let filme1 = new Filme(
@@ -34,6 +36,7 @@ let filme0 = new Filme(
   "Ação, Aventura, Fantasia", 
   "filme",
   "2h 28min",
+  "img/icons/classificacao/12anos.png",
   "Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências da sua identidade como aracnídeo ter sido revelada pela reportagem do Clarim Diário. Incapaz de separar sua vida normal das aventuras de ser um super-herói, Parker pede ao Doutor Estranho (Benedict Cumberbatch) para que todos esqueçam sua verdeira identidade. Entretanto, o feitiço não sai como planejado e a situação torna-se ainda mais perigosa, forçando-o a descobrir o que realmente significa ser o Homem-Aranha.");
 
 let filme2 = new Filme(
@@ -44,6 +47,7 @@ let filme2 = new Filme(
   "Biografia, Drama",
   "filme",
   "1h 55min",
+  "img/icons/classificacao/12anos.png",
   "Durante a Segunda Guerra Mundial, o governo britânico monta uma equipe que tem por objetivo quebrar o Enigma, o famoso código que os alemães usam para enviar mensagens aos submarinos. Um de seus integrantes é Alan Turing (Benedict Cumberbatch), um matemático de 27 anos estritamente lógico e focado no trabalho, que tem problemas de relacionamento com praticamente todos à sua volta. Não demora muito para que Turing, apesar de sua intransigência, lidere a equipe. Seu grande projeto é construir uma máquina que permita analisar todas as possibilidades de codificação do Enigma em apenas 18 horas, de forma que os ingleses conheçam as ordens enviadas antes que elas sejam executadas. Entretanto, para que o projeto dê certo, Turing terá que aprender a trabalhar em equipe e tem Joan Clarke (Keira Knightley) sua grande incentivadora."
 );
 
@@ -55,6 +59,7 @@ let filme3 = new Filme(
   "Animação, Fantasia",
   "filme",
   "1h 50min",
+  "img/icons/classificacao/10anos.png",
   "Mitsuha Miyamizu (Mone Kamishiraishi) é uma jovem que mora no interior do Japão e que deseja deixar sua pequena cidade para trás para tentar a sorte em Tóquio. Enquanto isso, Taki Tachibana (Ryûnosuke Kamiki), um jovem que trabalha em um restaurante italiano em Tóquio, deseja largar o seu emprego para tentar se tornar um arquiteto. Os dois não se conhecem, mas estão direta e misteriosamente conectados pelas imagens de seus sonhos."
 );
 
@@ -66,6 +71,7 @@ let filme4 = new Filme(
   "Drama, Família",
   "filme",
   "1h 33min",
+  "img/icons/classificacao/livre.png",
   "Parker Wilson (Richard Gere) é um professor universitário que, ao retornar do trabalho, encontra na estação de trem um filhote de cachorro da raça akita, conhecido por sua lealdade. Sem ter como deixá-lo na estação, Parker o leva para casa mesmo sabendo que Cate (Joan Allen), sua esposa, é contra a presença de um cachorro. Aos poucos Parker se afeiçoa ao filhote, que tem o nome Hachi escrito na coleira, em japonês. Cate cede e aceita sua permanência. Hachi cresce e passa a acompanhar Parker até a estação de trem, retornando ao local no horário em que o professor está de volta. Até que um acontecimento inesperado altera sua vida."
 );
 
@@ -77,6 +83,7 @@ let filme5 = new Filme(
   "Ação, Fantasia, Aventura",
   "filme",
   "3h 01min",
+  "img/icons/classificacao/12anos.png",
   "Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando perdido no espaço sem água nem comida, o Capitão América/Steve Rogers (Chris Evans) e a Viúva Negra/Natasha Romanov (Scarlett Johansson) precisam liderar a resistência contra o titã louco."
 );
 
@@ -84,14 +91,24 @@ let filme6 = new Filme(
   "It: Capítulo II", 
   "img/posters/it2.jpg", 
   "https://youtube.com/embed/Zs0hLEHAoSs", 
-  "2019"
+  "2019",
+  "Terror",
+  "filme",
+  "2h 50min",
+  "img/icons/classificacao/16anos.png",
+  "Em It - Capítulo 2, 27 anos depois dos eventos de \"It - A Coisa\", Mike (Isaiah Mustafa) percebe que o palhaço Pennywise (Bill Skarsgard) está de volta à cidade de Derry. Ele convoca os antigos amigos do Clube dos Otários para honrar a promessa de infância e acabar com o inimigo de uma vez por todas. Mas quando Bill (James McAvoy), Beverly (Jessica Chastain), Ritchie (Bill Hader), Ben (Jay Ryan) e Eddie (James Ransone) retornam às suas origens, eles precisam se confrontar a traumas nunca resolvidos de suas infâncias, e que repercutem até hoje na vida adulta."
 );
 
 let filme7 = new Filme(
   "Os Parças", 
   "img/posters/osParcas.jpeg", 
   "https://www.youtube.com/embed/FUlEV4tzzQ8", 
-  "2017"
+  "2017",
+  "Comédia",
+  "filme",
+  "1h 40min",
+  "img/icons/classificacao/14anos.png",
+  "Chantageados e enganados por um ambicioso trambiqueiro (Oscar Magrini), Toinho (Tom Cavalcante), Ray Van (Whindersson Nunes), Pilôra (Tirullipa) e Romeu (Bruno de Luca) precisam organizar uma festa inesquecível de casamento sem nenhum dinheiro no bolso. Caso falhem, terão que lidar com o maior contrabandista da famosa rua 25 de Março em São Paulo, que é também o pai da noiva (Paloma Bernardi)."
 );
 
 let filme8 = new Filme(
@@ -331,18 +348,18 @@ function abrirDetalhes(id) {
   "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
   "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
   "<tr><td class='info_table'>Gênero</td><td class='text_table'>" + filme.genero + "</td></tr>" +
-  "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div></div>" +
+  "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><img src='" + filme.classificacao + "' class='classificacao_indicativa'</div>" +
   "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
   ".details #details {margin: 45px auto; text-align:center;} .details #details .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
   "#details img {float: left;} #details {margin-top: 300px;} .titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
-  ".details table td {padding: 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6}</style>";
+  ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:70px;height: 70px;margin-top: 20px}</style>";
 }
 
 document.write("<div class='filmes'><section id='section0'><div class='div_categorias'><h2 class='categorias'>Lista do Adm</h2></div><a href='#section2' class='arrow_btn'>‹</a>")
 j = 0;
 i = 1;
 while(i <= filmes.length) {
-  document.write("<div class='div_poster' onmouseover=\"focarNoFilme('" + filmes[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes[i-1].id + "')\"><input type='image' src=" + filmes[i-1].imagem + 
+  document.write("<div class='div_poster'><input type='image' src=" + filmes[i-1].imagem + " onmouseover=\"focarNoFilme('" + filmes[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes[i-1].id + "')\"" +
   " class='poster' onclick=\"abrirDetalhes('" + filmes[i-1].id + "')\"></div>")
 
   if (j == 2 && i == filmes.length){
@@ -363,7 +380,7 @@ document.write("</div>")
 document.write("<div class='filmes'><section id='section3'><div class='div_categorias'><h2 class='categorias'>Animação</h2></div><a href='#section4' class='arrow_btn'>‹</a>")
 i = 1;
 while(i <= filmes0.length) {
-  document.write("<div class='div_poster' onmouseover=\"focarNoFilme('" + filmes0[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes0[i-1].id + "')\"><input type='image' src=" + filmes0[i-1].imagem + 
+  document.write("<div class='div_poster'><input type='image' src=" + filmes0[i-1].imagem + " onmouseover=\"focarNoFilme('" + filmes0[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes0[i-1].id + "')\"" +
   " class='poster' onclick=\"abrirDetalhes('" + filmes0[i-1].id + "')\"></div>")
 
   if (j == 4 && i == filmes0.length){
