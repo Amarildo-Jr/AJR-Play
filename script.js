@@ -447,7 +447,7 @@ function abrirDetalhes(id) {
   ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:70px;height: 70px;margin-top: 20px}</style>";
 }
 
-document.write("<div class='filmes'><section id='section0'><div class='div_categorias'><h2 class='categorias'>Lista do Adm</h2></div><a href='#section2' class='arrow_btn'>‹</a>")
+document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Lista do Adm</h2></div><button class='arrow_btn left inactive' onclick='slide(1, 0)'>‹</button>")
 j = 0;
 i = 1;
 while(i <= filmes.length) {
@@ -455,12 +455,12 @@ while(i <= filmes.length) {
   " class='poster' onclick=\"abrirDetalhes('" + filmes[i-1].id + "')\"></div>")
 
   if (j == Math.floor(filmes.length/5) - 1 && i == filmes.length){
-    document.write("<a href='#section0' class='arrow_btn'>›</a></section>");
+    document.write("<button class='arrow_btn right active' onclick='slide(2, 0)'>›</button>");
     j++;
   }
 
   else if(i % 5 == 0 && i > 1){
-    document.write("<a href='#section" + (j + 1) + "' class='arrow_btn'>›</a></section><section id='section" + (j + 1) + "'><a href='#section" + j + "' class='arrow_btn'>‹</a>");
+    //document.write("<button class='arrow_btn'>›</button><button class='arrow_btn'>‹</button>");
     j++;
   }
 
@@ -469,19 +469,19 @@ while(i <= filmes.length) {
 
 document.write("</div>")
 
-document.write("<div class='filmes'><section id='section3'><div class='div_categorias'><h2 class='categorias'>Animação</h2></div><a href='#section4' class='arrow_btn'>‹</a>")
+document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Animação</h2></div><button class='arrow_btn left inactive' onclick='slide(1, 1)'>‹</button>")
 i = 1;
 while(i <= filmes0.length) {
   document.write("<div class='div_poster'><input type='image' src=" + filmes0[i-1].imagem + " onmouseover=\"focarNoFilme('" + filmes0[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes0[i-1].id + "')\"" +
   " class='poster' onclick=\"abrirDetalhes('" + filmes0[i-1].id + "')\"></div>")
 
   if (j == 4 && i == filmes0.length){
-    document.write("<a href='#section3' class='arrow_btn'>›</a></section>");
+    document.write("<button class='arrow_btn right active' onclick='slide(2, 1)'>›</button>");
     j++;
   }
 
   else if(i % 5 == 0 && i > 1){
-    document.write("<a href='#section" + (j + 1) + "' class='arrow_btn'>›</a></section><section id='section" + (j + 1) + "'><a href='#section" + j + "' class='arrow_btn'>‹</a>");
+    //document.write("<button class='arrow_btn'>›</button><button class='arrow_btn'>‹</button>");
     j++;
   }
 
@@ -489,3 +489,68 @@ while(i <= filmes0.length) {
 }
 
 document.write("</div>")
+
+function reset() {
+  var largura = window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
+  
+  if(largura < 985) {
+    botoes_carr = document.getElementsByClassName('arrow_btn');
+    for(i = 0; i < botoes_carr.length; i++) {
+      botoes_carr[i].style = "display: none;";
+    }
+    botoes_carr = document.getElementsByClassName('filmes');
+    for(i = 0; i < botoes_carr.length; i++) {
+      botoes_carr[i].style = "overflow: scroll;";
+    }
+  }
+}
+
+reset();
+
+filmes_sections = document.getElementsByClassName('filmes')
+filmes_sections[0].scrollLeft = 0;
+filmes_sections[1].scrollLeft = 0;
+
+function slide(side, section) {
+  //side = 1 deslizar pra direita -> side = 2 deslizar pra esquerda
+  var x, y;
+  if(section === 0) {
+    x = 0;
+    y = 1;
+  } else if(section === 1) {
+    x = 2;
+    y = 3;
+  }
+  btn = document.getElementsByClassName('arrow_btn')
+  if(side === 1) {
+    if(filmes_sections[section].scrollLeft > 0) {
+      filmes_sections[section].scrollLeft -= filmes_sections[section].clientWidth - 180;
+      btn[y].classList.remove('inactive');
+      btn[y].classList.add('active');
+      btn[x].classList.remove('inactive');
+      btn[x].classList.add('active');
+    } if (filmes_sections[section].scrollLeft <= 0) {
+      btn[x].classList.remove('active');
+      btn[x].classList.add('inactive');
+      btn[y].classList.remove('inactive');
+      btn[y].classList.add('active');
+    }
+  } else if(side === 2) {
+    if(filmes_sections[section].scrollLeft < filmes_sections[section].scrollWidth) {
+        filmes_sections[section].scrollLeft += filmes_sections[section].clientWidth - 180;
+        btn[x].classList.remove('inactive');
+        btn[x].classList.add('active');
+        btn[y].classList.remove('inactive');
+        btn[y].classList.add('active');
+        console.log('oxente, passei por aqui')
+    } //else if(parseInt(filmes_sections[section].scrollLeft) >= filmes_sections[section].scrollWidth) {
+      // btn[x].classList.remove('inactive');
+      // btn[x].classList.add('active');
+      // btn[y].classList.remove('active');
+      // btn[y].classList.add('inactive');
+      // console.log('ue, passei por aqui')
+    //}
+  }
+}
