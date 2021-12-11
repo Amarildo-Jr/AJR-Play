@@ -450,44 +450,22 @@ function abrirDetalhes(id) {
 document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Lista do Adm</h2></div><button class='arrow_btn left inactive' onclick='slide(1, 0)'>‹</button>")
 j = 0;
 i = 1;
-while(i <= filmes.length) {
-  document.write("<div class='div_poster'><input type='image' src=" + filmes[i-1].imagem + " onmouseover=\"focarNoFilme('" + filmes[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes[i-1].id + "')\"" +
-  " class='poster' onclick=\"abrirDetalhes('" + filmes[i-1].id + "')\"></div>")
 
-  if (j == Math.floor(filmes.length/5) - 1 && i == filmes.length){
-    document.write("<button class='arrow_btn right active' onclick='slide(2, 0)'>›</button>");
-    j++;
-  }
-
-  else if(i % 5 == 0 && i > 1){
-    //document.write("<button class='arrow_btn'>›</button><button class='arrow_btn'>‹</button>");
-    j++;
-  }
-
-  i++;
+for(i = 0; i < filmes.length; i++) {
+  document.write("<div class='div_poster'><input type='image' src=" + filmes[i].imagem + " onmouseover=\"focarNoFilme('" + filmes[i].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes[i].id + "')\"" +
+  " class='poster' onclick=\"abrirDetalhes('" + filmes[i].id + "')\"></div>");
 }
-
+document.write("<button class='arrow_btn right active' onclick='slide(2, 0)'>›</button>");
 document.write("</div>")
 
 document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Animação</h2></div><button class='arrow_btn left inactive' onclick='slide(1, 1)'>‹</button>")
 i = 1;
-while(i <= filmes0.length) {
-  document.write("<div class='div_poster'><input type='image' src=" + filmes0[i-1].imagem + " onmouseover=\"focarNoFilme('" + filmes0[i-1].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes0[i-1].id + "')\"" +
-  " class='poster' onclick=\"abrirDetalhes('" + filmes0[i-1].id + "')\"></div>")
-
-  if (j == 4 && i == filmes0.length){
-    document.write("<button class='arrow_btn right active' onclick='slide(2, 1)'>›</button>");
-    j++;
-  }
-
-  else if(i % 5 == 0 && i > 1){
-    //document.write("<button class='arrow_btn'>›</button><button class='arrow_btn'>‹</button>");
-    j++;
-  }
-
-  i++;
+for(i = 0; i < filmes0.length; i++) {
+  document.write("<div class='div_poster'><input type='image' src=" + filmes0[i].imagem + " onmouseover=\"focarNoFilme('" + filmes0[i].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes0[i].id + "')\"" +
+  " class='poster' onclick=\"abrirDetalhes('" + filmes0[i].id + "')\"></div>");
 }
 
+document.write("<button class='arrow_btn right active' onclick='slide(2, 1)'>›</button>");
 document.write("</div>")
 
 function reset() {
@@ -544,7 +522,6 @@ function slide(side, section) {
         btn[x].classList.add('active');
         btn[y].classList.remove('inactive');
         btn[y].classList.add('active');
-        console.log('oxente, passei por aqui')
     } //else if(parseInt(filmes_sections[section].scrollLeft) >= filmes_sections[section].scrollWidth) {
       // btn[x].classList.remove('inactive');
       // btn[x].classList.add('active');
