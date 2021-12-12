@@ -66,7 +66,6 @@ header ul li button {
 header ul li button:hover {
   text-decoration: none;
   background-image: linear-gradient(#12025a43, #ff008043);
-  transition: 4s;
   cursor: pointer;
   color:rgba(255, 255, 255, 0.781);
   box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5) ;
