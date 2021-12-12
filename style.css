@@ -195,22 +195,26 @@ header ul li button:first-child{
   font-family: Arial, Helvetica, sans-serif, Courier, monospace;
   color:rgb(255, 255, 255);
   text-align: left;
-  position: absolute;
+  position: relative;
   left: 22px;
 }
 
 .categorias {
   font-family: Arial, Helvetica, sans-serif, Courier, monospace;
   color:rgb(255, 255, 255);
+  position: absolute;
+  width: 300px;
+  top: -30px;
+  margin-bottom: 40px;
 }
 
 .filmes {
-  /*display: grid;
-  grid-template-columns: repeat(3,100%);*/
   overflow-x: hidden;
   display: flex;
   flex-direction: row;
   scroll-behavior: smooth;
+  padding-top: 30px;
+  margin: 0 15px;
 }
 
 .arrow_btn {
