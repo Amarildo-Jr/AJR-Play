@@ -40,8 +40,9 @@ header {
   align-items: center;
   width: 100%;
   padding: 20px 0px;
-  position: block;
-  background-color: #00000057;
+  position: fixed;
+  background-color: #01051b;
+  z-index: 2;
 }
 
 header ul {
@@ -282,6 +283,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 25px;
 }
 
 footer p {

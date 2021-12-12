@@ -504,7 +504,7 @@ function slide(side, section) {
   btn = document.getElementsByClassName('arrow_btn')
   if(side === 1) {
     if(filmes_sections[section].scrollLeft > 0) {
-      filmes_sections[section].scrollLeft -= filmes_sections[section].clientWidth - 180;
+      filmes_sections[section].scrollLeft -= filmes_sections[section].clientWidth - 100;
       btn[y].classList.remove('inactive');
       btn[y].classList.add('active');
       btn[x].classList.remove('inactive');
@@ -517,7 +517,7 @@ function slide(side, section) {
     }
   } else if(side === 2) {
     if(filmes_sections[section].scrollLeft < filmes_sections[section].scrollWidth) {
-        filmes_sections[section].scrollLeft += filmes_sections[section].clientWidth - 180;
+        filmes_sections[section].scrollLeft += filmes_sections[section].clientWidth - 100;
         btn[x].classList.remove('inactive');
         btn[x].classList.add('active');
         btn[y].classList.remove('inactive');
