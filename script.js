@@ -509,7 +509,7 @@ function slide(side, section) {
       btn[y].classList.add('active');
       btn[x].classList.remove('inactive');
       btn[x].classList.add('active');
-    } if (filmes_sections[section].scrollLeft <= 0) {
+    } if (filmes_sections[section].scrollLeft <= filmes_sections[section].clientWidth) {
       btn[x].classList.remove('active');
       btn[x].classList.add('inactive');
       btn[y].classList.remove('inactive');
@@ -522,12 +522,13 @@ function slide(side, section) {
         btn[x].classList.add('active');
         btn[y].classList.remove('inactive');
         btn[y].classList.add('active');
-    } //else if(parseInt(filmes_sections[section].scrollLeft) >= filmes_sections[section].scrollWidth) {
-      // btn[x].classList.remove('inactive');
-      // btn[x].classList.add('active');
-      // btn[y].classList.remove('active');
-      // btn[y].classList.add('inactive');
-      // console.log('ue, passei por aqui')
-    //}
+    } if((filmes_sections[section].scrollLeft >= 0 && section === 1) || (filmes_sections[section].scrollLeft >= filmes_sections[section].clientWidth / 2 && section === 0)) {
+        btn[x].classList.remove('inactive');
+        btn[x].classList.add('active');
+        btn[y].classList.remove('active');
+        btn[y].classList.add('inactive');
+        
+    }
+    console.log('scroll: ' + filmes_sections[section].scrollLeft + '    width: ' + filmes_sections[section].scrollWidth  + '     client: ' + filmes_sections[section].clientWidth)
   }
 }
