@@ -363,67 +363,200 @@ let serie0 = new Serie(
 );
 
 let serie1 = new Serie(
-  "Suits", 
-  "img/posters/series/suits.jpg",
-  "https://www.youtube.com/embed/85z53bAebsI", 
-  "2011",
-  "Drama, Comédia",
+  "Black Mirror", 
+  "img/posters/series/blackMirror.jpg",
+  "https://www.youtube.com/embed/M8qG0vS2zWM", 
+  "2014",
+  "Ficção Científica, Suspense, Drama",
   "serie",
-  "9 temporadas",
-  classificacao_14anos,
-  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+  "5 temporadas",
+  classificacao_16anos,
+  "Contos de ficção científica que refletem o lado negro das telas e da tecnologia, mostrando que nem toda novidade traz só benefícios."
 );
 
 let serie2 = new Serie(
-  "Suits", 
-  "img/posters/series/suits.jpg",
-  "https://www.youtube.com/embed/85z53bAebsI", 
-  "2011",
-  "Drama, Comédia",
+  "Gravity Falls", 
+  "img/posters/series/gravityFalls.jpg",
+  "https://www.youtube.com/embed/maDIQk3AJ2E", 
+  "2012",
+  "Animação, Comédia, Aventura",
   "serie",
-  "9 temporadas",
-  classificacao_14anos,
-  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+  "2 temporadas",
+  classificacao_10anos,
+  "Gravity Falls é uma série animada da Disney Channel que conta as aventuras dos irmãos gêmeos, o sagaz Dipper e a adorável Mabel Pines, cujos planos pro verão são arruinados quando seus pais os enviam para ficarem com seu tio-avô, o charlatão Grunkle Stan em Gravity Falls, Oregon. O problema é que a cidade é cheia de mistériosâ€¦ e monstros! Lá, entre aventuras, enigmas e confusões, eles trabalham para o seu tio-avô na Cabana Misteriosa, junto com o cômico Soos e a graciosa e descolada Wendy, por quem Dipper é apaixonado."
 );
 
 let serie3 = new Serie(
-  "Suits", 
-  "img/posters/series/suits.jpg",
-  "https://www.youtube.com/embed/85z53bAebsI", 
-  "2011",
-  "Drama, Comédia",
+  "3%", 
+  "img/posters/series/3porcento.jpg",
+  "https://www.youtube.com/embed/LR5vVv2RDLw", 
+  "2016",
+  "Drama, Distopia, Ficção Científica",
   "serie",
-  "9 temporadas",
-  classificacao_14anos,
-  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+  "4 temporadas",
+  classificacao_16anos,
+  "Em um futuro não muito distante, o planeta é um lugar devastado. Aos 20 anos, todo cidadão recebe a chance de passar por uma rigorosa seleção para ascender ao Maralto, uma região farta de oportunidades. Porém, apenas 3% consegue chegar lá."
 );
 
 let serie4 = new Serie(
-  "Suits", 
-  "img/posters/series/suits.jpg",
-  "https://www.youtube.com/embed/85z53bAebsI", 
-  "2011",
-  "Drama, Comédia",
+  "Brooklyn 99", 
+  "img/posters/series/brooklyn99.jpg",
+  "https://www.youtube.com/embed/q6G_RMGk3vs", 
+  "2013",
+  "Comédia, Policial",
   "serie",
-  "9 temporadas",
+  "7 temporadas",
   classificacao_14anos,
-  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+  "O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão."
 );
 
 let serie5 = new Serie(
-  "Suits", 
-  "img/posters/series/suits.jpg",
-  "https://www.youtube.com/embed/85z53bAebsI", 
-  "2011",
-  "Drama, Comédia",
+  "Lol Brasil: Se rir já era", 
+  "img/posters/series/lolBrasil.jpeg",
+  "https://www.youtube.com/embed/0sC-qiZDuEA", 
+  "2021",
+  "Comédia, Reality Show",
   "serie",
-  "9 temporadas",
+  "1 temporada",
   classificacao_14anos,
-  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+  "LOL: Se Rir, Já Era reúne 10 dos maiores comediantes brasileiros numa batalha épica de seis horas sem poder rir enquanto tentam arrancar o riso dos adversários. O show é apresentado por Tom Cavalcante, que tem ao seu lado a comediante Clarice Falcão para ajudá-lo nessa missão de vigiar e flagrar qualquer riso do elenco."
 );
 
-var series = [serie0, serie1, serie2, serie3, serie4, serie5];
-var series_all = [series]
+let serie6 = new Serie(
+  "Mundo Mistério", 
+  "img/posters/series/mundoMisterio.jpg",
+  "https://www.youtube.com/embed/McpTUhgXNaE", 
+  "2020",
+  "Educativo, Documentário",
+  "serie",
+  "1 temporada",
+  classificacao_12anos,
+  "O apresentador Felipe Castanhari e seus assistentes exploram mistérios e maravilhas da ciência e da história. Prepare-se para descobertas alucinantes!"
+);
+
+let serie7 = new Serie(
+  "Sherlock", 
+  "img/posters/series/sherlock.jpg",
+  "https://www.youtube.com/embed/Orkng7s-GtA", 
+  "2010",
+  "Mistério, Drama",
+  "serie",
+  "3 temporadas",
+  classificacao_14anos,
+  "Sherlock Holmes sempre foi um homem moderno, o mundo é que envelheceu. Agora ele está de volta como sempre foi: nervoso, contemporâneo, difícil e perigoso, apresentado de um jeito novo, moderno."
+);
+
+let serie8 = new Serie(
+  "Irmão do Jorel", 
+  "img/posters/series/irmaoDoJorel.jpg",
+  "https://www.youtube.com/embed/RK4dAH6KTmM", 
+  "2014",
+  "Animação, Comédia",
+  "serie",
+  "3 temporadas",
+  classificacao_livre,
+  "Em Irmão do Jorel, Jorel é o garoto mais popular da escola e do bairro. Ele é bonito e tem cabelos longos e sedosos. Mas esta história não é sobre ele; é sobre seu irmão - cujo nome é um mistério. Filho de uma excêntrica família de acumuladores, ele quase não recebe atenção e acaba descobrindo uma maneira fantasiosa de sair das sombras de Jorel."
+);
+
+let serie9 = new Serie(
+  "La Casa de Papel", 
+  "img/posters/series/laCasadePapel.jpg",
+  "https://www.youtube.com/embed/Lg1wnSMhStA", 
+  "2017",
+  "Ação, Crime, Mistério",
+  "serie",
+  "5 temporadas",
+  classificacao_16anos,
+  "Um grupo de nove ladrões, liderados por um Professor, prepara o roubo do século na Casa da Moeda da Espanha, com o objetivo de fabricar o próprio dinheiro em quantidades incalculáveis e nunca antes vista."
+);
+
+let serie10 = new Serie(
+  "The Good Doctor", 
+  "img/posters/series/theGoodDoctor.jpg",
+  "https://www.youtube.com/embed/ogw3ax8WJfs", 
+  "2017",
+  "Drama",
+  "serie",
+  "4 temporadas",
+  classificacao_12anos,
+  "Em The Good Doctor, um jovem cirurgião diagnosticado com savantismo, um distúrbio psíquico raro, é recrutado para trabalhar na ala pedriátrica de um hospital de prestígio. Apesar do seu incrível conhecimento na área da medicina, esse médico não consegue se relacionar com o mundo à sua volta. Resta saber se esta dificuldade será um problema na hora de salvar vidas."
+);
+
+let serie11 = new Serie(
+  "WandaVision", 
+  "img/posters/series/wandavision.jpeg",
+  "https://www.youtube.com/embed/b3v9DXCP1UQ", 
+  "2021",
+  "Ação, Romance, Drama",
+  "serie",
+  "1 temporada",
+  classificacao_12anos,
+  "Após os eventos de Vingadores: Ultimato (2019), Wanda Maximoff/Feiticeira Escarlate (Elizabeth Olsen) e Visão (Paul Bettany) se esforçam para levar uma vida normal no subúrbio e esconder seus poderes. Mas a dupla de super-heróis logo começa a suspeitar que nem tudo está tão certo assim. Eles se encontram, na verdade, dentro de uma constante sitcom, que vai desde a década de 50 até os dias de hoje. Conforme o tempo passa, Wanda e Visão perdem o controle da situação, sem saber mais o que é real e o que é ficção. Eles ficam presos em um eterno vai e vem: da Era de Ouro da TV nos EUA, com imagens em preto e branco, ao presente - e vice-versa."
+);
+
+let serie12 = new Serie(
+  "Sherlock", 
+  "img/posters/series/sherlock.jpg",
+  "https://www.youtube.com/embed/Orkng7s-GtA", 
+  "2010",
+  "Mistério, Drama",
+  "serie",
+  "3 temporadas",
+  classificacao_14anos,
+  "Sherlock Holmes sempre foi um homem moderno, o mundo é que envelheceu. Agora ele está de volta como sempre foi: nervoso, contemporâneo, difícil e perigoso, apresentado de um jeito novo, moderno."
+);
+
+let serie13 = new Serie(
+  "Irmão do Jorel", 
+  "img/posters/series/irmaoDoJorel.jpg",
+  "https://www.youtube.com/embed/RK4dAH6KTmM", 
+  "2014",
+  "Animação, Comédia",
+  "serie",
+  "3 temporadas",
+  classificacao_livre,
+  "Em Irmão do Jorel, Jorel é o garoto mais popular da escola e do bairro. Ele é bonito e tem cabelos longos e sedosos. Mas esta história não é sobre ele; é sobre seu irmão - cujo nome é um mistério. Filho de uma excêntrica família de acumuladores, ele quase não recebe atenção e acaba descobrindo uma maneira fantasiosa de sair das sombras de Jorel."
+);
+
+let serie14 = new Serie(
+  "La Casa de Papel", 
+  "img/posters/series/laCasadePapel.jpg",
+  "https://www.youtube.com/embed/Lg1wnSMhStA", 
+  "2017",
+  "Ação, Crime, Mistério",
+  "serie",
+  "5 temporadas",
+  classificacao_16anos,
+  "Um grupo de nove ladrões, liderados por um Professor, prepara o roubo do século na Casa da Moeda da Espanha, com o objetivo de fabricar o próprio dinheiro em quantidades incalculáveis e nunca antes vista."
+);
+
+let serie15 = new Serie(
+  "The Good Doctor", 
+  "img/posters/series/theGoodDoctor.jpg",
+  "https://www.youtube.com/embed/ogw3ax8WJfs", 
+  "2017",
+  "Drama",
+  "serie",
+  "4 temporadas",
+  classificacao_12anos,
+  "Em The Good Doctor, um jovem cirurgião diagnosticado com savantismo, um distúrbio psíquico raro, é recrutado para trabalhar na ala pedriátrica de um hospital de prestígio. Apesar do seu incrível conhecimento na área da medicina, esse médico não consegue se relacionar com o mundo à sua volta. Resta saber se esta dificuldade será um problema na hora de salvar vidas."
+);
+
+let serie16 = new Serie(
+  "WandaVision", 
+  "img/posters/series/wandavision.jpeg",
+  "https://www.youtube.com/embed/b3v9DXCP1UQ", 
+  "2021",
+  "Ação, Romance, Drama",
+  "serie",
+  "1 temporada",
+  classificacao_12anos,
+  "Após os eventos de Vingadores: Ultimato (2019), Wanda Maximoff/Feiticeira Escarlate (Elizabeth Olsen) e Visão (Paul Bettany) se esforçam para levar uma vida normal no subúrbio e esconder seus poderes. Mas a dupla de super-heróis logo começa a suspeitar que nem tudo está tão certo assim. Eles se encontram, na verdade, dentro de uma constante sitcom, que vai desde a década de 50 até os dias de hoje. Conforme o tempo passa, Wanda e Visão perdem o controle da situação, sem saber mais o que é real e o que é ficção. Eles ficam presos em um eterno vai e vem: da Era de Ouro da TV nos EUA, com imagens em preto e branco, ao presente - e vice-versa."
+);
+
+var series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10, serie11];
+var series0 = [serie12, serie13, serie14, serie15, serie16]
+var series_all = [series, series0]
 
 var close = document.getElementsByClassName("close");
 close[0].onclick = function() {
@@ -561,10 +694,15 @@ function abrirDetalhes(id, tipo) {
 
 function mostrarPosters(listaElementos, tipo) {
   tipo = parseInt(tipo);
-  var filmes_categorias = ["Lista do Adm", "Animação"]
-  var series_categorias = ["Lista do Adm"]
+  var categorias = [];
+  if(tipo == 0) {
+    categorias = ["Lista do Adm", "Animação"]
+  } else if (tipo == 1) {
+    categorias = ["Lista do Adm", "Comédia"]
+  }
+  
   for(j = 0; j < listaElementos.length; j++) {
-    document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + filmes_categorias[j] + "</h2></div><button class='arrow_btn left inactive' onclick='slide(1, " + j + ")'>‹</button>")
+    document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + categorias[j] + "</h2></div><button class='arrow_btn left inactive' onclick='slide(1, " + j + ")'>‹</button>")
     for(i = 0; i < listaElementos[j].length; i++) {
       document.write("<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "')\"" +
       " class='poster' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>");
