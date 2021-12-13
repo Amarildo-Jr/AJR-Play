@@ -313,7 +313,7 @@ let filme23 = new Filme(
 
 let filme24 = new Filme(
   "Procurando Dory", 
-  "https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/3/4/342520210407-uau-posters-procurando-dory-filmes-infantil-1.jpg", 
+  "img/posters/procurandoDory.jpg", 
   "https://www.youtube.com/embed/BGNvbWeASbA", 
   "2016",
   "Animação, Comédia, Aventura",
@@ -495,67 +495,91 @@ let serie11 = new Serie(
 );
 
 let serie12 = new Serie(
-  "Sherlock", 
-  "img/posters/series/sherlock.jpg",
-  "https://www.youtube.com/embed/Orkng7s-GtA", 
-  "2010",
-  "Mistério, Drama",
-  "serie",
-  "3 temporadas",
-  classificacao_14anos,
-  "Sherlock Holmes sempre foi um homem moderno, o mundo é que envelheceu. Agora ele está de volta como sempre foi: nervoso, contemporâneo, difícil e perigoso, apresentado de um jeito novo, moderno."
-);
-
-let serie13 = new Serie(
-  "Irmão do Jorel", 
-  "img/posters/series/irmaoDoJorel.jpg",
-  "https://www.youtube.com/embed/RK4dAH6KTmM", 
-  "2014",
-  "Animação, Comédia",
-  "serie",
-  "3 temporadas",
-  classificacao_livre,
-  "Em Irmão do Jorel, Jorel é o garoto mais popular da escola e do bairro. Ele é bonito e tem cabelos longos e sedosos. Mas esta história não é sobre ele; é sobre seu irmão - cujo nome é um mistério. Filho de uma excêntrica família de acumuladores, ele quase não recebe atenção e acaba descobrindo uma maneira fantasiosa de sair das sombras de Jorel."
-);
-
-let serie14 = new Serie(
-  "La Casa de Papel", 
-  "img/posters/series/laCasadePapel.jpg",
-  "https://www.youtube.com/embed/Lg1wnSMhStA", 
-  "2017",
-  "Ação, Crime, Mistério",
+  "Rick and Morty", 
+  "img/posters/series/rickAndMorty.jpg",
+  "https://www.youtube.com/embed/SveaGIlBL2I", 
+  "2013",
+  "Animação, Comédia, Aventura",
   "serie",
   "5 temporadas",
   classificacao_16anos,
-  "Um grupo de nove ladrões, liderados por um Professor, prepara o roubo do século na Casa da Moeda da Espanha, com o objetivo de fabricar o próprio dinheiro em quantidades incalculáveis e nunca antes vista."
+  "Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto Morty, um adolescente não tão brilhante quanto o avô."
+);
+
+let serie13 = new Serie(
+  "Sex Education", 
+  "img/posters/series/sexEducation.jpg",
+  "https://www.youtube.com/embed/Jv46AlQUto4", 
+  "2019",
+  "Comédia, Drama",
+  "serie",
+  "4 temporadas",
+  classificacao_16anos,
+  "Otis Thompson (Asa Butterfield) é um virgem com ansiedade social que é filho de uma terapeuta sexual (Gillian Anderson). Por ter crescido cercado por manuais, vídeos e conversas abertas sobre sexualidade, ele torna-se um expert no assunto - mesmo que contra sua vontade. Com a ajuda de Maeve (Emma Mackey), ele inicia uma clínica clandestina dentro da escola, ajudando os colegas com problemas sexuais em troca de dinheiro."
+);
+
+let serie14 = new Serie(
+  "Dois Homens e Meio", 
+  "img/posters/series/doisHomensEMeio.jpg",
+  "https://www.youtube.com/embed/nkiEVmEf5YE", 
+  "2003",
+  "Comédia",
+  "serie",
+  "12 temporadas",
+  classificacao_14anos,
+  "Alan e Charlie Harper são irmão bem diferentes. Alan é médico quiroprático, recetemnete divorciado e com um filho chamado Jake. Já Charlie é um solteiro por opção que ganha a vida escrevendo jingles para comerciais de TV. Tudo vai bem, até o trio precisar dividir o mesmo teto. Juntos vão criar situações divertidas e nunca antes imaginadas."
 );
 
 let serie15 = new Serie(
-  "The Good Doctor", 
-  "img/posters/series/theGoodDoctor.jpg",
-  "https://www.youtube.com/embed/ogw3ax8WJfs", 
-  "2017",
-  "Drama",
+  "Modern Family", 
+  "img/posters/series/modernFamily.jpg",
+  "https://www.youtube.com/embed/Ub_lfN2VMIo", 
+  "2009",
+  "Comédia",
   "serie",
-  "4 temporadas",
-  classificacao_12anos,
-  "Em The Good Doctor, um jovem cirurgião diagnosticado com savantismo, um distúrbio psíquico raro, é recrutado para trabalhar na ala pedriátrica de um hospital de prestígio. Apesar do seu incrível conhecimento na área da medicina, esse médico não consegue se relacionar com o mundo à sua volta. Resta saber se esta dificuldade será um problema na hora de salvar vidas."
+  "11 temporadas",
+  classificacao_10anos,
+  "Com uma narração oculta, a série oferece uma perspectiva honesta e muitas vezes hilária do cotidiano de uma família. O casal Phil e Claire deseja ter um relacionamento aberto com seus três filhos, mas com um adolescente que tenta amadurecer rápido demais, uma filha muito esperta para sua idade e um filho em crise, o desafio é bem grande. Jay e a esposa criam o filho ao mesmo tempo que lidam com os problemas trazidos pela grande diferença de idade. As parceiras Mitchell e Cameron enfrentam novos desafios após a adoção de uma criança do Vietnã."
 );
 
 let serie16 = new Serie(
-  "WandaVision", 
-  "img/posters/series/wandavision.jpeg",
-  "https://www.youtube.com/embed/b3v9DXCP1UQ", 
-  "2021",
-  "Ação, Romance, Drama",
+  "A Grande Família", 
+  "img/posters/series/aGrandeFamilia.jpg",
+  "https://www.youtube.com/embed/GSoxRheqYGE", 
+  "2001",
+  "Comédia",
   "serie",
-  "1 temporada",
+  "14 temporadas",
+  classificacao_10anos,
+  "Tipicamente brasileira, a família Silva mora em um subúrbio na Zona Norte do Rio de Janeiro, convive com suas diferenças e ajuda uns aos outros a contornar as situações mais inusitadas."
+);
+
+let serie17 = new Serie(
+  "Os Simpsons", 
+  "img/posters/series/osSimpsons.jpg",
+  "https://www.youtube.com/embed/cF7ivUhgVHo", 
+  "1989",
+  "Animação, Comédia",
+  "serie",
+  "33 temporadas",
+  classificacao_14anos,
+  "Esta comédia animada de enorme sucesso gira em torno da família de mesmo nome que mora na cidade de Springfield, em um estado americano sem nome. O pai, Homer, não é um típico homem de família. Empregado de uma usina nuclear, ele faz o melhor para comandar sua família, mas frequentemente se vê comandado. A família inclui ainda a carinhosa mãe de cabelo azul Marge, o filho encrenqueiro Bart, a talentosa filha Lisa e a bebê Maggie. Outros moradores de Springfield incluem o vizinho religioso da família, Ned Flanders, o médico, Dr. Hibbert, o bartender Moe e o chefe de polícia Clancy Wiggum."
+);
+
+let serie18 = new Serie(
+  "The Office", 
+  "img/posters/series/theOffice.jpg",
+  "https://www.youtube.com/embed/OXcCS6b8NuA", 
+  "2005",
+  "Comédia",
+  "serie",
+  "9 temporadas",
   classificacao_12anos,
-  "Após os eventos de Vingadores: Ultimato (2019), Wanda Maximoff/Feiticeira Escarlate (Elizabeth Olsen) e Visão (Paul Bettany) se esforçam para levar uma vida normal no subúrbio e esconder seus poderes. Mas a dupla de super-heróis logo começa a suspeitar que nem tudo está tão certo assim. Eles se encontram, na verdade, dentro de uma constante sitcom, que vai desde a década de 50 até os dias de hoje. Conforme o tempo passa, Wanda e Visão perdem o controle da situação, sem saber mais o que é real e o que é ficção. Eles ficam presos em um eterno vai e vem: da Era de Ouro da TV nos EUA, com imagens em preto e branco, ao presente - e vice-versa."
+  "No formato de pseudodocumentário, a série retrata o cotidiano de um escritório em Scranton, na Pensilvânia, filial da empresa fictícia Dunder Mifflin, de suprimento de papel. Michael Scott (Steve Carell) é um patrão insensível mas que se preocupa com o bem estar de seus empregados, enquanto a série traça um olhar sobre todos eles, destacando suas diferenças e particularidades. "
 );
 
 var series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10, serie11];
-var series0 = [serie12, serie13, serie14, serie15, serie16]
+var series0 = [serie12, serie13, serie14, serie15, serie16, serie17, serie18]
 var series_all = [series, series0]
 
 var close = document.getElementsByClassName("close");
