@@ -329,7 +329,101 @@ var filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, fil
 
 var popUp = document.getElementsByClassName("popUp");
 
+var idSeries = 0;
+
+class Serie {
+  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao) {
+    this.id = idSeries;
+    this.nome = nome;
+    this.lancamento = lancamento;
+    this.imagem = imagem;
+    this.trailer = trailer;
+    //this.banner = banner;
+    this.genero = genero;
+    this.categoria = categoria;
+    this.duracao = duracao;
+    this.classificacao = classificacao;
+    this.descricao = descricao;
+    idSeries++;
+  } 
+}
+
 var filmes_all = [filmes, filmes0]
+
+let serie0 = new Serie(
+  "Suits", 
+  "img/posters/series/suits.jpg",
+  "https://www.youtube.com/embed/85z53bAebsI", 
+  "2011",
+  "Drama, Comédia",
+  "serie",
+  "9 temporadas",
+  classificacao_14anos,
+  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+);
+
+let serie1 = new Serie(
+  "Suits", 
+  "img/posters/series/suits.jpg",
+  "https://www.youtube.com/embed/85z53bAebsI", 
+  "2011",
+  "Drama, Comédia",
+  "serie",
+  "9 temporadas",
+  classificacao_14anos,
+  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+);
+
+let serie2 = new Serie(
+  "Suits", 
+  "img/posters/series/suits.jpg",
+  "https://www.youtube.com/embed/85z53bAebsI", 
+  "2011",
+  "Drama, Comédia",
+  "serie",
+  "9 temporadas",
+  classificacao_14anos,
+  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+);
+
+let serie3 = new Serie(
+  "Suits", 
+  "img/posters/series/suits.jpg",
+  "https://www.youtube.com/embed/85z53bAebsI", 
+  "2011",
+  "Drama, Comédia",
+  "serie",
+  "9 temporadas",
+  classificacao_14anos,
+  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+);
+
+let serie4 = new Serie(
+  "Suits", 
+  "img/posters/series/suits.jpg",
+  "https://www.youtube.com/embed/85z53bAebsI", 
+  "2011",
+  "Drama, Comédia",
+  "serie",
+  "9 temporadas",
+  classificacao_14anos,
+  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+);
+
+let serie5 = new Serie(
+  "Suits", 
+  "img/posters/series/suits.jpg",
+  "https://www.youtube.com/embed/85z53bAebsI", 
+  "2011",
+  "Drama, Comédia",
+  "serie",
+  "9 temporadas",
+  classificacao_14anos,
+  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+);
+
+var series = [serie0, serie1, serie2, serie3, serie4, serie5];
+var series_all = [series]
 
 var close = document.getElementsByClassName("close");
 close[0].onclick = function() {
@@ -417,15 +511,33 @@ function desfocarNoFilme(id) {
   }
 }
 
-function abrirDetalhes(id) {
+function abrirDetalhes(id, tipo) {
   id = parseInt(id);
+  tipo = parseInt(tipo);
   var filme;
-
-  for(x = 0; x < filmes_all.length; x++) {
-    for(i = 0; i < filmes_all[x].length; i++) {
-      if(id === filmes_all[x][i].id) {
-        filme = filmes_all[x][i];
-        break;
+  var encontrado = false;
+  if(tipo == 0) {
+    console.log("tipo == 0")
+    for(x = 0; x < filmes_all.length; x++) {
+      if(encontrado === true) {break;}
+      for(i = 0; i < filmes_all[x].length; i++) {
+        if(id === filmes_all[x][i].id) {
+          filme = filmes_all[x][i];
+          encontrado = true;
+          break;
+        }
+      }
+    }
+  } else if(tipo == 1) {
+    console.log("tipo == 1")
+    for(x = 0; x < series_all.length; x++) {
+      if(encontrado === true) {break;}
+      for(i = 0; i < series_all[x].length; i++) {
+        if(id === series_all[x][i].id) {
+          filme = series_all[x][i];
+          encontrado = true;
+          break;
+        }
       }
     }
   }
@@ -433,7 +545,7 @@ function abrirDetalhes(id) {
   var popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "flex";
   var popUp_content = document.getElementsByClassName("details");
-  popUp_content[0].innerHTML = "<iframe class='video' width='800' height='420' src=\"" + filme.trailer + "\" title='" + filme.nome + 
+  popUp_content[0].innerHTML = "<iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
   "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
   "<div id='details'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
   "<p class='descricao_filme'>" + filme.descricao + "</p>" +
@@ -447,26 +559,20 @@ function abrirDetalhes(id) {
   ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:70px;height: 70px;margin-top: 20px}</style>";
 }
 
-document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Lista do Adm</h2></div><button class='arrow_btn left inactive' onclick='slide(1, 0)'>‹</button>")
-j = 0;
-i = 1;
-
-for(i = 0; i < filmes.length; i++) {
-  document.write("<div class='div_poster'><input type='image' src=" + filmes[i].imagem + " onmouseover=\"focarNoFilme('" + filmes[i].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes[i].id + "')\"" +
-  " class='poster' onclick=\"abrirDetalhes('" + filmes[i].id + "')\"></div>");
+function mostrarPosters(listaElementos, tipo) {
+  tipo = parseInt(tipo);
+  var filmes_categorias = ["Lista do Adm", "Animação"]
+  var series_categorias = ["Lista do Adm"]
+  for(j = 0; j < listaElementos.length; j++) {
+    document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + filmes_categorias[j] + "</h2></div><button class='arrow_btn left inactive' onclick='slide(1, " + j + ")'>‹</button>")
+    for(i = 0; i < listaElementos[j].length; i++) {
+      document.write("<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "')\"" +
+      " class='poster' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>");
+    }
+    document.write("<button class='arrow_btn right active' onclick='slide(2, " + j + ")'>›</button>");
+    document.write("</div>")
+  }
 }
-document.write("<button class='arrow_btn right active' onclick='slide(2, 0)'>›</button>");
-document.write("</div>")
-
-document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>Animação</h2></div><button class='arrow_btn left inactive' onclick='slide(1, 1)'>‹</button>")
-i = 1;
-for(i = 0; i < filmes0.length; i++) {
-  document.write("<div class='div_poster'><input type='image' src=" + filmes0[i].imagem + " onmouseover=\"focarNoFilme('" + filmes0[i].id + "')\" onmouseout=\"desfocarNoFilme('" + filmes0[i].id + "')\"" +
-  " class='poster' onclick=\"abrirDetalhes('" + filmes0[i].id + "')\"></div>");
-}
-
-document.write("<button class='arrow_btn right active' onclick='slide(2, 1)'>›</button>");
-document.write("</div>")
 
 function reset() {
   var largura = window.innerWidth
