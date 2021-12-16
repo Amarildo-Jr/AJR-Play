@@ -674,7 +674,6 @@ function abrirDetalhes(id, tipo) {
   var filme;
   var encontrado = false;
   if(tipo == 0) {
-    console.log("tipo == 0")
     for(x = 0; x < filmes_all.length; x++) {
       if(encontrado === true) {break;}
       for(i = 0; i < filmes_all[x].length; i++) {
@@ -686,7 +685,6 @@ function abrirDetalhes(id, tipo) {
       }
     }
   } else if(tipo == 1) {
-    console.log("tipo == 1")
     for(x = 0; x < series_all.length; x++) {
       if(encontrado === true) {break;}
       for(i = 0; i < series_all[x].length; i++) {
@@ -756,8 +754,6 @@ function reset() {
 reset();
 
 filmes_sections = document.getElementsByClassName('filmes')
-filmes_sections[0].scrollLeft = 0;
-filmes_sections[1].scrollLeft = 0;
 
 function slide(side, section) {
   //side = 1 deslizar pra direita -> side = 2 deslizar pra esquerda
@@ -797,6 +793,5 @@ function slide(side, section) {
         btn[y].classList.add('inactive');
         
     }
-    console.log('scroll: ' + filmes_sections[section].scrollLeft + '    width: ' + filmes_sections[section].scrollWidth  + '     client: ' + filmes_sections[section].clientWidth)
   }
 }
