@@ -192,7 +192,8 @@ header ul li button:first-child{
   left:0;
   min-width: 100%; 
   height: 100%;
-  background-color: #000000bd; 
+  background-color: #000000bd;
+  overflow-x: hidden;
 }
 
 .popUp-content {
@@ -200,6 +201,7 @@ header ul li button:first-child{
   background-color: #03071E;
   min-width: 100%; 
   padding: 10px;
+  overflow-y: scroll;
 }
 
 .close {
@@ -221,6 +223,7 @@ header ul li button:first-child{
 .details {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #details {
