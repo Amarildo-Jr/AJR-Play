@@ -795,7 +795,7 @@ function abrirDetalhes(id, tipo) {
   var popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
   "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-  "<h2 style='margin-top: 15px'>Assista agora:</h2><div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'></a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+  "<div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'>Assista agora</a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
   "<p class='descricao_filme'>" + filme.descricao + "</p>" +
   "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
   "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
@@ -806,7 +806,7 @@ function abrirDetalhes(id, tipo) {
   ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
   ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
   ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-  ".plataforma {width: 150px;height: 150px;} .link_plataforma {} .link_plataforma .plataforma:hover{transform: scale(1.1);transition: 0.3s;}</style>";
+  ".plataforma {width: 150px;height: 150px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}</style>";
 }
 
 function mostrarPosters(listaElementos, tipo) {
