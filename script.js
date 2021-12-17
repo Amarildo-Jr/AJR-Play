@@ -62,7 +62,7 @@ let filme0 = new Filme(
   "filme",
   "1h 55min",
   classificacao_12anos,
-  "Durante a Segunda Guerra Mundial, o governo britânico monta uma equipe que tem por objetivo quebrar o Enigma, o famoso código que os alemães usam para enviar mensagens aos submarinos. Um de seus integrantes é Alan Turing (Benedict Cumberbatch), um matemático de 27 anos estritamente lógico e focado no trabalho, que tem problemas de relacionamento com praticamente todos à sua volta. Não demora muito para que Turing, apesar de sua intransigência, lidere a equipe. Seu grande projeto é construir uma máquina que permita analisar todas as possibilidades de codificação do Enigma em apenas 18 horas, de forma que os ingleses conheçam as ordens enviadas antes que elas sejam executadas. Entretanto, para que o projeto dê certo, Turing terá que aprender a trabalhar em equipe e tem Joan Clarke (Keira Knightley) sua grande incentivadora.",
+  "Em 1939, a recém-criada agência de inteligência britânica MI6 recruta Alan Turing, um aluno da Universidade de Cambridge, para entender códigos nazistas, incluindo o 'Enigma', que criptógrafos acreditavam ser inquebrável. A equipe de Turing, incluindo Joan Clarke, analisa as mensagens de 'Enigma', enquanto ele constrói uma máquina para decifrá-las. Após desvendar as codificações, Turing se torna herói. Porém, em 1952, autoridades revelam sua homossexualidade, e a vida dele vira um pesadelo.",
   "img/icons/plataformas/hboMax.png",
   "https://play.hbomax.com/page/urn:hbo:page:GYIbL5QU0QJCtnAEAAAAJ:type:feature?camp=googleHBOMAX"
 );
@@ -721,7 +721,7 @@ function abrirDetalhes(id, tipo) {
   var popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
   "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-  "<h2 style='margin-top: 15px'>Assista agora:</h2><div class='plataformas'><a href='" + filme.link + "'><img src=" + filme.plataforma + " class='plataforma'></a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+  "<h2 style='margin-top: 15px'>Assista agora:</h2><div class='plataformas'><a href='" + filme.link + "' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'></a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
   "<p class='descricao_filme'>" + filme.descricao + "</p>" +
   "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
   "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
@@ -732,7 +732,7 @@ function abrirDetalhes(id, tipo) {
   ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
   ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
   ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-  ".plataforma {width: 150px;height: 150px; position: absolute;} a .plataforma:hover{transform: scale(1.1);transition: 0.3s;}</style>";
+  ".plataforma {width: 150px;height: 150px;} .link_plataforma {} .link_plataforma .plataforma:hover{transform: scale(1.1);transition: 0.3s;}</style>";
 }
 
 function mostrarPosters(listaElementos, tipo) {
