@@ -379,6 +379,7 @@ let filme24 = new Filme(
 var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
 var filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24]
 
+var filmes_all = [filmes, filmes0]
 
 var popUp = document.getElementsByClassName("popUp");
 
@@ -402,8 +403,6 @@ class Serie {
     idSeries++;
   } 
 }
-
-var filmes_all = [filmes, filmes0]
 
 let serie0 = new Serie(
   "Suits", 
@@ -675,6 +674,44 @@ var series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, se
 var series0 = [serie12, serie13, serie14, serie15, serie16, serie17, serie18]
 var series_all = [series, series0]
 
+var idJogos = 0;
+class Jogo {
+  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma, link) {
+    this.id = idJogos;
+    this.nome = nome;
+    this.lancamento = lancamento;
+    this.imagem = imagem;
+    this.trailer = trailer;
+    //this.banner = banner;
+    this.genero = genero;
+    this.categoria = categoria;
+    this.duracao = duracao;
+    this.classificacao = classificacao;
+    this.descricao = descricao;
+    this.plataforma = plataforma;
+    this.link = link;
+    idJogos++;
+  } 
+}
+
+let jogo0 = new Jogo (
+  "Rocket League", 
+  "img/posters/jogos/rocketLeague.jpg",
+  "https://www.youtube.com/embed/SgSX3gOrj60", 
+  "2015",
+  "Esporte, Ação, Direção/Corrida",
+  "jogo",
+  "Um jogador, Multijogador local/online",
+  classificacao_livre,
+  "Rocket League apresenta uma mistura de futebol e carros. A ideia é usar seu veículo para atingir uma bola gigante e encaçapa-la no gol adversário. O time com maior pontuação vence a partida",
+  "img/icons/plataformas_games/mobile.png",
+  "https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX"
+)
+
+var jogos = [jogo0]
+
+var jogos_all = [jogos]
+
 var close = document.getElementsByClassName("close");
 close[0].onclick = function() {
   popUp[0].style.display = "none";
@@ -788,42 +825,77 @@ function abrirDetalhes(id, tipo) {
         }
       }
     }
+  } else if(tipo == 2) {
+    for(x = 0; x < jogos_all.length; x++) {
+      if(encontrado === true) {break;}
+      for(i = 0; i < jogos_all[x].length; i++) {
+        if(id === jogos_all[x][i].id) {
+          filme = jogos_all[x][i];
+          encontrado = true;
+          break;
+        }
+      }
+    }
   }
-
   var popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "flex";
   var popUp_content = document.getElementsByClassName("details");
-  popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
-  "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-  "<div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'>Assista agora</a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
-  "<p class='descricao_filme'>" + filme.descricao + "</p>" +
-  "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
-  "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
-  "<tr><td class='info_table'>Gênero</td><td class='text_table'>" + filme.genero + "</td></tr>" +
-  "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
-  "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
-  ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-itens: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
-  ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
-  ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
-  ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-  ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
-  "</style>";
+
+  if(tipo == 0 || tipo == 1) {
+    popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
+    "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
+    "<div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'>Assista agora</a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+    "<p class='descricao_filme'>" + filme.descricao + "</p>" +
+    "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
+    "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
+    "<tr><td class='info_table'>Gênero</td><td class='text_table'>" + filme.genero + "</td></tr>" +
+    "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
+    "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
+    ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-itens: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
+    ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
+    ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
+    ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
+    ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
+    "</style>";
+  } else if (tipo == 2) {
+    popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
+    "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
+    "<div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'>Jogue agora</a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+    "<p class='descricao_filme'>" + filme.descricao + "</p>" +
+    "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
+    "<tr><td class='info_table'>Multiplayer</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
+    "<tr><td class='info_table'>Categoria</td><td class='text_table'>" + filme.genero + "</td></tr>" +
+    "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
+    "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
+    ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-itens: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
+    ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
+    ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
+    ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
+    ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
+    "</style>";
+  }
 }
 
 function mostrarPosters(listaElementos, tipo) {
   tipo = parseInt(tipo);
   var categorias = [];
+  var classe = "";
   if(tipo == 0) {
     categorias = ["Lista do Adm", "Animação"]
+    classe = "poster";
   } else if (tipo == 1) {
     categorias = ["Lista do Adm", "Comédia"]
+    classe = "poster";
+  } else if (tipo == 2) {
+    categorias = ["Lançamentos", "Plataforma"]
+    classe = "poster_j";
   }
   
   for(j = 0; j < listaElementos.length; j++) {
     document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + categorias[j] + "</h2></div><button class='arrow_btn left inactive' onclick='slide(1, " + j + ")'>‹</button>")
     for(i = 0; i < listaElementos[j].length; i++) {
       document.write("<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "')\"" +
-      " class='poster' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>");
+      " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>");
     }
     document.write("<button class='arrow_btn right active' onclick='slide(2, " + j + ")'>›</button>");
     document.write("</div>")

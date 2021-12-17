@@ -158,13 +158,15 @@ header ul li button:first-child{
 
 #logo_link {
   margin-right: 10px;
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   background-image: linear-gradient(#12025a, #ff0080);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .page-title:hover {
   cursor: pointer;
 }
@@ -180,8 +182,12 @@ header ul li button:first-child{
 
 #play_button {
   width: 33px;
-  margin: 1px 0 0 6px; 
-  position: absolute;
+  margin: 1px 0 0 6px;
+}
+
+#controle {
+  width: 42px;
+  height: 42px;
 }
 
 .popUp {
@@ -298,7 +304,7 @@ header ul li button:first-child{
   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.555) 100%);
 }
 
-.poster {
+.poster, .poster_j {
   margin: 10px;
   border: 2px solid #FFFFFF;
   border-radius: 3px;
@@ -310,8 +316,14 @@ header ul li button:first-child{
   cursor: pointer;
   transition: 0.4s;
   transform: scale(1.04);
-  /*border-color: #b33c3c;*/
   border-color: #3cb371;
+}
+
+.poster_j:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  transform: scale(1.04);
+  border-color: #6a040f;
 }
 
 footer{

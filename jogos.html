@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>AJR Play</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" type="imagex/png" href="./img/icons/play_button.ico">
+  <link rel="shortcut icon" type="imagex/png" href="./img/icons/controle.ico">
 </head>
 
 <body>
@@ -12,14 +12,14 @@
       <header>
         <div id="page-title">
           <h1 class="page-title">
-            <a href="index.html" id="logo_link">AJR Play<img src ="./img/icons/play_button.ico" id="play_button"></a>
+            <a href="index.html" id="logo_link">AJR Play<img src ="./img/icons/controle.ico" id="controle"></a>
           </h1>
         </div>
         <nav>
           <ul>
-            <li><button class='btn-nav active' href='www.youtube.com' onclick='alterarBackgroundBtn(0)'>Filmes</li>
+            <a href='index.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(0)'>Filmes</li></a>
             <a href='series.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(1)'>Séries</li></a>
-            <a href='jogos.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(2)'>Jogos</li></a>
+            <li><button class='btn-nav active' onclick='alterarBackgroundBtn(2)'>Jogos</li>
           </ul>
         </nav>
       </header>
@@ -32,7 +32,7 @@
         </div>
       </div>
       <script  src="./script.js"></script>
-      <script>mostrarPosters(filmes_all, 0)</script>
+      <script>mostrarPosters(jogos_all, 2)</script>
     </div>
     <footer>
       <div>
