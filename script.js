@@ -146,7 +146,9 @@ let filme8 = new Filme(
   "filme",
   "2h 03min",
   classificacao_10anos,
-  "Baseado na biografia de Stephen Hawking, o filme mostra como o jovem astrofísico (Eddie Redmayne) fez descobertas importantes sobre o tempo, além de retratar o seu romance com a aluna de Cambridge Jane Wide (Felicity Jones) e a descoberta de uma doença motora degenerativa quando tinha apenas 21 anos."
+  "Baseado na biografia de Stephen Hawking, o filme mostra como o jovem astrofísico (Eddie Redmayne) fez descobertas importantes sobre o tempo, além de retratar o seu romance com a aluna de Cambridge Jane Wide (Felicity Jones) e a descoberta de uma doença motora degenerativa quando tinha apenas 21 anos.",
+  "img/icons/plataformas/globoplay.png",
+  "https://globoplay.globo.com/a-teoria-de-tudo/t/mvxqnCSdYg/"
 );
 
 let filme9 = new Filme(
@@ -158,7 +160,9 @@ let filme9 = new Filme(
   "filme",
   "2h 02min",
   classificacao_16anos,
-  "Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante."
+  "Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.",
+  "img/icons/plataformas/telecine.png",
+  "https://www.telecine.com.br/filme/Coringa_27252?action=play_filme"
 );
 
 let filme10 = new Filme(
@@ -170,7 +174,9 @@ let filme10 = new Filme(
   "filme",
   "1h 29min",  
   classificacao_14anos,
-  "Quando a inocente jovem Lucy (Scarlett Johansson) aceita transportar drogas dentro do seu estômago, ela não conhece muito bem os riscos que corre. Por acaso, ela acaba absorvendo as drogas, e um efeito inesperado acontece: Lucy ganha poderes sobre-humanos, incluindo a telecinesia, a ausência de dor e a capacidade de adquirir conhecimento instantaneamente."
+  "Quando a inocente jovem Lucy (Scarlett Johansson) aceita transportar drogas dentro do seu estômago, ela não conhece muito bem os riscos que corre. Por acaso, ela acaba absorvendo as drogas, e um efeito inesperado acontece: Lucy ganha poderes sobre-humanos, incluindo a telecinesia, a ausência de dor e a capacidade de adquirir conhecimento instantaneamente.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/70307658?source=35"
 );
 
 let filme11 = new Filme(
@@ -182,11 +188,13 @@ let filme11 = new Filme(
   "filme",
   "2h 13min",
   classificacao_12anos,
-  "O excêntrico magizoologista Newt Scamander (Eddie Redmayne) chega à cidade de Nova York levando com muito zelo sua preciosa maleta, um objeto mágico onde ele carrega fantásticos animais do mundo da magia que coletou durante as suas viagens. Em meio a comunidade bruxa norte-americana, que teme muito mais a exposição aos trouxas do que seus colegas ingleses, Newt precisará usar todas suas habilidades e conhecimentos para capturar uma variedade de criaturas que acabam fugindo."
+  "O excêntrico magizoologista Newt Scamander (Eddie Redmayne) chega à cidade de Nova York levando com muito zelo sua preciosa maleta, um objeto mágico onde ele carrega fantásticos animais do mundo da magia que coletou durante as suas viagens. Em meio a comunidade bruxa norte-americana, que teme muito mais a exposição aos trouxas do que seus colegas ingleses, Newt precisará usar todas suas habilidades e conhecimentos para capturar uma variedade de criaturas que acabam fugindo.",
+  "img/icons/plataformas/hboMax.png",
+  "https://play.hbomax.com/page/urn:hbo:page:GXssTNAEn61VGwwEAAABn:type:feature?camp=googleHBOMAX"
 );
 
 let filme12 = new Filme(
-  "Interstellar", 
+  "Interstelar", 
   "img/posters/interstellar.jpg", 
   "https://www.youtube.com/embed/frD_IiY_A3E", 
   "2014",
@@ -194,7 +202,9 @@ let filme12 = new Filme(
   "filme",
   "2h 49min",
   classificacao_10anos,
-  "Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta."
+  "Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta.",
+  "img/icons/plataformas/hboMax.png",
+  "https://play.hbomax.com/page/urn:hbo:page:GYGP7pwQv_ojDXAEAAAFc:type:feature?camp=googleHBOMAX"
 );
 
 let filme13 = new Filme(
@@ -206,7 +216,9 @@ let filme13 = new Filme(
   "filme",
   "2h 17min",
   classificacao_14anos,
-  "Velozes e Furiosos 7 acompanha Dom (Vin Diesel), Brian (Paul Walker), Letty (Michelle Rodriguez) e o resto da equipe após os acontecimentos em Londres. Apesar de terem suas chances de voltar para os Estados Unidos e recomeçarem suas vidas, a tranquilidade do grupo é destruída quando Deckard Shaw (Jason Statham), um assassino profissional, quer vingança pela morte de seu irmão. Agora, a equipe tem que se reunir para impedir este novo vilão. Mas dessa vez, não é só sobre ser veloz. A luta é pela sobrevivência."
+  "Velozes e Furiosos 7 acompanha Dom (Vin Diesel), Brian (Paul Walker), Letty (Michelle Rodriguez) e o resto da equipe após os acontecimentos em Londres. Apesar de terem suas chances de voltar para os Estados Unidos e recomeçarem suas vidas, a tranquilidade do grupo é destruída quando Deckard Shaw (Jason Statham), um assassino profissional, quer vingança pela morte de seu irmão. Agora, a equipe tem que se reunir para impedir este novo vilão. Mas dessa vez, não é só sobre ser veloz. A luta é pela sobrevivência.",
+  "img/icons/plataformas/telecine.png",
+  "https://www.telecine.com.br/filme/Velozes_and_Furiosos_7_13549?action=play_filme"
 );
 
 let filme14 = new Filme(
@@ -218,7 +230,9 @@ let filme14 = new Filme(
   "filme",
   "1h 42min",
   classificacao_livre,
-  "Will Stronghold (Michael Angarano) é um adolescente comum, que se preocupa com os amigos, as notas do colégio e garotas. Ele é também a 3ª geração de sua família a estudar na conceituada Sky High, uma escola de elite que tem por meta transformar jovens superdotados em super-heróis do futuro. Só que há um problema: Will está começando o 1º ano sem ter manifestado nenhum superpoder, o que faz com que seja apelidado de \"parceiro coadjuvante\" pelos colegas de escola. Humilhado constantemente na Sky High, Will ainda precisa esconder o fato de seus pais, os famosos super-heróis Commander (Kurt Russell) e Jetstream (Kelly Preston)."
+  "Will Stronghold (Michael Angarano) é um adolescente comum, que se preocupa com os amigos, as notas do colégio e garotas. Ele é também a 3ª geração de sua família a estudar na conceituada Sky High, uma escola de elite que tem por meta transformar jovens superdotados em super-heróis do futuro. Só que há um problema: Will está começando o 1º ano sem ter manifestado nenhum superpoder, o que faz com que seja apelidado de \"parceiro coadjuvante\" pelos colegas de escola. Humilhado constantemente na Sky High, Will ainda precisa esconder o fato de seus pais, os famosos super-heróis Commander (Kurt Russell) e Jetstream (Kelly Preston).",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/sky-high-super-escola-de-herois/2irhFMBxsO5H"
 );
 
 
@@ -721,7 +735,7 @@ function abrirDetalhes(id, tipo) {
   var popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
   "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-  "<h2 style='margin-top: 15px'>Assista agora:</h2><div class='plataformas'><a href='" + filme.link + "' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'></a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+  "<h2 style='margin-top: 15px'>Assista agora:</h2><div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'></a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
   "<p class='descricao_filme'>" + filme.descricao + "</p>" +
   "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
   "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
