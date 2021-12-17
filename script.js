@@ -830,26 +830,7 @@ function mostrarPosters(listaElementos, tipo) {
   }
 }
 
-function reset() {
-  var largura = window.innerWidth
-  || document.documentElement.clientWidth
-  || document.body.clientWidth;
-  
-  if(largura < 985) {
-    botoes_carr = document.getElementsByClassName('arrow_btn');
-    for(i = 0; i < botoes_carr.length; i++) {
-      botoes_carr[i].style = "display: none;";
-    }
-    botoes_carr = document.getElementsByClassName('filmes');
-    for(i = 0; i < botoes_carr.length; i++) {
-      botoes_carr[i].style = "overflow: scroll;";
-    }
-  }
-}
-
-reset();
-
-filmes_sections = document.getElementsByClassName('filmes')
+var filmes_sections = document.getElementsByClassName('filmes')
 
 function slide(side, section) {
   //side = 1 deslizar pra direita -> side = 2 deslizar pra esquerda

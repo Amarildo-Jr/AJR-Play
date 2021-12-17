@@ -35,8 +35,31 @@
       <script>mostrarPosters(series_all, 1)</script>
     </div>
     <footer>
+      <div>
+        <a href='https://github.com/Amarildo-Jr' target="_blank"><img class='contato_logo' src='img/icons/contato/github.png'></a>
+        <a href='https://www.linkedin.com/in/amarildo-junior/' target="_blank"><img class='contato_logo' src='img/icons/contato/linkedin.png'></a>
+        <a href='https://www.instagram.com/amorildo.jr/' target="_blank"><img class='contato_logo' src='img/icons/contato/instagram.png'></a>
+      </div>
       <p class="copyright">	&copy; Copyright Amarildo Junior - 2021</p>
     </footer>
+    <script>
+      var largura = window.innerWidth
+      var largura =  document.documentElement.clientWidth
+      var largura =  document.body.clientWidth;
+      
+      if(largura < 985) {
+        botoes_carr = document.getElementsByClassName('arrow_btn');
+        for(i = 0; i < 4; i++) {
+          botoes_carr[i].style = "display: none;";
+          console.log('olá')
+        }
+        filmes = document.getElementsByClassName('filmes');
+        console.log(filmes.length)
+        for(i = 0; i < filmes.length; i++) {
+          filmes[i].style = "overflow-x: scroll;";
+        }
+      }
+    </script>
 </body>
 
 </html>
