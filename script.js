@@ -1,7 +1,7 @@
 var idFilmes = 0;
 
 class Filme {
-  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma) {
+  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma, link) {
     this.id = idFilmes;
     this.nome = nome;
     this.lancamento = lancamento;
@@ -14,6 +14,7 @@ class Filme {
     this.classificacao = classificacao;
     this.descricao = descricao;
     this.plataforma = plataforma;
+    this.link = link;
     idFilmes++;
   } 
 }
@@ -34,8 +35,10 @@ let filme0 = new Filme(
   "filme",
   "1h 44min",
   classificacao_12anos,
-  "De origem humilde e desde a infância sonhando com um mundo mágico, P.T. Barnum (Hugh Jackman) desafia as barreiras sociais se casando com a filha do patrão do pai e dá o pontapé inicial na realização de seu maior desejo abrindo uma espécie de museu de curiosidades. O empreendimento fracassa, mas ele logo vislumbra uma ousada saída: produzir um grande show estrelado por freaks, fraudes, bizarrices e rejeitados de todos os tipos.");
-
+  "De origem humilde e desde a infância sonhando com um mundo mágico, P.T. Barnum (Hugh Jackman) desafia as barreiras sociais se casando com a filha do patrão do pai e dá o pontapé inicial na realização de seu maior desejo abrindo uma espécie de museu de curiosidades. O empreendimento fracassa, mas ele logo vislumbra uma ousada saída: produzir um grande show estrelado por freaks, fraudes, bizarrices e rejeitados de todos os tipos.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/o-rei-do-show/66TvI61aPddY"
+);
   let filme1 = new Filme(
   "Homem-aranha: Sem Volta pra Casa", 
   "img/posters/homemAranha.jpg", 
@@ -45,9 +48,12 @@ let filme0 = new Filme(
   "filme",
   "2h 28min",
   classificacao_12anos,
-  "Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências da sua identidade como aracnídeo ter sido revelada pela reportagem do Clarim Diário. Incapaz de separar sua vida normal das aventuras de ser um super-herói, Parker pede ao Doutor Estranho (Benedict Cumberbatch) para que todos esqueçam sua verdeira identidade. Entretanto, o feitiço não sai como planejado e a situação torna-se ainda mais perigosa, forçando-o a descobrir o que realmente significa ser o Homem-Aranha.");
+  "Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências da sua identidade como aracnídeo ter sido revelada pela reportagem do Clarim Diário. Incapaz de separar sua vida normal das aventuras de ser um super-herói, Parker pede ao Doutor Estranho (Benedict Cumberbatch) para que todos esqueçam sua verdeira identidade. Entretanto, o feitiço não sai como planejado e a situação torna-se ainda mais perigosa, forçando-o a descobrir o que realmente significa ser o Homem-Aranha.",
+  "img/icons/plataformas/cinepolis.png",
+  "https://www.cinepolis.com.br/filme/13337-homem-aranha-sem-volta-para-casa.html"
+);
 
-let filme2 = new Filme(
+  let filme2 = new Filme(
   "O Jogo da Imitação", 
   "img/posters/jogoDaImitacao.jpeg", 
   "https://youtube.com/embed/YIkKbMcJL_4", 
@@ -56,7 +62,9 @@ let filme2 = new Filme(
   "filme",
   "1h 55min",
   classificacao_12anos,
-  "Durante a Segunda Guerra Mundial, o governo britânico monta uma equipe que tem por objetivo quebrar o Enigma, o famoso código que os alemães usam para enviar mensagens aos submarinos. Um de seus integrantes é Alan Turing (Benedict Cumberbatch), um matemático de 27 anos estritamente lógico e focado no trabalho, que tem problemas de relacionamento com praticamente todos à sua volta. Não demora muito para que Turing, apesar de sua intransigência, lidere a equipe. Seu grande projeto é construir uma máquina que permita analisar todas as possibilidades de codificação do Enigma em apenas 18 horas, de forma que os ingleses conheçam as ordens enviadas antes que elas sejam executadas. Entretanto, para que o projeto dê certo, Turing terá que aprender a trabalhar em equipe e tem Joan Clarke (Keira Knightley) sua grande incentivadora."
+  "Durante a Segunda Guerra Mundial, o governo britânico monta uma equipe que tem por objetivo quebrar o Enigma, o famoso código que os alemães usam para enviar mensagens aos submarinos. Um de seus integrantes é Alan Turing (Benedict Cumberbatch), um matemático de 27 anos estritamente lógico e focado no trabalho, que tem problemas de relacionamento com praticamente todos à sua volta. Não demora muito para que Turing, apesar de sua intransigência, lidere a equipe. Seu grande projeto é construir uma máquina que permita analisar todas as possibilidades de codificação do Enigma em apenas 18 horas, de forma que os ingleses conheçam as ordens enviadas antes que elas sejam executadas. Entretanto, para que o projeto dê certo, Turing terá que aprender a trabalhar em equipe e tem Joan Clarke (Keira Knightley) sua grande incentivadora.",
+  "img/icons/plataformas/hboMax.png",
+  "https://play.hbomax.com/page/urn:hbo:page:GYIbL5QU0QJCtnAEAAAAJ:type:feature?camp=googleHBOMAX"
 );
 
 let filme3 = new Filme(
@@ -69,8 +77,9 @@ let filme3 = new Filme(
   "1h 50min",
   classificacao_10anos,
   "Mitsuha Miyamizu (Mone Kamishiraishi) é uma jovem que mora no interior do Japão e que deseja deixar sua pequena cidade para trás para tentar a sorte em Tóquio. Enquanto isso, Taki Tachibana (Ryûnosuke Kamiki), um jovem que trabalha em um restaurante italiano em Tóquio, deseja largar o seu emprego para tentar se tornar um arquiteto. Os dois não se conhecem, mas estão direta e misteriosamente conectados pelas imagens de seus sonhos.",
-  "img/icons/plataformas/hboMax.png"
-  );
+  "img/icons/plataformas/hboMax.png",
+  "https://play.hbomax.com/page/urn:hbo:page:GYIjjJwrPnZGxLwEAAANC:type:feature?camp=googleHBOMAX"
+);
 
 let filme4 = new Filme(
   "Sempre ao seu Lado", 
@@ -81,8 +90,10 @@ let filme4 = new Filme(
   "filme",
   "1h 33min",
   classificacao_livre,
-  "Parker Wilson (Richard Gere) é um professor universitário que, ao retornar do trabalho, encontra na estação de trem um filhote de cachorro da raça akita, conhecido por sua lealdade. Sem ter como deixá-lo na estação, Parker o leva para casa mesmo sabendo que Cate (Joan Allen), sua esposa, é contra a presença de um cachorro. Aos poucos Parker se afeiçoa ao filhote, que tem o nome Hachi escrito na coleira, em japonês. Cate cede e aceita sua permanência. Hachi cresce e passa a acompanhar Parker até a estação de trem, retornando ao local no horário em que o professor está de volta. Até que um acontecimento inesperado altera sua vida."
-);
+  "Parker Wilson (Richard Gere) é um professor universitário que, ao retornar do trabalho, encontra na estação de trem um filhote de cachorro da raça akita, conhecido por sua lealdade. Sem ter como deixá-lo na estação, Parker o leva para casa mesmo sabendo que Cate (Joan Allen), sua esposa, é contra a presença de um cachorro. Aos poucos Parker se afeiçoa ao filhote, que tem o nome Hachi escrito na coleira, em japonês. Cate cede e aceita sua permanência. Hachi cresce e passa a acompanhar Parker até a estação de trem, retornando ao local no horário em que o professor está de volta. Até que um acontecimento inesperado altera sua vida.",
+  "img/icons/plataformas/globoplay.png",
+  "https://globoplay.globo.com/sempre-ao-seu-lado/t/ncRkKtsgQd/"
+  );
 
 let filme5 = new Filme(
   "Vingadores: Ultimato", 
@@ -93,8 +104,10 @@ let filme5 = new Filme(
   "filme",
   "3h 01min",
   classificacao_12anos,
-  "Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando perdido no espaço sem água nem comida, o Capitão América/Steve Rogers (Chris Evans) e a Viúva Negra/Natasha Romanov (Scarlett Johansson) precisam liderar a resistência contra o titã louco."
-);
+  "Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando perdido no espaço sem água nem comida, o Capitão América/Steve Rogers (Chris Evans) e a Viúva Negra/Natasha Romanov (Scarlett Johansson) precisam liderar a resistência contra o titã louco.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/vingadores-ultimato-da-marvel-studios/aRbVJUb2h2Rf"
+  );
 
 let filme6 = new Filme(
   "It: Capítulo II", 
@@ -105,7 +118,9 @@ let filme6 = new Filme(
   "filme",
   "2h 50min",
   classificacao_16anos,
-  "Em It - Capítulo 2, 27 anos depois dos eventos de \"It - A Coisa\", Mike (Isaiah Mustafa) percebe que o palhaço Pennywise (Bill Skarsgard) está de volta à cidade de Derry. Ele convoca os antigos amigos do Clube dos Otários para honrar a promessa de infância e acabar com o inimigo de uma vez por todas. Mas quando Bill (James McAvoy), Beverly (Jessica Chastain), Ritchie (Bill Hader), Ben (Jay Ryan) e Eddie (James Ransone) retornam às suas origens, eles precisam se confrontar a traumas nunca resolvidos de suas infâncias, e que repercutem até hoje na vida adulta."
+  "Em It - Capítulo 2, 27 anos depois dos eventos de \"It - A Coisa\", Mike (Isaiah Mustafa) percebe que o palhaço Pennywise (Bill Skarsgard) está de volta à cidade de Derry. Ele convoca os antigos amigos do Clube dos Otários para honrar a promessa de infância e acabar com o inimigo de uma vez por todas. Mas quando Bill (James McAvoy), Beverly (Jessica Chastain), Ritchie (Bill Hader), Ben (Jay Ryan) e Eddie (James Ransone) retornam às suas origens, eles precisam se confrontar a traumas nunca resolvidos de suas infâncias, e que repercutem até hoje na vida adulta.",
+  "img/icons/plataformas/telecine.png",
+  "https://www.telecine.com.br/filme/It_Capítulo_Dois_26797?action=play_filme"
 );
 
 let filme7 = new Filme(
@@ -117,7 +132,9 @@ let filme7 = new Filme(
   "filme",
   "1h 40min",
   classificacao_14anos,
-  "Chantageados e enganados por um ambicioso trambiqueiro (Oscar Magrini), Toinho (Tom Cavalcante), Ray Van (Whindersson Nunes), Pilôra (Tirullipa) e Romeu (Bruno de Luca) precisam organizar uma festa inesquecível de casamento sem nenhum dinheiro no bolso. Caso falhem, terão que lidar com o maior contrabandista da famosa rua 25 de Março em São Paulo, que é também o pai da noiva (Paloma Bernardi)."
+  "Chantageados e enganados por um ambicioso trambiqueiro (Oscar Magrini), Toinho (Tom Cavalcante), Ray Van (Whindersson Nunes), Pilôra (Tirullipa) e Romeu (Bruno de Luca) precisam organizar uma festa inesquecível de casamento sem nenhum dinheiro no bolso. Caso falhem, terão que lidar com o maior contrabandista da famosa rua 25 de Março em São Paulo, que é também o pai da noiva (Paloma Bernardi).",
+  "img/icons/plataformas/globoplay.png",
+  "https://globoplay.globo.com/os-parcas/t/QN8SN5MVB9/"
 );
 
 let filme8 = new Filme(
@@ -704,7 +721,7 @@ function abrirDetalhes(id, tipo) {
   var popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
   "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-  "<h2 style='margin-top: 15px'>Assista agora:</h2><div class='plataformas'><img src=" + filme.plataforma + " class='plataforma'></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+  "<h2 style='margin-top: 15px'>Assista agora:</h2><div class='plataformas'><a href='" + filme.link + "'><img src=" + filme.plataforma + " class='plataforma'></a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
   "<p class='descricao_filme'>" + filme.descricao + "</p>" +
   "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
   "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
@@ -715,7 +732,7 @@ function abrirDetalhes(id, tipo) {
   ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
   ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
   ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-  ".plataforma {width: 150px;height: 150px; position: absolute;}</style>";
+  ".plataforma {width: 150px;height: 150px; position: absolute;} a .plataforma:hover{transform: scale(1.1);transition: 0.3s;}</style>";
 }
 
 function mostrarPosters(listaElementos, tipo) {
