@@ -176,7 +176,7 @@ let filme10 = new Filme(
   classificacao_14anos,
   "Quando a inocente jovem Lucy (Scarlett Johansson) aceita transportar drogas dentro do seu estômago, ela não conhece muito bem os riscos que corre. Por acaso, ela acaba absorvendo as drogas, e um efeito inesperado acontece: Lucy ganha poderes sobre-humanos, incluindo a telecinesia, a ausência de dor e a capacidade de adquirir conhecimento instantaneamente.",
   "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/70307658?source=35"
+  "https://www.netflix.com/br/title/70307658"
 );
 
 let filme11 = new Filme(
@@ -245,7 +245,9 @@ let filme15 = new Filme(
   "filme",
   "1h 40min",
   classificacao_livre,
-  "Agora morando na casa da pequena Bonnie, Woody apresenta aos amigos o novo brinquedo construído por ela: Forky, baseado em um garfo de verdade. O novo posto de brinquedo não o agrada nem um pouco, o que faz com que Forky fuja de casa. Decidido a trazer de volta o atual brinquedo favorito de Bonnie, Woody parte em seu encalço e, no caminho, reencontra Bo Peep, que agora vive em um parque de diversões."
+  "Agora morando na casa da pequena Bonnie, Woody apresenta aos amigos o novo brinquedo construído por ela: Forky, baseado em um garfo de verdade. O novo posto de brinquedo não o agrada nem um pouco, o que faz com que Forky fuja de casa. Decidido a trazer de volta o atual brinquedo favorito de Bonnie, Woody parte em seu encalço e, no caminho, reencontra Bo Peep, que agora vive em um parque de diversões.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/toy-story-4/2CtjW4tKzIHp"
 );
 
 let filme16 = new Filme(
@@ -257,7 +259,9 @@ let filme16 = new Filme(
   "filme",
   "1h 35min",
   classificacao_livre,
-  "Desta vez, Mestre Shifu tem como principal ensinamento fazer com que Po aprenda a técnica de dominação do Chi, uma espécie de “energia vital”. Porém, o atrapalhado panda acaba se desconcentrando com a chegada do pai de sangue, o panda Li, que o carrega para a vila secreta dos pandas – aguçando o ciúme do Sr Ping, o “pai” ganso de Po. Em paralelo, o poderoso touro Kai, O Coletor, um centenário inimigo do Mestre Oogway, reúne forças para voltar para o mundo dos vivos e tomar o que ele acha que é dele por direito. Caberá a Po e seus amigos impedir o maléfico plano do vilão."
+  "Desta vez, Mestre Shifu tem como principal ensinamento fazer com que Po aprenda a técnica de dominação do Chi, uma espécie de “energia vital”. Porém, o atrapalhado panda acaba se desconcentrando com a chegada do pai de sangue, o panda Li, que o carrega para a vila secreta dos pandas – aguçando o ciúme do Sr Ping, o “pai” ganso de Po. Em paralelo, o poderoso touro Kai, O Coletor, um centenário inimigo do Mestre Oogway, reúne forças para voltar para o mundo dos vivos e tomar o que ele acha que é dele por direito. Caberá a Po e seus amigos impedir o maléfico plano do vilão.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/80071348"
 );
 
 let filme17 = new Filme(
@@ -269,7 +273,9 @@ let filme17 = new Filme(
   "filme",
   "1h 45min",
   classificacao_livre,
-  "Em Viva - A Vida é uma Festa, Miguel é um menino de 12 anos que quer muito ser um músico famoso, mas ele precisa lidar com sua família que desaprova seu sonho. Determinado a virar o jogo, ele acaba desencadeando uma série de eventos ligados a um mistério de 100 anos. A aventura, com inspiração no feriado mexicano do Dia dos Mortos, acaba gerando uma extraordinária reunião familiar."
+  "Em Viva - A Vida é uma Festa, Miguel é um menino de 12 anos que quer muito ser um músico famoso, mas ele precisa lidar com sua família que desaprova seu sonho. Determinado a virar o jogo, ele acaba desencadeando uma série de eventos ligados a um mistério de 100 anos. A aventura, com inspiração no feriado mexicano do Dia dos Mortos, acaba gerando uma extraordinária reunião familiar.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/viva-a-vida-e-uma-festa/db9orsI5O4gC"
 );
 
 let filme18 = new Filme(
@@ -281,7 +287,9 @@ let filme18 = new Filme(
   "filme",
   "1h 44min",
   classificacao_livre,
-  "Decidido a fazer de Berk um verdadeiro libelo ao ideal da convivência pacífica entre homens e dragões, Soluço e seus amigos seguem atrás de caçadores, para não só libertar suas presas mas também impedir a matança desenfreada dos animais. O esforço do grupo desperta a atenção de Grimmel ao descobrir que entre eles está Banguela, um legítimo Fúria da Noite. O vilão então desenvolve um plano para capturá-lo a todo custo, usando como arma uma fêmea capturada, da mesma espécie."
+  "Decidido a fazer de Berk um verdadeiro libelo ao ideal da convivência pacífica entre homens e dragões, Soluço e seus amigos seguem atrás de caçadores, para não só libertar suas presas mas também impedir a matança desenfreada dos animais. O esforço do grupo desperta a atenção de Grimmel ao descobrir que entre eles está Banguela, um legítimo Fúria da Noite. O vilão então desenvolve um plano para capturá-lo a todo custo, usando como arma uma fêmea capturada, da mesma espécie.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/81021806"
 );
 
 let filme19 = new Filme(
@@ -293,7 +301,9 @@ let filme19 = new Filme(
   "filme",
   "1h 36min",
   classificacao_livre,
-  "Ao viajar para a Califórnia, o famoso carro de corridas Relâmpago McQueen se perde e vai parar em Radiator Springs, uma cidadezinha na Rota 66. Ele conhece novos amigos e aprende lições que mudam sua forma de encarar a vida."
+  "Ao viajar para a Califórnia, o famoso carro de corridas Relâmpago McQueen se perde e vai parar em Radiator Springs, uma cidadezinha na Rota 66. Ele conhece novos amigos e aprende lições que mudam sua forma de encarar a vida.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/carros/41KYquQjLwge"
 );
 
 let filme20 = new Filme(
@@ -305,7 +315,9 @@ let filme20 = new Filme(
   "filme",
   "1h 22min",
   classificacao_livre,
-  "Após a coroa do Rei Netuno ser roubada, Bob Esponja e seu melhor amigo Patrick partem em uma viagem pela Fenda do Bikini para reencontrá-la. No caminho eles precisam enfrentar monstros marinhos, vilões perigosos e vários bandidos."
+  "Após a coroa do Rei Netuno ser roubada, Bob Esponja e seu melhor amigo Patrick partem em uma viagem pela Fenda do Bikini para reencontrá-la. No caminho eles precisam enfrentar monstros marinhos, vilões perigosos e vários bandidos.",
+  "img/icons/plataformas/primeVideo.png",
+  "https://www.primevideo.com/dp/amzn1.dv.gti.1aabf5b9-9bcb-315a-cb50-b4553a8ec86b"
 );
 
 let filme21 = new Filme(
@@ -317,7 +329,9 @@ let filme21 = new Filme(
   "filme",
   "1h 47min",
   classificacao_livre,
-  "Moana Waialiki é uma corajosa jovem, filha do chefe de uma tribo na Oceania, vinda de uma longa linhagem de navegadores. Querendo descobrir mais sobre seu passado e ajudar a família, ela resolve partir em busca de seus ancestrais, habitantes de uma ilha mítica que ninguém sabe onde é. Acompanhada pelo lendário semideus Maui, Moana começa sua jornada em mar aberto, onde enfrenta terríveis criaturas marinhas e descobre histórias do submundo."
+  "Moana Waialiki é uma corajosa jovem, filha do chefe de uma tribo na Oceania, vinda de uma longa linhagem de navegadores. Querendo descobrir mais sobre seu passado e ajudar a família, ela resolve partir em busca de seus ancestrais, habitantes de uma ilha mítica que ninguém sabe onde é. Acompanhada pelo lendário semideus Maui, Moana começa sua jornada em mar aberto, onde enfrenta terríveis criaturas marinhas e descobre histórias do submundo.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/moana-um-mar-de-aventuras/70GoJHflgHH9"
 );
 
 let filme22 = new Filme(
@@ -329,7 +343,9 @@ let filme22 = new Filme(
   "filme",
   "1h 30min",
   classificacao_livre,
-  "Após se casar com a Princesa Fiona (Cameron Diaz), Shrek (Mike Myers) vive feliz em seu pântano. Ao retornar de sua lua-de-mel Fiona recebe uma carta de seus pais, que não sabem que ela agora é um ogro, convidando-a para um jantar juntamente com seu grande amor, na intenção de conhecê-lo. A muito custo Fiona consegue convencer Shrek a ir visitá-los, tendo ainda a companhia do Burro (Eddie Murphy). Porém os problemas começam quando os pais de Fiona descobrem que ela não se casou com o Príncipe (Rupert Everett), a quem havia sido prometida, e enviam o Gato de Botas (Antonio Banderas) para separá-los."
+  "Após se casar com a Princesa Fiona (Cameron Diaz), Shrek (Mike Myers) vive feliz em seu pântano. Ao retornar de sua lua-de-mel Fiona recebe uma carta de seus pais, que não sabem que ela agora é um ogro, convidando-a para um jantar juntamente com seu grande amor, na intenção de conhecê-lo. A muito custo Fiona consegue convencer Shrek a ir visitá-los, tendo ainda a companhia do Burro (Eddie Murphy). Porém os problemas começam quando os pais de Fiona descobrem que ela não se casou com o Príncipe (Rupert Everett), a quem havia sido prometida, e enviam o Gato de Botas (Antonio Banderas) para separá-los.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/60034572"
 );
 
 let filme23 = new Filme(
@@ -341,7 +357,9 @@ let filme23 = new Filme(
   "filme",
   "1h 57min",
   classificacao_10anos,
-  "Em Homem-Aranha no Aranhaverso, Miles Morales é um jovem negro do Brooklyn que se tornou o Homem-Aranha inspirado no legado de Peter Parker, já falecido. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói aracnídeo sob um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha."
+  "Em Homem-Aranha no Aranhaverso, Miles Morales é um jovem negro do Brooklyn que se tornou o Homem-Aranha inspirado no legado de Peter Parker, já falecido. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói aracnídeo sob um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.",
+  "img/icons/plataformas/telecine.png",
+  "https://www.telecine.com.br/filme/Homem_Aranha_no_Aranhaverso_22591?action=play_filme"
 );
 
 let filme24 = new Filme(
@@ -353,7 +371,9 @@ let filme24 = new Filme(
   "filme",
   "1h 37min",
   classificacao_livre,
-  "Um ano após ajudar Marlin (Albert Brooks) a reencontrar seu filho Nemo, Dory (Ellen DeGeneres) tem um insight e lembra de sua amada família. Com saudades, ela decide fazer de tudo para reencontrá-los e na desenfreada busca esbarra com amigos do passado e vai parar nas perigosas mãos de humanos."
+  "Um ano após ajudar Marlin (Albert Brooks) a reencontrar seu filho Nemo, Dory (Ellen DeGeneres) tem um insight e lembra de sua amada família. Com saudades, ela decide fazer de tudo para reencontrá-los e na desenfreada busca esbarra com amigos do passado e vai parar nas perigosas mãos de humanos.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/procurando-dory/2L6w30vnqebX"
 );
 
 var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
@@ -365,7 +385,7 @@ var popUp = document.getElementsByClassName("popUp");
 var idSeries = 0;
 
 class Serie {
-  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao) {
+  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma, link) {
     this.id = idSeries;
     this.nome = nome;
     this.lancamento = lancamento;
@@ -377,6 +397,8 @@ class Serie {
     this.duracao = duracao;
     this.classificacao = classificacao;
     this.descricao = descricao;
+    this.plataforma = plataforma;
+    this.link = link;
     idSeries++;
   } 
 }
@@ -392,7 +414,9 @@ let serie0 = new Serie(
   "serie",
   "9 temporadas",
   classificacao_14anos,
-  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma."
+  "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/70195800"
 );
 
 let serie1 = new Serie(
@@ -404,7 +428,9 @@ let serie1 = new Serie(
   "serie",
   "5 temporadas",
   classificacao_16anos,
-  "Contos de ficção científica que refletem o lado negro das telas e da tecnologia, mostrando que nem toda novidade traz só benefícios."
+  "Contos de ficção científica que refletem o lado negro das telas e da tecnologia, mostrando que nem toda novidade traz só benefícios.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/70264888"
 );
 
 let serie2 = new Serie(
@@ -416,7 +442,9 @@ let serie2 = new Serie(
   "serie",
   "2 temporadas",
   classificacao_10anos,
-  "Gravity Falls é uma série animada da Disney Channel que conta as aventuras dos irmãos gêmeos, o sagaz Dipper e a adorável Mabel Pines, cujos planos pro verão são arruinados quando seus pais os enviam para ficarem com seu tio-avô, o charlatão Grunkle Stan em Gravity Falls, Oregon. O problema é que a cidade é cheia de mistériosâ€¦ e monstros! Lá, entre aventuras, enigmas e confusões, eles trabalham para o seu tio-avô na Cabana Misteriosa, junto com o cômico Soos e a graciosa e descolada Wendy, por quem Dipper é apaixonado."
+  "Gravity Falls é uma série animada da Disney Channel que conta as aventuras dos irmãos gêmeos, o sagaz Dipper e a adorável Mabel Pines, cujos planos pro verão são arruinados quando seus pais os enviam para ficarem com seu tio-avô, o charlatão Grunkle Stan em Gravity Falls, Oregon. O problema é que a cidade é cheia de mistériosâ€¦ e monstros! Lá, entre aventuras, enigmas e confusões, eles trabalham para o seu tio-avô na Cabana Misteriosa, junto com o cômico Soos e a graciosa e descolada Wendy, por quem Dipper é apaixonado.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/series/gravity-falls/HZxayxzMJqed?distributionPartner=google"
 );
 
 let serie3 = new Serie(
@@ -428,7 +456,9 @@ let serie3 = new Serie(
   "serie",
   "4 temporadas",
   classificacao_16anos,
-  "Em um futuro não muito distante, o planeta é um lugar devastado. Aos 20 anos, todo cidadão recebe a chance de passar por uma rigorosa seleção para ascender ao Maralto, uma região farta de oportunidades. Porém, apenas 3% consegue chegar lá."
+  "Em um futuro não muito distante, o planeta é um lugar devastado. Aos 20 anos, todo cidadão recebe a chance de passar por uma rigorosa seleção para ascender ao Maralto, uma região farta de oportunidades. Porém, apenas 3% consegue chegar lá.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/80074220"
 );
 
 let serie4 = new Serie(
@@ -440,7 +470,9 @@ let serie4 = new Serie(
   "serie",
   "7 temporadas",
   classificacao_14anos,
-  "O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão."
+  "O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/70281562"
 );
 
 let serie5 = new Serie(
@@ -452,7 +484,9 @@ let serie5 = new Serie(
   "serie",
   "1 temporada",
   classificacao_14anos,
-  "LOL: Se Rir, Já Era reúne 10 dos maiores comediantes brasileiros numa batalha épica de seis horas sem poder rir enquanto tentam arrancar o riso dos adversários. O show é apresentado por Tom Cavalcante, que tem ao seu lado a comediante Clarice Falcão para ajudá-lo nessa missão de vigiar e flagrar qualquer riso do elenco."
+  "LOL: Se Rir, Já Era reúne 10 dos maiores comediantes brasileiros numa batalha épica de seis horas sem poder rir enquanto tentam arrancar o riso dos adversários. O show é apresentado por Tom Cavalcante, que tem ao seu lado a comediante Clarice Falcão para ajudá-lo nessa missão de vigiar e flagrar qualquer riso do elenco.",
+  "img/icons/plataformas/primeVideo.png",
+  "https://www.primevideo.com/detail/amzn1.dv.gti.a2851bc3-abc0-4c72-93d3-4dc5c0a6b703"
 );
 
 let serie6 = new Serie(
@@ -464,7 +498,9 @@ let serie6 = new Serie(
   "serie",
   "1 temporada",
   classificacao_12anos,
-  "O apresentador Felipe Castanhari e seus assistentes exploram mistérios e maravilhas da ciência e da história. Prepare-se para descobertas alucinantes!"
+  "O apresentador Felipe Castanhari e seus assistentes exploram mistérios e maravilhas da ciência e da história. Prepare-se para descobertas alucinantes!",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/81020977"
 );
 
 let serie7 = new Serie(
@@ -476,7 +512,9 @@ let serie7 = new Serie(
   "serie",
   "3 temporadas",
   classificacao_14anos,
-  "Sherlock Holmes sempre foi um homem moderno, o mundo é que envelheceu. Agora ele está de volta como sempre foi: nervoso, contemporâneo, difícil e perigoso, apresentado de um jeito novo, moderno."
+  "Sherlock Holmes sempre foi um homem moderno, o mundo é que envelheceu. Agora ele está de volta como sempre foi: nervoso, contemporâneo, difícil e perigoso, apresentado de um jeito novo, moderno.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/id-en/title/70202589"
 );
 
 let serie8 = new Serie(
@@ -488,7 +526,9 @@ let serie8 = new Serie(
   "serie",
   "3 temporadas",
   classificacao_livre,
-  "Em Irmão do Jorel, Jorel é o garoto mais popular da escola e do bairro. Ele é bonito e tem cabelos longos e sedosos. Mas esta história não é sobre ele; é sobre seu irmão - cujo nome é um mistério. Filho de uma excêntrica família de acumuladores, ele quase não recebe atenção e acaba descobrindo uma maneira fantasiosa de sair das sombras de Jorel."
+  "Em Irmão do Jorel, Jorel é o garoto mais popular da escola e do bairro. Ele é bonito e tem cabelos longos e sedosos. Mas esta história não é sobre ele; é sobre seu irmão - cujo nome é um mistério. Filho de uma excêntrica família de acumuladores, ele quase não recebe atenção e acaba descobrindo uma maneira fantasiosa de sair das sombras de Jorel.",
+  "img/icons/plataformas/cartoonNetwork.png",
+  "https://www.cartoonnetwork.com.br/show/irmao-do-jorel"
 );
 
 let serie9 = new Serie(
@@ -500,7 +540,9 @@ let serie9 = new Serie(
   "serie",
   "5 temporadas",
   classificacao_16anos,
-  "Um grupo de nove ladrões, liderados por um Professor, prepara o roubo do século na Casa da Moeda da Espanha, com o objetivo de fabricar o próprio dinheiro em quantidades incalculáveis e nunca antes vista."
+  "Um grupo de nove ladrões, liderados por um Professor, prepara o roubo do século na Casa da Moeda da Espanha, com o objetivo de fabricar o próprio dinheiro em quantidades incalculáveis e nunca antes vista.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/80192098"
 );
 
 let serie10 = new Serie(
@@ -512,7 +554,9 @@ let serie10 = new Serie(
   "serie",
   "4 temporadas",
   classificacao_12anos,
-  "Em The Good Doctor, um jovem cirurgião diagnosticado com savantismo, um distúrbio psíquico raro, é recrutado para trabalhar na ala pedriátrica de um hospital de prestígio. Apesar do seu incrível conhecimento na área da medicina, esse médico não consegue se relacionar com o mundo à sua volta. Resta saber se esta dificuldade será um problema na hora de salvar vidas."
+  "Em The Good Doctor, um jovem cirurgião diagnosticado com savantismo, um distúrbio psíquico raro, é recrutado para trabalhar na ala pedriátrica de um hospital de prestígio. Apesar do seu incrível conhecimento na área da medicina, esse médico não consegue se relacionar com o mundo à sua volta. Resta saber se esta dificuldade será um problema na hora de salvar vidas.",
+  "img/icons/plataformas/globoplay.png",
+  "https://globoplay.globo.com/the-good-doctor-o-bom-doutor/t/kmF21xZbHk/"
 );
 
 let serie11 = new Serie(
@@ -524,7 +568,9 @@ let serie11 = new Serie(
   "serie",
   "1 temporada",
   classificacao_12anos,
-  "Após os eventos de Vingadores: Ultimato (2019), Wanda Maximoff/Feiticeira Escarlate (Elizabeth Olsen) e Visão (Paul Bettany) se esforçam para levar uma vida normal no subúrbio e esconder seus poderes. Mas a dupla de super-heróis logo começa a suspeitar que nem tudo está tão certo assim. Eles se encontram, na verdade, dentro de uma constante sitcom, que vai desde a década de 50 até os dias de hoje. Conforme o tempo passa, Wanda e Visão perdem o controle da situação, sem saber mais o que é real e o que é ficção. Eles ficam presos em um eterno vai e vem: da Era de Ouro da TV nos EUA, com imagens em preto e branco, ao presente - e vice-versa."
+  "Após os eventos de Vingadores: Ultimato (2019), Wanda Maximoff/Feiticeira Escarlate (Elizabeth Olsen) e Visão (Paul Bettany) se esforçam para levar uma vida normal no subúrbio e esconder seus poderes. Mas a dupla de super-heróis logo começa a suspeitar que nem tudo está tão certo assim. Eles se encontram, na verdade, dentro de uma constante sitcom, que vai desde a década de 50 até os dias de hoje. Conforme o tempo passa, Wanda e Visão perdem o controle da situação, sem saber mais o que é real e o que é ficção. Eles ficam presos em um eterno vai e vem: da Era de Ouro da TV nos EUA, com imagens em preto e branco, ao presente - e vice-versa.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/series/wandavision/4SrN28ZjDLwH?distributionPartner=google"
 );
 
 let serie12 = new Serie(
