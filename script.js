@@ -1,7 +1,7 @@
 var idFilmes = 0;
 
 class Filme {
-  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao) {
+  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma) {
     this.id = idFilmes;
     this.nome = nome;
     this.lancamento = lancamento;
@@ -13,6 +13,7 @@ class Filme {
     this.duracao = duracao;
     this.classificacao = classificacao;
     this.descricao = descricao;
+    this.plataforma = plataforma;
     idFilmes++;
   } 
 }
@@ -67,8 +68,9 @@ let filme3 = new Filme(
   "filme",
   "1h 50min",
   classificacao_10anos,
-  "Mitsuha Miyamizu (Mone Kamishiraishi) é uma jovem que mora no interior do Japão e que deseja deixar sua pequena cidade para trás para tentar a sorte em Tóquio. Enquanto isso, Taki Tachibana (Ryûnosuke Kamiki), um jovem que trabalha em um restaurante italiano em Tóquio, deseja largar o seu emprego para tentar se tornar um arquiteto. Os dois não se conhecem, mas estão direta e misteriosamente conectados pelas imagens de seus sonhos."
-);
+  "Mitsuha Miyamizu (Mone Kamishiraishi) é uma jovem que mora no interior do Japão e que deseja deixar sua pequena cidade para trás para tentar a sorte em Tóquio. Enquanto isso, Taki Tachibana (Ryûnosuke Kamiki), um jovem que trabalha em um restaurante italiano em Tóquio, deseja largar o seu emprego para tentar se tornar um arquiteto. Os dois não se conhecem, mas estão direta e misteriosamente conectados pelas imagens de seus sonhos.",
+  "img/icons/plataformas/hboMax.png"
+  );
 
 let filme4 = new Filme(
   "Sempre ao seu Lado", 
@@ -700,18 +702,20 @@ function abrirDetalhes(id, tipo) {
   var popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "flex";
   var popUp_content = document.getElementsByClassName("details");
-  popUp_content[0].innerHTML = "<iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
+  popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
   "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-  "<div id='details'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+  "<h2 style='margin-top: 15px'>Assista agora:</h2><div class='plataformas'><img src=" + filme.plataforma + " class='plataforma'></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
   "<p class='descricao_filme'>" + filme.descricao + "</p>" +
   "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
   "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
   "<tr><td class='info_table'>Gênero</td><td class='text_table'>" + filme.genero + "</td></tr>" +
-  "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><img src=" + filme.classificacao + " class='classificacao_indicativa'</div>" +
+  "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
   "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
-  ".details #details {margin: 45px auto; text-align:center;} .details #details .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
-  "#details {margin-top: 300px; display: flex; align-itens: center;} .titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
-  ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:70px;height: 70px;margin-top: 20px}</style>";
+  ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-itens: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
+  ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
+  ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
+  ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
+  ".plataforma {width: 150px;height: 150px; position: absolute;}</style>";
 }
 
 function mostrarPosters(listaElementos, tipo) {
