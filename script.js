@@ -442,7 +442,7 @@ let serie2 = new Serie(
   "serie",
   "2 temporadas",
   classificacao_10anos,
-  "Gravity Falls é uma série animada da Disney Channel que conta as aventuras dos irmãos gêmeos, o sagaz Dipper e a adorável Mabel Pines, cujos planos pro verão são arruinados quando seus pais os enviam para ficarem com seu tio-avô, o charlatão Grunkle Stan em Gravity Falls, Oregon. O problema é que a cidade é cheia de mistériosâ€¦ e monstros! Lá, entre aventuras, enigmas e confusões, eles trabalham para o seu tio-avô na Cabana Misteriosa, junto com o cômico Soos e a graciosa e descolada Wendy, por quem Dipper é apaixonado.",
+  "Gravity Falls é uma série animada da Disney Channel que conta as aventuras dos irmãos gêmeos, o sagaz Dipper e a adorável Mabel Pines, cujos planos pro verão são arruinados quando seus pais os enviam para ficarem com seu tio-avô, o charlatão Grunkle Stan em Gravity Falls, Oregon. O problema é que a cidade é cheia de mistérios e monstros! Lá, entre aventuras, enigmas e confusões, eles trabalham para o seu tio-avô na Cabana Misteriosa, junto com o cômico Soos e a graciosa e descolada Wendy, por quem Dipper é apaixonado.",
   "img/icons/plataformas/disney+.png",
   "https://www.disneyplus.com/pt-br/series/gravity-falls/HZxayxzMJqed?distributionPartner=google"
 );
