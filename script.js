@@ -582,7 +582,9 @@ let serie12 = new Serie(
   "serie",
   "5 temporadas",
   classificacao_16anos,
-  "Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto Morty, um adolescente não tão brilhante quanto o avô."
+  "Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto Morty, um adolescente não tão brilhante quanto o avô.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/series/wandavision/4SrN28ZjDLwH?distributionPartner=google"
 );
 
 let serie13 = new Serie(
@@ -594,7 +596,9 @@ let serie13 = new Serie(
   "serie",
   "4 temporadas",
   classificacao_16anos,
-  "Otis Thompson (Asa Butterfield) é um virgem com ansiedade social que é filho de uma terapeuta sexual (Gillian Anderson). Por ter crescido cercado por manuais, vídeos e conversas abertas sobre sexualidade, ele torna-se um expert no assunto - mesmo que contra sua vontade. Com a ajuda de Maeve (Emma Mackey), ele inicia uma clínica clandestina dentro da escola, ajudando os colegas com problemas sexuais em troca de dinheiro."
+  "Otis Thompson (Asa Butterfield) é um virgem com ansiedade social que é filho de uma terapeuta sexual (Gillian Anderson). Por ter crescido cercado por manuais, vídeos e conversas abertas sobre sexualidade, ele torna-se um expert no assunto - mesmo que contra sua vontade. Com a ajuda de Maeve (Emma Mackey), ele inicia uma clínica clandestina dentro da escola, ajudando os colegas com problemas sexuais em troca de dinheiro.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/80197526"
 );
 
 let serie14 = new Serie(
@@ -606,7 +610,9 @@ let serie14 = new Serie(
   "serie",
   "12 temporadas",
   classificacao_14anos,
-  "Alan e Charlie Harper são irmão bem diferentes. Alan é médico quiroprático, recetemnete divorciado e com um filho chamado Jake. Já Charlie é um solteiro por opção que ganha a vida escrevendo jingles para comerciais de TV. Tudo vai bem, até o trio precisar dividir o mesmo teto. Juntos vão criar situações divertidas e nunca antes imaginadas."
+  "Alan e Charlie Harper são irmão bem diferentes. Alan é médico quiroprático, recetemnete divorciado e com um filho chamado Jake. Já Charlie é um solteiro por opção que ganha a vida escrevendo jingles para comerciais de TV. Tudo vai bem, até o trio precisar dividir o mesmo teto. Juntos vão criar situações divertidas e nunca antes imaginadas.",
+  "img/icons/plataformas/hboMax.png",
+  "https://play.hbomax.com/page/urn:hbo:page:GYJWmoAFMlMJRhwEAAACy:type:series?camp=googleHBOMAX"
 );
 
 let serie15 = new Serie(
@@ -618,7 +624,9 @@ let serie15 = new Serie(
   "serie",
   "11 temporadas",
   classificacao_10anos,
-  "Com uma narração oculta, a série oferece uma perspectiva honesta e muitas vezes hilária do cotidiano de uma família. O casal Phil e Claire deseja ter um relacionamento aberto com seus três filhos, mas com um adolescente que tenta amadurecer rápido demais, uma filha muito esperta para sua idade e um filho em crise, o desafio é bem grande. Jay e a esposa criam o filho ao mesmo tempo que lidam com os problemas trazidos pela grande diferença de idade. As parceiras Mitchell e Cameron enfrentam novos desafios após a adoção de uma criança do Vietnã."
+  "Com uma narração oculta, a série oferece uma perspectiva honesta e muitas vezes hilária do cotidiano de uma família. O casal Phil e Claire deseja ter um relacionamento aberto com seus três filhos, mas com um adolescente que tenta amadurecer rápido demais, uma filha muito esperta para sua idade e um filho em crise, o desafio é bem grande. Jay e a esposa criam o filho ao mesmo tempo que lidam com os problemas trazidos pela grande diferença de idade. As parceiras Mitchell e Cameron enfrentam novos desafios após a adoção de uma criança do Vietnã.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/br/title/70143858"
 );
 
 let serie16 = new Serie(
@@ -630,7 +638,9 @@ let serie16 = new Serie(
   "serie",
   "14 temporadas",
   classificacao_10anos,
-  "Tipicamente brasileira, a família Silva mora em um subúrbio na Zona Norte do Rio de Janeiro, convive com suas diferenças e ajuda uns aos outros a contornar as situações mais inusitadas."
+  "Tipicamente brasileira, a família Silva mora em um subúrbio na Zona Norte do Rio de Janeiro, convive com suas diferenças e ajuda uns aos outros a contornar as situações mais inusitadas.",
+  "img/icons/plataformas/globoplay.png",
+  "https://globoplay.globo.com/a-grande-familia/t/LXZMGBGCDc/"
 );
 
 let serie17 = new Serie(
@@ -642,7 +652,9 @@ let serie17 = new Serie(
   "serie",
   "33 temporadas",
   classificacao_14anos,
-  "Esta comédia animada de enorme sucesso gira em torno da família de mesmo nome que mora na cidade de Springfield, em um estado americano sem nome. O pai, Homer, não é um típico homem de família. Empregado de uma usina nuclear, ele faz o melhor para comandar sua família, mas frequentemente se vê comandado. A família inclui ainda a carinhosa mãe de cabelo azul Marge, o filho encrenqueiro Bart, a talentosa filha Lisa e a bebê Maggie. Outros moradores de Springfield incluem o vizinho religioso da família, Ned Flanders, o médico, Dr. Hibbert, o bartender Moe e o chefe de polícia Clancy Wiggum."
+  "Esta comédia animada de enorme sucesso gira em torno da família de mesmo nome que mora na cidade de Springfield, em um estado americano sem nome. O pai, Homer, não é um típico homem de família. Empregado de uma usina nuclear, ele faz o melhor para comandar sua família, mas frequentemente se vê comandado. A família inclui ainda a carinhosa mãe de cabelo azul Marge, o filho encrenqueiro Bart, a talentosa filha Lisa e a bebê Maggie. Outros moradores de Springfield incluem o vizinho religioso da família, Ned Flanders, o médico, Dr. Hibbert, o bartender Moe e o chefe de polícia Clancy Wiggum.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.netflix.com/br/title/70143858"
 );
 
 let serie18 = new Serie(
@@ -654,7 +666,9 @@ let serie18 = new Serie(
   "serie",
   "9 temporadas",
   classificacao_12anos,
-  "No formato de pseudodocumentário, a série retrata o cotidiano de um escritório em Scranton, na Pensilvânia, filial da empresa fictícia Dunder Mifflin, de suprimento de papel. Michael Scott (Steve Carell) é um patrão insensível mas que se preocupa com o bem estar de seus empregados, enquanto a série traça um olhar sobre todos eles, destacando suas diferenças e particularidades. "
+  "No formato de pseudodocumentário, a série retrata o cotidiano de um escritório em Scranton, na Pensilvânia, filial da empresa fictícia Dunder Mifflin, de suprimento de papel. Michael Scott (Steve Carell) é um patrão insensível mas que se preocupa com o bem estar de seus empregados, enquanto a série traça um olhar sobre todos eles, destacando suas diferenças e particularidades. ",
+  "img/icons/plataformas/hboMax.png",
+  "https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX"
 );
 
 var series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10, serie11];
