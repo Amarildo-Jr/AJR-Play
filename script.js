@@ -28,7 +28,7 @@ const classificacao_18anos = "img/icons/classificacao/18anos.png";
 
 let filme0 = new Filme(
   "O Rei do Show", 
-  "img/posters/reiDoShow.jpg", 
+  "img/posters/filmes/reiDoShow.jpg", 
   "https://www.youtube.com/embed/r5R6CVp_JzU", 
   "2017",
   "Drama, Comédia, Musical",
@@ -41,7 +41,7 @@ let filme0 = new Filme(
 );
   let filme1 = new Filme(
   "Homem-aranha: Sem Volta pra Casa", 
-  "img/posters/homemAranha.jpg", 
+  "img/posters/filmes/homemAranha.jpg", 
   "https://youtube.com/embed/rzOvXvBNzMc", 
   "2021", 
   "Ação, Aventura, Fantasia", 
@@ -55,7 +55,7 @@ let filme0 = new Filme(
 
   let filme2 = new Filme(
   "O Jogo da Imitação", 
-  "img/posters/jogoDaImitacao.jpeg", 
+  "img/posters/filmes/jogoDaImitacao.jpeg", 
   "https://youtube.com/embed/YIkKbMcJL_4", 
   "2014",
   "Biografia, Drama",
@@ -69,7 +69,7 @@ let filme0 = new Filme(
 
 let filme3 = new Filme(
   "Your name", 
-  "img/posters/yourName.jpg", 
+  "img/posters/filmes/yourName.jpg", 
   "https://youtube.com/embed/soQXM3XVvIU", 
   "2016",
   "Animação, Fantasia",
@@ -83,7 +83,7 @@ let filme3 = new Filme(
 
 let filme4 = new Filme(
   "Sempre ao seu Lado", 
-  "img/posters/hachiko.jpeg", 
+  "img/posters/filmes/hachiko.jpeg", 
   "https://youtube.com/embed/UFY8vW5IedY", 
   "2009",
   "Drama, Família",
@@ -97,7 +97,7 @@ let filme4 = new Filme(
 
 let filme5 = new Filme(
   "Vingadores: Ultimato", 
-  "img/posters/avengers.jpg", 
+  "img/posters/filmes/avengers.jpg", 
   "https://www.youtube.com/embed/4QRdB4RAQMs", 
   "2019",
   "Ação, Fantasia, Aventura",
@@ -111,7 +111,7 @@ let filme5 = new Filme(
 
 let filme6 = new Filme(
   "It: Capítulo II", 
-  "img/posters/it2.jpg", 
+  "img/posters/filmes/it2.jpg", 
   "https://youtube.com/embed/Zs0hLEHAoSs", 
   "2019",
   "Terror",
@@ -125,7 +125,7 @@ let filme6 = new Filme(
 
 let filme7 = new Filme(
   "Os Parças", 
-  "img/posters/osParcas.jpeg", 
+  "img/posters/filmes/osParcas.jpeg", 
   "https://www.youtube.com/embed/FUlEV4tzzQ8", 
   "2017",
   "Comédia",
@@ -139,7 +139,7 @@ let filme7 = new Filme(
 
 let filme8 = new Filme(
   "A Teoria de Tudo", 
-  "img/posters/aTeoriaDeTudo.jpeg", 
+  "img/posters/filmes/aTeoriaDeTudo.jpeg", 
   "https://youtube.com/embed/SbUVNHdPE4w", 
   "2014",
   "Biografia, Romance, Drama",
@@ -153,7 +153,7 @@ let filme8 = new Filme(
 
 let filme9 = new Filme(
   "Coringa", 
-  "img/posters/joker.jpeg", 
+  "img/posters/filmes/joker.jpeg", 
   "https://www.youtube.com/embed/ntSvI2qaRxU", 
   "2019",
   "Drama",
@@ -167,7 +167,7 @@ let filme9 = new Filme(
 
 let filme10 = new Filme(
   "Lucy", 
-  "img/posters/lucy.jpeg", 
+  "img/posters/filmes/lucy.jpeg", 
   "https://www.youtube.com/embed/hI8TuEc45zw", 
   "2014",
   "Ficção Científica, Ação",
@@ -181,7 +181,7 @@ let filme10 = new Filme(
 
 let filme11 = new Filme(
   "Animais fantásticos e onde habitam", 
-  "img/posters/animaisFantasticos.jpg", 
+  "img/posters/filmes/animaisFantasticos.jpg", 
   "https://www.youtube.com/embed/TiaxfJ7QrIo", 
   "2016",
   "Fantasia, Aventura",
@@ -195,7 +195,7 @@ let filme11 = new Filme(
 
 let filme12 = new Filme(
   "Interstelar", 
-  "img/posters/interstellar.jpg", 
+  "img/posters/filmes/interstellar.jpg", 
   "https://www.youtube.com/embed/frD_IiY_A3E", 
   "2014",
   "Ficção Científica, Drama",
@@ -209,7 +209,7 @@ let filme12 = new Filme(
 
 let filme13 = new Filme(
   "Velozes e Furiosos 7", 
-  "img/posters/fast7.jpeg", 
+  "img/posters/filmes/fast7.jpeg", 
   "https://www.youtube.com/embed/hujU0dw6Erk", 
   "2015",
   "Ação",
@@ -223,7 +223,7 @@ let filme13 = new Filme(
 
 let filme14 = new Filme(
   "Sky High: Super Escola de Heróis", 
-  "img/posters/skyHigh.jpg",
+  "img/posters/filmes/skyHigh.jpg",
   "https://www.youtube.com/embed/I82ZaHx0PWk", 
   "2005",
   "Comédia, Fantasia, Família",
@@ -238,7 +238,7 @@ let filme14 = new Filme(
 
 let filme15 = new Filme(
   "Toy Story 4", 
-  "img/posters/toyStory4.jpg",
+  "img/posters/filmes/toyStory4.jpg",
   "https://www.youtube.com/embed/76CslX-q5C4", 
   "2019",
   "Animação, Aventura, Família",
@@ -252,7 +252,7 @@ let filme15 = new Filme(
 
 let filme16 = new Filme(
   "Kung Fu Panda 3", 
-  "img/posters/kungFuPanda3.jpeg",
+  "img/posters/filmes/kungFuPanda3.jpeg",
   "https://www.youtube.com/embed/q75bGipJzIg", 
   "2016",
   "Animação, Aventura, Comédia, Família",
@@ -266,7 +266,7 @@ let filme16 = new Filme(
 
 let filme17 = new Filme(
   "Viva - A Vida é uma Festa", 
-  "img/posters/vivaAvida.jpg", 
+  "img/posters/filmes/vivaAvida.jpg", 
   "https://www.youtube.com/embed/iLmZZV-Nkuk", 
   "2017",
   "Animação, Fantasia, Família",
@@ -280,7 +280,7 @@ let filme17 = new Filme(
 
 let filme18 = new Filme(
   "Como Treinar o seu Dragão 3", 
-  "img/posters/comoTreinarSeuDragao.jpg", 
+  "img/posters/filmes/comoTreinarSeuDragao.jpg", 
   "https://www.youtube.com/embed/P5GAg92efK0", 
   "2019",
   "Animação, Aventura, Família",
@@ -294,7 +294,7 @@ let filme18 = new Filme(
 
 let filme19 = new Filme(
   "Carros", 
-  "img/posters/carros.jpg", 
+  "img/posters/filmes/carros.jpg", 
   "https://www.youtube.com/embed/0I1x9ew1OZU", 
   "2006",
   "Animação, Comédia, Ação, Fantasia",
@@ -308,7 +308,7 @@ let filme19 = new Filme(
 
 let filme20 = new Filme(
   "Bob Esponja: O Filme", 
-  "img/posters/bobEsponja.jpg", 
+  "img/posters/filmes/bobEsponja.jpg", 
   "https://www.youtube.com/embed/Sfbtp2sCP2E", 
   "2004",
   "Animação, Comédia, Família",
@@ -322,7 +322,7 @@ let filme20 = new Filme(
 
 let filme21 = new Filme(
   "Moana: Um Mar de Aventuras", 
-  "img/posters/moana.jpg",
+  "img/posters/filmes/moana.jpg",
   "https://www.youtube.com/embed/XL4Tf1Eohv8", 
   "2017",
   "Animação, Família",
@@ -336,7 +336,7 @@ let filme21 = new Filme(
 
 let filme22 = new Filme(
   "Shrek 2", 
-  "img/posters/shrek2.jpg", 
+  "img/posters/filmes/shrek2.jpg", 
   "https://www.youtube.com/embed/6SKf944GNig", 
   "2004",
   "Animação, Comédia, Família, Aventura",
@@ -350,7 +350,7 @@ let filme22 = new Filme(
 
 let filme23 = new Filme(
   "Homem-Aranha no Aranhaverso", 
-  "img/posters/aranhaverso.jpg", 
+  "img/posters/filmes/aranhaverso.jpg", 
   "https://www.youtube.com/embed/SS6ABPkfmBE", 
   "2019",
   "Animação, Ação, Família",
@@ -364,7 +364,7 @@ let filme23 = new Filme(
 
 let filme24 = new Filme(
   "Procurando Dory", 
-  "img/posters/procurandoDory.jpg", 
+  "img/posters/filmes/procurandoDory.jpg", 
   "https://www.youtube.com/embed/BGNvbWeASbA", 
   "2016",
   "Animação, Comédia, Aventura",
@@ -806,7 +806,8 @@ function abrirDetalhes(id, tipo) {
   ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
   ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
   ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-  ".plataforma {width: 150px;height: 150px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}</style>";
+  ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
+  "</style>";
 }
 
 function mostrarPosters(listaElementos, tipo) {

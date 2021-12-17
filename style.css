@@ -3,7 +3,24 @@
 	src: url('./font/Resolute-NF.ttf');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Mono',monospace;
+  height: 100%;
+  text-align:center;
+  background-color: #03071e;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -16,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9D0208;
+  background: #5e5e5e;
   border: 0px none #ffffff;
   border-radius: 50px;
 }
@@ -47,24 +64,6 @@
   background: transparent;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  font-family: 'Roboto Mono',monospace;
-  height: 100%;
-  text-align:center;
-  background-color: #03071e;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
 
 .container {
   text-align: center;
@@ -309,6 +308,7 @@ header ul li button:first-child{
   cursor: pointer;
   transition: 0.4s;
   transform: scale(1.04);
+  /*border-color: #b33c3c;*/
   border-color: #3cb371;
 }
 
