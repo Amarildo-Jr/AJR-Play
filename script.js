@@ -700,7 +700,7 @@ let jogo0 = new Jogo (
   "https://www.youtube.com/embed/UFhi0PlBnnE", 
   "Novembro/2021",
   "Tiro, Primeira Pessoa",
-  "jogo",
+  ["pc", "console"],
   "Multijogador online",
   classificacao_16anos,
   "Battlefield™ 2042 marca o retorno à emblemática guerra total da franquia. Monte seu pelotão e traga um arsenal de ponta para campos de batalha em escala massiva, ambientados num mundo num futuro próximo, transformado pela desordem.",
@@ -753,16 +753,24 @@ function alterarBackgroundBtn(num) {
   }
 }
 
-function focarNoFilme(id) {
+function focarNoFilme(id, tipo) {
   id = parseInt(id)
+  tipo = parseInt(tipo)
   var posters = document.getElementsByClassName('poster');
   var num_lista = -1;
-  for(x = 0; x < filmes_all.length; x++) {
+  if(tipo == 0) {
+    listaElementos_ = filmes_all;
+  } else if (tipo == 1) {
+    listaElementos_ = series_all;
+  } else if(tipo == 2) {
+    listaElementos_ = jogos_all;
+  }
+  for(x = 0; x < listaElementos_.length; x++) {
     if(num_lista != -1) {
       break;
     }
-    for(i = 0; i < filmes_all[x].length; i++) {
-      if(id === filmes_all[x][i].id) {
+    for(i = 0; i < listaElementos_[x].length; i++) {
+      if(id === listaElementos_[x][i].id) {
         num_lista = x;
         break;
       }
@@ -770,44 +778,53 @@ function focarNoFilme(id) {
   }
   
   if(num_lista === 0) {
-    for(i = 0; i < filmes_all[num_lista].length; i++) {
+    for(i = 0; i < listaElementos_[num_lista].length; i++) {
       if(i != id) {
         posters[i].style = 'opacity: 35%; transition: 0.4s;';
       }
     }
   }
   if(num_lista === 1) {
-    for(i = 0; i < (filmes_all[num_lista].length); i++) {
-      if(i + 15 != id) {
-        posters[i + 15].style = 'opacity: 35%; transition: 0.4s;';
+    for(i = 0; i < (listaElementos_[num_lista].length); i++) {
+      if(i + listaElementos_[num_lista - 1].length != id) {
+        posters[i + listaElementos_[num_lista - 1].length].style = 'opacity: 35%; transition: 0.4s;';
       }
     }
   }
 }
 
-function desfocarNoFilme(id) {
+function desfocarNoFilme(id, tipo) {
   id = parseInt(id)
+  tipo = parseInt(tipo)
   var posters = document.getElementsByClassName('poster');
+  if(tipo == 0) {
+    listaElementos_ = filmes_all;
+  } else if (tipo == 1) {
+    listaElementos_ = series_all;
+  } else if(tipo == 2) {
+    listaElementos_ = jogos_all;
+  }
+
   var num_lista = -1;
-  for(x = 0; x < filmes_all.length; x++) {
+  for(x = 0; x < listaElementos_.length; x++) {
     if(num_lista != -1) {
       break;
     }
-    for(i = 0; i < filmes_all[x].length; i++) {
-      if(id === filmes_all[x][i].id) {
+    for(i = 0; i < listaElementos_[x].length; i++) {
+      if(id === listaElementos_[x][i].id) {
         num_lista = x;
         break;
       }
     }
   }
   if(num_lista === 0) {
-    for(i = 0; i < filmes_all[num_lista].length; i++) {
+    for(i = 0; i < listaElementos_[num_lista].length; i++) {
       posters[i].style = 'opacity: 100%; transition: 0.4s;';
     }
   }
   if(num_lista === 1) {
-    for(i = 0; i < (filmes_all[num_lista].length); i++) {
-      posters[i + 15].style = 'opacity: 100%; transition: 0.4s;';
+    for(i = 0; i < listaElementos_[num_lista].length; i++) {
+      posters[i + listaElementos_[num_lista - 1].length].style = 'opacity: 100%; transition: 0.4s;';
     }
   }
 }
@@ -876,13 +893,18 @@ function abrirDetalhes(id, tipo) {
     for(i = 0; i < filme.plataforma.length; i++) {
       codigo_plataformas += "<a href='" + filme.link[i] + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma[i] + " class='plataforma_j'></a>";
     }
+    var codigo_requisitos = "";
+    if(filme.categoria.includes("pc")) {
+      codigo_requisitos += "<button onclick='mostrarRequisitos'>Requisitos para PC</button>";
+    }
     popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
     "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" + 
     "<h3>Jogue Agora:</h3><div class='plataformas'>" + codigo_plataformas + "</div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2><p class='descricao_filme'>" + filme.descricao + "</p>" +
     "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
     "<tr><td class='info_table'>Multiplayer</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
     "<tr><td class='info_table'>Categoria</td><td class='text_table'>" + filme.genero + "</td></tr>" +
-    "<tr><td class='info_table'>Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
+    "<tr><td class='info_table'>Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div>" +
+    "</div>" + codigo_requisitos +
     "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
     ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-itens: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
     ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
@@ -911,7 +933,7 @@ function mostrarPosters(listaElementos, tipo) {
   for(j = 0; j < listaElementos.length; j++) {
     document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + categorias[j] + "</h2></div><button class='arrow_btn left inactive' onclick='slide(1, " + j + ")'>‹</button>")
     for(i = 0; i < listaElementos[j].length; i++) {
-      document.write("<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "')\"" +
+      document.write("<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
       " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>");
     }
     document.write("<button class='arrow_btn right active' onclick='slide(2, " + j + ")'>›</button>");
