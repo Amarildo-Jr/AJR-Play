@@ -695,6 +695,20 @@ class Jogo {
 }
 
 let jogo0 = new Jogo (
+  "Battlefield 2042", 
+  "img/posters/jogos/battlefield2042.jpg",
+  "https://www.youtube.com/embed/UFhi0PlBnnE", 
+  "Novembro/2021",
+  "Tiro, Primeira Pessoa",
+  "jogo",
+  "Multijogador online",
+  classificacao_16anos,
+  "Battlefield™ 2042 marca o retorno à emblemática guerra total da franquia. Monte seu pelotão e traga um arsenal de ponta para campos de batalha em escala massiva, ambientados num mundo num futuro próximo, transformado pela desordem.",
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/battlefield-2042", "https://store.steampowered.com/app/1517290/Battlefield_2042", "https://www.xbox.com/pt-BR/games/battlefield-2042", "https://store.playstation.com/pt-br/concept/10000758"]
+)
+
+let jogo10 = new Jogo (
   "Rocket League", 
   "img/posters/jogos/rocketLeague.jpg",
   "https://www.youtube.com/embed/SgSX3gOrj60", 
@@ -704,7 +718,7 @@ let jogo0 = new Jogo (
   "Um jogador, Multijogador local/online",
   classificacao_livre,
   "Rocket League apresenta uma mistura de futebol e carros. A ideia é usar seu veículo para atingir uma bola gigante e encaçapa-la no gol adversário. O time com maior pontuação vence a partida",
-  "img/icons/plataformas_games/mobile.png",
+  "img/icons/plataformas_games/epic.png",
   "https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX"
 )
 
@@ -858,20 +872,23 @@ function abrirDetalhes(id, tipo) {
     ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
     "</style>";
   } else if (tipo == 2) {
+    var codigo_plataformas = "";
+    for(i = 0; i < filme.plataforma.length; i++) {
+      codigo_plataformas += "<a href='" + filme.link[i] + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma[i] + " class='plataforma_j'></a>";
+    }
     popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
-    "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-    "<div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'>Jogue agora</a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
-    "<p class='descricao_filme'>" + filme.descricao + "</p>" +
+    "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" + 
+    "<h3>Jogue Agora:</h3><div class='plataformas'>" + codigo_plataformas + "</div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2><p class='descricao_filme'>" + filme.descricao + "</p>" +
     "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
     "<tr><td class='info_table'>Multiplayer</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
     "<tr><td class='info_table'>Categoria</td><td class='text_table'>" + filme.genero + "</td></tr>" +
-    "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
+    "<tr><td class='info_table'>Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
     "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
     ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-itens: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
     ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
     ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
-    ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-    ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
+    ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .trailer_plataformas h3 {margin: 20px 0;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
+    ".plataforma_j {width: 60px;height: 60px; margin: 0 20px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; align-itens: center; text-decoration: none;} .link_plataforma:hover{transform: scale(1.07);transition: 0.4s;text-decoration: underline;}" +
     "</style>";
   }
 }
