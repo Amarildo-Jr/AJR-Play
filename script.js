@@ -957,7 +957,6 @@ function slide(side, section) {
         btn[x].classList.add('active');
         btn[y].classList.remove('active');
         btn[y].classList.add('inactive');
-        
     }
   }
 }
