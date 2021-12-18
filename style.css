@@ -361,3 +361,123 @@ footer p {
   color: #ffffff;
   font-size: 13px;
 }
+
+.link_requisitos {
+  margin-top: 30px;
+  width: 150px;
+}
+
+.btn_requisitos {
+  width: 150px;
+  padding: 10px; 
+  /* background: #370617; */
+  /* background-image: linear-gradient(#12025a, #ff0080); */
+  /* background: #030519; */
+  /* color: #FFFFFF;
+  border-radius: 17px;
+  font-size: 15px; */
+	background-color:#03071E;
+	border-radius:17px;
+	border:1px solid rgb(16, 28, 44);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+
+.btn_requisitos:hover {
+  cursor: pointer;
+	background-color:#050930;
+  border:1px solid #1f2f47;
+  /* background: #03071E; */
+}
+
+.btn_requisitos.active {
+  position:relative;
+	top:1px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index:2;  
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup_requisitos {
+  margin: 70px auto;
+  padding: 20px;
+  /* background: #370617; */
+  background: #030519;
+  border-radius: 5px;
+  max-width: 75%;
+  min-height: 60%;
+  transition: all 2s ease-in-out;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.popup_requisitos h2 {
+  color: #add8e6;
+  /* color: #e6adad; */
+}
+
+.popup_requisitos .close_ {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff9e;
+}
+
+.popup_requisitos .close_:hover {
+  color: rgb(160, 0, 0);
+}
+
+.popup_requisitos .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+dl {
+  margin-right: 20px;
+  text-align: left;
+  font-size: 17px;
+}
+
+dt {
+  color: #ffffff9e;
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+dd {
+  color: #fff;
+  line-height: 30px;
+}
+
+.requisitos {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -676,7 +676,7 @@ var series_all = [series, series0]
 
 var idJogos = 0;
 class Jogo {
-  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma, link) {
+  constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma, link, requisitos_min, recomendados) {
     this.id = idJogos;
     this.nome = nome;
     this.lancamento = lancamento;
@@ -690,6 +690,8 @@ class Jogo {
     this.descricao = descricao;
     this.plataforma = plataforma;
     this.link = link;
+    this.requisitos_min = requisitos_min;
+    this.recomendados = recomendados;
     idJogos++;
   } 
 }
@@ -705,7 +707,9 @@ let jogo0 = new Jogo (
   classificacao_16anos,
   "Battlefield™ 2042 marca o retorno à emblemática guerra total da franquia. Monte seu pelotão e traga um arsenal de ponta para campos de batalha em escala massiva, ambientados num mundo num futuro próximo, transformado pela desordem.",
   ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
-  ["https://www.epicgames.com/store/pt-BR/p/battlefield-2042", "https://store.steampowered.com/app/1517290/Battlefield_2042", "https://www.xbox.com/pt-BR/games/battlefield-2042", "https://store.playstation.com/pt-br/concept/10000758"]
+  ["https://www.epicgames.com/store/pt-BR/p/battlefield-2042", "https://store.steampowered.com/app/1517290/Battlefield_2042", "https://www.xbox.com/pt-BR/games/battlefield-2042", "https://store.playstation.com/pt-br/concept/10000758"],
+  ["Windows 10 de 64 bits", "AMD Ryzen 5 1600, Core i5 6600K", "8 GB", "100 GB", "12", "AMD Radeon RX 560, Nvidia GeForce GTX 1050 Ti"],
+  ["Windows 10 de 64 bits", "AMD Ryzen 7 2700X, Intel Core i7 4790", "16 GB", "100 GB", "12", "AMD Radeon RX 6600 XT, Nvidia GeForce RTX 3060"]
 )
 
 let jogo10 = new Jogo (
@@ -882,10 +886,10 @@ function abrirDetalhes(id, tipo) {
     "<tr><td class='info_table'>Gênero</td><td class='text_table'>" + filme.genero + "</td></tr>" +
     "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
     "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
-    ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-itens: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
+    ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-items: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
     ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
     ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
-    ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
+    ".trailer_plataformas {display: flex; align-items: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
     ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
     "</style>";
   } else if (tipo == 2) {
@@ -895,7 +899,7 @@ function abrirDetalhes(id, tipo) {
     }
     var codigo_requisitos = "";
     if(filme.categoria.includes("pc")) {
-      codigo_requisitos += "<button onclick='mostrarRequisitos'>Requisitos para PC</button>";
+      codigo_requisitos += "<a class='link_requisitos' href='#popup1'><button class='btn_requisitos'>Requisitos para PC</button></a>";
     }
     popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
     "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" + 
@@ -904,13 +908,15 @@ function abrirDetalhes(id, tipo) {
     "<tr><td class='info_table'>Multiplayer</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
     "<tr><td class='info_table'>Categoria</td><td class='text_table'>" + filme.genero + "</td></tr>" +
     "<tr><td class='info_table'>Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div>" +
-    "</div>" + codigo_requisitos +
+    "</div>" + codigo_requisitos + 
+    "<div id='popup1' class='overlay'><div class='popup_requisitos'><div class='requisitos'><h2>Requisitos Mínimos</h2><dl><dt>Sistema Operacional</dt><dd>" + filme.requisitos_min[0] + "</dd><dt>Processador</dt><dd>" + filme.requisitos_min[1] + "</dd><dt>Memória</dt><dd>" + filme.requisitos_min[2] + "</dd><dt>Armazenamento</dt><dd>" + filme.requisitos_min[3] + "</dd><dt>Direct X</dt><dd>" + filme.requisitos_min[4] + "</dd><dt>Placa de Vídeo</dt><dd>" + filme.requisitos_min[5] + "</dd></dl></div><div class='requisitos'>" +
+    "<h2>Recomendados</h2><dl><dt>Sistema Operacional</dt><dd>" + filme.recomendados[0] + "</dd><dt>Processador</dt><dd>" + filme.recomendados[1] + "</dd><dt>Memória</dt><dd>" + filme.recomendados[2] + "</dd><dt>Armazenamento</dt><dd>" + filme.recomendados[3] + "</dd><dt>Direct X</dt><dd>" + filme.recomendados[4] + "</dd><dt>Placa de Vídeo</dt><dd>" + filme.recomendados[5] + "</dd></dl></div><a class='close_' href='#'>&times;</a></div></div>" +
     "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
-    ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-itens: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
+    ".details .details_ {margin: 45px auto; display: flex; flex-direction: column; align-items: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
     ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
     ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
-    ".trailer_plataformas {display: flex; align-itens: center; flex-direction: column;} .trailer_plataformas h3 {margin: 20px 0;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-    ".plataforma_j {width: 60px;height: 60px; margin: 0 20px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; align-itens: center; text-decoration: none;} .link_plataforma:hover{transform: scale(1.07);transition: 0.4s;text-decoration: underline;}" +
+    ".trailer_plataformas {display: flex; align-items: center; flex-direction: column;} .trailer_plataformas h3 {margin: 20px 0;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
+    ".plataforma_j {width: 60px;height: 60px; margin: 0 20px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; align-items: center; text-decoration: none;} .link_plataforma:hover{transform: scale(1.07);transition: 0.4s;text-decoration: underline;}" +
     "</style>";
   }
 }
