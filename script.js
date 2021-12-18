@@ -745,6 +745,14 @@ window.onclick = function(event) {
   }
 }
 
+window.onclick = function(event) {
+  if (event.target == popUp[0]) {
+    popUp[0].style.display = "none";
+    var popUp_content = document.getElementsByClassName("details");
+    popUp_content[0].innerHTML = "";
+  }
+}
+
 function alterarBackgroundBtn(num) {
   num = parseInt(num);
   var elemento = document.getElementsByClassName("btn-nav");

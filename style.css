@@ -330,37 +330,6 @@ header ul li button:first-child{
   border-color: #6a040f;
 }
 
-footer{
-  background: #6a040f;
-  font-size: 13px;
-  width: 100%;
-  height: 100px;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 25px;
-}
-
-footer a .contato_logo:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: 0.2s;
-}
-
-footer .contato_logo {
-  height: 36px;
-  width: 36px;
-  margin: 0 3px;
-}
-
-footer p {
-  margin-top: 10px;
-  color: #ffffff;
-  font-size: 13px;
-}
 
 .link_requisitos {
   margin-top: 30px;
@@ -443,7 +412,7 @@ footer p {
   top: 10px;
   right: 20px;
   transition: all 200ms;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   text-decoration: none;
   color: #ffffff9e;
@@ -458,19 +427,19 @@ footer p {
   overflow: auto;
 }
 
-dl {
+.popup_requisitos dl {
   margin-right: 20px;
   text-align: left;
   font-size: 17px;
 }
 
-dt {
+.popup_requisitos dl dt {
   color: #ffffff9e;
   line-height: 25px;
   margin-top: 15px;
 }
 
-dd {
+.popup_requisitos dl dd {
   color: #fff;
   line-height: 30px;
 }
@@ -480,4 +449,36 @@ dd {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+footer{
+  background: #6a040f;
+  font-size: 13px;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+footer a .contato_logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+footer .contato_logo {
+  height: 36px;
+  width: 36px;
+  margin: 0 3px;
+}
+
+footer p {
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 13px;
 }
