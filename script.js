@@ -708,8 +708,120 @@ let jogo0 = new Jogo (
   "Battlefield™ 2042 marca o retorno à emblemática guerra total da franquia. Monte seu pelotão e traga um arsenal de ponta para campos de batalha em escala massiva, ambientados num mundo num futuro próximo, transformado pela desordem.",
   ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
   ["https://www.epicgames.com/store/pt-BR/p/battlefield-2042", "https://store.steampowered.com/app/1517290/Battlefield_2042", "https://www.xbox.com/pt-BR/games/battlefield-2042", "https://store.playstation.com/pt-br/concept/10000758"],
-  ["Windows 10 de 64 bits", "AMD Ryzen 5 1600, Core i5 6600K", "8 GB", "100 GB", "12", "AMD Radeon RX 560, Nvidia GeForce GTX 1050 Ti"],
-  ["Windows 10 de 64 bits", "AMD Ryzen 7 2700X, Intel Core i7 4790", "16 GB", "100 GB", "12", "AMD Radeon RX 6600 XT, Nvidia GeForce RTX 3060"]
+  ["Windows 10 de 64 bits", "AMD Ryzen 5 1600, Core i5 6600K", "8 GB de RAM", "100 GB de espaço disponível", "Versão 12", "AMD Radeon RX 560, Nvidia GeForce GTX 1050 Ti"],
+  ["Windows 10 de 64 bits", "AMD Ryzen 7 2700X, Intel Core i7 4790", "16 GB de RAM", "100 GB de espaço disponível", "Versão 12", "AMD Radeon RX 6600 XT, Nvidia GeForce RTX 3060"]
+)
+
+let jogo1 = new Jogo (
+  "Far Cry 6", 
+  "img/posters/jogos/farCry6.jpg",
+  "https://www.youtube.com/embed/yzCZyJSGub4", 
+  "Outubro/2021",
+  "FPS, Mundo Aberto, Ação",
+  ["pc", "console"],
+  "Co-op online",
+  classificacao_18anos,
+  "Bem-vindo a Yara, um paraíso tropical parado no tempo. Como ditador de Yara, Antón Castillo (Giancarlo Esposito) está decidido a restaurar sua nação de volta à sua antiga glória de qualquer maneira possível, com seu filho, Diego, obedientemente ao seu lado. Seu governo opressor deu início a uma revolução.",
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/far-cry-6", "https://www.xbox.com/pt-BR/games/far-cry-6", "https://store.playstation.com/pt-br/product/UP0001-PPSA01876_00-FC6EDSTANDARD000"],
+  ["Windows 10 (20H1 ou mais recente) – apenas 64 bits", "AMD Ryzen 3 1200 de 3,1 GHz / Intel i5-4460 de 3,2 GHz", "8 GB de RAM (Configuração de canal duplo)", "60 GB de espaço disponível HDD (SSD recomendado)", "Versão 12", "AMD RX 460 de 4 GB / NVIDIA GTX 960 de 4 GB"],
+  ["Windows 10 (20H1 ou mais recente) – apenas 64 bits", "AMD Ryzen 5 3600X de 3,8 GHz / Intel i7-7700 de 3,6 GHz ou superior", "16 GB de RAM (Configuração de canal duplo)", "60 GB de espaço disponível HDD (SSD recomendado) + 37 GB de Texturas HD (opcional)", "Versão 12", "AMD RX VEGA64 de 8 GB / NVIDIA GTX 1080 de 8 GB ou superior"]
+)
+
+let jogo2 = new Jogo (
+  "Farming Simulator 22", 
+  "img/posters/jogos/farmingSimulator22.jpg",
+  "https://www.youtube.com/embed/qg9VPiUtaic", 
+  "Novembro/2021",
+  "Simulação",
+  ["pc", "console"],
+  "Co-op online, Multijogador",
+  classificacao_livre,
+  "No papel de um fazendeiro moderno, use toda a sua criatividade para construir sua fazenda em três cenários diversos na América e na Europa. Farming Simulator 22 oferece uma enorme variedade de atividades agrícolas com foco em agricultura, pecuária e silvicultura, agora com a empolgante adição de ciclos sazonais!",
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/farming-simulator-22", "https://store.steampowered.com/app/1248130/Farming_Simulator_22/", "https://www.xbox.com/pt-BR/games/store/farming-simulator-22/9P6SRW1HVW9K", "https://store.playstation.com/pt-br/product/UP4399-PPSA02426_00-1548339055872147"],
+  ["Windows 10 Home (x64)", "Intel Core i5-3330 / AMD FX-8320 ou superior", "8 GB de RAM", "35 GB de espaço disponível", "Versão 11", "GeForce GTX 660 / AMD Radeon R7 265 ou superior (min 2GB VRAM)"],
+  ["Windows 10 Home (x64)", "Intel Core i5-5675C / AMD Ryzen 5 1600 ou superior", "8 GB de RAM", "35 GB de espaço disponível", "Versão 11", "GeForce GTX 1060 or Radeon RX 570 ou superior (min 6GB VRAM)"]
+)
+
+let jogo3 = new Jogo (
+  "Halo Infinite", 
+  "img/posters/jogos/haloInfinite.jpg",
+  "https://www.youtube.com/embed/W2hbqp4M6h8", 
+  "Dezembro/2021",
+  "Atirador",
+  ["pc", "console"],
+  "Multijogador online",
+  classificacao_16anos,
+  "A lendária série Halo está de volta com a campanha Master Chief mais ampla de todos os tempos e uma experiência multijogador gratuita e inovadora.",
+  ["img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png"],
+  ["https://store.steampowered.com/app/1240440/Halo_Infinite/", "https://www.xbox.com/pt-BR/games/halo-infinite"],
+  ["Windows 10 RS5 x64", "AMD Ryzen 5 1600 / Intel i5-4440", "8 GB de RAM", "50 GB de espaço disponível", "Versão 12", "AMD RX 570 / Nvidia GTX 1050 Ti"],
+  ["Windows 10 19H2 x64", "AMD Ryzen 7 3700X / Intel i7-9700k", "16 GB de RAM", "50 GB de espaço disponível", "Versão 12", "Radeon RX 5700 XT / Nvidia RTX 2070"]
+)
+
+let jogo4 = new Jogo (
+  "Forza Horizon 5", 
+  "img/posters/jogos/forzaHorizon5.jpg",
+  "https://www.youtube.com/embed/agI0xMBQo2U", 
+  "Novembro/2021",
+  "Corrida",
+  ["pc", "console"],
+  "Multijogador online",
+  classificacao_livre,
+  "Sua Aventura Definitiva de Horizon o aguarda! Explore as paisagens do mundo aberto vibrante e em constante evolução do México, com uma ação de direção divertida e ilimitada em centenas dos melhores carros do mundo.",
+  ["img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png"],
+  ["https://store.steampowered.com/app/1551360/Forza_Horizon_5/", "https://www.xbox.com/pt-BR/games/forza-horizon-5"],
+  ["Windows 10 version 15063.0 ou superior", "Intel i5-4460 / AMD Ryzen 3 1200", "8 GB de RAM", "110 GB de espaço disponível", "Versão 12", "NVidia GTX 970 / AMD RX 470"],
+  ["Windows 10 version 15063.0 ou superior", "Intel i5-8400 / AMD Ryzen 5 1500X", "16 GB de RAM", "110 GB de espaço disponível", "Versão 12", "NVidia GTX 1070 / AMD RX 590"]
+)
+
+let jogo5 = new Jogo (
+  "Just Dance 2022", 
+  "img/posters/jogos/justDance22.jpg",
+  "https://www.youtube.com/embed/EXk2KnrJlqY", 
+  "Novembro/2021",
+  "Música/Ritmo",
+  ["console"],
+  "Co-op local",
+  classificacao_livre,
+  "Just Dance® 2022, o jogo de dança definitivo, está de volta com 40 novas faixas e mais jogabilidade, desde os sucessos das paradas até os grandes clássicos! À procura do jogo perfeito para compartilhar com os amigos e a família? Just Dance 2022 é perfeito para você!",
+  ["img/icons/plataformas_games/switch.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.nintendo.com/pt_BR/games/detail/just-dance-2022-switch/", "https://www.xbox.com/pt-br/games/store/just-dance-2022/9n04kqk2lbzl", "https://store.playstation.com/pt-br/product/UP0001-CUSA27802_00-JD2022PS4SIEA000"],
+  [],
+  []
+)
+
+let jogo6 = new Jogo (
+  "The King of Fighters XV", 
+  "img/posters/jogos/kof_xv.jpg",
+  "https://www.youtube.com/embed/QZnOWSvip1E", 
+  "Fevereiro/2022",
+  "Luta",
+  ["pc", "console"],
+  "Multijogador local/online",
+  classificacao_12anos,
+  "The King of Fighters XV ou KOF XV é a edição 15 da série de jogos eletrônicos de luta The King of Fighters. Um jogo de Luta / Fighting desenvolvido e publicado pela SNK.",
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/the-king-of-fighters-xv", "https://store.steampowered.com/app/1498570/THE_KING_OF_FIGHTERS_XV/", "https://www.xbox.com/pt-BR/games/store/the-king-of-fighters-xv-deluxe-edition-pre-order/9NKWQ9K9D2ZV", "https://store.playstation.com/pt-br/product/UP0576-PPSA02213_00-KOF15PS5USDXPO00"],
+  ["Windows 7", "Intel Core i5", "8 GB de RAM", "35 GB de espaço disponível", "Versão 11", "NVIDIA GeForce GTX 770 de 2 GB / AMD Radeon R9 280 de 3 GB"],
+  ["Windows 10", "Intel Core i7", "16 GB de RAM", "35 GB de espaço disponível", "Versão 11", "NVIDIA GeForce GTX 1060 de 6 GB / AMD Radeon RX 480 de 4 GB"]
+)
+
+let jogo7 = new Jogo (
+  "Call of Duty: Vanguard", 
+  "img/posters/jogos/callOfDutyVanguard.jpg",
+  "https://www.youtube.com/embed/OQ1CwPhE8KQ", 
+  "Novembro/2021",
+  "Tiro, Ação",
+  ["pc", "console"],
+  "Multijogador local/online",
+  classificacao_18anos,
+  "Conquiste Todas as Frentes. Lute em batalhas aéreas sobre o Pacífico, salte de paraquedas na França, defenda o Stalingrado com um fuzil de precisão e avance em meio a inimigos no norte da África.",
+  ["img/icons/plataformas_games/battlenet.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://us.shop.battle.net/pt-br/product/call-of-duty-vanguard", "https://www.xbox.com/pt-BR/games/store/call-of-duty-vanguard-edicao-padrao/9NQQ8B4PJR25", "https://www.playstation.com/pt-br/games/call-of-duty-vanguard/"],
+  ["Windows 10 64 bits (atualização mais recente)", "Intel Core i3-4340 / AMD FX-6300", "8 GB de RAM", "177 GB para todos os modos de jogo", "Versão 12", "NVIDIA GeForce GTX 960 / AMD Radeon RX 470"],
+  ["Windows 10 64 bits (atualização mais recente) ou Windows 11 64 bits (atualização mais recente)", "Intel Core i5-2500k / AMD Ryzen 5 1600X", "12 GB de RAM", "177 GB para todos os modos de jogo", "Versão 12", "NVIDIA GeForce GTX 1060 / AMD Radeon RX 580"]
 )
 
 let jogo10 = new Jogo (
@@ -726,7 +838,7 @@ let jogo10 = new Jogo (
   "https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX"
 )
 
-var jogos = [jogo0]
+var jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
 
 var jogos_all = [jogos]
 
@@ -735,14 +847,6 @@ close[0].onclick = function() {
   popUp[0].style.display = "none";
   var popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "";
-}
-
-window.onclick = function(event) {
-  if (event.target == popUp[0]) {
-    popUp[0].style.display = "none";
-    var popUp_content = document.getElementsByClassName("details");
-    popUp_content[0].innerHTML = "";
-  }
 }
 
 window.onclick = function(event) {
@@ -768,14 +872,17 @@ function alterarBackgroundBtn(num) {
 function focarNoFilme(id, tipo) {
   id = parseInt(id)
   tipo = parseInt(tipo)
-  var posters = document.getElementsByClassName('poster');
+  var posters = []
   var num_lista = -1;
   if(tipo == 0) {
     listaElementos_ = filmes_all;
+    posters = document.getElementsByClassName('poster');
   } else if (tipo == 1) {
     listaElementos_ = series_all;
+    posters = document.getElementsByClassName('poster');
   } else if(tipo == 2) {
     listaElementos_ = jogos_all;
+    posters = document.getElementsByClassName('poster_j');
   }
   for(x = 0; x < listaElementos_.length; x++) {
     if(num_lista != -1) {
@@ -808,13 +915,16 @@ function focarNoFilme(id, tipo) {
 function desfocarNoFilme(id, tipo) {
   id = parseInt(id)
   tipo = parseInt(tipo)
-  var posters = document.getElementsByClassName('poster');
+  var posters = []
   if(tipo == 0) {
     listaElementos_ = filmes_all;
+    posters = document.getElementsByClassName('poster');
   } else if (tipo == 1) {
     listaElementos_ = series_all;
+    posters = document.getElementsByClassName('poster');
   } else if(tipo == 2) {
     listaElementos_ = jogos_all;
+    posters = document.getElementsByClassName('poster_j');
   }
 
   var num_lista = -1;
@@ -918,7 +1028,7 @@ function abrirDetalhes(id, tipo) {
     "<tr><td class='info_table'>Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div>" +
     "</div>" + codigo_requisitos + 
     "<div id='popup1' class='overlay'><div class='popup_requisitos'><div class='requisitos'><h2>Requisitos Mínimos</h2><dl><dt>Sistema Operacional</dt><dd>" + filme.requisitos_min[0] + "</dd><dt>Processador</dt><dd>" + filme.requisitos_min[1] + "</dd><dt>Memória</dt><dd>" + filme.requisitos_min[2] + "</dd><dt>Armazenamento</dt><dd>" + filme.requisitos_min[3] + "</dd><dt>Direct X</dt><dd>" + filme.requisitos_min[4] + "</dd><dt>Placa de Vídeo</dt><dd>" + filme.requisitos_min[5] + "</dd></dl></div><div class='requisitos'>" +
-    "<h2>Recomendados</h2><dl><dt>Sistema Operacional</dt><dd>" + filme.recomendados[0] + "</dd><dt>Processador</dt><dd>" + filme.recomendados[1] + "</dd><dt>Memória</dt><dd>" + filme.recomendados[2] + "</dd><dt>Armazenamento</dt><dd>" + filme.recomendados[3] + "</dd><dt>Direct X</dt><dd>" + filme.recomendados[4] + "</dd><dt>Placa de Vídeo</dt><dd>" + filme.recomendados[5] + "</dd></dl></div><a class='close_' href='#'>&times;</a></div></div>" +
+    "<h2>Especificações Recomendadas</h2><dl><dt>Sistema Operacional</dt><dd>" + filme.recomendados[0] + "</dd><dt>Processador</dt><dd>" + filme.recomendados[1] + "</dd><dt>Memória</dt><dd>" + filme.recomendados[2] + "</dd><dt>Armazenamento</dt><dd>" + filme.recomendados[3] + "</dd><dt>Direct X</dt><dd>" + filme.recomendados[4] + "</dd><dt>Placa de Vídeo</dt><dd>" + filme.recomendados[5] + "</dd></dl></div><a class='close_' href='#'>&times;</a></div></div>" +
     "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
     ".details .details_ {margin: 45px auto; display: flex; flex-direction: column; align-items: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
     ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
@@ -988,11 +1098,11 @@ function slide(side, section) {
         btn[x].classList.add('active');
         btn[y].classList.remove('inactive');
         btn[y].classList.add('active');
-    } if((filmes_sections[section].scrollLeft >= 0 && section === 1) || (filmes_sections[section].scrollLeft >= filmes_sections[section].clientWidth / 2 && section === 0)) {
-        btn[x].classList.remove('inactive');
+    } if((filmes_sections[section].scrollLeft >= 0 && section === 1) || (filmes_sections[section].scrollLeft >= filmes_sections[section].clientWidth && section === 0)) {
+        // btn[x].classList.remove('inactive');
         btn[x].classList.add('active');
-        btn[y].classList.remove('active');
-        btn[y].classList.add('inactive');
+        // btn[y].classList.remove('active');
+        // btn[y].classList.add('inactive');
     }
   }
 }
