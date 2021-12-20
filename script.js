@@ -995,7 +995,7 @@ function abrirDetalhes(id, tipo) {
   var popUp_content = document.getElementsByClassName("details");
 
   if(tipo == 0 || tipo == 1) {
-    popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
+    popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='710' height='372.75' src='" + filme.trailer + "' title='" + filme.nome + 
     "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
     "<div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'>Assista agora</a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
     "<p class='descricao_filme'>" + filme.descricao + "</p>" +
@@ -1019,7 +1019,7 @@ function abrirDetalhes(id, tipo) {
     if(filme.categoria.includes("pc")) {
       codigo_requisitos += "<a class='link_requisitos' href='#popup1'><button class='btn_requisitos'>Requisitos para PC</button></a>";
     }
-    popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='800' height='420' src='" + filme.trailer + "' title='" + filme.nome + 
+    popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='710' height='372.75' src='" + filme.trailer + "' title='" + filme.nome + 
     "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" + 
     "<h3>Jogue Agora:</h3><div class='plataformas'>" + codigo_plataformas + "</div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2><p class='descricao_filme'>" + filme.descricao + "</p>" +
     "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
