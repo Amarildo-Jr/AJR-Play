@@ -873,19 +873,19 @@ let jogo10 = new Jogo (
 )
 
 let jogo11 = new Jogo (
-  "Hitman III", 
-  "img/posters/jogos/hitman3.jpg",
-  "https://www.youtube.com/embed/avAXhnbs69w", 
-  "Janeiro/2021",
+  "Assassins Creed III", 
+  "img/posters/jogos/assassinsCreed3.jpg",
+  "https://www.youtube.com/embed/DCZ2l1BbWyY", 
+  "Outubro/2012",
   "Ação, Aventura",
-  ["PC/Epic", "Xbox", "Playstation", "PC"],
-  "Um jogador, Multijogador online",
-  classificacao_18anos,
-  "Torne-se o icônico assassino Agente 47 mais uma vez nesta conclusão dramática da trilogia Mundo de Assassinato. A morte está à espreita e o Agente 47 retorna, o emocionante desfecho da trilogia World of Assassination.",
-  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
-  ["https://www.epicgames.com/store/pt-BR/p/hitman-3", "https://www.xbox.com/pt-BR/games/store/hitman-3/9N647K4PK0KV", "https://www.playstation.com/pt-br/games/hitman-3/"],
-  ["Windows 10 64-Bits", "Intel Core i5-2500K de 3,3 GHz / AMD Phenom II X4 940", "8 GB de RAM", "80 GB de espaço disponível", "Versão 12", "NVIDIA GeForce GTX 660 / Radeon HD 7870"],
-  ["Windows 10 64-Bits", "Intel Core i7 4790 de 4 GHz ou superior", "16 GB de RAM", "80 GB de espaço disponível", "Versão 12", "Nvidia GeForce GTX 1070 / AMD Radeon RX Vega 56 de 8GB"]
+  ["PC/Steam", "Xbox", "Playstation", "PC"],
+  "Um jogador",
+  classificacao_16anos,
+  "1775. As colónias americanas estão à beira da revolta. Você é Connor, um Assassino nativo-americano que jurou proteger a liberdade do seu povo e da sua nação. Das ruas movimentadas até aos caóticos campos de batalha, assassina os teus inimigos e domina um enorme arsenal de armas.",
+  ["img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://store.steampowered.com/app/911400/Assassins_Creed_III_Remastered/", "https://www.xbox.com/pt-BR/games/store/assassins-creed-iii-remastered/BPMJ413V6BB2", "https://store.playstation.com/pt-br/product/UP0001-CUSA11711_00-AC3GAMEPS4BRAZIL"],
+  ["Windows 7 de 64-Bits", " Intel Core i5 2400 3.1 GHz / AMD FX 6350 3.9 GHz", "8 GB de RAM", "45 GB de espaço disponível", "Versão 11", "Nvidia GeForce GTX 660 / AMD Radeon R9 270X (2GB VRAM com Shader Model 5.0)"],
+  ["Windows 7 de 64-Bits ou superior", "Intel Core i5 3470 3.2 GHz / AMD FX 8350 4.0 GHz", "8 GB de RAM", "45 GB de espaço disponível", "Versão 11", "Nvidia GeForce GTX 770 (4GB) / AMD Radeon R9 280X (3GB) ou superior"]
 )
 
 let jogo12 = new Jogo (
@@ -920,9 +920,41 @@ let jogo13 = new Jogo (
   []
 )
 
+let jogo14 = new Jogo (
+  "Hitman III", 
+  "img/posters/jogos/hitman3.jpg",
+  "https://www.youtube.com/embed/avAXhnbs69w", 
+  "Janeiro/2021",
+  "Ação, Aventura",
+  ["PC/Epic", "Xbox", "Playstation", "PC"],
+  "Um jogador, Multijogador online",
+  classificacao_18anos,
+  "Torne-se o icônico assassino Agente 47 mais uma vez nesta conclusão dramática da trilogia Mundo de Assassinato. A morte está à espreita e o Agente 47 retorna, o emocionante desfecho da trilogia World of Assassination.",
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/hitman-3", "https://www.xbox.com/pt-BR/games/store/hitman-3/9N647K4PK0KV", "https://www.playstation.com/pt-br/games/hitman-3/"],
+  ["Windows 10 64-Bits", "Intel Core i5-2500K de 3,3 GHz / AMD Phenom II X4 940", "8 GB de RAM", "80 GB de espaço disponível", "Versão 12", "NVIDIA GeForce GTX 660 / Radeon HD 7870"],
+  ["Windows 10 64-Bits", "Intel Core i7 4790 de 4 GHz ou superior", "16 GB de RAM", "80 GB de espaço disponível", "Versão 12", "Nvidia GeForce GTX 1070 / AMD Radeon RX Vega 56 de 8GB"]
+)
+
+let jogo15 = new Jogo (
+  "Grand Theft Auto V", 
+  "img/posters/jogos/gta5.jpg",
+  "https://www.youtube.com/embed/dnSTk7wCtAM", 
+  "Novembro/2014",
+  "Ação, Aventura",
+  ["PC/Epic", "PC/Steam", "Xbox", "Playstation", "PC"],
+  "Um jogador, Multijogador online",
+  classificacao_18anos,
+  "Quando um malandro de rua, um ladrão de bancos aposentado e um psicopata aterrorizante se envolvem com alguns dos criminosos mais assustadores e loucos do submundo, o governo dos EUA e a indústria do entretenimento, eles devem realizar golpes ousados para sobreviver nessa cidade implacável onde não podem confiar em ninguém, nem mesmo um no outro.",
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/grand-theft-auto-v", "https://store.steampowered.com/bundle/5699/Grand_Theft_Auto_V_Edio_Premium/", "https://www.xbox.com/pt-BR/games/store/grand-theft-auto-v-edicao-premium/C496CLVXMJP8/0001", "https://store.playstation.com/pt-br/product/UP1004-CUSA00419_00-PREMIUMPACKOG001"],
+  ["Windows 8/8.1 de 64-Bits", "Intel Core 2 Quad CPU Q6600 com 2.40 GHz (4 CPUs) / AMD Phenom 9850 Quad-Core (4 CPUs) com 2.5 GHz", "4 GB de RAM", "90 GB de espaço disponível", "Versão 10", "NVIDIA 9800 GT 1 GB / AMD HD 4870 1 GB"],
+  ["Windows 8/8.1 de 64-Bits ou superior", "Intel Core i5 3470 com 3.2GHZ (4 CPUs) / AMD X8 FX-8350 com 4GHZ (8 CPUs)", "8 GB de RAM", "90 GB de espaço disponível", "Versão 10", "NVIDIA GTX 660 2GB / AMD HD7870 2GB"]
+)
+
 let jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
 
-let jogos0 = [jogo8, jogo9, jogo10, jogo11, jogo12, jogo13]
+let jogos0 = [jogo8, jogo9, jogo10, jogo11, jogo12, jogo13, jogo14, jogo15]
 
 let jogos_all = [jogos, jogos0]
 
