@@ -824,23 +824,41 @@ let jogo7 = new Jogo (
   ["Windows 10 64 bits (atualização mais recente) ou Windows 11 64 bits (atualização mais recente)", "Intel Core i5-2500k / AMD Ryzen 5 1600X", "12 GB de RAM", "177 GB para todos os modos de jogo", "Versão 12", "NVIDIA GeForce GTX 1060 / AMD Radeon RX 580"]
 )
 
-let jogo10 = new Jogo (
+let jogo8 = new Jogo (
   "Rocket League", 
   "img/posters/jogos/rocketLeague.jpg",
   "https://www.youtube.com/embed/SgSX3gOrj60", 
-  "2015",
+  "Julho/2015",
   "Esporte, Ação, Direção/Corrida",
-  "jogo",
+  ["PC/Epic", "Switch", "Xbox", "Playstation", "PC"],
   "Um jogador, Multijogador local/online",
   classificacao_livre,
   "Rocket League apresenta uma mistura de futebol e carros. A ideia é usar seu veículo para atingir uma bola gigante e encaçapa-la no gol adversário. O time com maior pontuação vence a partida",
-  "img/icons/plataformas_games/epic.png",
-  "https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX"
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/switch.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/rocket-league", "https://www.nintendo.com/games/detail/rocket-league-switch/", "https://www.xbox.com/pt-BR/games/store/rocket-league/C125W9BG2K0V", "https://store.playstation.com/pt-br/concept/203715"],
+  ["Windows 7 (64 bits) ou Sistema Operacional Windows mais recente (64 bits)", "Dual Core de 2,5 GHz", "4 GB de RAM", "20 GB de espaço disponível", "Versão 11", "NVIDIA GeForce 760, AMD Radeon R7 270X ou superior"],
+  ["Windows 7 (64 bits) ou Sistema Operacional Windows mais recente (64 bits)", "Quad Core de 3,0 GHz ou superior", "8 GB de RAM", "20 GB de espaço disponível", "Versão 11", "NVIDIA GeForce GTX 1060, AMD Radeon RX 470 ou superior"]
+)
+
+let jogo9 = new Jogo (
+  "Life is Strange", 
+  "img/posters/jogos/lifeIsStrange.jpg",
+  "https://www.youtube.com/embed/DS4gzq6gX_g", 
+  "Janeiro/2015",
+  "Ação, Aventura",
+  ["PC/Steam", "Xbox", "Playstation", "PC"],
+  "Um jogador",
+  classificacao_16anos,
+  "Life is Strange é uma aventura episódica que segue a história de Max Caulfield, uma estudante dedicada à fotografia que descobre que pode voltar atrás no tempo e salvar a sua melhor amiga, Chloe Price. As duas começam a investigar o misterioso desaparecimento da colega Rachel Amber, revelando o lado mais negro da vida em Arcadia Bay. Entretanto, Max terá pouco tempo para se dar conta de que alterar o passado pode criar um futuro devastador.",
+  ["img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://store.steampowered.com/sub/56692/", "https://www.xbox.com/pt-BR/games/store/life-is-strange-complete-season-episodes-1-5/C205FBSPZ3W8", "https://store.playstation.com/pt-br/product/UP0082-CUSA01442_00-B000000000001366"],
+  ["Windows Vista", "Dual Core 2.0GHz ou equivalente", "2 GB de RAM", "10.6 GB de espaço disponível", "Versão 9.0", "ATI ou placa NVidia com 512 MB RAM (não recomendado para Intel HD Graphics)"],
+  ["Windows 7 ou superior", "Dual Core 3.0GHz ou superior", "2 GB de RAM", "10.6 GB de espaço disponível", "Versão 9.0", "ATI ou placa NVidia com 1024 MB RAM (NVIDIA GeForce GTX 260 ou ATI HD 4890)"]
 )
 
 let jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
 
-let jogos0 = [jogo10]
+let jogos0 = [jogo8, jogo9]
 
 let jogos_all = [jogos, jogos0]
 
@@ -1052,7 +1070,7 @@ function mostrarPosters(listaElementos, tipo) {
     categorias = ["Lista do Adm", "Comédia"]
     classe = "poster";
   } else if (tipo == 2) {
-    categorias = ["Lançamentos", "Plataforma"]
+    categorias = ["Lançamentos", "Lista do Adm"]
     classe = "poster_j";
   }
   
