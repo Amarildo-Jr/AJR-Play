@@ -881,16 +881,48 @@ let jogo11 = new Jogo (
   ["PC/Epic", "Xbox", "Playstation", "PC"],
   "Um jogador, Multijogador online",
   classificacao_18anos,
-  " Torne-se o icônico assassino Agente 47 mais uma vez nesta conclusão dramática da trilogia Mundo de Assassinato. A morte está à espreita e o Agente 47 retorna, o emocionante desfecho da trilogia World of Assassination.",
+  "Torne-se o icônico assassino Agente 47 mais uma vez nesta conclusão dramática da trilogia Mundo de Assassinato. A morte está à espreita e o Agente 47 retorna, o emocionante desfecho da trilogia World of Assassination.",
   ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
   ["https://www.epicgames.com/store/pt-BR/p/hitman-3", "https://www.xbox.com/pt-BR/games/store/hitman-3/9N647K4PK0KV", "https://www.playstation.com/pt-br/games/hitman-3/"],
   ["Windows 10 64-Bits", "Intel Core i5-2500K de 3,3 GHz / AMD Phenom II X4 940", "8 GB de RAM", "80 GB de espaço disponível", "Versão 12", "NVIDIA GeForce GTX 660 / Radeon HD 7870"],
   ["Windows 10 64-Bits", "Intel Core i7 4790 de 4 GHz ou superior", "16 GB de RAM", "80 GB de espaço disponível", "Versão 12", "Nvidia GeForce GTX 1070 / AMD Radeon RX Vega 56 de 8GB"]
 )
 
+let jogo12 = new Jogo (
+  "Overcooked 2", 
+  "img/posters/jogos/overcooked2.jpg",
+  "https://www.youtube.com/embed/qpzmirQllT0", 
+  "Agosto/2018",
+  "Simulação, Aventura",
+  ["PC/Epic", "PC/Steam", "Switch", "Xbox", "Playstation", "PC"],
+  "Um jogador, Co-op local/online",
+  classificacao_livre,
+  "Overcooked retorna com uma nova porção de ação culinária caótica! Viaje de volta para o Reino da Cebola e reúna sua equipe de chefes de cozinha no clássico modo cooperativo local ou online para até quatro jogadores. Segure seus aventais... está na hora de salvar o mundo (novamente!)",
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/switch.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/overcooked-2", "https://store.steampowered.com/app/728880/Overcooked_2/", "https://www.nintendo.com/pt_BR/games/detail/overcooked-2-switch/", "https://www.xbox.com/pt-BR/games/store/overcooked-2/BVJLKDG2TX8H", "https://store.playstation.com/pt-br/product/UP4064-CUSA10940_00-OVERCOOKED200000"],
+  ["Windows 7 de 64-Bits", "Intel i3-2100 / AMD A8-5600k", "4 GB de RAM", "3 GB de espaço disponível", "Versão 11", "GeForce GTX 630 / Radeon HD 6570"],
+  ["Windows 7 de 64-Bits ou superior", "Intel i5-650 / AMD A10-5800K", "8 GB de RAM", "3 GB de espaço disponível", "Versão 11", "Nvidia GeForce GTX 650 / Radeon HD 7510"]
+)
+
+let jogo13 = new Jogo (
+  "Overcooked 2", 
+  "img/posters/jogos/spiderMan.jpg",
+  "https://www.youtube.com/embed/GqPLeQJ6lJk", 
+  "Novembro/2020",
+  "Ação, Aventura",
+  ["Playstation"],
+  "Um jogador",
+  classificacao_12anos,
+  "Na mais nova aventura do universo de Marvel's Spider-Man, o adolescente Miles Morales está se adaptando a um novo lar enquanto segue os passos de seu mentor, Peter Parker, como novo Spider-Man. Mas quando uma violenta disputa de forças ameaça destruir sua vizinhança, o aspirante a herói percebe que com grandes poderes também vêm grandes responsabilidades. Para salvar a Nova York da Marvel, Miles deve reconhecer e assumir o título de Spider-Man.",
+  ["img/icons/plataformas_games/ps.png"],
+  ["https://www.playstation.com/pt-br/games/marvels-spider-man-miles-morales/"],
+  [],
+  []
+)
+
 let jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
 
-let jogos0 = [jogo8, jogo9, jogo10, jogo11]
+let jogos0 = [jogo8, jogo9, jogo10, jogo11, jogo12, jogo13]
 
 let jogos_all = [jogos, jogos0]
 
