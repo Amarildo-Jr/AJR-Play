@@ -702,7 +702,7 @@ let jogo0 = new Jogo (
   "https://www.youtube.com/embed/UFhi0PlBnnE", 
   "Novembro/2021",
   "Tiro, Primeira Pessoa",
-  ["pc", "console"],
+  ["PC/Epic", "PC/Steam", "Xbox", "Playstation", "PC"],
   "Multijogador online",
   classificacao_16anos,
   "Battlefield™ 2042 marca o retorno à emblemática guerra total da franquia. Monte seu pelotão e traga um arsenal de ponta para campos de batalha em escala massiva, ambientados num mundo num futuro próximo, transformado pela desordem.",
@@ -718,7 +718,7 @@ let jogo1 = new Jogo (
   "https://www.youtube.com/embed/yzCZyJSGub4", 
   "Outubro/2021",
   "FPS, Mundo Aberto, Ação",
-  ["pc", "console"],
+  ["PC/Epic", "Xbox", "Playstation", "PC"],
   "Co-op online",
   classificacao_18anos,
   "Bem-vindo a Yara, um paraíso tropical parado no tempo. Como ditador de Yara, Antón Castillo (Giancarlo Esposito) está decidido a restaurar sua nação de volta à sua antiga glória de qualquer maneira possível, com seu filho, Diego, obedientemente ao seu lado. Seu governo opressor deu início a uma revolução.",
@@ -734,7 +734,7 @@ let jogo2 = new Jogo (
   "https://www.youtube.com/embed/qg9VPiUtaic", 
   "Novembro/2021",
   "Simulação",
-  ["pc", "console"],
+  ["PC/Epic", "PC/Steam", "Xbox", "Playstation", "PC"],
   "Co-op online, Multijogador",
   classificacao_livre,
   "No papel de um fazendeiro moderno, use toda a sua criatividade para construir sua fazenda em três cenários diversos na América e na Europa. Farming Simulator 22 oferece uma enorme variedade de atividades agrícolas com foco em agricultura, pecuária e silvicultura, agora com a empolgante adição de ciclos sazonais!",
@@ -750,7 +750,7 @@ let jogo3 = new Jogo (
   "https://www.youtube.com/embed/W2hbqp4M6h8", 
   "Dezembro/2021",
   "Atirador",
-  ["pc", "console"],
+  ["PC/Steam", "Xbox", "PC"],
   "Multijogador online",
   classificacao_16anos,
   "A lendária série Halo está de volta com a campanha Master Chief mais ampla de todos os tempos e uma experiência multijogador gratuita e inovadora.",
@@ -766,7 +766,7 @@ let jogo4 = new Jogo (
   "https://www.youtube.com/embed/agI0xMBQo2U", 
   "Novembro/2021",
   "Corrida",
-  ["pc", "console"],
+  ["PC/Steam", "Xbox", "PC"],
   "Multijogador online",
   classificacao_livre,
   "Sua Aventura Definitiva de Horizon o aguarda! Explore as paisagens do mundo aberto vibrante e em constante evolução do México, com uma ação de direção divertida e ilimitada em centenas dos melhores carros do mundo.",
@@ -782,7 +782,7 @@ let jogo5 = new Jogo (
   "https://www.youtube.com/embed/EXk2KnrJlqY", 
   "Novembro/2021",
   "Música/Ritmo",
-  ["console"],
+  ["Switch", "Xbox", "Playstation"],
   "Co-op local",
   classificacao_livre,
   "Just Dance® 2022, o jogo de dança definitivo, está de volta com 40 novas faixas e mais jogabilidade, desde os sucessos das paradas até os grandes clássicos! À procura do jogo perfeito para compartilhar com os amigos e a família? Just Dance 2022 é perfeito para você!",
@@ -798,7 +798,7 @@ let jogo6 = new Jogo (
   "https://www.youtube.com/embed/QZnOWSvip1E", 
   "Fevereiro/2022",
   "Luta",
-  ["pc", "console"],
+  ["PC/Epic", "PC/Steam", "Xbox", "Playstation", "PC"],
   "Multijogador local/online",
   classificacao_12anos,
   "The King of Fighters XV ou KOF XV é a edição 15 da série de jogos eletrônicos de luta The King of Fighters. Um jogo de Luta / Fighting desenvolvido e publicado pela SNK.",
@@ -814,7 +814,7 @@ let jogo7 = new Jogo (
   "https://www.youtube.com/embed/OQ1CwPhE8KQ", 
   "Novembro/2021",
   "Tiro, Ação",
-  ["pc", "console"],
+  ["PC/Battle Net", "Xbox", "Playstation", "PC"],
   "Multijogador local/online",
   classificacao_18anos,
   "Conquiste Todas as Frentes. Lute em batalhas aéreas sobre o Pacífico, salte de paraquedas na França, defenda o Stalingrado com um fuzil de precisão e avance em meio a inimigos no norte da África.",
@@ -1013,10 +1013,10 @@ function abrirDetalhes(id, tipo) {
   } else if (tipo == 2) {
     let codigo_plataformas = "";
     for(i = 0; i < filme.plataforma.length; i++) {
-      codigo_plataformas += "<a href='" + filme.link[i] + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma[i] + " class='plataforma_j'></a>";
+      codigo_plataformas += "<a href='" + filme.link[i] + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma[i] + " class='plataforma_j'><section>Jogue no " + filme.categoria[i] + "</section></a>";
     }
     let codigo_requisitos = "";
-    if(filme.categoria.includes("pc")) {
+    if(filme.categoria.includes("PC")) {
       codigo_requisitos += "<a class='link_requisitos' href='#popup1'><button class='btn_requisitos'>Requisitos para PC</button></a>";
     }
     popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='710' height='372.75' src='" + filme.trailer + "' title='" + filme.nome + 
@@ -1035,7 +1035,7 @@ function abrirDetalhes(id, tipo) {
     ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
     ".trailer_plataformas {display: flex; align-items: center; flex-direction: column;} .trailer_plataformas h3 {margin: 20px 0;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
     ".plataforma_j {width: 60px;height: 60px; margin: 0 20px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; align-items: center; text-decoration: none;} .link_plataforma:hover{transform: scale(1.07);transition: 0.4s;text-decoration: underline;}" +
-    "</style>";
+    ".link_plataforma section {visibility: hidden; width: 110px; text-align:center;} .link_plataforma:hover section {visibility: visible;}</style>";
   }
 }
 
