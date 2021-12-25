@@ -840,7 +840,9 @@ let jogo10 = new Jogo (
 
 let jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
 
-let jogos_all = [jogos]
+let jogos0 = [jogo10]
+
+let jogos_all = [jogos, jogos0]
 
 let close = document.getElementsByClassName("close");
 close[0].onclick = function() {

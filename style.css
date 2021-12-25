@@ -198,7 +198,7 @@ header ul li button:first-child{
   left:0;
   min-width: 100%; 
   height: 100%;
-  background-color: #000000bd;
+  background-color: #03071E;
   overflow-x: hidden;
 }
 
@@ -206,8 +206,7 @@ header ul li button:first-child{
   color: #FFFFFF;
   background-color: #03071E;
   min-width: 100%; 
-  padding: 10px;
-  overflow-y: scroll;
+  margin: 10px;
 }
 
 .close {
