@@ -856,9 +856,41 @@ let jogo9 = new Jogo (
   ["Windows 7 ou superior", "Dual Core 3.0GHz ou superior", "2 GB de RAM", "10.6 GB de espaço disponível", "Versão 9.0", "ATI ou placa NVidia com 1024 MB RAM (NVIDIA GeForce GTX 260 ou ATI HD 4890)"]
 )
 
+let jogo10 = new Jogo (
+  "Valorant", 
+  "img/posters/jogos/valorant.jpg",
+  "https://www.youtube.com/embed/sE3UqyzKR30", 
+  "Junho/2020",
+  "FPS, Ação",
+  ["PC/Riot Games", "PC"],
+  "Multijogador Online",
+  classificacao_14anos,
+  "O game é um fps 5v5 tático que mistura elementos de Counter Strike: Global Offensive (CS:GO) com Overwatch. O título conta com um elenco de personagens com habilidades específicas e mapas onde o objetivo é ativar um bomba ou defender um território. Os times começam a partida como ataque ou defesa, e trocam de lado na décima segunda rodada. Vence a equipe que fizer 13 pontos primeiro, e os jogos têm até 24 rounds.",
+  ["img/icons/plataformas_games/riotGames.png"],
+  ["https://playvalorant.com/pt-br/"],
+  ["Windows 7/8/10 64-Bit", "Intel Core 2 Duo E8400 (Intel), Athlon 200GE (AMD)", "4 GB de RAM", "10 GB de espaço disponível", "Versão 11", "Intel HD 4000, Radeon R5 200"],
+  ["Windows 7/8/10 64-Bit", "Intel i3-4150 (Intel), Ryzen 3 1200 (AMD) ou superior", "4 GB de RAM", "10 GB de espaço disponível", "Versão 11", "Geforce GT 730, Radeon R7 240"]
+)
+
+let jogo11 = new Jogo (
+  "Hitman III", 
+  "img/posters/jogos/hitman3.jpg",
+  "https://www.youtube.com/embed/avAXhnbs69w", 
+  "Janeiro/2021",
+  "Ação, Aventura",
+  ["PC/Epic", "Xbox", "Playstation", "PC"],
+  "Um jogador, Multijogador online",
+  classificacao_18anos,
+  " Torne-se o icônico assassino Agente 47 mais uma vez nesta conclusão dramática da trilogia Mundo de Assassinato. A morte está à espreita e o Agente 47 retorna, o emocionante desfecho da trilogia World of Assassination.",
+  ["img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://www.epicgames.com/store/pt-BR/p/hitman-3", "https://www.xbox.com/pt-BR/games/store/hitman-3/9N647K4PK0KV", "https://www.playstation.com/pt-br/games/hitman-3/"],
+  ["Windows 10 64-Bits", "Intel Core i5-2500K de 3,3 GHz / AMD Phenom II X4 940", "8 GB de RAM", "80 GB de espaço disponível", "Versão 12", "NVIDIA GeForce GTX 660 / Radeon HD 7870"],
+  ["Windows 10 64-Bits", "Intel Core i7 4790 de 4 GHz ou superior", "16 GB de RAM", "80 GB de espaço disponível", "Versão 12", "Nvidia GeForce GTX 1070 / AMD Radeon RX Vega 56 de 8GB"]
+)
+
 let jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
 
-let jogos0 = [jogo8, jogo9]
+let jogos0 = [jogo8, jogo9, jogo10, jogo11]
 
 let jogos_all = [jogos, jogos0]
 
