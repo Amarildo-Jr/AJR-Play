@@ -1,4 +1,4 @@
-var idFilmes = 0;
+let idFilmes = 0;
 
 class Filme {
   constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma, link) {
@@ -376,14 +376,14 @@ let filme24 = new Filme(
   "https://www.disneyplus.com/pt-br/movies/procurando-dory/2L6w30vnqebX"
 );
 
-var filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
-var filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24]
+let filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
+let filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24]
 
-var filmes_all = [filmes, filmes0]
+let filmes_all = [filmes, filmes0]
 
-var popUp = document.getElementsByClassName("popUp");
+let popUp = document.getElementsByClassName("popUp");
 
-var idSeries = 0;
+let idSeries = 0;
 
 class Serie {
   constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma, link) {
@@ -670,11 +670,11 @@ let serie18 = new Serie(
   "https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX"
 );
 
-var series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10, serie11];
-var series0 = [serie12, serie13, serie14, serie15, serie16, serie17, serie18]
-var series_all = [series, series0]
+let series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10, serie11];
+let series0 = [serie12, serie13, serie14, serie15, serie16, serie17, serie18]
+let series_all = [series, series0]
 
-var idJogos = 0;
+let idJogos = 0;
 class Jogo {
   constructor(nome, imagem, trailer, lancamento, genero, categoria, duracao, classificacao, descricao, plataforma, link, requisitos_min, recomendados) {
     this.id = idJogos;
@@ -838,28 +838,28 @@ let jogo10 = new Jogo (
   "https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX"
 )
 
-var jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
+let jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
 
-var jogos_all = [jogos]
+let jogos_all = [jogos]
 
-var close = document.getElementsByClassName("close");
+let close = document.getElementsByClassName("close");
 close[0].onclick = function() {
   popUp[0].style.display = "none";
-  var popUp_content = document.getElementsByClassName("details");
+  let popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "";
 }
 
 window.onclick = function(event) {
   if (event.target == popUp[0]) {
     popUp[0].style.display = "none";
-    var popUp_content = document.getElementsByClassName("details");
+    let popUp_content = document.getElementsByClassName("details");
     popUp_content[0].innerHTML = "";
   }
 }
 
 function alterarBackgroundBtn(num) {
   num = parseInt(num);
-  var elemento = document.getElementsByClassName("btn-nav");
+  let elemento = document.getElementsByClassName("btn-nav");
   for (i = 0; i < elemento.length; i++) {
     if (i != num && elemento[i].classList) {
       elemento[i].classList.remove('active');
@@ -872,8 +872,8 @@ function alterarBackgroundBtn(num) {
 function focarNoFilme(id, tipo) {
   id = parseInt(id)
   tipo = parseInt(tipo)
-  var posters = []
-  var num_lista = -1;
+  let posters = []
+  let num_lista = -1;
   if(tipo == 0) {
     listaElementos_ = filmes_all;
     posters = document.getElementsByClassName('poster');
@@ -915,7 +915,7 @@ function focarNoFilme(id, tipo) {
 function desfocarNoFilme(id, tipo) {
   id = parseInt(id)
   tipo = parseInt(tipo)
-  var posters = []
+  let posters = []
   if(tipo == 0) {
     listaElementos_ = filmes_all;
     posters = document.getElementsByClassName('poster');
@@ -927,7 +927,7 @@ function desfocarNoFilme(id, tipo) {
     posters = document.getElementsByClassName('poster_j');
   }
 
-  var num_lista = -1;
+  let num_lista = -1;
   for(x = 0; x < listaElementos_.length; x++) {
     if(num_lista != -1) {
       break;
@@ -954,8 +954,8 @@ function desfocarNoFilme(id, tipo) {
 function abrirDetalhes(id, tipo) {
   id = parseInt(id);
   tipo = parseInt(tipo);
-  var filme;
-  var encontrado = false;
+  let filme;
+  let encontrado = false;
   if(tipo == 0) {
     for(x = 0; x < filmes_all.length; x++) {
       if(encontrado === true) {break;}
@@ -990,9 +990,9 @@ function abrirDetalhes(id, tipo) {
       }
     }
   }
-  var popUp = document.getElementsByClassName("popUp");
+  let popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "flex";
-  var popUp_content = document.getElementsByClassName("details");
+  let popUp_content = document.getElementsByClassName("details");
 
   if(tipo == 0 || tipo == 1) {
     popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='710' height='372.75' src='" + filme.trailer + "' title='" + filme.nome + 
@@ -1011,11 +1011,11 @@ function abrirDetalhes(id, tipo) {
     ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
     "</style>";
   } else if (tipo == 2) {
-    var codigo_plataformas = "";
+    let codigo_plataformas = "";
     for(i = 0; i < filme.plataforma.length; i++) {
       codigo_plataformas += "<a href='" + filme.link[i] + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma[i] + " class='plataforma_j'></a>";
     }
-    var codigo_requisitos = "";
+    let codigo_requisitos = "";
     if(filme.categoria.includes("pc")) {
       codigo_requisitos += "<a class='link_requisitos' href='#popup1'><button class='btn_requisitos'>Requisitos para PC</button></a>";
     }
@@ -1041,8 +1041,8 @@ function abrirDetalhes(id, tipo) {
 
 function mostrarPosters(listaElementos, tipo) {
   tipo = parseInt(tipo);
-  var categorias = [];
-  var classe = "";
+  let categorias = [];
+  let classe = "";
   if(tipo == 0) {
     categorias = ["Lista do Adm", "Animação"]
     classe = "poster";
@@ -1065,11 +1065,11 @@ function mostrarPosters(listaElementos, tipo) {
   }
 }
 
-var filmes_sections = document.getElementsByClassName('filmes')
+let filmes_sections = document.getElementsByClassName('filmes')
 
 function slide(side, section) {
   //side = 1 deslizar pra direita -> side = 2 deslizar pra esquerda
-  var x, y;
+  let x, y;
   if(section === 0) {
     x = 0;
     y = 1;
