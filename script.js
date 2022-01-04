@@ -1168,7 +1168,7 @@ function mostrarPosters(listaElementos, tipo) {
   }
   
   for(j = 0; j < listaElementos.length; j++) {
-    document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + categorias[j] + "</h2></div><button class='arrow_btn left inactive' onclick='slide(1, " + j + ")'>‹</button>")
+    document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + categorias[j] + "</h2></div><button class='arrow_btn left active' onclick='slide(1, " + j + ")'>‹</button>")
     for(i = 0; i < listaElementos[j].length; i++) {
       document.write("<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
       " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>");
@@ -1193,29 +1193,11 @@ function slide(side, section) {
   btn = document.getElementsByClassName('arrow_btn')
   if(side === 1) {
     if(filmes_sections[section].scrollLeft > 0) {
-      filmes_sections[section].scrollLeft -= filmes_sections[section].clientWidth - 100;
-      btn[y].classList.remove('inactive');
-      btn[y].classList.add('active');
-      btn[x].classList.remove('inactive');
-      btn[x].classList.add('active');
-    } if (filmes_sections[section].scrollLeft <= filmes_sections[section].clientWidth) {
-      btn[x].classList.remove('active');
-      btn[x].classList.add('inactive');
-      btn[y].classList.remove('inactive');
-      btn[y].classList.add('active');
+      filmes_sections[section].scrollLeft -= filmes_sections[section].clientWidth - 100;  
     }
   } else if(side === 2) {
     if(filmes_sections[section].scrollLeft < filmes_sections[section].scrollWidth) {
         filmes_sections[section].scrollLeft += filmes_sections[section].clientWidth - 100;
-        btn[x].classList.remove('inactive');
-        btn[x].classList.add('active');
-        btn[y].classList.remove('inactive');
-        btn[y].classList.add('active');
-    } if((filmes_sections[section].scrollLeft >= 0 && section === 1) || (filmes_sections[section].scrollLeft >= filmes_sections[section].clientWidth && section === 0)) {
-        // btn[x].classList.remove('inactive');
-        btn[x].classList.add('active');
-        // btn[y].classList.remove('active');
-        // btn[y].classList.add('inactive');
     }
   }
 }
