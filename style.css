@@ -423,7 +423,7 @@ header ul li button:first-child{
   /* color: #FFFFFF;
   border-radius: 17px;
   font-size: 15px; */
-	background-color:#03071E;
+	background-color:#0000008a;
 	border-radius:17px;
 	border:1px solid rgb(16, 28, 44);
 	display:inline-block;
@@ -438,7 +438,7 @@ header ul li button:first-child{
 
 .btn_requisitos:hover {
   cursor: pointer;
-	background-color:#050930;
+	background-color:#04082e;
   border:1px solid #1f2f47;
   /* background: #03071E; */
 }

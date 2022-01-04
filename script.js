@@ -970,14 +970,6 @@ close[0].onclick = function() {
   popUp_content[0].innerHTML = "";
 }
 
-window.onclick = function(event) {
-  if (event.target == popUp[0]) {
-    popUp[0].style.display = "none";
-    let popUp_content = document.getElementsByClassName("details");
-    popUp_content[0].innerHTML = "";
-  }
-}
-
 function alterarBackgroundBtn(num) {
   num = parseInt(num);
   let elemento = document.getElementsByClassName("btn-nav");
