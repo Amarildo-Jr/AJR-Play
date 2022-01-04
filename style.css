@@ -468,13 +468,13 @@ footer{
 footer a .contato_logo:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 footer .contato_logo {
   height: 36px;
   width: 36px;
-  margin: 0 3px;
+  margin: 0 10px;
 }
 
 footer p {
