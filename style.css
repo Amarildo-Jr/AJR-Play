@@ -365,6 +365,7 @@ header ul li button:first-child{
   color: rgb(255, 255, 255);
   transition: 0.2s;
   cursor: pointer;
+  font-size: 5.4em;
 }
 
 .arrow_btn.inactive {
