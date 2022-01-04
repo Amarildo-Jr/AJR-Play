@@ -5,57 +5,65 @@
   <title>AJR Play</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="shortcut icon" type="imagex/png" href="./img/icons/controle.ico">
+  <script type="text/javascript" language="javascript" src="jquery.js"></script>
 </head>
 
 <body>
-    <div class="container">
-      <header>
-        <div id="page-title">
-          <h1 class="page-title">
-            <a href="index.html" id="logo_link">AJR Play<img src ="./img/icons/controle.ico" id="controle"></a>
-          </h1>
-        </div>
-        <nav>
-          <ul>
-            <a href='index.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(0)'>Filmes</li></a>
-            <a href='series.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(1)'>Séries</li></a>
-            <li><button class='btn-nav active' onclick='alterarBackgroundBtn(2)'>Jogos</li>
-          </ul>
-        </nav>
-      </header>
-      <div class="body-content">
-        <div class="popUp">
-          <div class="popUp-content">
-            <span class="close">←</span>
-            <div class="details"></div>
-          </div>
+  <div id="loader">
+    <ul id="loading">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="container">
+    <header>
+      <div id="page-title">
+        <h1 class="page-title">
+          <a href="index.html" id="logo_link">AJR Play<img src ="./img/icons/controle.ico" id="controle"></a>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <a href='index.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(0)'>Filmes</li></a>
+          <a href='series.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(1)'>Séries</li></a>
+          <li><button class='btn-nav active' onclick='alterarBackgroundBtn(2)'>Jogos</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="body-content">
+      <div class="popUp">
+        <div class="popUp-content">
+          <span class="close">←</span>
+          <div class="details"></div>
         </div>
       </div>
-      <script  src="./script.js"></script>
-      <script>mostrarPosters(jogos_all, 2)</script>
     </div>
-    <footer>
-      <div>
-        <a href='https://github.com/Amarildo-Jr' target="_blank"><img class='contato_logo' src='img/icons/contato/github.png'></a>
-        <a href='https://www.linkedin.com/in/amarildo-junior/' target="_blank"><img class='contato_logo' src='img/icons/contato/linkedin.png'></a>
-        <a href='https://www.instagram.com/amorildo.jr/' target="_blank"><img class='contato_logo' src='img/icons/contato/instagram.png'></a>
-      </div>
-      <p class="copyright">	&copy; Copyright Amarildo Junior - 2021</p>
-    </footer>
-    <script>
-      let largura =  document.body.clientWidth;
-      
-      if(largura < 985) {
-        botoes_carr = document.getElementsByClassName('arrow_btn');
-        for(i = 0; i < 4; i++) {
-          botoes_carr[i].style = "display: none;";
-        }
-        filmes = document.getElementsByClassName('filmes');
-        for(i = 0; i < filmes.length; i++) {
-          filmes[i].style = "overflow-x: scroll;";
-        }
+    <script  src="./script.js"></script>
+    <script>mostrarPosters(jogos_all, 2)</script>
+  </div>
+  <footer>
+    <div>
+      <a href='https://github.com/Amarildo-Jr' target="_blank"><img class='contato_logo' src='img/icons/contato/github.png'></a>
+      <a href='https://www.linkedin.com/in/amarildo-junior/' target="_blank"><img class='contato_logo' src='img/icons/contato/linkedin.png'></a>
+      <a href='https://www.instagram.com/amorildo.jr/' target="_blank"><img class='contato_logo' src='img/icons/contato/instagram.png'></a>
+    </div>
+    <p class="copyright">	&copy; Copyright Amarildo Junior - 2021</p>
+  </footer>
+  <script>
+    let largura =  document.body.clientWidth;
+    
+    if(largura < 985) {
+      botoes_carr = document.getElementsByClassName('arrow_btn');
+      for(i = 0; i < 4; i++) {
+        botoes_carr[i].style = "display: none;";
       }
-    </script>
+      filmes = document.getElementsByClassName('filmes');
+      for(i = 0; i < filmes.length; i++) {
+        filmes[i].style = "overflow-x: scroll;";
+      }
+    }
+  </script>
 </body>
 
 </html>

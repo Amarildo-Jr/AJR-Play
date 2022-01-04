@@ -1,3 +1,8 @@
+$(window).load(function() {
+  document.getElementById("loader").style.display = "none";
+  document.scrollingElement.scrollTop = 0;
+})
+
 let idFilmes = 0;
 
 class Filme {
