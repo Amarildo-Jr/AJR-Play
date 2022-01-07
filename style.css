@@ -342,6 +342,10 @@ header ul li button:first-child{
   margin-top: 10px;
 }
 
+.filmes::-webkit-scrollbar {
+  display: none;
+}
+
 .arrow_btn {
   position: absolute;
   color: rgba(255, 255, 255, 0.603);
