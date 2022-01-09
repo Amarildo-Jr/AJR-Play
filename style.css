@@ -153,6 +153,8 @@ body {
 
 #page-title {
   margin-left: 30px;
+  display: flex;
+  align-items: center;
 }
 
 header {
@@ -210,6 +212,74 @@ header ul li button.active {
 header ul li button:first-child{
 	border:none;
 	box-shadow: none;
+}
+
+#page-titleR {
+  margin-right: 30px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#page-titleR form { 
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  opacity: 0.5;
+  
+  transition: opacity .4s ease;
+}
+
+#page-titleR form:hover {
+  opacity: 0.7;
+}
+
+#page-titleR form:focus-within {
+  opacity: 1;
+}
+
+.pesquisa-texto  {
+  height: 40px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  background: none;
+  z-index: 3;
+  color: #FFFFFF;
+  position: absolute;
+  cursor: pointer;
+}
+
+.pesquisa-texto:focus:hover {
+  border-bottom: 1px solid #BBB;
+}
+
+.pesquisa-texto:focus {
+  width: 210px;
+  z-index: 1;
+  border-bottom: 1px solid #BBB;
+  cursor: text;
+}
+
+.btn-pesquisa {
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("img/icons/search.png");
+  background-size: cover;
+  cursor: pointer;
+  text-indent: -10000px;
+  border: none;
+
+  display: inline-block;
+  position: absolute;
+
+  z-index: 2;
+  transition: opacity .4s ease;
 }
 
 .body-content {
