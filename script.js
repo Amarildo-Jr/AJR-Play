@@ -1069,40 +1069,27 @@ function abrirDetalhes(id, tipo) {
   tipo = parseInt(tipo);
   let filme;
   let encontrado = false;
+  let conjunto;
+  
   if(tipo == 0) {
-    for(x = 0; x < filmes_all.length; x++) {
-      if(encontrado === true) {break;}
-      for(i = 0; i < filmes_all[x].length; i++) {
-        if(id === filmes_all[x][i].id) {
-          filme = filmes_all[x][i];
-          encontrado = true;
-          break;
-        }
-      }
-    }
+    conjunto = filmes_all;
   } else if(tipo == 1) {
-    for(x = 0; x < series_all.length; x++) {
-      if(encontrado === true) {break;}
-      for(i = 0; i < series_all[x].length; i++) {
-        if(id === series_all[x][i].id) {
-          filme = series_all[x][i];
-          encontrado = true;
-          break;
-        }
-      }
-    }
+    conjunto = series_all;
   } else if(tipo == 2) {
-    for(x = 0; x < jogos_all.length; x++) {
-      if(encontrado === true) {break;}
-      for(i = 0; i < jogos_all[x].length; i++) {
-        if(id === jogos_all[x][i].id) {
-          filme = jogos_all[x][i];
-          encontrado = true;
-          break;
-        }
+    conjunto = jogos_all;
+  }
+
+  for(x = 0; x < conjunto.length; x++) {
+    if(encontrado === true) {break;}
+    for(i = 0; i < conjunto[x].length; i++) {
+      if(id === conjunto[x][i].id) {
+        filme = conjunto[x][i];
+        encontrado = true;
+        break;
       }
     }
   }
+
   let popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "flex";
   let popUp_content = document.getElementsByClassName("details");

@@ -236,7 +236,6 @@ header ul li button:first-child{
 }
 
 #logo_link {
-  margin-right: 10px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -297,8 +296,7 @@ header ul li button:first-child{
   margin: 0 40px;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: rgb(143, 0, 0);
   text-decoration: none;
   cursor: pointer;
@@ -346,6 +344,11 @@ header ul li button:first-child{
   display: none;
 }
 
+.filmes:hover .arrow_btn{
+  visibility: visible;
+}
+
+
 .arrow_btn {
   position: absolute;
   color: rgba(255, 255, 255, 0.603);
@@ -355,6 +358,7 @@ header ul li button:first-child{
   padding: 5px;
   z-index: 1;
   border: none;
+  visibility: hidden;
 }
 
 .left {
@@ -421,13 +425,7 @@ header ul li button:first-child{
 
 .btn_requisitos {
   width: 150px;
-  padding: 10px; 
-  /* background: #370617; */
-  /* background-image: linear-gradient(#12025a, #ff0080); */
-  /* background: #030519; */
-  /* color: #FFFFFF;
-  border-radius: 17px;
-  font-size: 15px; */
+  padding: 10px;
 	background-color:#0000006b;
 	border-radius:17px;
 	border:1px solid rgb(16, 28, 44);
@@ -445,7 +443,6 @@ header ul li button:first-child{
   cursor: pointer;
 	background-color:#050a3b;
   border:1px solid #1f2f47;
-  /* background: #03071E; */
 }
 
 .btn_requisitos.active {
@@ -472,7 +469,6 @@ header ul li button:first-child{
 .popup_requisitos {
   margin: 70px auto;
   padding: 20px;
-  /* background: #370617; */
   background: #030519;
   border-radius: 5px;
   max-width: 75%;
@@ -487,7 +483,6 @@ header ul li button:first-child{
 
 .popup_requisitos h2 {
   color: #add8e6;
-  /* color: #e6adad; */
 }
 
 .popup_requisitos .close_ {
