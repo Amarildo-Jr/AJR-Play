@@ -157,6 +157,51 @@ body {
   align-items: center;
 }
 
+.body-content {
+  margin-bottom: 110px;
+}
+
+.page-title {
+  text-align: center;
+  font-family: Resolute-nf;
+  font-size: 33px;
+  margin: 7px 25px 7px 0;
+}
+
+#logo_link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-image: linear-gradient(#12025a, #ff0080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.page-title:hover {
+  cursor: pointer;
+}
+
+.page-title:hover #logo_link {
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.4s;
+  background-image: linear-gradient(#18027c, #ff359a);
+}
+
+#play_button {
+  width: 33px;
+  margin: 1px 0 0 6px;
+}
+
+#controle {
+  width: 42px;
+  height: 42px;
+}
+
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -184,29 +229,30 @@ header ul a {
 header ul li button {
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 14px;
-  color:rgb(255, 255, 255);
-  background-color: #00000055;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.719);
   padding: 15px 25px;
   border-radius: 2px;
-  color:rgba(255, 255, 255, 0.521);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #FFFFFF00;
 }
 
 header ul li button:hover {
   text-decoration: none;
-  background-image: linear-gradient(#12025a43, #ff008043);
-  cursor: pointer;
-  color:rgba(255, 255, 255, 0.781);
-  box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5) ;
-  
+  background-image: linear-gradient(#12025a80, #ff008080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #FFFFFF00;
 }
 
 header ul li button.active {
-  text-decoration: none;
-  background-image: linear-gradient(#12025a, #ff0080);
-  cursor: pointer;
-  color:#FFF;
-  box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5) ;
+  background-image: linear-gradient(#17036d, #ff0080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #FFFFFF00;
 }
 
 header ul li button:first-child{
@@ -274,68 +320,10 @@ header ul li button:first-child{
   cursor: pointer;
   text-indent: -10000px;
   border: none;
-
   display: inline-block;
   position: absolute;
-
   z-index: 2;
   transition: opacity .4s ease;
-}
-
-.body-content {
-  margin-bottom: 110px;
-}
-
-.page-title {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  font-family: Resolute-nf;
-  font-size: 33px;
-  margin: 7px 25px 7px 0;
-}
-
-.gradient {
-  font-size: 6em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  background-image: linear-gradient(#001fff, #8406d6);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-#logo_link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  background-image: linear-gradient(#12025a, #ff0080);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.page-title:hover {
-  cursor: pointer;
-}
-
-.page-title:hover #logo_link {
-  cursor: pointer;
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.03);
-  transition: 0.4s;
-  background-image: linear-gradient(#18027c, #ff359a);
-}
-
-#play_button {
-  width: 33px;
-  margin: 1px 0 0 6px;
-}
-
-#controle {
-  width: 42px;
-  height: 42px;
 }
 
 .popUp {
