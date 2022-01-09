@@ -22,14 +22,21 @@
         <h1 class="page-title">
           <a href="index.html" id="logo_link">AJR Play<img src ="./img/icons/play_button.ico" id="play_button"></a>
         </h1>
+        <nav>
+          <ul>
+            <a href='index.html'><li><button class='btn-nav href='www.youtube.com' onclick='alterarBackgroundBtn(0)'>Filmes</button></li></a>
+            <li><button class='btn-nav active' onclick='alterarBackgroundBtn(1)'>Séries</button></li>
+            <a href='jogos.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(2)'>Jogos</button></li></a>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <a href='index.html'><li><button class='btn-nav href='www.youtube.com' onclick='alterarBackgroundBtn(0)'>Filmes</button></li></a>
-          <li><button class='btn-nav active' onclick='alterarBackgroundBtn(1)'>Séries</button></li>
-          <a href='jogos.html'><li><button class='btn-nav' onclick='alterarBackgroundBtn(2)'>Jogos</button></li></a>
-        </ul>
-      </nav>
+      <div id='page-titleR'>
+        <form action="" autocomplete="on">
+        <input type='text' class="pesquisa-texto" placeholder='Digite o título de um filme'>
+        <input class='btn-pesquisa' type="submit">
+        </form>
+      </div>
+      
     </header>
     <div class="body-content">
       <div class="popUp">
