@@ -93,7 +93,7 @@ html {
   transition-duration: 1s
 }
 
-.body-ativo {
+body {
   font-family: 'Roboto Mono',monospace;
   height: 100%;
   text-align:center;
@@ -101,6 +101,14 @@ html {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+.body-ativo {
+  overflow-y: auto;
+}
+
+.body-desativado {
+  overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {

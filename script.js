@@ -980,7 +980,10 @@ function pesquisar(tipo) {
   let popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "flex";
   let popUp_content = document.getElementsByClassName("details");
-  document.getElementsByClassName("body-ativo")[0].style.overflow = 'hidden'
+  let body_element = document.getElementsByTagName("body")[0];
+  body_element.classList.add("body-desativado")
+  body_element.classList.remove("body-ativo")
+  // document.getElementsByClassName("body-ativo")[0].style.overflow += 'hidden'
   document.body.scroll = "no"
     for(j = 0; j < listaElementos.length; j++) {
       popUp_content[0].innerHTML = "<div class='filmes-search'></div>"
@@ -1003,7 +1006,9 @@ close[0].onclick = function() {
   popUp[0].style.display = "none";
   let popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "";
-  document.getElementsByClassName("body-ativo")[0].style.overflow = 'auto';
+  let body_element = document.getElementsByTagName("body")[0];
+  body_element.classList.remove("body-desativado")
+  body_element.classList.add("body-ativo")
   document.body.scroll = "yes";
 }
 
