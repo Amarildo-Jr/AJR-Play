@@ -8,15 +8,15 @@
   <script type="text/javascript" language="javascript" src="jquery.js"></script>
 </head>
 
-<body>
-  <div id="loader">
-    <ul id="loading">
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-    <div class="container">
+<body class='body-ativo'>
+  <div class="container">
+    <div id="loader">
+      <ul id="loading">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
       <header>
         <div id="page-title">
           <h1 class="page-title">
@@ -31,7 +31,7 @@
           </nav>
         </div>
         <div id='page-titleR'>
-          <form autocomplete="off" OnSubmit="event.preventDefault(); javascript:pesquisar()" id='formulario'>
+          <form autocomplete="off" OnSubmit="event.preventDefault(); javascript:pesquisar(0)" id='formulario'>
             <input type='text' name='titulo' class="pesquisa-texto" placeholder='Digite o título de um filme'>
             <input class='btn-pesquisa' type="submit">
           </form>

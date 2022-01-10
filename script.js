@@ -963,13 +963,39 @@ let jogos0 = [jogo8, jogo9, jogo10, jogo11, jogo12, jogo13, jogo14, jogo15]
 
 let jogos_all = [jogos, jogos0]
 
-function pesquisar() {
+function pesquisar(tipo) {
+  tipo = parseInt(tipo);
+  let classe = "";
+  if(tipo == 0) {
+    listaElementos = filmes_all;
+    classe = "poster";
+  } else if(tipo == 1) {
+    listaElementos = series_all;
+    classe = "poster";
+  } else if(tipo == 2) {
+    listaElementos = jogos_all;
+    classe = "poster_j";
+  }
+
+  let popUp = document.getElementsByClassName("popUp");
+  popUp[0].style.display = "flex";
+  let popUp_content = document.getElementsByClassName("details");
+  document.getElementsByClassName("body-ativo")[0].style.overflow = 'hidden'
+  document.body.scroll = "no"
+    for(j = 0; j < listaElementos.length; j++) {
+      popUp_content[0].innerHTML = "<div class='filmes-search'></div>"
+      for(i = 0; i < listaElementos[j].length; i++) {
+        popUp_content[0].innerHTML += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
+        " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+      }
+      popUp_content[0].innerHTML += "</div>";
+    }
   f = document.getElementById("formulario");
   v = f.titulo.value;
   f.titulo.value =  "";
   f.titulo.blur();
   //x = v.search("name")
-  alert("Você pesquisou por: \"" + v + "\"")
+  //alert("Você pesquisou por: \"" + tipo + "\"")
 }
 
 let close = document.getElementsByClassName("close");
@@ -977,6 +1003,8 @@ close[0].onclick = function() {
   popUp[0].style.display = "none";
   let popUp_content = document.getElementsByClassName("details");
   popUp_content[0].innerHTML = "";
+  document.getElementsByClassName("body-ativo")[0].style.overflow = 'auto';
+  document.body.scroll = "yes";
 }
 
 function alterarBackgroundBtn(num) {
