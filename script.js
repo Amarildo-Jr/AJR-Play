@@ -967,6 +967,7 @@ function pesquisar() {
   f = document.getElementById("formulario");
   v = f.titulo.value;
   f.titulo.value =  "";
+  f.titulo.blur();
   //x = v.search("name")
   alert("Você pesquisou por: \"" + v + "\"")
 }
