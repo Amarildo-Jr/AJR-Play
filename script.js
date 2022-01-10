@@ -963,6 +963,14 @@ let jogos0 = [jogo8, jogo9, jogo10, jogo11, jogo12, jogo13, jogo14, jogo15]
 
 let jogos_all = [jogos, jogos0]
 
+function pesquisar() {
+  f = document.getElementById("formulario");
+  v = f.titulo.value;
+  f.titulo.value =  "";
+  //x = v.search("name")
+  alert("Você pesquisou por: \"" + v + "\"")
+}
+
 let close = document.getElementsByClassName("close");
 close[0].onclick = function() {
   popUp[0].style.display = "none";
