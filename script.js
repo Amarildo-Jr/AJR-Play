@@ -969,7 +969,7 @@ function pesquisar() {
   f.titulo.value =  "";
   f.titulo.blur();
   //x = v.search("name")
-  alert("Você pesquisou por: \"" + v + "\"")
+  console.log("Você pesquisou por: \"" + v + "\"")
 }
 
 let close = document.getElementsByClassName("close");
