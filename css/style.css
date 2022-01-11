@@ -357,6 +357,14 @@ header ul li button:first-child{
   margin: 10px;
 }
 
+.titulo-search {
+  width: 100vw;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .close {
   color: #aaaaaa;
   float: left;
@@ -376,6 +384,11 @@ header ul li button:first-child{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.details-search {
+  display: flex;
+  justify-content: center;
 }
 
 #details {
@@ -408,6 +421,10 @@ header ul li button:first-child{
   padding-top: 30px;
   margin: 0 15px;
   margin-top: 10px;
+}
+
+.filmes-search {
+  display: grid;
 }
 
 .filmes::-webkit-scrollbar {

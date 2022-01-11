@@ -985,25 +985,22 @@ function pesquisar(tipo) {
   let body_element = document.getElementsByTagName("body")[0];
   body_element.classList.add("body-desativado")
   body_element.classList.remove("body-ativo")
-  // document.getElementsByClassName("body-ativo")[0].style.overflow += 'hidden'
   document.body.scroll = "no"
-    for(j = 0; j < listaElementos.length; j++) {
-      popUp_content[1].innerHTML = "<div class='filmes-search'></div>"
-      for(i = 0; i < listaElementos[j].length; i++) {
-        popUp_content[1].innerHTML += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
-        " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
-      }
-      popUp_content[1].innerHTML += "</div>";
-    }
-  f = document.getElementById("formulario");
+  f = document.getElementById("formulario")
   v = f.titulo.value;
-  f.titulo.value =  "";
+
+  let conteudo = "";
+  for(j = 0; j < listaElementos.length; j++) {
+    for(i = 0; i < listaElementos[j].length; i++) {
+      conteudo += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
+      " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+    }
+  }
+  popUp_content[1].innerHTML = "<div class='titulo-search'><h2>Resultados para \"" + v + "\"</h2></div><div class='filmes-search'>" + conteudo + "</div>"
+
   f.titulo.blur();
   //x = v.search("name")
-  //alert("Você pesquisou por: \"" + tipo + "\"")
-
   pesquisa = true;
-
 }
 
 let close = document.getElementsByClassName("close");
@@ -1028,6 +1025,7 @@ close_search[0].onclick = function() {
   body_element.classList.remove("body-desativado")
   body_element.classList.add("body-ativo")
   document.body.scroll = "yes";
+  document.getElementById("formulario").reset()
   pesquisa = false;
 }
 
