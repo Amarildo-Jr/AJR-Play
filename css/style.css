@@ -353,8 +353,9 @@ header ul li button:first-child{
 .popUp-content {
   color: #FFFFFF;
   background-color: #03071E;
-  min-width: 100%; 
-  margin: 10px;
+  min-width: 100%;
+  max-height: 100%;
+  overflow-y: overlay;
 }
 
 .titulo-search {
@@ -371,7 +372,7 @@ header ul li button:first-child{
   font-size: 36px;
   font-weight: bold;
   padding-bottom: 30px;
-  margin: 0 40px;
+  margin: 10px 0 0 40px;
 }
 
 .close:hover, .close:focus {
@@ -387,6 +388,7 @@ header ul li button:first-child{
 }
 
 .details-search {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
 }
@@ -424,7 +426,9 @@ header ul li button:first-child{
 }
 
 .filmes-search {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filmes::-webkit-scrollbar {
@@ -553,6 +557,7 @@ header ul li button:first-child{
   visibility: visible;
   opacity: 1;
 }
+
 .popup_requisitos {
   margin: 70px auto;
   padding: 20px;

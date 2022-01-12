@@ -910,7 +910,7 @@ let jogo12 = new Jogo (
 )
 
 let jogo13 = new Jogo (
-  "Overcooked 2", 
+  "Spider-Man Miles Morales", 
   "/img/posters/jogos/spiderMan.jpg",
   "https://www.youtube.com/embed/GqPLeQJ6lJk", 
   "Novembro/2020",
@@ -992,8 +992,10 @@ function pesquisar(tipo) {
   let conteudo = "";
   for(j = 0; j < listaElementos.length; j++) {
     for(i = 0; i < listaElementos[j].length; i++) {
-      conteudo += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
-      " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+      if(listaElementos[j][i].nome.toUpperCase().split(" ").join("").includes(v.toUpperCase().split(" ").join(""))){
+        conteudo += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
+        " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+      }
     }
   }
   popUp_content[1].innerHTML = "<div class='titulo-search'><h2>Resultados para \"" + v + "\"</h2></div><div class='filmes-search'>" + conteudo + "</div>"
