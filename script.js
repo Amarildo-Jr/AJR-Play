@@ -980,7 +980,7 @@ function pesquisar(tipo) {
   }
 
   let popUp = document.getElementsByClassName("popUp");
-  popUp[1].style.display = "flex";
+  popUp[1].style.display = "inline-grid";
   let popUp_content = document.getElementsByClassName("details");
   let body_element = document.getElementsByTagName("body")[0];
   body_element.classList.add("body-desativado")
