@@ -312,17 +312,17 @@ let filme19 = new Filme(
 );
 
 let filme20 = new Filme(
-  "Bob Esponja: O Filme", 
-  "img/posters/filmes/bobEsponja.jpg", 
-  "https://www.youtube.com/embed/Sfbtp2sCP2E", 
-  "2004",
-  "Animação, Comédia, Família",
+  "Madagascar 3", 
+  "img/posters/filmes/madagascar3.jpg", 
+  "https://www.youtube.com/embed/hPrSYz0BxS8", 
+  "2012",
+  "Animação, Comédia",
   "filme",
-  "1h 22min",
+  "1h 35min",
   classificacao_livre,
-  "Após a coroa do Rei Netuno ser roubada, Bob Esponja e seu melhor amigo Patrick partem em uma viagem pela Fenda do Bikini para reencontrá-la. No caminho eles precisam enfrentar monstros marinhos, vilões perigosos e vários bandidos.",
-  "img/icons/plataformas/primeVideo.png",
-  "https://www.primevideo.com/dp/amzn1.dv.gti.1aabf5b9-9bcb-315a-cb50-b4553a8ec86b"
+  "Nossos amigos animais Alex, Marty, Glória e Melman vão para a Europa e passam a ser perseguidos por uma agente de controle de animais. Para despistá-la, eles se juntam a um grupo circense que sonha em se apresentar em Nova York, o lar dos animais.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/watch/70216224?source=35"
 );
 
 let filme21 = new Filme(
@@ -381,10 +381,208 @@ let filme24 = new Filme(
   "https://www.disneyplus.com/pt-br/movies/procurando-dory/2L6w30vnqebX"
 );
 
-let filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
-let filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24]
+let filme25 = new Filme(
+  "Bob Esponja: O Filme", 
+  "img/posters/filmes/bobEsponja.jpg", 
+  "https://www.youtube.com/embed/Sfbtp2sCP2E", 
+  "2004",
+  "Animação, Comédia, Família",
+  "filme",
+  "1h 22min",
+  classificacao_livre,
+  "Após a coroa do Rei Netuno ser roubada, Bob Esponja e seu melhor amigo Patrick partem em uma viagem pela Fenda do Bikini para reencontrá-la. No caminho eles precisam enfrentar monstros marinhos, vilões perigosos e vários bandidos.",
+  "img/icons/plataformas/primeVideo.png",
+  "https://www.primevideo.com/dp/amzn1.dv.gti.1aabf5b9-9bcb-315a-cb50-b4553a8ec86b"
+);
 
-let filmes_all = [filmes, filmes0]
+let filme26 = new Filme(
+  "Vingadores: Guerra Infinita", 
+  "img/posters/filmes/vingadoresGuerraInfinita.jpg", 
+  "https://www.youtube.com/embed/t_ULBP6V9bg", 
+  "2018",
+  "Aventura, Ação, Fantasia ",
+  "filme",
+  "2h 36min",
+  classificacao_12anos,
+  "Em Vingadores: Guerra Infinita, Thanos enfim chega à Terra, disposto a reunir as Joias do Infinito. Para enfrentá-lo, os Vingadores precisam unir forças com os Guardiões da Galáxia, ao mesmo tempo em que lidam com desavenças entre alguns de seus integrantes.",
+  "img/icons/plataformas/disney+.png",
+  "https://www.disneyplus.com/pt-br/movies/vingadores-guerra-infinita-da-marvel-studios/1WEuZ7H6y39v"
+);
+
+let filme27 = new Filme(
+  "John Wick 3: Parabellum", 
+  "img/posters/filmes/johnWick3.jpg", 
+  "https://www.youtube.com/embed/PP0cnmZPbws", 
+  "2019",
+  "Ação",
+  "filme",
+  "2h 12min",
+  classificacao_16anos,
+  "Após quebrar as regras do Hotel Continental, John Wick (Keanu Reeves) está sendo perseguido pelos melhores assassinos do mundo. Buscando sobreviver, ele se alia a antigos conhecidos para escapar com vida desta caçada.",
+  "img/icons/plataformas/telecine.png",
+  "https://www.telecine.com.br/filme/27981?utm_source=adoro_cinema&utm_medium=cpc&utm_campaign=aquisicao|parcerias|up&utm_content=john_wick_3_parabellum|filme_250861|botao|none|adoro_cinema|none"
+);
+
+let filme28 = new Filme(
+  "Logan", 
+  "img/posters/filmes/logan.jpg", 
+  "https://www.youtube.com/embed/KPND6SgkN7Q", 
+  "2017",
+  "Ação, Ficção científica",
+  "filme",
+  "2h 18min",
+  classificacao_16anos,
+  "Em 2024, os mutantes estão em franco declínio, e as pessoas não sabem o real motivo. Uma organização está transformando as crianças mutantes em verdadeiras assassinas. Wolverine, cansado de tudo e a pedido de um cada vez mais enfraquecido Professor Xavier, precisa proteger a jovem e poderosa Laura Kinney, conhecida como X-23. Enquanto isso, o vilão Nathaniel Essex amplia seu projeto de destruição.",
+  "img/icons/plataformas/star+.png",
+  "https://www.starplus.com/movies/logan/4BPdGjuoQAvT"
+);
+
+let filme29 = new Filme(
+  "Velozes e furiosos 8", 
+  "img/posters/filmes/fast8.jpg", 
+  "https://www.youtube.com/embed/KvSlvtPnZTo", 
+  "2017",
+  "Ação, Suspense",
+  "filme",
+  "2h 16min",
+  classificacao_14anos,
+  "Depois da aposentadoria de Brian e Mia, Dom e Letty aproveitam a lua de mel e levam uma vida pacata e normal. Mas a adrenalina do passado volta com tudo quando uma mulher misteriosa obriga Dom a retornar ao mundo do crime e da velocidade.",
+  "img/icons/plataformas/youtube.png",
+  "https://www.youtube.com/watch?v=Yl8zGoIW-Vo"
+);
+
+let filme30 = new Filme(
+  "Duro de Matar: Um bom dia para morrer", 
+  "img/posters/filmes/duroDeMatar.jpg", 
+  "https://www.youtube.com/embed/VFp36WYErJM", 
+  "2013",
+  "Ação",
+  "filme",
+  "1h 38min",
+  classificacao_16anos,
+  "O policial John McClane não tem boa relação com seu filho. Os dois precisam deixar de lado suas diferenças para livrar o rapaz de uma acusação e proteger um terrorista que diz ter um dossiê contra um potencial candidato à presidência da Rússia.",
+  "img/icons/plataformas/star+.png",
+  "https://www.starplus.com/movies/a-good-day-to-die-hard/VZjwaJrZlPBz"
+);
+
+
+let filme31 = new Filme(
+  "Esquadrão Suicida", 
+  "img/posters/filmes/esquadraoSuicida.jpg", 
+  "https://www.youtube.com/embed/8pYp4T8TdP4", 
+  "2016",
+  "Ação, Fantasia",
+  "filme",
+  "2h 03min",
+  classificacao_12anos,
+  "Um time dos mais perigosos e encarcerados supervilões são contratados por uma agência secreta do governo, para combater uma poderosa entidade. No entanto, quando eles percebem que não foram escolhidos apenas para ter sucesso, mas também por sua óbvia culpa quando inevitavelmente falharem, terão que decidir se vale a pena ou não continuar correndo risco de morte.",
+  "img/icons/plataformas/primeVideo.png",
+  "https://www.primevideo.com/dp/amzn1.dv.gti.a0b8f07a-32bf-8f41-daad-1cf96a33b97a?autoplay=1&ref_=atv_cf_strg_wb"
+);
+
+let filme32 = new Filme(
+  "Transformers: O último cavalheiro", 
+  "img/posters/filmes/transformers.jpg", 
+  "https://www.youtube.com/embed/XdiU0W1lG-Y", 
+  "2017",
+  "Ação, Ficção científica",
+  "filme",
+  "2h 29min",
+  classificacao_12anos,
+  "O gigante Optimus Prime embarca em uma das missões mais difíceis de sua vida: encontrar, no espaço sideral, os Quintessons, seres que possivelmente são os responsáveis pela criação da raça Transformers. O problema é que, enquanto isso, seus amigos estão precisando de muita ajuda na Terra, já que uma nova ameaça alienígena resolveu destruir toda a humanidade.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/watch/80164399?source=35"
+);
+
+let filme33 = new Filme(
+  "Venom", 
+  "img/posters/filmes/venom.jpg", 
+  "https://www.youtube.com/embed/Y9PQon7wbpU", 
+  "2018",
+  "Ação, Ficção científica",
+  "filme",
+  "2h 20min",
+  classificacao_14anos,
+  "O jornalista Eddie Brock desenvolve força e poder sobre-humanos quando seu corpo se funde com o alienígena Venom. Dominado pela raiva, Venom tenta controlar as novas e perigosas habilidades de Eddie.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/watch/80991034?source=35"
+);
+
+let filme34 = new Filme(
+  "Os mercenários 3", 
+  "img/posters/filmes/osMercenarios3.jpg", 
+  "https://www.youtube.com/embed/93vai1Zi6rc", 
+  "2014",
+  "Ação",
+  "filme",
+  "2h 07min",
+  classificacao_14anos,
+  "Barney e sua trupe de mercenários resgatam Doc, um dos integrantes do grupo, que estava preso há oito anos. Ao participarem de uma missão, os mercenários são surpreendidos quando reencontram Conrad, um comerciante de armas impiedoso, que Barney pensava ter matado. Novos membros, mais jovens e mais rápidos, entram para equipe e um novo duelo começa.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/watch/70307662?source=35"
+);
+
+let filme35 = new Filme(
+  "Noite sem fim", 
+  "img/posters/filmes/noiteSemFim.jpg", 
+  "https://www.youtube.com/embed/9RKkX7xw2pg", 
+  "2015",
+  "Ação, Policial, Drama",
+  "filme",
+  "1h 54min",
+  classificacao_16anos,
+  "O mafioso e pistoleiro do Brooklyn Jimmy Conlon descobre que seu filho Mike está em perigo, e deve escolher entre a família do crime que escolheu e a família real que abandonou há muito tempo. Com Mike foragido, a única penitência de Conlon para os erros do passado pode ser evitar que o filho tenha o mesmo destino que o dele.",
+  "img/icons/plataformas/netflix.png",
+  "https://www.netflix.com/watch/80021752?source=35"
+);
+
+let filme36 = new Filme(
+  "007 contra Spectre", 
+  "img/posters/filmes/007.jpeg", 
+  "https://www.youtube.com/embed/0Q7XHvi4-QE", 
+  "2015",
+  "Ação, Espionagem",
+  "filme",
+  "2h 28min",
+  classificacao_14anos,
+  "James Bond chega à Cidade do México e está pronto para eliminar Marco Sciarra sem que o chef M saiba da missão. O caso leva à suspensão temporária do agente, que passa a ser constantemente vigiado pelo governo britânico graças a uma tecnologia implantada em seu corpo por Q. Na tentativa de despistar os inimigos e até mesmo alguns de seus parceiros de trabalho, ele se responsabiliza por ajudar a filha de um desafeto. Toda a situação o leva ao centro de uma temida organização denominada Spectre.",
+  "img/icons/plataformas/telecine.png",
+  "https://www.telecine.com.br/filme/007_Contra_Spectre_6878?action=play_filme"
+);
+
+let filme37 = new Filme(
+  "13° Distrito", 
+  "img/posters/filmes/13distrito.jpg", 
+  "https://www.youtube.com/embed/yz1T-OYdiYo", 
+  "2014",
+  "Ação, Policial",
+  "filme",
+  "1h 31min",
+  classificacao_14anos,
+  "A área de Brick Mansions é extremamente violenta e abandonada pela polícia local, que foi corrompida pelo crime organizado. Todo dia é uma batalha para o honesto detetive Damien Collier, que pretende vingar o assassinato do seu pai. Ele recebe a missão de entrar na perigosa região e localizar uma bomba que pode destruir a cidade de Detroit inteira. Para tanto, Damien conta com a ajuda do jovem Lino, que precisa tirar a namorada das mãos de um traficante.",
+  "img/icons/plataformas/hbomax.png",
+  "https://play.hbomax.com/page/urn:hbo:page:GYIjhuA2vMJGxLwEAAAJV:type:feature?camp=googleHBOMAX"
+);
+
+let filme38 = new Filme(
+  "Deadpool 2", 
+  "img/posters/filmes/deadpool2.jpg", 
+  "https://www.youtube.com/embed/fZWN2UBMK3Q", 
+  "2018",
+  "Ação, Comédia , Aventura",
+  "filme",
+  "2h 00min",
+  classificacao_16anos,
+  "O supersoldado Cable vem do futuro com a missão de assassinar o jovem mutante Russel e o mercenário Deadpool precisa aprender o que é ser herói de verdade para salvá-lo. Para isso, ele recruta seu velho amigo Colossus e forma o novo grupo X-Force, sempre com o apoio do fiel escudeiro Dopinder.",
+  "img/icons/plataformas/star+.png",
+  "https://www.starplus.com/movies/deadpool-2/LSuXSQ3S5mxU"
+);
+
+let filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
+let filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24, filme25]
+let filmes1 = [filme26, filme27, filme28, filme29, filme30, filme31, filme32, filme33, filme34, filme35, filme36, filme37, filme38]
+
+let filmes_all = [filmes, filmes0, filmes1]
 
 let popUp = document.getElementsByClassName("popUp");
 
@@ -1003,7 +1201,6 @@ function pesquisar(tipo) {
   popUp_content[1].innerHTML = "<div class='titulo-search'><h2>Resultados para \"" + v + "\"</h2></div><div class='filmes-search'>" + conteudo + "</div>"
 
   f.titulo.blur();
-  //x = v.search("name")
   pesquisa = true;
 }
 
@@ -1212,7 +1409,7 @@ function mostrarPosters(listaElementos, tipo) {
   let categorias = [];
   let classe = "";
   if(tipo == 0) {
-    categorias = ["Lista do Adm", "Animação"]
+    categorias = ["Lista do Adm", "Animação", "Ação"]
     classe = "poster";
   } else if (tipo == 1) {
     categorias = ["Lista do Adm", "Comédia"]
