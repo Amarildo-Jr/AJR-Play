@@ -990,10 +990,11 @@ function pesquisar(tipo) {
   v = f.titulo.value;
 
   let conteudo = "";
+
   for(j = 0; j < listaElementos.length; j++) {
     for(i = 0; i < listaElementos[j].length; i++) {
-      if(listaElementos[j][i].nome.toUpperCase().split(" ").join("").includes(v.toUpperCase().split(" ").join("")) || 
-      listaElementos[j][i].genero.toUpperCase().split(" ").join("").includes(v.toUpperCase().split(" ").join(""))){
+      if(listaElementos[j][i].nome.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("").includes(v.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("")) || 
+      listaElementos[j][i].genero.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("").includes(v.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join(""))){
         conteudo += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
         " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
       }
