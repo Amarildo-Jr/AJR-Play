@@ -285,17 +285,17 @@ let filme17 = new Filme(
 );
 
 let filme18 = new Filme(
-  "Como Treinar o seu Dragão 3", 
-  "img/posters/filmes/comoTreinarSeuDragao.jpg", 
-  "https://www.youtube.com/embed/P5GAg92efK0", 
-  "2019",
-  ["Animação", "Aventura", "Família"],
-  ["Netflix"],
-  "1h 44min",
+  "O Pequeno Príncipe", 
+  "img/posters/filmes/oPequenoPrincipe.jpg", 
+  "https://www.youtube.com/embed/7WoO-luLshk", 
+  "2015",
+  ["Animação", "Família"],
+  ["Prime Video"],
+  "1h 47min",
   classificacao_livre,
-  "Decidido a fazer de Berk um verdadeiro libelo ao ideal da convivência pacífica entre homens e dragões, Soluço e seus amigos seguem atrás de caçadores, para não só libertar suas presas mas também impedir a matança desenfreada dos animais. O esforço do grupo desperta a atenção de Grimmel ao descobrir que entre eles está Banguela, um legítimo Fúria da Noite. O vilão então desenvolve um plano para capturá-lo a todo custo, usando como arma uma fêmea capturada, da mesma espécie.",
-  ["img/icons/plataformas/netflix.png"],
-  ["https://www.netflix.com/br/title/81021806"]
+  "Uma garota acaba de se mudar com a mãe, uma controladora obsessiva que deseja definir antecipadamente todos os passos da filha para que ela seja aprovada em uma escola conceituada. Entretanto, um acidente provocado por seu vizinho faz com que a hélice de um avião abra um enorme buraco em sua casa. Curiosa em saber como o objeto parou ali, ela decide investigar. Logo conhece e se torna amiga de seu novo vizinho, um senhor que lhe conta a história de um pequeno príncipe que vive em um asteróide com sua rosa e, um dia, encontrou um aviador perdido no deserto em plena Terra.",
+  ["img/icons/plataformas/primeVideo.png"],
+  ["https://www.primevideo.com/detail/amzn1.dv.gti.eca0b2b2-579b-488f-a7f7-78da3ea666ab"]
 );
 
 let filme19 = new Filme(
@@ -313,20 +313,6 @@ let filme19 = new Filme(
 );
 
 let filme20 = new Filme(
-  "Madagascar 3", 
-  "img/posters/filmes/madagascar3.jpg", 
-  "https://www.youtube.com/embed/hPrSYz0BxS8", 
-  "2012",
-  ["Animação", "Comédia"],
-  ["Netflix", "HBO Max", "Telecine"],
-  "1h 35min",
-  classificacao_livre,
-  "Nossos amigos animais Alex, Marty, Glória e Melman vão para a Europa e passam a ser perseguidos por uma agente de controle de animais. Para despistá-la, eles se juntam a um grupo circense que sonha em se apresentar em Nova York, o lar dos animais.",
-  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/telecine.png"],
-  ["https://www.netflix.com/watch/70216224?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GXdcZSAKtkcPCwwEAACri?camp=googleHBOMAX", "https://www.telecine.com.br/filme/Madagascar_3_Os_Procurados_13832"]
-);
-
-let filme21 = new Filme(
   "Moana: Um Mar de Aventuras", 
   "img/posters/filmes/moana.jpg",
   "https://www.youtube.com/embed/XL4Tf1Eohv8", 
@@ -338,6 +324,20 @@ let filme21 = new Filme(
   "Moana Waialiki é uma corajosa jovem, filha do chefe de uma tribo na Oceania, vinda de uma longa linhagem de navegadores. Querendo descobrir mais sobre seu passado e ajudar a família, ela resolve partir em busca de seus ancestrais, habitantes de uma ilha mítica que ninguém sabe onde é. Acompanhada pelo lendário semideus Maui, Moana começa sua jornada em mar aberto, onde enfrenta terríveis criaturas marinhas e descobre histórias do submundo.",
   ["img/icons/plataformas/disney+.png"],
   ["https://www.disneyplus.com/pt-br/movies/moana-um-mar-de-aventuras/70GoJHflgHH9"]
+);
+
+let filme21 = new Filme(
+  "Madagascar 3", 
+  "img/posters/filmes/madagascar3.jpg", 
+  "https://www.youtube.com/embed/hPrSYz0BxS8", 
+  "2012",
+  ["Animação", "Comédia"],
+  ["Netflix", "HBO Max", "Telecine"],
+  "1h 35min",
+  classificacao_livre,
+  "Nossos amigos animais Alex, Marty, Glória e Melman vão para a Europa e passam a ser perseguidos por uma agente de controle de animais. Para despistá-la, eles se juntam a um grupo circense que sonha em se apresentar em Nova York, o lar dos animais.",
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/telecine.png"],
+  ["https://www.netflix.com/watch/70216224?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GXdcZSAKtkcPCwwEAACri?camp=googleHBOMAX", "https://www.telecine.com.br/filme/Madagascar_3_Os_Procurados_13832"]
 );
 
 let filme22 = new Filme(
@@ -397,6 +397,62 @@ let filme25 = new Filme(
 );
 
 let filme26 = new Filme(
+  "Angry Birds 2: O Filme", 
+  "img/posters/filmes/angryBirds2.jpg", 
+  "https://www.youtube.com/embed/M3S_h4yiqm4", 
+  "2019",
+  ["Animação", "Família"],
+  ["Prime Video"],
+  "1h 37min",
+  classificacao_livre,
+  "Os raivosos passarinhos que não voam e os porquinhos conspiradores levam sua briga para outro nível quando surge uma nova ameaça que coloca ambas as Ilhas dos Porcos e dos Pássaros em perigo.",
+  ["img/icons/plataformas/primeVideo.png"],
+  ["https://www.primevideo.com/dp/amzn1.dv.gti.30b85627-7a75-445f-8643-d6ca2d2ebf49"]
+);
+
+let filme27 = new Filme(
+  "O Poderoso Chefinho", 
+  "img/posters/filmes/oPoderosoChefinho.jpg", 
+  "https://www.youtube.com/embed/QYYsJkUl7TY", 
+  "2017",
+  ["Animação", "Família"],
+  ["Telecine"],
+  "1h 37min",
+  classificacao_livre,
+  "Um bebê falante que usa terno e carrega uma maleta misteriosa une forças com seu irmão mais velho invejoso para impedir que um inescrupuloso CEO acabe com o amor no mundo. A missão é salvar os pais, impedir a catástrofe e provar que o mais intenso dos sentimentos é uma poderosa força.",
+  ["img/icons/plataformas/telecine.png"],
+  ["https://www.telecine.com.br/filme/O_Poderoso_Chefinho_7412"]
+);
+
+let filme28 = new Filme(
+  "Como Treinar o seu Dragão 3", 
+  "img/posters/filmes/comoTreinarSeuDragao.jpg", 
+  "https://www.youtube.com/embed/P5GAg92efK0", 
+  "2019",
+  ["Animação", "Aventura", "Família"],
+  ["Netflix"],
+  "1h 44min",
+  classificacao_livre,
+  "Decidido a fazer de Berk um verdadeiro libelo ao ideal da convivência pacífica entre homens e dragões, Soluço e seus amigos seguem atrás de caçadores, para não só libertar suas presas mas também impedir a matança desenfreada dos animais. O esforço do grupo desperta a atenção de Grimmel ao descobrir que entre eles está Banguela, um legítimo Fúria da Noite. O vilão então desenvolve um plano para capturá-lo a todo custo, usando como arma uma fêmea capturada, da mesma espécie.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/81021806"]
+);
+
+let filme29 = new Filme(
+  "Divertida Mente", 
+  "img/posters/filmes/divertidaMente.jpg", 
+  "https://www.youtube.com/embed/LSpeM7G4zfY", 
+  "2015",
+  ["Animação", "Família"],
+  ["Disney +"],
+  "1h 34min",
+  classificacao_livre,
+  "Com a mudança para uma nova cidade, as emoções de Riley, que tem apenas 11 anos de idade, ficam extremamente agitadas. Uma confusão na sala de controle do seu cérebro deixa a Alegria e a Tristeza de fora, afetando a vida de Riley radicalmente.",
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/video/1e48d13a-4e0b-4a89-b3fd-e13a00c1d451?distributionPartner=google"]
+);
+
+let filme30 = new Filme(
   "Vingadores: Guerra Infinita", 
   "img/posters/filmes/vingadoresGuerraInfinita.jpg", 
   "https://www.youtube.com/embed/t_ULBP6V9bg", 
@@ -410,7 +466,7 @@ let filme26 = new Filme(
   ["https://www.disneyplus.com/pt-br/movies/vingadores-guerra-infinita-da-marvel-studios/1WEuZ7H6y39v"]
 );
 
-let filme27 = new Filme(
+let filme31 = new Filme(
   "John Wick 3: Parabellum", 
   "img/posters/filmes/johnWick3.jpg", 
   "https://www.youtube.com/embed/PP0cnmZPbws", 
@@ -424,7 +480,7 @@ let filme27 = new Filme(
   ["https://www.telecine.com.br/filme/27981?utm_source=adoro_cinema&utm_medium=cpc&utm_campaign=aquisicao|parcerias|up&utm_content=john_wick_3_parabellum|filme_250861|botao|none|adoro_cinema|none"]
 );
 
-let filme28 = new Filme(
+let filme32 = new Filme(
   "Logan", 
   "img/posters/filmes/logan.jpg", 
   "https://www.youtube.com/embed/KPND6SgkN7Q", 
@@ -438,50 +494,7 @@ let filme28 = new Filme(
   ["https://www.starplus.com/movies/logan/4BPdGjuoQAvT"]
 );
 
-let filme29 = new Filme(
-  "Velozes e furiosos 8", 
-  "img/posters/filmes/fast8.jpg", 
-  "https://www.youtube.com/embed/KvSlvtPnZTo", 
-  "2017",
-  ["Ação", "Suspense"],
-  ["Youtube"],
-  "2h 16min",
-  classificacao_14anos,
-  "Depois da aposentadoria de Brian e Mia, Dom e Letty aproveitam a lua de mel e levam uma vida pacata e normal. Mas a adrenalina do passado volta com tudo quando uma mulher misteriosa obriga Dom a retornar ao mundo do crime e da velocidade.",
-  ["img/icons/plataformas/youtube.png"],
-  ["https://www.youtube.com/watch?v=Yl8zGoIW-Vo"]
-);
-
-let filme30 = new Filme(
-  "Duro de Matar: Um bom dia para morrer", 
-  "img/posters/filmes/duroDeMatar.jpg", 
-  "https://www.youtube.com/embed/VFp36WYErJM", 
-  "2013",
-  ["Ação"],
-  ["Star +"],
-  "1h 38min",
-  classificacao_16anos,
-  "O policial John McClane não tem boa relação com seu filho. Os dois precisam deixar de lado suas diferenças para livrar o rapaz de uma acusação e proteger um terrorista que diz ter um dossiê contra um potencial candidato à presidência da Rússia.",
-  ["img/icons/plataformas/star+.png"],
-  ["https://www.starplus.com/movies/a-good-day-to-die-hard/VZjwaJrZlPBz"]
-);
-
-
-let filme31 = new Filme(
-  "Esquadrão Suicida", 
-  "img/posters/filmes/esquadraoSuicida.jpg", 
-  "https://www.youtube.com/embed/8pYp4T8TdP4", 
-  "2016",
-  ["Ação", "Fantasia"],
-  ["Prime Video"],
-  "2h 03min",
-  classificacao_12anos,
-  "Um time dos mais perigosos e encarcerados supervilões são contratados por uma agência secreta do governo, para combater uma poderosa entidade. No entanto, quando eles percebem que não foram escolhidos apenas para ter sucesso, mas também por sua óbvia culpa quando inevitavelmente falharem, terão que decidir se vale a pena ou não continuar correndo risco de morte.",
-  ["img/icons/plataformas/primeVideo.png"],
-  ["https://www.primevideo.com/dp/amzn1.dv.gti.a0b8f07a-32bf-8f41-daad-1cf96a33b97a?autoplay=1&ref_=atv_cf_strg_wb"]
-);
-
-let filme32 = new Filme(
+let filme33 = new Filme(
   "Transformers: O último cavalheiro", 
   "img/posters/filmes/transformers.jpg", 
   "https://www.youtube.com/embed/XdiU0W1lG-Y", 
@@ -495,46 +508,32 @@ let filme32 = new Filme(
   ["https://www.netflix.com/watch/80164399?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYQbYGAOqisLCFQEAAAAS?camp=googleHBOMAX&action=open", "https://www.primevideo.com/dp/amzn1.dv.gti.98b3067c-2965-c840-bea8-95f04d0cc885", "https://www.telecine.com.br/filme/Transformers_O_%C3%9Altimo_Cavaleiro_7843"]
 );
 
-let filme33 = new Filme(
-  "Venom", 
-  "img/posters/filmes/venom.jpg", 
-  "https://www.youtube.com/embed/Y9PQon7wbpU", 
-  "2018",
-  ["Ação", "Ficção científica"],
-  ["Netflix"],
-  "2h 20min",
-  classificacao_14anos,
-  "O jornalista Eddie Brock desenvolve força e poder sobre-humanos quando seu corpo se funde com o alienígena Venom. Dominado pela raiva, Venom tenta controlar as novas e perigosas habilidades de Eddie.",
-  ["img/icons/plataformas/netflix.png"],
-  ["https://www.netflix.com/watch/80991034?source=35"]
-);
-
 let filme34 = new Filme(
-  "Os mercenários 3", 
-  "img/posters/filmes/osMercenarios3.jpg", 
-  "https://www.youtube.com/embed/93vai1Zi6rc", 
-  "2014",
+  "Duro de Matar: Um bom dia para morrer", 
+  "img/posters/filmes/duroDeMatar.jpg", 
+  "https://www.youtube.com/embed/VFp36WYErJM", 
+  "2013",
   ["Ação"],
-  ["Netflix", "HBO Max", "Telecine"],
-  "2h 07min",
-  classificacao_14anos,
-  "Barney e sua trupe de mercenários resgatam Doc, um dos integrantes do grupo, que estava preso há oito anos. Ao participarem de uma missão, os mercenários são surpreendidos quando reencontram Conrad, um comerciante de armas impiedoso, que Barney pensava ter matado. Novos membros, mais jovens e mais rápidos, entram para equipe e um novo duelo começa.",
-  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/telecine.png"],
-  ["https://www.netflix.com/watch/70307662?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYF5NZw5xNAaavQEAAAMu?camp=googleHBOMAX", "https://www.telecine.com.br/filme/Os_Mercen%C3%A1rios_3_4410"]
+  ["Star +"],
+  "1h 38min",
+  classificacao_16anos,
+  "O policial John McClane não tem boa relação com seu filho. Os dois precisam deixar de lado suas diferenças para livrar o rapaz de uma acusação e proteger um terrorista que diz ter um dossiê contra um potencial candidato à presidência da Rússia.",
+  ["img/icons/plataformas/star+.png"],
+  ["https://www.starplus.com/movies/a-good-day-to-die-hard/VZjwaJrZlPBz"]
 );
 
 let filme35 = new Filme(
-  "Noite sem fim", 
-  "img/posters/filmes/noiteSemFim.jpg", 
-  "https://www.youtube.com/embed/9RKkX7xw2pg", 
-  "2015",
-  ["Ação", "Policial", "Drama"],
-  ["Netflix", "HBO Max"],
-  "1h 54min",
-  classificacao_16anos,
-  "O mafioso e pistoleiro do Brooklyn Jimmy Conlon descobre que seu filho Mike está em perigo, e deve escolher entre a família do crime que escolheu e a família real que abandonou há muito tempo. Com Mike foragido, a única penitência de Conlon para os erros do passado pode ser evitar que o filho tenha o mesmo destino que o dele.",
-  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png"],
-  ["https://www.netflix.com/watch/80021752?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYKa3JAfyRsNomgEAAABi?camp=googleHBOMAX"]
+  "Esquadrão Suicida", 
+  "img/posters/filmes/esquadraoSuicida.jpg", 
+  "https://www.youtube.com/embed/8pYp4T8TdP4", 
+  "2016",
+  ["Ação", "Fantasia"],
+  ["Prime Video"],
+  "2h 03min",
+  classificacao_12anos,
+  "Um time dos mais perigosos e encarcerados supervilões são contratados por uma agência secreta do governo, para combater uma poderosa entidade. No entanto, quando eles percebem que não foram escolhidos apenas para ter sucesso, mas também por sua óbvia culpa quando inevitavelmente falharem, terão que decidir se vale a pena ou não continuar correndo risco de morte.",
+  ["img/icons/plataformas/primeVideo.png"],
+  ["https://www.primevideo.com/dp/amzn1.dv.gti.a0b8f07a-32bf-8f41-daad-1cf96a33b97a?autoplay=1&ref_=atv_cf_strg_wb"]
 );
 
 let filme36 = new Filme(
@@ -552,20 +551,76 @@ let filme36 = new Filme(
 );
 
 let filme37 = new Filme(
-  "13° Distrito", 
-  "img/posters/filmes/13distrito.jpg", 
-  "https://www.youtube.com/embed/yz1T-OYdiYo", 
-  "2014",
-  ["Ação", "Policial"],
-  ["HBO Max"],
-  "1h 31min",
+  "Venom", 
+  "img/posters/filmes/venom.jpg", 
+  "https://www.youtube.com/embed/Y9PQon7wbpU", 
+  "2018",
+  ["Ação", "Ficção científica"],
+  ["Netflix"],
+  "2h 20min",
   classificacao_14anos,
-  "A área de Brick Mansions é extremamente violenta e abandonada pela polícia local, que foi corrompida pelo crime organizado. Todo dia é uma batalha para o honesto detetive Damien Collier, que pretende vingar o assassinato do seu pai. Ele recebe a missão de entrar na perigosa região e localizar uma bomba que pode destruir a cidade de Detroit inteira. Para tanto, Damien conta com a ajuda do jovem Lino, que precisa tirar a namorada das mãos de um traficante.",
-  ["img/icons/plataformas/hbomax.png"],
-  ["https://play.hbomax.com/page/urn:hbo:page:GYIjhuA2vMJGxLwEAAAJV:type:feature?camp=googleHBOMAX"]
+  "O jornalista Eddie Brock desenvolve força e poder sobre-humanos quando seu corpo se funde com o alienígena Venom. Dominado pela raiva, Venom tenta controlar as novas e perigosas habilidades de Eddie.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80991034?source=35"]
 );
 
 let filme38 = new Filme(
+  "Os mercenários 3", 
+  "img/posters/filmes/osMercenarios3.jpg", 
+  "https://www.youtube.com/embed/93vai1Zi6rc", 
+  "2014",
+  ["Ação"],
+  ["Netflix", "HBO Max", "Telecine"],
+  "2h 07min",
+  classificacao_14anos,
+  "Barney e sua trupe de mercenários resgatam Doc, um dos integrantes do grupo, que estava preso há oito anos. Ao participarem de uma missão, os mercenários são surpreendidos quando reencontram Conrad, um comerciante de armas impiedoso, que Barney pensava ter matado. Novos membros, mais jovens e mais rápidos, entram para equipe e um novo duelo começa.",
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/telecine.png"],
+  ["https://www.netflix.com/watch/70307662?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYF5NZw5xNAaavQEAAAMu?camp=googleHBOMAX", "https://www.telecine.com.br/filme/Os_Mercen%C3%A1rios_3_4410"]
+);
+
+let filme39 = new Filme(
+  "Noite sem fim", 
+  "img/posters/filmes/noiteSemFim.jpg", 
+  "https://www.youtube.com/embed/9RKkX7xw2pg", 
+  "2015",
+  ["Ação", "Policial", "Drama"],
+  ["Netflix", "HBO Max"],
+  "1h 54min",
+  classificacao_16anos,
+  "O mafioso e pistoleiro do Brooklyn Jimmy Conlon descobre que seu filho Mike está em perigo, e deve escolher entre a família do crime que escolheu e a família real que abandonou há muito tempo. Com Mike foragido, a única penitência de Conlon para os erros do passado pode ser evitar que o filho tenha o mesmo destino que o dele.",
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png"],
+  ["https://www.netflix.com/watch/80021752?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYKa3JAfyRsNomgEAAABi?camp=googleHBOMAX"]
+);
+
+let filme40 = new Filme(
+  "Velozes e furiosos 8", 
+  "img/posters/filmes/fast8.jpg", 
+  "https://www.youtube.com/embed/KvSlvtPnZTo", 
+  "2017",
+  ["Ação", "Suspense"],
+  ["Youtube"],
+  "2h 16min",
+  classificacao_14anos,
+  "Depois da aposentadoria de Brian e Mia, Dom e Letty aproveitam a lua de mel e levam uma vida pacata e normal. Mas a adrenalina do passado volta com tudo quando uma mulher misteriosa obriga Dom a retornar ao mundo do crime e da velocidade.",
+  ["img/icons/plataformas/youtube.png"],
+  ["https://www.youtube.com/watch?v=Yl8zGoIW-Vo"]
+);
+
+let filme41 = new Filme(
+  "Rambo: Até o fim", 
+  "img/posters/filmes/ramboAteOFIM.jpg", 
+  "https://www.youtube.com/embed/yd71hmhobAg", 
+  "2019",
+  ["Ação", "Aventura"],
+  ["Telecine"],
+  "1h 29min",
+  classificacao_18anos,
+  "O tempo passou para Rambo, que agora vive recluso em um rancho. Sua vida marcada por lutas violentas ficou para trás, mas deixou marcas inesquecíveis. No entanto, quando uma jovem de uma família amiga é sequestrada, Rambo precisa confrontar seu passado e resgatar suas habilidades de combate para enfrentar o mais perigoso cartel mexicano. A busca logo se transforma em uma caçada por justiça, na qual nenhum criminoso é perdoado.",
+  ["img/icons/plataformas/telecine.png"],
+  ["https://www.telecine.com.br/filme/Rambo_At%C3%A9_o_Fim_17589"]
+);
+
+let filme42 = new Filme(
   "Deadpool 2", 
   "img/posters/filmes/deadpool2.jpg", 
   "https://www.youtube.com/embed/fZWN2UBMK3Q", 
@@ -579,9 +634,23 @@ let filme38 = new Filme(
   ["https://www.starplus.com/movies/deadpool-2/LSuXSQ3S5mxU"]
 );
 
+let filme43 = new Filme(
+  "13° Distrito", 
+  "img/posters/filmes/13distrito.jpg", 
+  "https://www.youtube.com/embed/yz1T-OYdiYo", 
+  "2014",
+  ["Ação", "Policial"],
+  ["HBO Max"],
+  "1h 31min",
+  classificacao_14anos,
+  "A área de Brick Mansions é extremamente violenta e abandonada pela polícia local, que foi corrompida pelo crime organizado. Todo dia é uma batalha para o honesto detetive Damien Collier, que pretende vingar o assassinato do seu pai. Ele recebe a missão de entrar na perigosa região e localizar uma bomba que pode destruir a cidade de Detroit inteira. Para tanto, Damien conta com a ajuda do jovem Lino, que precisa tirar a namorada das mãos de um traficante.",
+  ["img/icons/plataformas/hbomax.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GYIjhuA2vMJGxLwEAAAJV:type:feature?camp=googleHBOMAX"]
+);
+
  let filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
- let filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24, filme25]
- let filmes1 = [filme26, filme27, filme28, filme29, filme30, filme31, filme32, filme33, filme34, filme35, filme36, filme37, filme38]
+ let filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24, filme25, filme26, filme27, filme28, filme29]
+ let filmes1 = [filme30, filme31, filme32, filme33, filme34, filme35, filme36, filme37, filme38, filme39, filme40, filme41, filme42, filme43]
 
 let filmes_all = [filmes, filmes0, filmes1]
 
