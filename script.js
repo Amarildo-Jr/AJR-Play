@@ -36,26 +36,27 @@ let filme0 = new Filme(
   "img/posters/filmes/reiDoShow.jpg", 
   "https://www.youtube.com/embed/r5R6CVp_JzU", 
   "2017",
-  "Drama, Comédia, Musical",
-  "filme",
+  ["Drama", "Comédia", "Musical"],
+  ["Disney +"],
   "1h 44min",
   classificacao_12anos,
   "De origem humilde e desde a infância sonhando com um mundo mágico, P.T. Barnum (Hugh Jackman) desafia as barreiras sociais se casando com a filha do patrão do pai e dá o pontapé inicial na realização de seu maior desejo abrindo uma espécie de museu de curiosidades. O empreendimento fracassa, mas ele logo vislumbra uma ousada saída: produzir um grande show estrelado por freaks, fraudes, bizarrices e rejeitados de todos os tipos.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/o-rei-do-show/66TvI61aPddY"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/o-rei-do-show/66TvI61aPddY"]
 );
-  let filme1 = new Filme(
+
+let filme1 = new Filme(
   "Homem-aranha: Sem Volta pra Casa", 
   "img/posters/filmes/homemAranha.jpg", 
   "https://youtube.com/embed/rzOvXvBNzMc", 
   "2021", 
-  "Ação, Aventura, Fantasia", 
-  "filme",
+  ["Ação", "Aventura", "Fantasia"], 
+  ["Cinema"],
   "2h 28min",
   classificacao_12anos,
   "Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências da sua identidade como aracnídeo ter sido revelada pela reportagem do Clarim Diário. Incapaz de separar sua vida normal das aventuras de ser um super-herói, Parker pede ao Doutor Estranho (Benedict Cumberbatch) para que todos esqueçam sua verdeira identidade. Entretanto, o feitiço não sai como planejado e a situação torna-se ainda mais perigosa, forçando-o a descobrir o que realmente significa ser o Homem-Aranha.",
-  "img/icons/plataformas/cinepolis.png",
-  "https://www.cinepolis.com.br/filme/13337-homem-aranha-sem-volta-para-casa.html"
+  ["img/icons/plataformas/cinepolis.png"],
+  ["https://www.cinepolis.com.br/filme/13337-homem-aranha-sem-volta-para-casa.html"]
 );
 
   let filme2 = new Filme(
@@ -63,13 +64,13 @@ let filme0 = new Filme(
   "img/posters/filmes/jogoDaImitacao.jpeg", 
   "https://youtube.com/embed/YIkKbMcJL_4", 
   "2014",
-  "Biografia, Drama",
-  "filme",
+  ["Biografia", "Drama"],
+  ["HBO Max", "Prime Video"],
   "1h 55min",
   classificacao_12anos,
   "Em 1939, a recém-criada agência de inteligência britânica MI6 recruta Alan Turing, um aluno da Universidade de Cambridge, para entender códigos nazistas, incluindo o 'Enigma', que criptógrafos acreditavam ser inquebrável. A equipe de Turing, incluindo Joan Clarke, analisa as mensagens de 'Enigma', enquanto ele constrói uma máquina para decifrá-las. Após desvendar as codificações, Turing se torna herói. Porém, em 1952, autoridades revelam sua homossexualidade, e a vida dele vira um pesadelo.",
-  "img/icons/plataformas/hboMax.png",
-  "https://play.hbomax.com/page/urn:hbo:page:GYIbL5QU0QJCtnAEAAAAJ:type:feature?camp=googleHBOMAX"
+  ["img/icons/plataformas/hboMax.png", "img/icons/plataformas/primeVideo.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GYIbL5QU0QJCtnAEAAAAJ:type:feature?camp=googleHBOMAX", "https://www.primevideo.com/dp/amzn1.dv.gti.ceb32035-6406-89ae-1c1c-aea06c4abdf2"]
 );
 
 let filme3 = new Filme(
@@ -77,13 +78,13 @@ let filme3 = new Filme(
   "img/posters/filmes/yourName.jpg", 
   "https://youtube.com/embed/soQXM3XVvIU", 
   "2016",
-  "Animação, Fantasia",
-  "filme",
+  ["Animação", "Fantasia"],
+  ["HBO Max"],
   "1h 50min",
   classificacao_10anos,
   "Mitsuha Miyamizu (Mone Kamishiraishi) é uma jovem que mora no interior do Japão e que deseja deixar sua pequena cidade para trás para tentar a sorte em Tóquio. Enquanto isso, Taki Tachibana (Ryûnosuke Kamiki), um jovem que trabalha em um restaurante italiano em Tóquio, deseja largar o seu emprego para tentar se tornar um arquiteto. Os dois não se conhecem, mas estão direta e misteriosamente conectados pelas imagens de seus sonhos.",
-  "img/icons/plataformas/hboMax.png",
-  "https://play.hbomax.com/page/urn:hbo:page:GYIjjJwrPnZGxLwEAAANC:type:feature?camp=googleHBOMAX"
+  ["img/icons/plataformas/hboMax.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GYIjjJwrPnZGxLwEAAANC:type:feature?camp=googleHBOMAX"]
 );
 
 let filme4 = new Filme(
@@ -91,13 +92,13 @@ let filme4 = new Filme(
   "img/posters/filmes/hachiko.jpeg", 
   "https://youtube.com/embed/UFY8vW5IedY", 
   "2009",
-  "Drama, Família",
-  "filme",
+  ["Drama", "Família"],
+  ["Globoplay", "Prime Video"],
   "1h 33min",
   classificacao_livre,
   "Parker Wilson (Richard Gere) é um professor universitário que, ao retornar do trabalho, encontra na estação de trem um filhote de cachorro da raça akita, conhecido por sua lealdade. Sem ter como deixá-lo na estação, Parker o leva para casa mesmo sabendo que Cate (Joan Allen), sua esposa, é contra a presença de um cachorro. Aos poucos Parker se afeiçoa ao filhote, que tem o nome Hachi escrito na coleira, em japonês. Cate cede e aceita sua permanência. Hachi cresce e passa a acompanhar Parker até a estação de trem, retornando ao local no horário em que o professor está de volta. Até que um acontecimento inesperado altera sua vida.",
-  "img/icons/plataformas/globoplay.png",
-  "https://globoplay.globo.com/sempre-ao-seu-lado/t/ncRkKtsgQd/"
+  ["img/icons/plataformas/globoplay.png", "img/icons/plataformas/primeVideo.png"],
+  ["https://globoplay.globo.com/sempre-ao-seu-lado/t/ncRkKtsgQd/", "https://www.primevideo.com/dp/amzn1.dv.gti.0cb4e25d-d1ff-faef-8f99-5ee102e31d0c"]
   );
 
 let filme5 = new Filme(
@@ -105,13 +106,13 @@ let filme5 = new Filme(
   "img/posters/filmes/avengers.jpg", 
   "https://www.youtube.com/embed/4QRdB4RAQMs", 
   "2019",
-  "Ação, Fantasia, Aventura",
-  "filme",
+  ["Ação", "Fantasia", "Aventura"],
+  ["Disney +"],
   "3h 01min",
   classificacao_12anos,
   "Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando perdido no espaço sem água nem comida, o Capitão América/Steve Rogers (Chris Evans) e a Viúva Negra/Natasha Romanov (Scarlett Johansson) precisam liderar a resistência contra o titã louco.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/vingadores-ultimato-da-marvel-studios/aRbVJUb2h2Rf"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/vingadores-ultimato-da-marvel-studios/aRbVJUb2h2Rf"]
   );
 
 let filme6 = new Filme(
@@ -119,13 +120,13 @@ let filme6 = new Filme(
   "img/posters/filmes/it2.jpg", 
   "https://youtube.com/embed/Zs0hLEHAoSs", 
   "2019",
-  "Terror",
-  "filme",
+  ["Terror"],
+  ["Telecine"],
   "2h 50min",
   classificacao_16anos,
   "Em It - Capítulo 2, 27 anos depois dos eventos de \"It - A Coisa\", Mike (Isaiah Mustafa) percebe que o palhaço Pennywise (Bill Skarsgard) está de volta à cidade de Derry. Ele convoca os antigos amigos do Clube dos Otários para honrar a promessa de infância e acabar com o inimigo de uma vez por todas. Mas quando Bill (James McAvoy), Beverly (Jessica Chastain), Ritchie (Bill Hader), Ben (Jay Ryan) e Eddie (James Ransone) retornam às suas origens, eles precisam se confrontar a traumas nunca resolvidos de suas infâncias, e que repercutem até hoje na vida adulta.",
-  "img/icons/plataformas/telecine.png",
-  "https://www.telecine.com.br/filme/It_Capítulo_Dois_26797?action=play_filme"
+  ["img/icons/plataformas/telecine.png"],
+  ["https://www.telecine.com.br/filme/It_Capítulo_Dois_26797?action=play_filme"]
 );
 
 let filme7 = new Filme(
@@ -133,13 +134,13 @@ let filme7 = new Filme(
   "img/posters/filmes/osParcas.jpeg", 
   "https://www.youtube.com/embed/FUlEV4tzzQ8", 
   "2017",
-  "Comédia",
-  "filme",
+  ["Comédia"],
+  ["Globoplay", "Telecine"],
   "1h 40min",
   classificacao_14anos,
   "Chantageados e enganados por um ambicioso trambiqueiro (Oscar Magrini), Toinho (Tom Cavalcante), Ray Van (Whindersson Nunes), Pilôra (Tirullipa) e Romeu (Bruno de Luca) precisam organizar uma festa inesquecível de casamento sem nenhum dinheiro no bolso. Caso falhem, terão que lidar com o maior contrabandista da famosa rua 25 de Março em São Paulo, que é também o pai da noiva (Paloma Bernardi).",
-  "img/icons/plataformas/globoplay.png",
-  "https://globoplay.globo.com/os-parcas/t/QN8SN5MVB9/"
+  ["img/icons/plataformas/globoplay.png", "img/icons/plataformas/telecine.png"],
+  ["https://globoplay.globo.com/os-parcas/t/QN8SN5MVB9/", "https://www.telecine.com.br/filme/Os_Par%C3%A7as_7851"]
 );
 
 let filme8 = new Filme(
@@ -147,13 +148,13 @@ let filme8 = new Filme(
   "img/posters/filmes/aTeoriaDeTudo.jpeg", 
   "https://youtube.com/embed/SbUVNHdPE4w", 
   "2014",
-  "Biografia, Romance, Drama",
-  "filme",
+  ["Biografia", "Romance", "Drama"],
+  ["Globoplay", "Star +"],
   "2h 03min",
   classificacao_10anos,
   "Baseado na biografia de Stephen Hawking, o filme mostra como o jovem astrofísico (Eddie Redmayne) fez descobertas importantes sobre o tempo, além de retratar o seu romance com a aluna de Cambridge Jane Wide (Felicity Jones) e a descoberta de uma doença motora degenerativa quando tinha apenas 21 anos.",
-  "img/icons/plataformas/globoplay.png",
-  "https://globoplay.globo.com/a-teoria-de-tudo/t/mvxqnCSdYg/"
+  ["img/icons/plataformas/globoplay.png", "img/icons/plataformas/star+.png"],
+  ["https://globoplay.globo.com/a-teoria-de-tudo/t/mvxqnCSdYg/", "https://www.starplus.com/video/4962daae-8f5d-4cf3-a50b-edb333d9c22c?distributionPartner=google"]
 );
 
 let filme9 = new Filme(
@@ -161,13 +162,13 @@ let filme9 = new Filme(
   "img/posters/filmes/joker.jpeg", 
   "https://www.youtube.com/embed/ntSvI2qaRxU", 
   "2019",
-  "Drama",
-  "filme",
+  ["Drama"],
+  ["Telecine"],
   "2h 02min",
   classificacao_16anos,
   "Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.",
-  "img/icons/plataformas/telecine.png",
-  "https://www.telecine.com.br/filme/Coringa_27252?action=play_filme"
+  ["img/icons/plataformas/telecine.png"],
+  ["https://www.telecine.com.br/filme/Coringa_27252"]
 );
 
 let filme10 = new Filme(
@@ -175,13 +176,13 @@ let filme10 = new Filme(
   "img/posters/filmes/lucy.jpeg", 
   "https://www.youtube.com/embed/hI8TuEc45zw", 
   "2014",
-  "Ficção Científica, Ação",
-  "filme",
+  ["Ficção Científica", "Ação"],
+  ["Netflix", "Prime Video", "Star +"],
   "1h 29min",  
   classificacao_14anos,
   "Quando a inocente jovem Lucy (Scarlett Johansson) aceita transportar drogas dentro do seu estômago, ela não conhece muito bem os riscos que corre. Por acaso, ela acaba absorvendo as drogas, e um efeito inesperado acontece: Lucy ganha poderes sobre-humanos, incluindo a telecinesia, a ausência de dor e a capacidade de adquirir conhecimento instantaneamente.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/70307658"
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/primeVideo.png", "img/icons/plataformas/star+.png",],
+  ["https://www.netflix.com/br/title/70307658", "https://www.primevideo.com/dp/amzn1.dv.gti.8ab36a91-fa4a-e8f1-4c3e-cdf1209572c9", "https://www.starplus.com/video/289a4216-f836-47a2-b88f-c48776047cb7?distributionPartner=google"]
 );
 
 let filme11 = new Filme(
@@ -189,13 +190,13 @@ let filme11 = new Filme(
   "img/posters/filmes/animaisFantasticos.jpg", 
   "https://www.youtube.com/embed/TiaxfJ7QrIo", 
   "2016",
-  "Fantasia, Aventura",
-  "filme",
+  ["Fantasia", "Aventura"],
+  ["HBO Max"],
   "2h 13min",
   classificacao_12anos,
   "O excêntrico magizoologista Newt Scamander (Eddie Redmayne) chega à cidade de Nova York levando com muito zelo sua preciosa maleta, um objeto mágico onde ele carrega fantásticos animais do mundo da magia que coletou durante as suas viagens. Em meio a comunidade bruxa norte-americana, que teme muito mais a exposição aos trouxas do que seus colegas ingleses, Newt precisará usar todas suas habilidades e conhecimentos para capturar uma variedade de criaturas que acabam fugindo.",
-  "img/icons/plataformas/hboMax.png",
-  "https://play.hbomax.com/page/urn:hbo:page:GXssTNAEn61VGwwEAAABn:type:feature?camp=googleHBOMAX"
+  ["img/icons/plataformas/hboMax.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GXssTNAEn61VGwwEAAABn:type:feature?camp=googleHBOMAX"]
 );
 
 let filme12 = new Filme(
@@ -203,13 +204,13 @@ let filme12 = new Filme(
   "img/posters/filmes/interstellar.jpg", 
   "https://www.youtube.com/embed/frD_IiY_A3E", 
   "2014",
-  "Ficção Científica, Drama",
-  "filme",
+  ["Ficção Científica", "Drama"],
+  ["HBO Max"],
   "2h 49min",
   classificacao_10anos,
   "Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta.",
-  "img/icons/plataformas/hboMax.png",
-  "https://play.hbomax.com/page/urn:hbo:page:GYGP7pwQv_ojDXAEAAAFc:type:feature?camp=googleHBOMAX"
+  ["img/icons/plataformas/hboMax.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GYGP7pwQv_ojDXAEAAAFc:type:feature?camp=googleHBOMAX"]
 );
 
 let filme13 = new Filme(
@@ -217,13 +218,13 @@ let filme13 = new Filme(
   "img/posters/filmes/fast7.jpeg", 
   "https://www.youtube.com/embed/hujU0dw6Erk", 
   "2015",
-  "Ação",
-  "filme",
+  ["Ação"],
+  ["Telecine"],
   "2h 17min",
   classificacao_14anos,
   "Velozes e Furiosos 7 acompanha Dom (Vin Diesel), Brian (Paul Walker), Letty (Michelle Rodriguez) e o resto da equipe após os acontecimentos em Londres. Apesar de terem suas chances de voltar para os Estados Unidos e recomeçarem suas vidas, a tranquilidade do grupo é destruída quando Deckard Shaw (Jason Statham), um assassino profissional, quer vingança pela morte de seu irmão. Agora, a equipe tem que se reunir para impedir este novo vilão. Mas dessa vez, não é só sobre ser veloz. A luta é pela sobrevivência.",
-  "img/icons/plataformas/telecine.png",
-  "https://www.telecine.com.br/filme/Velozes_and_Furiosos_7_13549?action=play_filme"
+  ["img/icons/plataformas/telecine.png"],
+  ["https://www.telecine.com.br/filme/Velozes_and_Furiosos_7_13549?action=play_filme"]
 );
 
 let filme14 = new Filme(
@@ -231,13 +232,13 @@ let filme14 = new Filme(
   "img/posters/filmes/skyHigh.jpg",
   "https://www.youtube.com/embed/I82ZaHx0PWk", 
   "2005",
-  "Comédia, Fantasia, Família",
-  "filme",
+  ["Comédia", "Fantasia", "Família"],
+  ["Disney +"],
   "1h 42min",
   classificacao_livre,
   "Will Stronghold (Michael Angarano) é um adolescente comum, que se preocupa com os amigos, as notas do colégio e garotas. Ele é também a 3ª geração de sua família a estudar na conceituada Sky High, uma escola de elite que tem por meta transformar jovens superdotados em super-heróis do futuro. Só que há um problema: Will está começando o 1º ano sem ter manifestado nenhum superpoder, o que faz com que seja apelidado de \"parceiro coadjuvante\" pelos colegas de escola. Humilhado constantemente na Sky High, Will ainda precisa esconder o fato de seus pais, os famosos super-heróis Commander (Kurt Russell) e Jetstream (Kelly Preston).",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/sky-high-super-escola-de-herois/2irhFMBxsO5H"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/sky-high-super-escola-de-herois/2irhFMBxsO5H"]
 );
 
 
@@ -246,13 +247,13 @@ let filme15 = new Filme(
   "img/posters/filmes/toyStory4.jpg",
   "https://www.youtube.com/embed/76CslX-q5C4", 
   "2019",
-  "Animação, Aventura, Família",
-  "filme",
+  ["Animação", "Aventura", "Família"],
+  ["Disney +"],
   "1h 40min",
   classificacao_livre,
   "Agora morando na casa da pequena Bonnie, Woody apresenta aos amigos o novo brinquedo construído por ela: Forky, baseado em um garfo de verdade. O novo posto de brinquedo não o agrada nem um pouco, o que faz com que Forky fuja de casa. Decidido a trazer de volta o atual brinquedo favorito de Bonnie, Woody parte em seu encalço e, no caminho, reencontra Bo Peep, que agora vive em um parque de diversões.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/toy-story-4/2CtjW4tKzIHp"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/toy-story-4/2CtjW4tKzIHp"]
 );
 
 let filme16 = new Filme(
@@ -260,13 +261,13 @@ let filme16 = new Filme(
   "img/posters/filmes/kungFuPanda3.jpeg",
   "https://www.youtube.com/embed/q75bGipJzIg", 
   "2016",
-  "Animação, Aventura, Comédia, Família",
-  "filme",
+  ["Animação", "Aventura", "Comédia", "Família"],
+  ["Globoplay", "Netflix", "Telecine"],
   "1h 35min",
   classificacao_livre,
   "Desta vez, Mestre Shifu tem como principal ensinamento fazer com que Po aprenda a técnica de dominação do Chi, uma espécie de “energia vital”. Porém, o atrapalhado panda acaba se desconcentrando com a chegada do pai de sangue, o panda Li, que o carrega para a vila secreta dos pandas – aguçando o ciúme do Sr Ping, o “pai” ganso de Po. Em paralelo, o poderoso touro Kai, O Coletor, um centenário inimigo do Mestre Oogway, reúne forças para voltar para o mundo dos vivos e tomar o que ele acha que é dele por direito. Caberá a Po e seus amigos impedir o maléfico plano do vilão.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/80071348"
+  ["img/icons/plataformas/globoplay.png", "img/icons/plataformas/netflix.png", "img/icons/plataformas/telecine.png"],
+  ["https://globoplay.globo.com/kung-fu-panda-3/t/S9JHWjJmMg/", "https://www.netflix.com/br/title/80071348", "https://www.telecine.com.br/filme/Kung_Fu_Panda_3_3811"]
 );
 
 let filme17 = new Filme(
@@ -274,13 +275,13 @@ let filme17 = new Filme(
   "img/posters/filmes/vivaAvida.jpg", 
   "https://www.youtube.com/embed/iLmZZV-Nkuk", 
   "2017",
-  "Animação, Fantasia, Família",
-  "filme",
+  ["Animação", "Fantasia", "Família"],
+  ["Disney +"],
   "1h 45min",
   classificacao_livre,
   "Em Viva - A Vida é uma Festa, Miguel é um menino de 12 anos que quer muito ser um músico famoso, mas ele precisa lidar com sua família que desaprova seu sonho. Determinado a virar o jogo, ele acaba desencadeando uma série de eventos ligados a um mistério de 100 anos. A aventura, com inspiração no feriado mexicano do Dia dos Mortos, acaba gerando uma extraordinária reunião familiar.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/viva-a-vida-e-uma-festa/db9orsI5O4gC"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/viva-a-vida-e-uma-festa/db9orsI5O4gC"]
 );
 
 let filme18 = new Filme(
@@ -288,13 +289,13 @@ let filme18 = new Filme(
   "img/posters/filmes/comoTreinarSeuDragao.jpg", 
   "https://www.youtube.com/embed/P5GAg92efK0", 
   "2019",
-  "Animação, Aventura, Família",
-  "filme",
+  ["Animação", "Aventura", "Família"],
+  ["Netflix"],
   "1h 44min",
   classificacao_livre,
   "Decidido a fazer de Berk um verdadeiro libelo ao ideal da convivência pacífica entre homens e dragões, Soluço e seus amigos seguem atrás de caçadores, para não só libertar suas presas mas também impedir a matança desenfreada dos animais. O esforço do grupo desperta a atenção de Grimmel ao descobrir que entre eles está Banguela, um legítimo Fúria da Noite. O vilão então desenvolve um plano para capturá-lo a todo custo, usando como arma uma fêmea capturada, da mesma espécie.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/81021806"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/81021806"]
 );
 
 let filme19 = new Filme(
@@ -302,13 +303,13 @@ let filme19 = new Filme(
   "img/posters/filmes/carros.jpg", 
   "https://www.youtube.com/embed/0I1x9ew1OZU", 
   "2006",
-  "Animação, Comédia, Ação, Fantasia",
-  "filme",
+  ["Animação", "Comédia", "Família"],
+  ["Disney +"],
   "1h 36min",
   classificacao_livre,
   "Ao viajar para a Califórnia, o famoso carro de corridas Relâmpago McQueen se perde e vai parar em Radiator Springs, uma cidadezinha na Rota 66. Ele conhece novos amigos e aprende lições que mudam sua forma de encarar a vida.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/carros/41KYquQjLwge"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/carros/41KYquQjLwge"]
 );
 
 let filme20 = new Filme(
@@ -316,13 +317,13 @@ let filme20 = new Filme(
   "img/posters/filmes/madagascar3.jpg", 
   "https://www.youtube.com/embed/hPrSYz0BxS8", 
   "2012",
-  "Animação, Comédia",
-  "filme",
+  ["Animação", "Comédia"],
+  ["Netflix", "HBO Max", "Telecine"],
   "1h 35min",
   classificacao_livre,
   "Nossos amigos animais Alex, Marty, Glória e Melman vão para a Europa e passam a ser perseguidos por uma agente de controle de animais. Para despistá-la, eles se juntam a um grupo circense que sonha em se apresentar em Nova York, o lar dos animais.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/watch/70216224?source=35"
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/telecine.png"],
+  ["https://www.netflix.com/watch/70216224?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GXdcZSAKtkcPCwwEAACri?camp=googleHBOMAX", "https://www.telecine.com.br/filme/Madagascar_3_Os_Procurados_13832"]
 );
 
 let filme21 = new Filme(
@@ -330,13 +331,13 @@ let filme21 = new Filme(
   "img/posters/filmes/moana.jpg",
   "https://www.youtube.com/embed/XL4Tf1Eohv8", 
   "2017",
-  "Animação, Família",
-  "filme",
+  ["Animação", "Família"],
+  ["Disney +"],
   "1h 47min",
   classificacao_livre,
   "Moana Waialiki é uma corajosa jovem, filha do chefe de uma tribo na Oceania, vinda de uma longa linhagem de navegadores. Querendo descobrir mais sobre seu passado e ajudar a família, ela resolve partir em busca de seus ancestrais, habitantes de uma ilha mítica que ninguém sabe onde é. Acompanhada pelo lendário semideus Maui, Moana começa sua jornada em mar aberto, onde enfrenta terríveis criaturas marinhas e descobre histórias do submundo.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/moana-um-mar-de-aventuras/70GoJHflgHH9"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/moana-um-mar-de-aventuras/70GoJHflgHH9"]
 );
 
 let filme22 = new Filme(
@@ -344,13 +345,13 @@ let filme22 = new Filme(
   "img/posters/filmes/shrek2.jpg", 
   "https://www.youtube.com/embed/6SKf944GNig", 
   "2004",
-  "Animação, Comédia, Família, Aventura",
-  "filme",
+  ["Animação", "Comédia", "Família", "Aventura"],
+  ["Netflix", "Globoplay", "Telecine"],
   "1h 30min",
   classificacao_livre,
   "Após se casar com a Princesa Fiona (Cameron Diaz), Shrek (Mike Myers) vive feliz em seu pântano. Ao retornar de sua lua-de-mel Fiona recebe uma carta de seus pais, que não sabem que ela agora é um ogro, convidando-a para um jantar juntamente com seu grande amor, na intenção de conhecê-lo. A muito custo Fiona consegue convencer Shrek a ir visitá-los, tendo ainda a companhia do Burro (Eddie Murphy). Porém os problemas começam quando os pais de Fiona descobrem que ela não se casou com o Príncipe (Rupert Everett), a quem havia sido prometida, e enviam o Gato de Botas (Antonio Banderas) para separá-los.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/60034572"
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/globoplay.png", "img/icons/plataformas/telecine.png"],
+  ["https://www.netflix.com/br/title/60034572", "https://globoplay.globo.com/shrek-2/t/tSp8wVTZy1/", "https://www.telecine.com.br/filme/Shrek_2_19222"]
 );
 
 let filme23 = new Filme(
@@ -358,13 +359,13 @@ let filme23 = new Filme(
   "img/posters/filmes/aranhaverso.jpg", 
   "https://www.youtube.com/embed/SS6ABPkfmBE", 
   "2019",
-  "Animação, Ação, Família",
-  "filme",
+  ["Animação", "Ação", "Família"],
+  ["Telecine"],
   "1h 57min",
   classificacao_10anos,
   "Em Homem-Aranha no Aranhaverso, Miles Morales é um jovem negro do Brooklyn que se tornou o Homem-Aranha inspirado no legado de Peter Parker, já falecido. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói aracnídeo sob um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.",
-  "img/icons/plataformas/telecine.png",
-  "https://www.telecine.com.br/filme/Homem_Aranha_no_Aranhaverso_22591?action=play_filme"
+  ["img/icons/plataformas/telecine.png"],
+  ["https://www.telecine.com.br/filme/Homem_Aranha_no_Aranhaverso_22591"]
 );
 
 let filme24 = new Filme(
@@ -372,13 +373,13 @@ let filme24 = new Filme(
   "img/posters/filmes/procurandoDory.jpg", 
   "https://www.youtube.com/embed/BGNvbWeASbA", 
   "2016",
-  "Animação, Comédia, Aventura",
-  "filme",
+  ["Animação", "Comédia", "Aventura"],
+  ["Disney +"],
   "1h 37min",
   classificacao_livre,
   "Um ano após ajudar Marlin (Albert Brooks) a reencontrar seu filho Nemo, Dory (Ellen DeGeneres) tem um insight e lembra de sua amada família. Com saudades, ela decide fazer de tudo para reencontrá-los e na desenfreada busca esbarra com amigos do passado e vai parar nas perigosas mãos de humanos.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/procurando-dory/2L6w30vnqebX"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/procurando-dory/2L6w30vnqebX"]
 );
 
 let filme25 = new Filme(
@@ -386,13 +387,13 @@ let filme25 = new Filme(
   "img/posters/filmes/bobEsponja.jpg", 
   "https://www.youtube.com/embed/Sfbtp2sCP2E", 
   "2004",
-  "Animação, Comédia, Família",
-  "filme",
+  ["Animação", "Comédia", "Família"],
+  ["Prime Video"],
   "1h 22min",
   classificacao_livre,
   "Após a coroa do Rei Netuno ser roubada, Bob Esponja e seu melhor amigo Patrick partem em uma viagem pela Fenda do Bikini para reencontrá-la. No caminho eles precisam enfrentar monstros marinhos, vilões perigosos e vários bandidos.",
-  "img/icons/plataformas/primeVideo.png",
-  "https://www.primevideo.com/dp/amzn1.dv.gti.1aabf5b9-9bcb-315a-cb50-b4553a8ec86b"
+  ["img/icons/plataformas/primeVideo.png"],
+  ["https://www.primevideo.com/dp/amzn1.dv.gti.1aabf5b9-9bcb-315a-cb50-b4553a8ec86b"]
 );
 
 let filme26 = new Filme(
@@ -400,13 +401,13 @@ let filme26 = new Filme(
   "img/posters/filmes/vingadoresGuerraInfinita.jpg", 
   "https://www.youtube.com/embed/t_ULBP6V9bg", 
   "2018",
-  "Aventura, Ação, Fantasia ",
-  "filme",
+  ["Aventura", "Ação", "Fantasia"],
+  ["Disney +"],
   "2h 36min",
   classificacao_12anos,
   "Em Vingadores: Guerra Infinita, Thanos enfim chega à Terra, disposto a reunir as Joias do Infinito. Para enfrentá-lo, os Vingadores precisam unir forças com os Guardiões da Galáxia, ao mesmo tempo em que lidam com desavenças entre alguns de seus integrantes.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/movies/vingadores-guerra-infinita-da-marvel-studios/1WEuZ7H6y39v"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/movies/vingadores-guerra-infinita-da-marvel-studios/1WEuZ7H6y39v"]
 );
 
 let filme27 = new Filme(
@@ -414,13 +415,13 @@ let filme27 = new Filme(
   "img/posters/filmes/johnWick3.jpg", 
   "https://www.youtube.com/embed/PP0cnmZPbws", 
   "2019",
-  "Ação",
-  "filme",
+  ["Ação"],
+  ["Telecine"],
   "2h 12min",
   classificacao_16anos,
   "Após quebrar as regras do Hotel Continental, John Wick (Keanu Reeves) está sendo perseguido pelos melhores assassinos do mundo. Buscando sobreviver, ele se alia a antigos conhecidos para escapar com vida desta caçada.",
-  "img/icons/plataformas/telecine.png",
-  "https://www.telecine.com.br/filme/27981?utm_source=adoro_cinema&utm_medium=cpc&utm_campaign=aquisicao|parcerias|up&utm_content=john_wick_3_parabellum|filme_250861|botao|none|adoro_cinema|none"
+  ["img/icons/plataformas/telecine.png"],
+  ["https://www.telecine.com.br/filme/27981?utm_source=adoro_cinema&utm_medium=cpc&utm_campaign=aquisicao|parcerias|up&utm_content=john_wick_3_parabellum|filme_250861|botao|none|adoro_cinema|none"]
 );
 
 let filme28 = new Filme(
@@ -428,13 +429,13 @@ let filme28 = new Filme(
   "img/posters/filmes/logan.jpg", 
   "https://www.youtube.com/embed/KPND6SgkN7Q", 
   "2017",
-  "Ação, Ficção científica",
-  "filme",
+  ["Ação", "Ficção científica"],
+  ["Star +"],
   "2h 18min",
   classificacao_16anos,
   "Em 2024, os mutantes estão em franco declínio, e as pessoas não sabem o real motivo. Uma organização está transformando as crianças mutantes em verdadeiras assassinas. Wolverine, cansado de tudo e a pedido de um cada vez mais enfraquecido Professor Xavier, precisa proteger a jovem e poderosa Laura Kinney, conhecida como X-23. Enquanto isso, o vilão Nathaniel Essex amplia seu projeto de destruição.",
-  "img/icons/plataformas/star+.png",
-  "https://www.starplus.com/movies/logan/4BPdGjuoQAvT"
+  ["img/icons/plataformas/star+.png"],
+  ["https://www.starplus.com/movies/logan/4BPdGjuoQAvT"]
 );
 
 let filme29 = new Filme(
@@ -442,13 +443,13 @@ let filme29 = new Filme(
   "img/posters/filmes/fast8.jpg", 
   "https://www.youtube.com/embed/KvSlvtPnZTo", 
   "2017",
-  "Ação, Suspense",
-  "filme",
+  ["Ação", "Suspense"],
+  ["Youtube"],
   "2h 16min",
   classificacao_14anos,
   "Depois da aposentadoria de Brian e Mia, Dom e Letty aproveitam a lua de mel e levam uma vida pacata e normal. Mas a adrenalina do passado volta com tudo quando uma mulher misteriosa obriga Dom a retornar ao mundo do crime e da velocidade.",
-  "img/icons/plataformas/youtube.png",
-  "https://www.youtube.com/watch?v=Yl8zGoIW-Vo"
+  ["img/icons/plataformas/youtube.png"],
+  ["https://www.youtube.com/watch?v=Yl8zGoIW-Vo"]
 );
 
 let filme30 = new Filme(
@@ -456,13 +457,13 @@ let filme30 = new Filme(
   "img/posters/filmes/duroDeMatar.jpg", 
   "https://www.youtube.com/embed/VFp36WYErJM", 
   "2013",
-  "Ação",
-  "filme",
+  ["Ação"],
+  ["Star +"],
   "1h 38min",
   classificacao_16anos,
   "O policial John McClane não tem boa relação com seu filho. Os dois precisam deixar de lado suas diferenças para livrar o rapaz de uma acusação e proteger um terrorista que diz ter um dossiê contra um potencial candidato à presidência da Rússia.",
-  "img/icons/plataformas/star+.png",
-  "https://www.starplus.com/movies/a-good-day-to-die-hard/VZjwaJrZlPBz"
+  ["img/icons/plataformas/star+.png"],
+  ["https://www.starplus.com/movies/a-good-day-to-die-hard/VZjwaJrZlPBz"]
 );
 
 
@@ -471,13 +472,13 @@ let filme31 = new Filme(
   "img/posters/filmes/esquadraoSuicida.jpg", 
   "https://www.youtube.com/embed/8pYp4T8TdP4", 
   "2016",
-  "Ação, Fantasia",
-  "filme",
+  ["Ação", "Fantasia"],
+  ["Prime Video"],
   "2h 03min",
   classificacao_12anos,
   "Um time dos mais perigosos e encarcerados supervilões são contratados por uma agência secreta do governo, para combater uma poderosa entidade. No entanto, quando eles percebem que não foram escolhidos apenas para ter sucesso, mas também por sua óbvia culpa quando inevitavelmente falharem, terão que decidir se vale a pena ou não continuar correndo risco de morte.",
-  "img/icons/plataformas/primeVideo.png",
-  "https://www.primevideo.com/dp/amzn1.dv.gti.a0b8f07a-32bf-8f41-daad-1cf96a33b97a?autoplay=1&ref_=atv_cf_strg_wb"
+  ["img/icons/plataformas/primeVideo.png"],
+  ["https://www.primevideo.com/dp/amzn1.dv.gti.a0b8f07a-32bf-8f41-daad-1cf96a33b97a?autoplay=1&ref_=atv_cf_strg_wb"]
 );
 
 let filme32 = new Filme(
@@ -485,13 +486,13 @@ let filme32 = new Filme(
   "img/posters/filmes/transformers.jpg", 
   "https://www.youtube.com/embed/XdiU0W1lG-Y", 
   "2017",
-  "Ação, Ficção científica",
-  "filme",
+  ["Ação", "Ficção científica"],
+  ["Netflix", "HBO Max", "Prime Video", "Telecine"],
   "2h 29min",
   classificacao_12anos,
   "O gigante Optimus Prime embarca em uma das missões mais difíceis de sua vida: encontrar, no espaço sideral, os Quintessons, seres que possivelmente são os responsáveis pela criação da raça Transformers. O problema é que, enquanto isso, seus amigos estão precisando de muita ajuda na Terra, já que uma nova ameaça alienígena resolveu destruir toda a humanidade.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/watch/80164399?source=35"
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/primeVideo.png", "img/icons/plataformas/telecine.png"],
+  ["https://www.netflix.com/watch/80164399?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYQbYGAOqisLCFQEAAAAS?camp=googleHBOMAX&action=open", "https://www.primevideo.com/dp/amzn1.dv.gti.98b3067c-2965-c840-bea8-95f04d0cc885", "https://www.telecine.com.br/filme/Transformers_O_%C3%9Altimo_Cavaleiro_7843"]
 );
 
 let filme33 = new Filme(
@@ -499,13 +500,13 @@ let filme33 = new Filme(
   "img/posters/filmes/venom.jpg", 
   "https://www.youtube.com/embed/Y9PQon7wbpU", 
   "2018",
-  "Ação, Ficção científica",
-  "filme",
+  ["Ação", "Ficção científica"],
+  ["Netflix"],
   "2h 20min",
   classificacao_14anos,
   "O jornalista Eddie Brock desenvolve força e poder sobre-humanos quando seu corpo se funde com o alienígena Venom. Dominado pela raiva, Venom tenta controlar as novas e perigosas habilidades de Eddie.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/watch/80991034?source=35"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80991034?source=35"]
 );
 
 let filme34 = new Filme(
@@ -513,13 +514,13 @@ let filme34 = new Filme(
   "img/posters/filmes/osMercenarios3.jpg", 
   "https://www.youtube.com/embed/93vai1Zi6rc", 
   "2014",
-  "Ação",
-  "filme",
+  ["Ação"],
+  ["Netflix", "HBO Max", "Telecine"],
   "2h 07min",
   classificacao_14anos,
   "Barney e sua trupe de mercenários resgatam Doc, um dos integrantes do grupo, que estava preso há oito anos. Ao participarem de uma missão, os mercenários são surpreendidos quando reencontram Conrad, um comerciante de armas impiedoso, que Barney pensava ter matado. Novos membros, mais jovens e mais rápidos, entram para equipe e um novo duelo começa.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/watch/70307662?source=35"
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/telecine.png"],
+  ["https://www.netflix.com/watch/70307662?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYF5NZw5xNAaavQEAAAMu?camp=googleHBOMAX", "https://www.telecine.com.br/filme/Os_Mercen%C3%A1rios_3_4410"]
 );
 
 let filme35 = new Filme(
@@ -527,13 +528,13 @@ let filme35 = new Filme(
   "img/posters/filmes/noiteSemFim.jpg", 
   "https://www.youtube.com/embed/9RKkX7xw2pg", 
   "2015",
-  "Ação, Policial, Drama",
-  "filme",
+  ["Ação", "Policial", "Drama"],
+  ["Netflix", "HBO Max"],
   "1h 54min",
   classificacao_16anos,
   "O mafioso e pistoleiro do Brooklyn Jimmy Conlon descobre que seu filho Mike está em perigo, e deve escolher entre a família do crime que escolheu e a família real que abandonou há muito tempo. Com Mike foragido, a única penitência de Conlon para os erros do passado pode ser evitar que o filho tenha o mesmo destino que o dele.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/watch/80021752?source=35"
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png"],
+  ["https://www.netflix.com/watch/80021752?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYKa3JAfyRsNomgEAAABi?camp=googleHBOMAX"]
 );
 
 let filme36 = new Filme(
@@ -541,13 +542,13 @@ let filme36 = new Filme(
   "img/posters/filmes/007.jpeg", 
   "https://www.youtube.com/embed/0Q7XHvi4-QE", 
   "2015",
-  "Ação, Espionagem",
-  "filme",
+  ["Ação", "Espionagem"],
+  ["Telecine"],
   "2h 28min",
   classificacao_14anos,
   "James Bond chega à Cidade do México e está pronto para eliminar Marco Sciarra sem que o chef M saiba da missão. O caso leva à suspensão temporária do agente, que passa a ser constantemente vigiado pelo governo britânico graças a uma tecnologia implantada em seu corpo por Q. Na tentativa de despistar os inimigos e até mesmo alguns de seus parceiros de trabalho, ele se responsabiliza por ajudar a filha de um desafeto. Toda a situação o leva ao centro de uma temida organização denominada Spectre.",
-  "img/icons/plataformas/telecine.png",
-  "https://www.telecine.com.br/filme/007_Contra_Spectre_6878?action=play_filme"
+  ["img/icons/plataformas/telecine.png"],
+  ["https://www.telecine.com.br/filme/007_Contra_Spectre_6878"]
 );
 
 let filme37 = new Filme(
@@ -555,13 +556,13 @@ let filme37 = new Filme(
   "img/posters/filmes/13distrito.jpg", 
   "https://www.youtube.com/embed/yz1T-OYdiYo", 
   "2014",
-  "Ação, Policial",
-  "filme",
+  ["Ação", "Policial"],
+  ["HBO Max"],
   "1h 31min",
   classificacao_14anos,
   "A área de Brick Mansions é extremamente violenta e abandonada pela polícia local, que foi corrompida pelo crime organizado. Todo dia é uma batalha para o honesto detetive Damien Collier, que pretende vingar o assassinato do seu pai. Ele recebe a missão de entrar na perigosa região e localizar uma bomba que pode destruir a cidade de Detroit inteira. Para tanto, Damien conta com a ajuda do jovem Lino, que precisa tirar a namorada das mãos de um traficante.",
-  "img/icons/plataformas/hbomax.png",
-  "https://play.hbomax.com/page/urn:hbo:page:GYIjhuA2vMJGxLwEAAAJV:type:feature?camp=googleHBOMAX"
+  ["img/icons/plataformas/hbomax.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GYIjhuA2vMJGxLwEAAAJV:type:feature?camp=googleHBOMAX"]
 );
 
 let filme38 = new Filme(
@@ -569,18 +570,18 @@ let filme38 = new Filme(
   "img/posters/filmes/deadpool2.jpg", 
   "https://www.youtube.com/embed/fZWN2UBMK3Q", 
   "2018",
-  "Ação, Comédia , Aventura",
-  "filme",
+  ["Ação", "Comédia", "Aventura"],
+  ["Star +"],
   "2h 00min",
   classificacao_16anos,
   "O supersoldado Cable vem do futuro com a missão de assassinar o jovem mutante Russel e o mercenário Deadpool precisa aprender o que é ser herói de verdade para salvá-lo. Para isso, ele recruta seu velho amigo Colossus e forma o novo grupo X-Force, sempre com o apoio do fiel escudeiro Dopinder.",
-  "img/icons/plataformas/star+.png",
-  "https://www.starplus.com/movies/deadpool-2/LSuXSQ3S5mxU"
+  ["img/icons/plataformas/star+.png"],
+  ["https://www.starplus.com/movies/deadpool-2/LSuXSQ3S5mxU"]
 );
 
-let filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
-let filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24, filme25]
-let filmes1 = [filme26, filme27, filme28, filme29, filme30, filme31, filme32, filme33, filme34, filme35, filme36, filme37, filme38]
+ let filmes = [filme0, filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10, filme11, filme12, filme13, filme14]
+ let filmes0 = [filme15, filme16, filme17, filme18, filme19, filme20,filme21, filme22, filme23, filme24, filme25]
+ let filmes1 = [filme26, filme27, filme28, filme29, filme30, filme31, filme32, filme33, filme34, filme35, filme36, filme37, filme38]
 
 let filmes_all = [filmes, filmes0, filmes1]
 
@@ -612,7 +613,7 @@ let serie0 = new Serie(
   "img/posters/series/suits.jpg",
   "https://www.youtube.com/embed/85z53bAebsI", 
   "2011",
-  "Drama, Comédia",
+  ["Drama", "Comédia"],
   "serie",
   "9 temporadas",
   classificacao_14anos,
@@ -626,7 +627,7 @@ let serie1 = new Serie(
   "img/posters/series/blackMirror.jpg",
   "https://www.youtube.com/embed/M8qG0vS2zWM", 
   "2014",
-  "Ficção Científica, Suspense, Drama",
+  ["Ficção Científica", "Suspense", "Drama"],
   "serie",
   "5 temporadas",
   classificacao_16anos,
@@ -640,7 +641,7 @@ let serie2 = new Serie(
   "img/posters/series/gravityFalls.jpg",
   "https://www.youtube.com/embed/maDIQk3AJ2E", 
   "2012",
-  "Animação, Comédia, Aventura",
+  ["Animação", "Comédia", "Aventura"],
   "serie",
   "2 temporadas",
   classificacao_10anos,
@@ -654,7 +655,7 @@ let serie3 = new Serie(
   "img/posters/series/3porcento.jpg",
   "https://www.youtube.com/embed/LR5vVv2RDLw", 
   "2016",
-  "Drama, Distopia, Ficção Científica",
+  ["Drama", "Distopia", "Ficção Científica"],
   "serie",
   "4 temporadas",
   classificacao_16anos,
@@ -668,7 +669,7 @@ let serie4 = new Serie(
   "img/posters/series/brooklyn99.jpg",
   "https://www.youtube.com/embed/q6G_RMGk3vs", 
   "2013",
-  "Comédia, Policial",
+  ["Comédia", "Policial"],
   "serie",
   "7 temporadas",
   classificacao_14anos,
@@ -682,7 +683,7 @@ let serie5 = new Serie(
   "img/posters/series/lolBrasil.jpeg",
   "https://www.youtube.com/embed/0sC-qiZDuEA", 
   "2021",
-  "Comédia, Reality Show",
+  ["Comédia", "Reality Show"],
   "serie",
   "1 temporada",
   classificacao_14anos,
@@ -696,7 +697,7 @@ let serie6 = new Serie(
   "img/posters/series/mundoMisterio.jpg",
   "https://www.youtube.com/embed/McpTUhgXNaE", 
   "2020",
-  "Educativo, Documentário",
+  ["Educativo", "Documentário"],
   "serie",
   "1 temporada",
   classificacao_12anos,
@@ -710,7 +711,7 @@ let serie7 = new Serie(
   "img/posters/series/sherlock.jpg",
   "https://www.youtube.com/embed/Orkng7s-GtA", 
   "2010",
-  "Mistério, Drama",
+  ["Mistério", "Drama"],
   "serie",
   "3 temporadas",
   classificacao_14anos,
@@ -724,7 +725,7 @@ let serie8 = new Serie(
   "img/posters/series/irmaoDoJorel.jpg",
   "https://www.youtube.com/embed/RK4dAH6KTmM", 
   "2014",
-  "Animação, Comédia",
+  ["Animação", "Comédia"],
   "serie",
   "3 temporadas",
   classificacao_livre,
@@ -738,7 +739,7 @@ let serie9 = new Serie(
   "img/posters/series/laCasadePapel.jpg",
   "https://www.youtube.com/embed/Lg1wnSMhStA", 
   "2017",
-  "Ação, Crime, Mistério",
+  ["Ação", "Crime", "Mistério"],
   "serie",
   "5 temporadas",
   classificacao_16anos,
@@ -752,7 +753,7 @@ let serie10 = new Serie(
   "img/posters/series/theGoodDoctor.jpg",
   "https://www.youtube.com/embed/ogw3ax8WJfs", 
   "2017",
-  "Drama",
+  ["Drama"],
   "serie",
   "4 temporadas",
   classificacao_12anos,
@@ -766,7 +767,7 @@ let serie11 = new Serie(
   "img/posters/series/wandavision.jpeg",
   "https://www.youtube.com/embed/b3v9DXCP1UQ", 
   "2021",
-  "Ação, Romance, Drama",
+  ["Ação", "Romance", "Drama"],
   "serie",
   "1 temporada",
   classificacao_12anos,
@@ -780,7 +781,7 @@ let serie12 = new Serie(
   "img/posters/series/rickAndMorty.jpg",
   "https://www.youtube.com/embed/SveaGIlBL2I", 
   "2013",
-  "Animação, Comédia, Aventura",
+  ["Animação", "Comédia", "Aventura"],
   "serie",
   "5 temporadas",
   classificacao_16anos,
@@ -794,7 +795,7 @@ let serie13 = new Serie(
   "img/posters/series/sexEducation.jpg",
   "https://www.youtube.com/embed/Jv46AlQUto4", 
   "2019",
-  "Comédia, Drama",
+  ["Comédia", "Drama"],
   "serie",
   "4 temporadas",
   classificacao_16anos,
@@ -808,7 +809,7 @@ let serie14 = new Serie(
   "img/posters/series/doisHomensEMeio.jpg",
   "https://www.youtube.com/embed/nkiEVmEf5YE", 
   "2003",
-  "Comédia",
+  ["Comédia"],
   "serie",
   "12 temporadas",
   classificacao_14anos,
@@ -822,7 +823,7 @@ let serie15 = new Serie(
   "img/posters/series/modernFamily.jpg",
   "https://www.youtube.com/embed/Ub_lfN2VMIo", 
   "2009",
-  "Comédia",
+  ["Comédia"],
   "serie",
   "11 temporadas",
   classificacao_10anos,
@@ -836,7 +837,7 @@ let serie16 = new Serie(
   "img/posters/series/aGrandeFamilia.jpg",
   "https://www.youtube.com/embed/GSoxRheqYGE", 
   "2001",
-  "Comédia",
+  ["Comédia"],
   "serie",
   "14 temporadas",
   classificacao_10anos,
@@ -850,7 +851,7 @@ let serie17 = new Serie(
   "img/posters/series/osSimpsons.jpg",
   "https://www.youtube.com/embed/cF7ivUhgVHo", 
   "1989",
-  "Animação, Comédia",
+  ["Animação", "Comédia"],
   "serie",
   "33 temporadas",
   classificacao_14anos,
@@ -864,7 +865,7 @@ let serie18 = new Serie(
   "img/posters/series/theOffice.jpg",
   "https://www.youtube.com/embed/OXcCS6b8NuA", 
   "2005",
-  "Comédia",
+  ["Comédia"],
   "serie",
   "9 temporadas",
   classificacao_12anos,
@@ -904,7 +905,7 @@ let jogo0 = new Jogo (
   "img/posters/jogos/battlefield2042.jpg",
   "https://www.youtube.com/embed/UFhi0PlBnnE", 
   "Novembro/2021",
-  "Tiro, Primeira Pessoa",
+  ["Tiro", "FPS"],
   ["PC/Epic", "PC/Steam", "Xbox", "Playstation", "PC"],
   "Multijogador online",
   classificacao_16anos,
@@ -920,7 +921,7 @@ let jogo1 = new Jogo (
   "img/posters/jogos/farCry6.jpg",
   "https://www.youtube.com/embed/yzCZyJSGub4", 
   "Outubro/2021",
-  "FPS, Mundo Aberto, Ação",
+  ["FPS", "Mundo Aberto", "Ação"],
   ["PC/Epic", "Xbox", "Playstation", "PC"],
   "Co-op online",
   classificacao_18anos,
@@ -936,7 +937,7 @@ let jogo2 = new Jogo (
   "img/posters/jogos/farmingSimulator22.jpg",
   "https://www.youtube.com/embed/qg9VPiUtaic", 
   "Novembro/2021",
-  "Simulação",
+  ["Simulação"],
   ["PC/Epic", "PC/Steam", "Xbox", "Playstation", "PC"],
   "Co-op online, Multijogador",
   classificacao_livre,
@@ -952,7 +953,7 @@ let jogo3 = new Jogo (
   "img/posters/jogos/haloInfinite.jpg",
   "https://www.youtube.com/embed/W2hbqp4M6h8", 
   "Dezembro/2021",
-  "Atirador",
+  ["FPS", "Tiro"],
   ["PC/Steam", "Xbox", "PC"],
   "Multijogador online",
   classificacao_16anos,
@@ -968,7 +969,7 @@ let jogo4 = new Jogo (
   "img/posters/jogos/forzaHorizon5.jpg",
   "https://www.youtube.com/embed/agI0xMBQo2U", 
   "Novembro/2021",
-  "Corrida",
+  ["Corrida"],
   ["PC/Steam", "Xbox", "PC"],
   "Multijogador online",
   classificacao_livre,
@@ -984,7 +985,7 @@ let jogo5 = new Jogo (
   "img/posters/jogos/justDance22.jpg",
   "https://www.youtube.com/embed/EXk2KnrJlqY", 
   "Novembro/2021",
-  "Música/Ritmo",
+  ["Música/Ritmo"],
   ["Switch", "Xbox", "Playstation"],
   "Co-op local",
   classificacao_livre,
@@ -1000,7 +1001,7 @@ let jogo6 = new Jogo (
   "img/posters/jogos/kof_xv.jpg",
   "https://www.youtube.com/embed/QZnOWSvip1E", 
   "Fevereiro/2022",
-  "Luta",
+  ["Luta"],
   ["PC/Epic", "PC/Steam", "Xbox", "Playstation", "PC"],
   "Multijogador local/online",
   classificacao_12anos,
@@ -1016,7 +1017,7 @@ let jogo7 = new Jogo (
   "img/posters/jogos/callOfDutyVanguard.jpg",
   "https://www.youtube.com/embed/OQ1CwPhE8KQ", 
   "Novembro/2021",
-  "Tiro, Ação",
+  ["Tiro", "Ação"],
   ["PC/Battle Net", "Xbox", "Playstation", "PC"],
   "Multijogador local/online",
   classificacao_18anos,
@@ -1032,7 +1033,7 @@ let jogo8 = new Jogo (
   "img/posters/jogos/rocketLeague.jpg",
   "https://www.youtube.com/embed/SgSX3gOrj60", 
   "Julho/2015",
-  "Esporte, Ação, Direção/Corrida",
+  ["Esporte", "Ação", "Direção/Corrida"],
   ["PC/Epic", "Switch", "Xbox", "Playstation", "PC"],
   "Um jogador, Multijogador local/online",
   classificacao_livre,
@@ -1048,7 +1049,7 @@ let jogo9 = new Jogo (
   "img/posters/jogos/lifeIsStrange.jpg",
   "https://www.youtube.com/embed/DS4gzq6gX_g", 
   "Janeiro/2015",
-  "Ação, Aventura",
+  ["Ação", "Aventura"],
   ["PC/Steam", "Xbox", "Playstation", "PC"],
   "Um jogador",
   classificacao_16anos,
@@ -1064,7 +1065,7 @@ let jogo10 = new Jogo (
   "img/posters/jogos/valorant.jpg",
   "https://www.youtube.com/embed/sE3UqyzKR30", 
   "Junho/2020",
-  "FPS, Ação",
+  ["FPS", "Ação"],
   ["PC/Riot Games", "PC"],
   "Multijogador Online",
   classificacao_14anos,
@@ -1080,7 +1081,7 @@ let jogo11 = new Jogo (
   "img/posters/jogos/assassinsCreed3.jpg",
   "https://www.youtube.com/embed/DCZ2l1BbWyY", 
   "Outubro/2012",
-  "Ação, Aventura",
+  ["Ação", "Aventura"],
   ["PC/Steam", "Xbox", "Playstation", "PC"],
   "Um jogador",
   classificacao_16anos,
@@ -1096,7 +1097,7 @@ let jogo12 = new Jogo (
   "img/posters/jogos/overcooked2.jpg",
   "https://www.youtube.com/embed/qpzmirQllT0", 
   "Agosto/2018",
-  "Simulação, Aventura",
+  ["Simulação", "Aventura"],
   ["PC/Epic", "PC/Steam", "Switch", "Xbox", "Playstation", "PC"],
   "Um jogador, Co-op local/online",
   classificacao_livre,
@@ -1112,7 +1113,7 @@ let jogo13 = new Jogo (
   "img/posters/jogos/spiderMan.jpg",
   "https://www.youtube.com/embed/GqPLeQJ6lJk", 
   "Novembro/2020",
-  "Ação, Aventura",
+  ["Ação", "Aventura"],
   ["Playstation"],
   "Um jogador",
   classificacao_12anos,
@@ -1128,7 +1129,7 @@ let jogo14 = new Jogo (
   "img/posters/jogos/hitman3.jpg",
   "https://www.youtube.com/embed/avAXhnbs69w", 
   "Janeiro/2021",
-  "Ação, Aventura",
+  ["Ação", "Aventura"],
   ["PC/Epic", "Xbox", "Playstation", "PC"],
   "Um jogador, Multijogador online",
   classificacao_18anos,
@@ -1144,7 +1145,7 @@ let jogo15 = new Jogo (
   "img/posters/jogos/gta5.jpg",
   "https://www.youtube.com/embed/dnSTk7wCtAM", 
   "Novembro/2014",
-  "Ação, Aventura",
+  ["Ação", "Aventura"],
   ["PC/Epic", "PC/Steam", "Xbox", "Playstation", "PC"],
   "Um jogador, Multijogador online",
   classificacao_18anos,
@@ -1191,10 +1192,15 @@ function pesquisar(tipo) {
 
   for(j = 0; j < listaElementos.length; j++) {
     for(i = 0; i < listaElementos[j].length; i++) {
-      if(listaElementos[j][i].nome.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("").includes(v.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("")) || 
-      listaElementos[j][i].genero.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("").includes(v.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join(""))){
+      if(listaElementos[j][i].nome.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("").includes(v.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join(""))) {
         conteudo += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
         " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+      }
+      for(a = 0; a < listaElementos[j][i].genero.length; a++) {
+        if(listaElementos[j][i].genero[a].toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("") === v.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("")){
+          conteudo += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
+        " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+        }
       }
     }
   }
@@ -1358,11 +1364,15 @@ function abrirDetalhes(id, tipo) {
   let popUp = document.getElementsByClassName("popUp");
   popUp[0].style.display = "flex";
   let popUp_content = document.getElementsByClassName("details");
-
+  let codigo_plataformas = "";
   if(tipo == 0 || tipo == 1) {
+  for(i = 0; i < filme.plataforma.length; i++) {
+    //codigo_plataformas += "<a href='" + filme.link[i] + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma[i] + " class='plataforma'>Assista agora</a>";
+    codigo_plataformas += "<a href='" + filme.link[i] + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma[i] + " class='plataforma_j'><section>Assista em " + filme.categoria[i] + "</section></a>";
+  }
     popUp_content[0].innerHTML = "<div class='trailer_plataformas'><iframe class='video' width='710' height='372.75' src='" + filme.trailer + "' title='" + filme.nome + 
     "' frameborder='0' allow='accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" +
-    "<div class='plataformas'><a href='" + filme.link + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma + " class='plataforma'>Assista agora</a></div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
+    "<h3>Assista Agora:</h3><div class='plataformas'>" + codigo_plataformas + "</div></div><div class='details_'><h2 class='titulo_filme'>" + filme.nome + "</h2>" +
     "<p class='descricao_filme'>" + filme.descricao + "</p>" +
     "<div class='tabela_descricao'><table width='80%' style='font-size: 18px'>" +
     "<tr><td class='info_table'>Duração</td><td class='text_table'>" + filme.duracao + "</td></tr>" +
@@ -1373,10 +1383,10 @@ function abrirDetalhes(id, tipo) {
     ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
     ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
     ".trailer_plataformas {display: flex; align-items: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-    ".plataforma {width: 130px;height: 130px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; text-decoration: none;} .link_plataforma:hover{transform: scale(1.05);transition: 0.2s;text-decoration: underline;}" +
-    "</style>";
+    ".trailer_plataformas {display: flex; align-items: center; flex-direction: column;} .trailer_plataformas h3 {margin: 20px 0;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
+    ".plataforma_j {width: 105px;height: 105px; margin: 0 20px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; align-items: center; text-decoration: none;} .link_plataforma:hover{transform: scale(1.07);transition: 0.4s;text-decoration: underline;}" +
+    ".link_plataforma section {visibility: hidden; width: 110px; text-align:center;} .link_plataforma:hover section {visibility: visible;}</style>";
   } else if (tipo == 2) {
-    let codigo_plataformas = "";
     for(i = 0; i < filme.plataforma.length; i++) {
       codigo_plataformas += "<a href='" + filme.link[i] + "' target='_blank' class='link_plataforma'><img src=" + filme.plataforma[i] + " class='plataforma_j'><section>Jogue no " + filme.categoria[i] + "</section></a>";
     }
