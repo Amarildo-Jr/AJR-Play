@@ -614,12 +614,12 @@ let serie0 = new Serie(
   "https://www.youtube.com/embed/85z53bAebsI", 
   "2011",
   ["Drama", "Comédia"],
-  "serie",
+  ["Netflix"],
   "9 temporadas",
   classificacao_14anos,
   "Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/70195800"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/70195800"]
 );
 
 let serie1 = new Serie(
@@ -628,12 +628,12 @@ let serie1 = new Serie(
   "https://www.youtube.com/embed/M8qG0vS2zWM", 
   "2014",
   ["Ficção Científica", "Suspense", "Drama"],
-  "serie",
+  ["Netflix"],
   "5 temporadas",
   classificacao_16anos,
   "Contos de ficção científica que refletem o lado negro das telas e da tecnologia, mostrando que nem toda novidade traz só benefícios.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/70264888"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/70264888"]
 );
 
 let serie2 = new Serie(
@@ -642,12 +642,12 @@ let serie2 = new Serie(
   "https://www.youtube.com/embed/maDIQk3AJ2E", 
   "2012",
   ["Animação", "Comédia", "Aventura"],
-  "serie",
+  ["Disney +"],
   "2 temporadas",
   classificacao_10anos,
   "Gravity Falls é uma série animada da Disney Channel que conta as aventuras dos irmãos gêmeos, o sagaz Dipper e a adorável Mabel Pines, cujos planos pro verão são arruinados quando seus pais os enviam para ficarem com seu tio-avô, o charlatão Grunkle Stan em Gravity Falls, Oregon. O problema é que a cidade é cheia de mistérios e monstros! Lá, entre aventuras, enigmas e confusões, eles trabalham para o seu tio-avô na Cabana Misteriosa, junto com o cômico Soos e a graciosa e descolada Wendy, por quem Dipper é apaixonado.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/series/gravity-falls/HZxayxzMJqed?distributionPartner=google"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/series/gravity-falls/HZxayxzMJqed?distributionPartner=google"]
 );
 
 let serie3 = new Serie(
@@ -656,12 +656,12 @@ let serie3 = new Serie(
   "https://www.youtube.com/embed/LR5vVv2RDLw", 
   "2016",
   ["Drama", "Distopia", "Ficção Científica"],
-  "serie",
+  ["Netflix"],
   "4 temporadas",
   classificacao_16anos,
   "Em um futuro não muito distante, o planeta é um lugar devastado. Aos 20 anos, todo cidadão recebe a chance de passar por uma rigorosa seleção para ascender ao Maralto, uma região farta de oportunidades. Porém, apenas 3% consegue chegar lá.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/80074220"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/80074220"]
 );
 
 let serie4 = new Serie(
@@ -670,12 +670,12 @@ let serie4 = new Serie(
   "https://www.youtube.com/embed/q6G_RMGk3vs", 
   "2013",
   ["Comédia", "Policial"],
-  "serie",
+  ["Netflix"],
   "7 temporadas",
   classificacao_14anos,
   "O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/70281562"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/70281562"]
 );
 
 let serie5 = new Serie(
@@ -684,12 +684,12 @@ let serie5 = new Serie(
   "https://www.youtube.com/embed/0sC-qiZDuEA", 
   "2021",
   ["Comédia", "Reality Show"],
-  "serie",
+  ["Prime Video"],
   "1 temporada",
   classificacao_14anos,
   "LOL: Se Rir, Já Era reúne 10 dos maiores comediantes brasileiros numa batalha épica de seis horas sem poder rir enquanto tentam arrancar o riso dos adversários. O show é apresentado por Tom Cavalcante, que tem ao seu lado a comediante Clarice Falcão para ajudá-lo nessa missão de vigiar e flagrar qualquer riso do elenco.",
-  "img/icons/plataformas/primeVideo.png",
-  "https://www.primevideo.com/detail/amzn1.dv.gti.a2851bc3-abc0-4c72-93d3-4dc5c0a6b703"
+  ["img/icons/plataformas/primeVideo.png"],
+  ["https://www.primevideo.com/detail/amzn1.dv.gti.a2851bc3-abc0-4c72-93d3-4dc5c0a6b703"]
 );
 
 let serie6 = new Serie(
@@ -698,12 +698,12 @@ let serie6 = new Serie(
   "https://www.youtube.com/embed/McpTUhgXNaE", 
   "2020",
   ["Educativo", "Documentário"],
-  "serie",
+  ["Netflix"],
   "1 temporada",
   classificacao_12anos,
   "O apresentador Felipe Castanhari e seus assistentes exploram mistérios e maravilhas da ciência e da história. Prepare-se para descobertas alucinantes!",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/81020977"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/81020977"]
 );
 
 let serie7 = new Serie(
@@ -712,12 +712,12 @@ let serie7 = new Serie(
   "https://www.youtube.com/embed/Orkng7s-GtA", 
   "2010",
   ["Mistério", "Drama"],
-  "serie",
+  ["Netflix"],
   "3 temporadas",
   classificacao_14anos,
   "Sherlock Holmes sempre foi um homem moderno, o mundo é que envelheceu. Agora ele está de volta como sempre foi: nervoso, contemporâneo, difícil e perigoso, apresentado de um jeito novo, moderno.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/id-en/title/70202589"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/id-en/title/70202589"]
 );
 
 let serie8 = new Serie(
@@ -726,12 +726,12 @@ let serie8 = new Serie(
   "https://www.youtube.com/embed/RK4dAH6KTmM", 
   "2014",
   ["Animação", "Comédia"],
-  "serie",
+  ["Cartoon Network"],
   "3 temporadas",
   classificacao_livre,
   "Em Irmão do Jorel, Jorel é o garoto mais popular da escola e do bairro. Ele é bonito e tem cabelos longos e sedosos. Mas esta história não é sobre ele; é sobre seu irmão - cujo nome é um mistério. Filho de uma excêntrica família de acumuladores, ele quase não recebe atenção e acaba descobrindo uma maneira fantasiosa de sair das sombras de Jorel.",
-  "img/icons/plataformas/cartoonNetwork.png",
-  "https://www.cartoonnetwork.com.br/show/irmao-do-jorel"
+  ["img/icons/plataformas/cartoonNetwork.png"],
+  ["https://www.cartoonnetwork.com.br/show/irmao-do-jorel"]
 );
 
 let serie9 = new Serie(
@@ -740,12 +740,12 @@ let serie9 = new Serie(
   "https://www.youtube.com/embed/Lg1wnSMhStA", 
   "2017",
   ["Ação", "Crime", "Mistério"],
-  "serie",
+  ["Netflix"],
   "5 temporadas",
   classificacao_16anos,
   "Um grupo de nove ladrões, liderados por um Professor, prepara o roubo do século na Casa da Moeda da Espanha, com o objetivo de fabricar o próprio dinheiro em quantidades incalculáveis e nunca antes vista.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/80192098"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/80192098"]
 );
 
 let serie10 = new Serie(
@@ -754,12 +754,12 @@ let serie10 = new Serie(
   "https://www.youtube.com/embed/ogw3ax8WJfs", 
   "2017",
   ["Drama"],
-  "serie",
+  ["Globoplay"],
   "4 temporadas",
   classificacao_12anos,
   "Em The Good Doctor, um jovem cirurgião diagnosticado com savantismo, um distúrbio psíquico raro, é recrutado para trabalhar na ala pedriátrica de um hospital de prestígio. Apesar do seu incrível conhecimento na área da medicina, esse médico não consegue se relacionar com o mundo à sua volta. Resta saber se esta dificuldade será um problema na hora de salvar vidas.",
-  "img/icons/plataformas/globoplay.png",
-  "https://globoplay.globo.com/the-good-doctor-o-bom-doutor/t/kmF21xZbHk/"
+  ["img/icons/plataformas/globoplay.png"],
+  ["https://globoplay.globo.com/the-good-doctor-o-bom-doutor/t/kmF21xZbHk/"]
 );
 
 let serie11 = new Serie(
@@ -768,12 +768,12 @@ let serie11 = new Serie(
   "https://www.youtube.com/embed/b3v9DXCP1UQ", 
   "2021",
   ["Ação", "Romance", "Drama"],
-  "serie",
+  ["Disney +"],
   "1 temporada",
   classificacao_12anos,
   "Após os eventos de Vingadores: Ultimato (2019), Wanda Maximoff/Feiticeira Escarlate (Elizabeth Olsen) e Visão (Paul Bettany) se esforçam para levar uma vida normal no subúrbio e esconder seus poderes. Mas a dupla de super-heróis logo começa a suspeitar que nem tudo está tão certo assim. Eles se encontram, na verdade, dentro de uma constante sitcom, que vai desde a década de 50 até os dias de hoje. Conforme o tempo passa, Wanda e Visão perdem o controle da situação, sem saber mais o que é real e o que é ficção. Eles ficam presos em um eterno vai e vem: da Era de Ouro da TV nos EUA, com imagens em preto e branco, ao presente - e vice-versa.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/series/wandavision/4SrN28ZjDLwH?distributionPartner=google"
+  ["img/icons/plataformas/disney+.png"],
+  ["https://www.disneyplus.com/pt-br/series/wandavision/4SrN28ZjDLwH?distributionPartner=google"]
 );
 
 let serie12 = new Serie(
@@ -782,12 +782,12 @@ let serie12 = new Serie(
   "https://www.youtube.com/embed/SveaGIlBL2I", 
   "2013",
   ["Animação", "Comédia", "Aventura"],
-  "serie",
+  ["Netflix", "HBO Max"],
   "5 temporadas",
   classificacao_16anos,
   "Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto Morty, um adolescente não tão brilhante quanto o avô.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.disneyplus.com/pt-br/series/wandavision/4SrN28ZjDLwH?distributionPartner=google"
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png"],
+  ["https://www.netflix.com/watch/80014749?source=35", "https://play.hbomax.com/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ?camp=googleHBOMAX"]
 );
 
 let serie13 = new Serie(
@@ -796,12 +796,12 @@ let serie13 = new Serie(
   "https://www.youtube.com/embed/Jv46AlQUto4", 
   "2019",
   ["Comédia", "Drama"],
-  "serie",
+  ["Netflix"],
   "4 temporadas",
   classificacao_16anos,
   "Otis Thompson (Asa Butterfield) é um virgem com ansiedade social que é filho de uma terapeuta sexual (Gillian Anderson). Por ter crescido cercado por manuais, vídeos e conversas abertas sobre sexualidade, ele torna-se um expert no assunto - mesmo que contra sua vontade. Com a ajuda de Maeve (Emma Mackey), ele inicia uma clínica clandestina dentro da escola, ajudando os colegas com problemas sexuais em troca de dinheiro.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/80197526"
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/br/title/80197526"]
 );
 
 let serie14 = new Serie(
@@ -810,12 +810,12 @@ let serie14 = new Serie(
   "https://www.youtube.com/embed/nkiEVmEf5YE", 
   "2003",
   ["Comédia"],
-  "serie",
+  ["HBO Max", "Prime Video"],
   "12 temporadas",
   classificacao_14anos,
   "Alan e Charlie Harper são irmão bem diferentes. Alan é médico quiroprático, recetemnete divorciado e com um filho chamado Jake. Já Charlie é um solteiro por opção que ganha a vida escrevendo jingles para comerciais de TV. Tudo vai bem, até o trio precisar dividir o mesmo teto. Juntos vão criar situações divertidas e nunca antes imaginadas.",
-  "img/icons/plataformas/hboMax.png",
-  "https://play.hbomax.com/page/urn:hbo:page:GYJWmoAFMlMJRhwEAAACy:type:series?camp=googleHBOMAX"
+  ["img/icons/plataformas/hboMax.png", "img/icons/plataformas/primeVideo.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GYJWmoAFMlMJRhwEAAACy:type:series?camp=googleHBOMAX", "https://www.primevideo.com/dp/amzn1.dv.gti.e4af5369-c07c-2289-7603-59660ef244ba"]
 );
 
 let serie15 = new Serie(
@@ -824,12 +824,12 @@ let serie15 = new Serie(
   "https://www.youtube.com/embed/Ub_lfN2VMIo", 
   "2009",
   ["Comédia"],
-  "serie",
+  ["Star +"],
   "11 temporadas",
   classificacao_10anos,
   "Com uma narração oculta, a série oferece uma perspectiva honesta e muitas vezes hilária do cotidiano de uma família. O casal Phil e Claire deseja ter um relacionamento aberto com seus três filhos, mas com um adolescente que tenta amadurecer rápido demais, uma filha muito esperta para sua idade e um filho em crise, o desafio é bem grande. Jay e a esposa criam o filho ao mesmo tempo que lidam com os problemas trazidos pela grande diferença de idade. As parceiras Mitchell e Cameron enfrentam novos desafios após a adoção de uma criança do Vietnã.",
-  "img/icons/plataformas/netflix.png",
-  "https://www.netflix.com/br/title/70143858"
+  ["img/icons/plataformas/star+.png"],
+  ["https://www.starplus.com/series/modern-family/6p2yzz9mh8Kp?distributionPartner=google"]
 );
 
 let serie16 = new Serie(
@@ -838,12 +838,12 @@ let serie16 = new Serie(
   "https://www.youtube.com/embed/GSoxRheqYGE", 
   "2001",
   ["Comédia"],
-  "serie",
+  ["Globoplay"],
   "14 temporadas",
   classificacao_10anos,
   "Tipicamente brasileira, a família Silva mora em um subúrbio na Zona Norte do Rio de Janeiro, convive com suas diferenças e ajuda uns aos outros a contornar as situações mais inusitadas.",
-  "img/icons/plataformas/globoplay.png",
-  "https://globoplay.globo.com/a-grande-familia/t/LXZMGBGCDc/"
+  ["img/icons/plataformas/globoplay.png"],
+  ["https://globoplay.globo.com/a-grande-familia/t/LXZMGBGCDc/"]
 );
 
 let serie17 = new Serie(
@@ -852,12 +852,12 @@ let serie17 = new Serie(
   "https://www.youtube.com/embed/cF7ivUhgVHo", 
   "1989",
   ["Animação", "Comédia"],
-  "serie",
+  ["Disney +", "Star +"],
   "33 temporadas",
   classificacao_14anos,
   "Esta comédia animada de enorme sucesso gira em torno da família de mesmo nome que mora na cidade de Springfield, em um estado americano sem nome. O pai, Homer, não é um típico homem de família. Empregado de uma usina nuclear, ele faz o melhor para comandar sua família, mas frequentemente se vê comandado. A família inclui ainda a carinhosa mãe de cabelo azul Marge, o filho encrenqueiro Bart, a talentosa filha Lisa e a bebê Maggie. Outros moradores de Springfield incluem o vizinho religioso da família, Ned Flanders, o médico, Dr. Hibbert, o bartender Moe e o chefe de polícia Clancy Wiggum.",
-  "img/icons/plataformas/disney+.png",
-  "https://www.netflix.com/br/title/70143858"
+  ["img/icons/plataformas/disney+.png", "img/icons/plataformas/star+.png"],
+  ["https://www.disneyplus.com/series/the-simpsons/3ZoBZ52QHb4x?distributionPartner=google", "https://www.starplus.com/series/the-simpsons/3ZoBZ52QHb4x?distributionPartner=google"]
 );
 
 let serie18 = new Serie(
@@ -866,12 +866,12 @@ let serie18 = new Serie(
   "https://www.youtube.com/embed/OXcCS6b8NuA", 
   "2005",
   ["Comédia"],
-  "serie",
+  ["HBO Max", "Prime Video"],
   "9 temporadas",
   classificacao_12anos,
   "No formato de pseudodocumentário, a série retrata o cotidiano de um escritório em Scranton, na Pensilvânia, filial da empresa fictícia Dunder Mifflin, de suprimento de papel. Michael Scott (Steve Carell) é um patrão insensível mas que se preocupa com o bem estar de seus empregados, enquanto a série traça um olhar sobre todos eles, destacando suas diferenças e particularidades. ",
-  "img/icons/plataformas/hboMax.png",
-  "https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX"
+  ["img/icons/plataformas/hboMax.png", "img/icons/plataformas/primeVideo.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX", "https://www.primevideo.com/dp/amzn1.dv.gti.e2b02937-2b89-48dc-d59a-41ab6b145c7f"]
 );
 
 let series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10, serie11];
