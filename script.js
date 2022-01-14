@@ -1189,22 +1189,31 @@ function pesquisar(tipo) {
   v = f.titulo.value;
 
   let conteudo = "";
+  let titulo_pesquisa = "";
 
+  let resultado_pesquisa = false;
   for(j = 0; j < listaElementos.length; j++) {
     for(i = 0; i < listaElementos[j].length; i++) {
       if(listaElementos[j][i].nome.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("").includes(v.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join(""))) {
         conteudo += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
         " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+        resultado_pesquisa = true;
       }
       for(a = 0; a < listaElementos[j][i].genero.length; a++) {
         if(listaElementos[j][i].genero[a].toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("") === v.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(" ").join("").split("-").join("")){
           conteudo += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
-        " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+          " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
+          resultado_pesquisa = true;
         }
       }
     }
   }
-  popUp_content[1].innerHTML = "<div class='titulo-search'><h2>Resultados para \"" + v + "\"</h2></div><div class='filmes-search'>" + conteudo + "</div>"
+  if(resultado_pesquisa) {
+    titulo_pesquisa = "Resultados para ";
+  } else {
+    titulo_pesquisa = "Não houve resultados para ";
+  }
+  popUp_content[1].innerHTML = "<div class='titulo-search'><h2>" + titulo_pesquisa + "\"" + v + "\"</h2></div><div class='filmes-search'>" + conteudo + "</div>"
 
   f.titulo.blur();
   pesquisa = true;
