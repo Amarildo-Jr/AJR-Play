@@ -336,7 +336,7 @@ let filme21 = new Filme(
   "1h 35min",
   classificacao_livre,
   "Nossos amigos animais Alex, Marty, Glória e Melman vão para a Europa e passam a ser perseguidos por uma agente de controle de animais. Para despistá-la, eles se juntam a um grupo circense que sonha em se apresentar em Nova York, o lar dos animais.",
-  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/telecine.png"],
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hboMax.png", "img/icons/plataformas/telecine.png"],
   ["https://www.netflix.com/watch/70216224?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GXdcZSAKtkcPCwwEAACri?camp=googleHBOMAX", "https://www.telecine.com.br/filme/Madagascar_3_Os_Procurados_13832"]
 );
 
@@ -504,7 +504,7 @@ let filme33 = new Filme(
   "2h 29min",
   classificacao_12anos,
   "O gigante Optimus Prime embarca em uma das missões mais difíceis de sua vida: encontrar, no espaço sideral, os Quintessons, seres que possivelmente são os responsáveis pela criação da raça Transformers. O problema é que, enquanto isso, seus amigos estão precisando de muita ajuda na Terra, já que uma nova ameaça alienígena resolveu destruir toda a humanidade.",
-  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/primeVideo.png", "img/icons/plataformas/telecine.png"],
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hboMax.png", "img/icons/plataformas/primeVideo.png", "img/icons/plataformas/telecine.png"],
   ["https://www.netflix.com/watch/80164399?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYQbYGAOqisLCFQEAAAAS?camp=googleHBOMAX&action=open", "https://www.primevideo.com/dp/amzn1.dv.gti.98b3067c-2965-c840-bea8-95f04d0cc885", "https://www.telecine.com.br/filme/Transformers_O_%C3%9Altimo_Cavaleiro_7843"]
 );
 
@@ -574,7 +574,7 @@ let filme38 = new Filme(
   "2h 07min",
   classificacao_14anos,
   "Barney e sua trupe de mercenários resgatam Doc, um dos integrantes do grupo, que estava preso há oito anos. Ao participarem de uma missão, os mercenários são surpreendidos quando reencontram Conrad, um comerciante de armas impiedoso, que Barney pensava ter matado. Novos membros, mais jovens e mais rápidos, entram para equipe e um novo duelo começa.",
-  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png", "img/icons/plataformas/telecine.png"],
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hboMax.png", "img/icons/plataformas/telecine.png"],
   ["https://www.netflix.com/watch/70307662?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYF5NZw5xNAaavQEAAAMu?camp=googleHBOMAX", "https://www.telecine.com.br/filme/Os_Mercen%C3%A1rios_3_4410"]
 );
 
@@ -588,7 +588,7 @@ let filme39 = new Filme(
   "1h 54min",
   classificacao_16anos,
   "O mafioso e pistoleiro do Brooklyn Jimmy Conlon descobre que seu filho Mike está em perigo, e deve escolher entre a família do crime que escolheu e a família real que abandonou há muito tempo. Com Mike foragido, a única penitência de Conlon para os erros do passado pode ser evitar que o filho tenha o mesmo destino que o dele.",
-  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png"],
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hboMax.png"],
   ["https://www.netflix.com/watch/80021752?source=35", "https://play.hbomax.com/feature/urn:hbo:feature:GYKa3JAfyRsNomgEAAABi?camp=googleHBOMAX"]
 );
 
@@ -644,7 +644,7 @@ let filme43 = new Filme(
   "1h 31min",
   classificacao_14anos,
   "A área de Brick Mansions é extremamente violenta e abandonada pela polícia local, que foi corrompida pelo crime organizado. Todo dia é uma batalha para o honesto detetive Damien Collier, que pretende vingar o assassinato do seu pai. Ele recebe a missão de entrar na perigosa região e localizar uma bomba que pode destruir a cidade de Detroit inteira. Para tanto, Damien conta com a ajuda do jovem Lino, que precisa tirar a namorada das mãos de um traficante.",
-  ["img/icons/plataformas/hbomax.png"],
+  ["img/icons/plataformas/hboMax.png"],
   ["https://play.hbomax.com/page/urn:hbo:page:GYIjhuA2vMJGxLwEAAAJV:type:feature?camp=googleHBOMAX"]
 );
 
@@ -855,7 +855,7 @@ let serie12 = new Serie(
   "5 temporadas",
   classificacao_16anos,
   "Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto Morty, um adolescente não tão brilhante quanto o avô.",
-  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hbomax.png"],
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/hboMax.png"],
   ["https://www.netflix.com/watch/80014749?source=35", "https://play.hbomax.com/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ?camp=googleHBOMAX"]
 );
 
