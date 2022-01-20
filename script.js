@@ -608,7 +608,7 @@ let filme40 = new Filme(
 
 let filme41 = new Filme(
   "Rambo: Até o fim", 
-  "img/posters/filmes/ramboAteOFIM.jpg", 
+  "img/posters/filmes/ramboAteOFim.jpg", 
   "https://www.youtube.com/embed/yd71hmhobAg", 
   "2019",
   ["Ação", "Aventura"],
