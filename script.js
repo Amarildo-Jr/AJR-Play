@@ -1457,11 +1457,11 @@ function abrirDetalhes(id, tipo) {
     "<tr><td class='info_table'>Gênero</td><td class='text_table'>" + filme.genero + "</td></tr>" +
     "<tr><td class='info_table'>Ano de Lançamento</td><td class='text_table'>" + filme.lancamento + "</td></tr></table></div><div class='classificacao'><img src=" + filme.classificacao + " class='classificacao_indicativa'</div></div>" +
     "<style> body {overflow: hidden;} iframe {border: 2px solid #fff; margin-top: 50px;} iframe:hover {border: 2px solid rgb(102, 1, 1);} .video {z-index: 2;} " +
-    ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-items: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 505px; margin-top: 30px;}" +
+    ".details .details_ {margin: 45px auto; text-align:center; display: flex; flex-direction: column; align-items: center;} .details .details_ .descricao_filme {text-align: justify; max-width: 595px; margin-top: 30px;}" +
     ".titulo_filme {color: #add8e6} .tabela_descricao {width: 505px; display: flex; justify-content: center;} " +
     ".details table td {padding: 8px 20px; height: 50px; width: 100px;} .info_table{color: #ffffff9e} .text_table{color: #add8e6} .classificacao_indicativa {width:64px;height: 64px;margin-top: 20px;} " +
     ".trailer_plataformas {display: flex; align-items: center; flex-direction: column;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
-    ".trailer_plataformas {display: flex; align-items: center; flex-direction: column;} .trailer_plataformas h3 {margin: 20px 0;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
+    ".trailer_plataformas {display: flex; align-items: center; flex-direction: column;} .trailer_plataformas h3 {margin-top: 20px;} .plataformas {margin-top: 10px; display: flex; flex-direction: row; justify-content: center;} " + 
     ".plataforma_j {width: 105px;height: 105px; margin: 0 20px;} .link_plataforma {color: #ffffff; display: flex; flex-direction: column; align-items: center; text-decoration: none;} .link_plataforma:hover{transform: scale(1.07);transition: 0.4s;text-decoration: underline;}" +
     ".link_plataforma section {visibility: hidden; width: 110px; text-align:center;} .link_plataforma:hover section {visibility: visible;}</style>";
   } else if (tipo == 2) {
