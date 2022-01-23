@@ -1541,3 +1541,24 @@ function slide(side, section) {
     }
   }
 }
+
+
+window.onresize = function desativarArrows() {
+  
+  let largura =  document.body.clientWidth;
+  botoes_carr = document.getElementsByClassName('arrow_btn');
+  filmes = document.getElementsByClassName('filmes');
+  let arrows = document.getElementsByClassName('filmes').length * 2;
+  if(largura < 985) {
+    for(i = 0; i < arrows; i++) {
+      botoes_carr[i].style = "display: none;";
+    }
+    for(i = 0; i < filmes.length; i++) {
+      filmes[i].style = "overflow-x: scroll;";
+    }
+  } else {
+    for(i = 0; i < arrows; i++) {
+      botoes_carr[i].style = "display: inline-block;";
+    }
+  }
+}

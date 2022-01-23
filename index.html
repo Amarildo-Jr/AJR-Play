@@ -64,20 +64,7 @@
       </div>
       <p class="copyright">	&copy; Copyright Amarildo Junior - 2021</p>
     </footer>
-    <script>
-      let largura =  document.body.clientWidth;
-      
-      if(largura < 985) {
-        botoes_carr = document.getElementsByClassName('arrow_btn');
-        for(i = 0; i < 4; i++) {
-          botoes_carr[i].style = "display: none;";
-        }
-        filmes = document.getElementsByClassName('filmes');
-        for(i = 0; i < filmes.length; i++) {
-          filmes[i].style = "overflow-x: scroll;";
-        }
-      }
-    </script>
+    <script>desativarArrows()</script>
 </body>
 
 </html>
