@@ -1507,14 +1507,14 @@ function mostrarPosters(listaElementos, tipo) {
     classe = "poster_j";
   }
   
+  div_elementos = document.getElementById('elementos_pag');
   for(j = 0; j < listaElementos.length; j++) {
-    document.write("<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + categorias[j] + "</h2></div><button class='arrow_btn left active' onclick='slide(1, " + j + ")'>‹</button>")
+    let conteudo_html = ""
     for(i = 0; i < listaElementos[j].length; i++) {
-      document.write("<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
-      " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>");
+      conteudo_html += "<div class='div_poster'><input type='image' src=" + listaElementos[j][i].imagem + " onmouseover=\"focarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\" onmouseout=\"desfocarNoFilme('" + listaElementos[j][i].id + "','" + tipo + "')\"" +
+      " class='" + classe + "' onclick=\"abrirDetalhes('" + listaElementos[j][i].id + "', '" + tipo + "')\"></div>";
     }
-    document.write("<button class='arrow_btn right active' onclick='slide(2, " + j + ")'>›</button>");
-    document.write("</div>")
+    div_elementos.innerHTML += "<div class='filmes'><div class='div_categorias'><h2 class='categorias'>" + categorias[j] + "</h2></div><button class='arrow_btn left active' onclick='slide(1, " + j + ")'>‹</button>" + conteudo_html + "<button class='arrow_btn right active' onclick='slide(2, " + j + ")'>›</button></div>";
   }
 }
 
