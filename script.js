@@ -1542,9 +1542,7 @@ function slide(side, section) {
   }
 }
 
-
-window.onresize = function desativarArrows() {
-  
+function desativarArrows() {
   let largura =  document.body.clientWidth;
   botoes_carr = document.getElementsByClassName('arrow_btn');
   filmes = document.getElementsByClassName('filmes');
@@ -1562,3 +1560,5 @@ window.onresize = function desativarArrows() {
     }
   }
 }
+
+window.onresize = desativarArrows;
