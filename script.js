@@ -1327,83 +1327,85 @@ function alterarBackgroundBtn(num) {
 }
 
 function focarNoFilme(id, tipo) {
-  id = parseInt(id)
-  tipo = parseInt(tipo)
-  let posters = []
-  let num_lista = -1;
-  if(tipo == 0) {
-    listaElementos_ = filmes_all;
-    posters = document.getElementsByClassName('poster');
-  } else if (tipo == 1) {
-    listaElementos_ = series_all;
-    posters = document.getElementsByClassName('poster');
-  } else if(tipo == 2) {
-    listaElementos_ = jogos_all;
-    posters = document.getElementsByClassName('poster_j');
-  }
-  for(x = 0; x < listaElementos_.length; x++) {
-    if(num_lista != -1) {
-      break;
+  if(window.getComputedStyle(document.getElementsByClassName("popUp-search")[0]).display === "none"){
+    id = parseInt(id)
+    tipo = parseInt(tipo)
+    let posters = []
+    let num_lista = -1;
+    if(tipo == 0) {
+      listaElementos_ = filmes_all;
+      posters = document.getElementsByClassName('poster');
+    } else if (tipo == 1) {
+      listaElementos_ = series_all;
+      posters = document.getElementsByClassName('poster');
+    } else if(tipo == 2) {
+      listaElementos_ = jogos_all;
+      posters = document.getElementsByClassName('poster_j');
     }
-    for(i = 0; i < listaElementos_[x].length; i++) {
-      if(id === listaElementos_[x][i].id) {
-        num_lista = x;
+    for(x = 0; x < listaElementos_.length; x++) {
+      if(num_lista != -1) {
         break;
       }
-    }
-  }
-  
-  if(num_lista === 0) {
-    for(i = 0; i < listaElementos_[num_lista].length; i++) {
-      if(i != id) {
-        posters[i].style = 'opacity: 35%; transition: 0.4s;';
+      for(i = 0; i < listaElementos_[x].length; i++) {
+        if(id === listaElementos_[x][i].id) {
+          num_lista = x;
+          break;
+        }
       }
     }
-  }
-  if(num_lista === 1) {
-    for(i = 0; i < (listaElementos_[num_lista].length); i++) {
-      if(i + listaElementos_[num_lista - 1].length != id) {
-        posters[i + listaElementos_[num_lista - 1].length].style = 'opacity: 35%; transition: 0.4s;';
+    
+    if(num_lista === 0) {
+      for(i = 0; i < listaElementos_[num_lista].length; i++) {
+        if(i != id) {
+          posters[i].style = 'opacity: 35%; transition: 0.4s;';
+        }
+      }
+    }else {
+      for(i = listaElementos_[num_lista][0].id; i < (listaElementos_[num_lista].length + listaElementos_[num_lista][0].id); i++){
+        if(i != id) {
+          posters[i].style = 'opacity: 35%; transition: 0.4s;';
+        }
       }
     }
   }
 }
 
 function desfocarNoFilme(id, tipo) {
-  id = parseInt(id)
-  tipo = parseInt(tipo)
-  let posters = []
-  if(tipo == 0) {
-    listaElementos_ = filmes_all;
-    posters = document.getElementsByClassName('poster');
-  } else if (tipo == 1) {
-    listaElementos_ = series_all;
-    posters = document.getElementsByClassName('poster');
-  } else if(tipo == 2) {
-    listaElementos_ = jogos_all;
-    posters = document.getElementsByClassName('poster_j');
-  }
-
-  let num_lista = -1;
-  for(x = 0; x < listaElementos_.length; x++) {
-    if(num_lista != -1) {
-      break;
+  if(window.getComputedStyle(document.getElementsByClassName("popUp-search")[0]).display === "none"){
+    id = parseInt(id)
+    tipo = parseInt(tipo)
+    let posters = []
+    if(tipo == 0) {
+      listaElementos_ = filmes_all;
+      posters = document.getElementsByClassName('poster');
+    } else if (tipo == 1) {
+      listaElementos_ = series_all;
+      posters = document.getElementsByClassName('poster');
+    } else if(tipo == 2) {
+      listaElementos_ = jogos_all;
+      posters = document.getElementsByClassName('poster_j');
     }
-    for(i = 0; i < listaElementos_[x].length; i++) {
-      if(id === listaElementos_[x][i].id) {
-        num_lista = x;
+
+    let num_lista = -1;
+    for(x = 0; x < listaElementos_.length; x++) {
+      if(num_lista != -1) {
         break;
       }
+      for(i = 0; i < listaElementos_[x].length; i++) {
+        if(id === listaElementos_[x][i].id) {
+          num_lista = x;
+          break;
+        }
+      }
     }
-  }
-  if(num_lista === 0) {
-    for(i = 0; i < listaElementos_[num_lista].length; i++) {
-      posters[i].style = 'opacity: 100%; transition: 0.4s;';
-    }
-  }
-  if(num_lista === 1) {
-    for(i = 0; i < listaElementos_[num_lista].length; i++) {
-      posters[i + listaElementos_[num_lista - 1].length].style = 'opacity: 100%; transition: 0.4s;';
+    if(num_lista === 0) {
+      for(i = 0; i < listaElementos_[num_lista].length; i++) {
+        posters[i].style = 'opacity: 100%; transition: 0.4s;';
+      }
+    }else {
+      for(i = listaElementos_[num_lista][0].id; i < (listaElementos_[num_lista].length + listaElementos_[num_lista][0].id); i++){
+        posters[i].style = 'opacity: 100%; transition: 0.4s;';
+      }
     }
   }
 }
