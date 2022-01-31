@@ -874,17 +874,17 @@ let serie13 = new Serie(
 );
 
 let serie14 = new Serie(
-  "Dois Homens e Meio", 
-  "img/posters/series/doisHomensEMeio.jpg",
-  "https://www.youtube.com/embed/nkiEVmEf5YE", 
-  "2003",
-  ["Comédia"],
-  ["HBO Max", "Prime Video"],
-  "12 temporadas",
-  classificacao_14anos,
-  "Alan e Charlie Harper são irmão bem diferentes. Alan é médico quiroprático, recetemnete divorciado e com um filho chamado Jake. Já Charlie é um solteiro por opção que ganha a vida escrevendo jingles para comerciais de TV. Tudo vai bem, até o trio precisar dividir o mesmo teto. Juntos vão criar situações divertidas e nunca antes imaginadas.",
-  ["img/icons/plataformas/hboMax.png", "img/icons/plataformas/primeVideo.png"],
-  ["https://play.hbomax.com/page/urn:hbo:page:GYJWmoAFMlMJRhwEAAACy:type:series?camp=googleHBOMAX", "https://www.primevideo.com/dp/amzn1.dv.gti.e4af5369-c07c-2289-7603-59660ef244ba"]
+  "Big Mouth", 
+  "img/posters/series/bigMouth.jpg",
+  "https://www.youtube.com/embed/qVC4hVPF0rc",
+  "2017",
+  ["Comédia", "Animação"],
+  ["Netflix"],
+  "5 temporadas",
+  classificacao_16anos,
+  "Big Mouth acompanha as aventuras de Nick Birch e Andrew Goldberg, dois melhores amigos que enfrentam as mudanças da puberdade. Junto dos colegas Jessi, Missy e Jay, os dois adolescentes vivem diversas situações cômicas, desde começar a sentir atração por garotas até ter dúvidas sobre suas preferências sexuais. Mas, devido à falta de experiência, eles nem sempre conseguem superar esses desafios.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80117038?source=35"]
 );
 
 let serie15 = new Serie(
@@ -902,17 +902,17 @@ let serie15 = new Serie(
 );
 
 let serie16 = new Serie(
-  "A Grande Família", 
-  "img/posters/series/aGrandeFamilia.jpg",
-  "https://www.youtube.com/embed/GSoxRheqYGE", 
-  "2001",
+  "The Good Place", 
+  "img/posters/series/theGoodPlace.jpg",
+  "https://www.youtube.com/embed/4dMH_raemyg", 
+  "2016",
   ["Comédia"],
-  ["Globoplay"],
-  "14 temporadas",
-  classificacao_10anos,
-  "Tipicamente brasileira, a família Silva mora em um subúrbio na Zona Norte do Rio de Janeiro, convive com suas diferenças e ajuda uns aos outros a contornar as situações mais inusitadas.",
-  ["img/icons/plataformas/globoplay.png"],
-  ["https://globoplay.globo.com/a-grande-familia/t/LXZMGBGCDc/"]
+  ["Netflfix"],
+  "4 temporadas",
+  classificacao_16anos,
+  "Eleanor Shellstrop está morta. Acontece que, após sua partida, ela foi enviada ao \"Good Place - ou Lugar Bom\" -, um lugar de eterna felicidade destinado às pessoas que fizeram o bem durante suas vidas. Lá, todos são bons e encontram as suas almas gêmeas, com quem passarão o resto da eternidade. Mas tudo isso não passa de um acidente: Eleanor não merece estar lá. E agora, será que ela vai conseguir esconder a verdade de Michael, que coordena a vizinhança, ou será eventualmente enviada ao \"Bad Place\"?",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80113701?source=35"]
 );
 
 let serie17 = new Serie(
@@ -943,9 +943,136 @@ let serie18 = new Serie(
   ["https://play.hbomax.com/page/urn:hbo:page:GYRsKbA3gmIjDwgEAAAMH:type:series?camp=googleHBOMAX", "https://www.primevideo.com/dp/amzn1.dv.gti.e2b02937-2b89-48dc-d59a-41ab6b145c7f"]
 );
 
+let serie19 = new Serie(
+  "Dois Homens e Meio", 
+  "img/posters/series/doisHomensEMeio.jpg",
+  "https://www.youtube.com/embed/nkiEVmEf5YE", 
+  "2003",
+  ["Comédia"],
+  ["HBO Max", "Prime Video"],
+  "12 temporadas",
+  classificacao_14anos,
+  "Alan e Charlie Harper são irmão bem diferentes. Alan é médico quiroprático, recetemnete divorciado e com um filho chamado Jake. Já Charlie é um solteiro por opção que ganha a vida escrevendo jingles para comerciais de TV. Tudo vai bem, até o trio precisar dividir o mesmo teto. Juntos vão criar situações divertidas e nunca antes imaginadas.",
+  ["img/icons/plataformas/hboMax.png", "img/icons/plataformas/primeVideo.png"],
+  ["https://play.hbomax.com/page/urn:hbo:page:GYJWmoAFMlMJRhwEAAACy:type:series?camp=googleHBOMAX", "https://www.primevideo.com/dp/amzn1.dv.gti.e4af5369-c07c-2289-7603-59660ef244ba"]
+);
+
+let serie20 = new Serie(
+  "A Grande Família", 
+  "img/posters/series/aGrandeFamilia.jpg",
+  "https://www.youtube.com/embed/GSoxRheqYGE", 
+  "2001",
+  ["Comédia"],
+  ["Globoplay"],
+  "14 temporadas",
+  classificacao_10anos,
+  "Tipicamente brasileira, a família Silva mora em um subúrbio na Zona Norte do Rio de Janeiro, convive com suas diferenças e ajuda uns aos outros a contornar as situações mais inusitadas.",
+  ["img/icons/plataformas/globoplay.png"],
+  ["https://globoplay.globo.com/a-grande-familia/t/LXZMGBGCDc/"]
+);
+
+let serie21 = new Serie(
+  "Euphoria", 
+  "img/posters/series/euphoria.jpg",
+  "https://www.youtube.com/embed/XaiwZrsgWhY", 
+  "2019",
+  ["Drama"],
+  ["HBO Max"],
+  "2 temporadas",
+  classificacao_18anos,
+  "Um grupo de adolescentes experimenta os altos e baixos do amor e amizade em um mundo de redes sociais, sexo, drogas e violência.",
+  ["img/icons/plataformas/hboMax.png"],
+  ["https://play.hbomax.com/series/urn:hbo:series:GXKN_xQX5csPDwwEAAABj?camp=googleHBOMAX"]
+);
+
+let serie22 = new Serie(
+  "Peaky Blinders", 
+  "img/posters/series/peakyBlinders.jpg",
+  "https://www.youtube.com/embed/IZFUxDKUKbw", 
+  "2013",
+  ["Drama"],
+  ["Netflix"],
+  "5 temporadas",
+  classificacao_18anos,
+  "Em Peaky Blinders, Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial. Shelby e os Peaky Blinders, a gangue de criminosos da qual ele é líder, controlam a cidade com mãos de ferro, construindo um império que vai desde corridas de cavalo adulteradas e roubo de carregamentos até parcerias secretas com os russos. Mas as ambições de Shelby se estendem para além de Birmingham, e ele não vai deixar que ninguém atrapalhe seus planos de se tornar um dos homens mais poderosos do Reino Unido. À medida que sua família se destaca nos negócios, novas alianças se formam, bem como novas e perigosas rivalidades. Ao mesmo tempo que vive as transformações políticas, econômicas e sociais do início do século 20, Shelby precisa lidar com os traumas de seu próprio passado - que parecem atormentá-lo diariamente.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80002479?source=35"]
+);
+
+let serie23 = new Serie(
+  "Dark", 
+  "img/posters/series/dark.jpg",
+  "https://www.youtube.com/embed/JkUWmxhtU4E",
+  "2017",
+  ["Drama, Ficção Científica"],
+  ["Netflix"],
+  "3 temporadas",
+  classificacao_16anos,
+  "Os mistérios sombrios de uma pequena cidade alemã são expostos quando duas crianças desaparecem. Enquanto as famílias procuram os dois desaparecidos, eles descobrem uma trama de indivíduos conectados com a história conturbada da cidade.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80100172?source=35"]
+);
+
+let serie24 = new Serie(
+  "The 100", 
+  "img/posters/series/the100.jpg",
+  "https://www.youtube.com/embed/G-PpFU6tuek",
+  "2014",
+  ["Drama, Ficção Científica"],
+  ["Netflix"],
+  "7 temporadas",
+  classificacao_14anos,
+  "Quase 100 anos após um apocalipse nuclear devastar a Terra, 100 sobreviventes de uma estação espacial voltam para avaliar as condições do planeta.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/70283264?source=35"]
+);
+
+let serie25 = new Serie(
+  "Dinastia", 
+  "img/posters/series/dinastia.jpg",
+  "https://www.youtube.com/embed/XB-nuNrdO6Q",
+  "2017",
+  ["Drama"],
+  ["Netflix"],
+  "5 temporadas",
+  classificacao_14anos,
+  "O bilionário Blake Carrington e a jovem Cristal estão prestes a se casar, mas a notícia não parece agradar a todos, principalmente à filha do empresário Fallon Carrington.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80179394?source=35"]
+);
+
+let serie26 = new Serie(
+  "This is us", 
+  "img/posters/series/thisIsUs.jpg",
+  "https://www.youtube.com/embed/dOh2hx11wA8",
+  "2016",
+  ["Drama"],
+  ["Star +", "Prime Video"],
+  "6 temporadas",
+  classificacao_14anos,
+  "A história da família Pearson começa em 1979, no dia que os trigêmeos Jack, Kate e Randall chegam em casa da maternidade. Revelações sobre os pais Jack e Rebecca surgem nos momentos de amor, mas também de dor, e moldam para sempre a vida de todos.",
+  ["img/icons/plataformas/star+.png", "img/icons/plataformas/primeVideo.png"],
+  ["https://www.starplus.com/series/this-is-us/2aoqr1oEavrr?distributionPartner=google", "https://www.primevideo.com/dp/amzn1.dv.gti.ea8ff592-1aac-40c0-8bb6-d5811a2928b0"]
+);
+
+let serie27 = new Serie(
+  "13 Reasons Why", 
+  "img/posters/series/13reasonsWhy.jpg",
+  "https://www.youtube.com/embed/W3Om2us6JZ4",
+  "2017",
+  ["Drama"],
+  ["Netflix"],
+  "4 temporadas",
+  classificacao_14anos,
+  "Uma caixa de sapatos é enviada para Clay por Hannah, sua amiga e paixão platônica secreta de escola. O jovem se surpreende ao ver o remetente, pois Hannah acabara de se suicidar. Dentro da caixa, há várias fitas cassete, onde a jovem lista os 13 motivos que a levaram a interromper sua vida - além de instruções para elas serem passadas entre os demais envolvidos.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80117470?source=35"]
+);
+
 let series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10, serie11];
-let series0 = [serie12, serie13, serie14, serie15, serie16, serie17, serie18]
-let series_all = [series, series0]
+let series0 = [serie12, serie13, serie14, serie15, serie16, serie17, serie18, serie19, serie20]
+let series1 = [serie21, serie22, serie23, serie24, serie25, serie26, serie27]
+let series_all = [series, series0, series1]
 
 let idJogos = 0;
 class Jogo {
@@ -1502,7 +1629,7 @@ function mostrarPosters(listaElementos, tipo) {
     categorias = ["Lista do Adm", "Animação", "Ação"]
     classe = "poster";
   } else if (tipo == 1) {
-    categorias = ["Lista do Adm", "Comédia"]
+    categorias = ["Lista do Adm", "Comédia", "Drama"]
     classe = "poster";
   } else if (tipo == 2) {
     categorias = ["Lançamentos", "Lista do Adm"]
