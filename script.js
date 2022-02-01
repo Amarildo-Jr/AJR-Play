@@ -1257,19 +1257,19 @@ let jogo9 = new Jogo (
 )
 
 let jogo10 = new Jogo (
-  "Valorant", 
-  "img/posters/jogos/valorant.jpg",
-  "https://www.youtube.com/embed/sE3UqyzKR30", 
-  "Junho/2020",
-  ["FPS", "Ação"],
-  ["PC/Riot Games", "PC"],
-  "Multijogador Online",
-  classificacao_14anos,
-  "O game é um fps 5v5 tático que mistura elementos de Counter Strike: Global Offensive (CS:GO) com Overwatch. O título conta com um elenco de personagens com habilidades específicas e mapas onde o objetivo é ativar um bomba ou defender um território. Os times começam a partida como ataque ou defesa, e trocam de lado na décima segunda rodada. Vence a equipe que fizer 13 pontos primeiro, e os jogos têm até 24 rounds.",
-  ["img/icons/plataformas_games/riotGames.png"],
-  ["https://playvalorant.com/pt-br/"],
-  ["Windows 7/8/10 64-Bit", "Intel Core 2 Duo E8400 (Intel), Athlon 200GE (AMD)", "4 GB de RAM", "10 GB de espaço disponível", "Versão 11", "Intel HD 4000, Radeon R5 200"],
-  ["Windows 7/8/10 64-Bit", "Intel i3-4150 (Intel), Ryzen 3 1200 (AMD) ou superior", "4 GB de RAM", "10 GB de espaço disponível", "Versão 11", "Geforce GT 730, Radeon R7 240"]
+  "Ouder Wilds", 
+  "img/posters/jogos/outerWilds.jpg",
+  "https://www.youtube.com/embed/d6LGnVCL1_A", 
+  "Maio/2019",
+  ["Exploração"],
+  ["PC/Steam", "PC/Epic Games", "Xbox", "Playstation", "PC"],
+  "Um jogador",
+  classificacao_livre,
+  "Outer Wilds é um mistério em mundo aberto sobre um sistema solar preso em um ciclo temporal infinito. Você é o mais novo recruta do Outer Wilds Ventures, um programa espacial recém-lançado que busca respostas num sistema solar estranho em constante evolução. Mistérios do sistema solar... O que espreita no coração do sinistro Dark Bramble? Quem construiu as ruínas alienígenas na Lua? O ciclo temporal infinito pode ser interrompido?",
+  ["img/icons/plataformas_games/steam.png", "img/icons/plataformas_games/epic.png", "img/icons/plataformas_games/xbox.png", "img/icons/plataformas_games/ps.png"],
+  ["https://store.steampowered.com/app/753640/Outer_Wilds/", "https://www.epicgames.com/store/pt-BR/p/outerwilds", "https://www.xbox.com/pt-br/games/store/outer-wilds/c596fkdkmqn7", "https://store.playstation.com/pt-br/product/UP2470-CUSA09929_00-OUTERWILDSSIEA00"],
+  ["Windows 7/8/10 64-Bit", "Intel Core i5-2300 | AMD FX-4350", "4 GB de RAM", "8 GB de espaço disponível", "Versão 11", "Nvidia GeForce GTX 560 | AMD Radeon HD 7870 2 GB"],
+  ["Windows 10 64-Bit", "Intel Core i5-8400 | AMD Ryzen 5 2600X", "8 GB de RAM", "8 GB de espaço disponível", "Versão 11", "Nvidia GeForce GTX 1060 | AMD Radeon RX 580"]
 )
 
 let jogo11 = new Jogo (
@@ -1352,9 +1352,25 @@ let jogo15 = new Jogo (
   ["Windows 8/8.1 de 64-Bits ou superior", "Intel Core i5 3470 com 3.2GHZ (4 CPUs) / AMD X8 FX-8350 com 4GHZ (8 CPUs)", "8 GB de RAM", "90 GB de espaço disponível", "Versão 10", "NVIDIA GTX 660 2GB / AMD HD7870 2GB"]
 )
 
+let jogo16 = new Jogo (
+  "Valorant", 
+  "img/posters/jogos/valorant.jpg",
+  "https://www.youtube.com/embed/sE3UqyzKR30", 
+  "Junho/2020",
+  ["FPS", "Ação"],
+  ["PC/Riot Games", "PC"],
+  "Multijogador Online",
+  classificacao_14anos,
+  "O game é um fps 5v5 tático que mistura elementos de Counter Strike: Global Offensive (CS:GO) com Overwatch. O título conta com um elenco de personagens com habilidades específicas e mapas onde o objetivo é ativar um bomba ou defender um território. Os times começam a partida como ataque ou defesa, e trocam de lado na décima segunda rodada. Vence a equipe que fizer 13 pontos primeiro, e os jogos têm até 24 rounds.",
+  ["img/icons/plataformas_games/riotGames.png"],
+  ["https://playvalorant.com/pt-br/"],
+  ["Windows 7/8/10 64-Bit", "Intel Core 2 Duo E8400 (Intel), Athlon 200GE (AMD)", "4 GB de RAM", "10 GB de espaço disponível", "Versão 11", "Intel HD 4000, Radeon R5 200"],
+  ["Windows 7/8/10 64-Bit", "Intel i3-4150 (Intel), Ryzen 3 1200 (AMD) ou superior", "4 GB de RAM", "10 GB de espaço disponível", "Versão 11", "Geforce GT 730, Radeon R7 240"]
+)
+
 let jogos = [jogo0, jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7]
 
-let jogos0 = [jogo8, jogo9, jogo10, jogo11, jogo12, jogo13, jogo14, jogo15]
+let jogos0 = [jogo8, jogo9, jogo10, jogo11, jogo12, jogo13, jogo14, jogo15, jogo16]
 
 let jogos_all = [jogos, jogos0]
 
