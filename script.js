@@ -1028,17 +1028,17 @@ let serie24 = new Serie(
 );
 
 let serie25 = new Serie(
-  "Dinastia", 
-  "img/posters/series/dinastia.jpg",
-  "https://www.youtube.com/embed/XB-nuNrdO6Q",
-  "2017",
+  "Chernobyl", 
+  "img/posters/series/chernobyl.jpg",
+  "https://www.youtube.com/embed/jQO2EhzG-uU",
+  "2019",
   ["Drama"],
-  ["Netflix"],
-  "5 temporadas",
-  classificacao_14anos,
-  "O bilionário Blake Carrington e a jovem Cristal estão prestes a se casar, mas a notícia não parece agradar a todos, principalmente à filha do empresário Fallon Carrington.",
-  ["img/icons/plataformas/netflix.png"],
-  ["https://www.netflix.com/watch/80179394?source=35"]
+  ["HBO Max"],
+  "1 temporada",
+  classificacao_16anos,
+  "Homens e mulheres corajosos agem heroicamente para mitigar danos catastróficos quando a Usina Nuclear de Chernobyl sofre um acidente nuclear em 25 de abril de 1986.",
+  ["img/icons/plataformas/hboMax.png"],
+  ["https://play.hbomax.com/series/urn:hbo:series:GXJvkMAU0JIG6gAEAAAIo?camp=googleHBOMAX"]
 );
 
 let serie26 = new Serie(
@@ -1069,9 +1069,93 @@ let serie27 = new Serie(
   ["https://www.netflix.com/watch/80117470?source=35"]
 );
 
+let serie28 = new Serie(
+  "Dinastia", 
+  "img/posters/series/dinastia.jpg",
+  "https://www.youtube.com/embed/XB-nuNrdO6Q",
+  "2017",
+  ["Drama"],
+  ["Netflix"],
+  "5 temporadas",
+  classificacao_14anos,
+  "O bilionário Blake Carrington e a jovem Cristal estão prestes a se casar, mas a notícia não parece agradar a todos, principalmente à filha do empresário Fallon Carrington.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80179394?source=35"]
+);
+
+let serie29 = new Serie(
+  "Game of Thrones", 
+  "img/posters/series/got.jpg",
+  "https://www.youtube.com/embed/7KAW90MpL_U",
+  "2011",
+  ["Drama"],
+  ["HBO Max"],
+  "8 temporadas",
+  classificacao_16anos,
+  "Este é o retrato de duas famílias poderosas - reis e rainhas, cavaleiros e renegados, homens honestos e mentirosos - disputando um jogo mortal pelo controle dos Sete Reinos de Westeros para assumir o Trono de Ferro.",
+  ["img/icons/plataformas/hboMax.png"],
+  ["https://play.hbomax.com/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo?camp=googleHBOMAX"]
+);
+
+let serie30 = new Serie(
+  "Pose", 
+  "img/posters/series/pose.jpg",
+  "https://www.youtube.com/embed/e_gHbMfsgP4",
+  "2018",
+  ["Drama"],
+  ["Netflix","Star +"],
+  "2 temporadas",
+  classificacao_16anos,
+  "Em Nova York, no final da década de 1980, Blanca abriga jovens LGBT que foram expulsas de suas casas. A época foi marcada pela ascensão da cultura de luxo e o surgimento dos bailes LGBT.",
+  ["img/icons/plataformas/netflix.png", "img/icons/plataformas/star+.png"],
+  ["https://www.netflix.com/watch/80241986?source=35", "https://www.starplus.com/series/pose/1ARtTsGv1oCS?distributionPartner=google"]
+);
+
+let serie31 = new Serie(
+  "Manifest: O Mistério do Voo 828", 
+  "img/posters/series/manifest.jpg",
+  "https://www.youtube.com/embed/uXarGkV96fw",
+  "2018",
+  ["Drama"],
+  ["HBO Max","Globoplay"],
+  "3 temporadas",
+  classificacao_14anos,
+  "Um voo aparentemente normal chega ao seu destino cerca de três horas após a partida, passando por algumas turbulências. No entanto, ao desembarcarem, os passageiros descobrem que foram dados como mortos e se passaram cinco anos desde a decolagem.",
+  ["img/icons/plataformas/hboMax.png", "img/icons/plataformas/globoplay.png"],
+  ["https://play.hbomax.com/series/urn:hbo:series:GYJam1wXI1sJKugEAAAAT?camp=googleHBOMAX", "https://globoplay.globo.com/manifest-o-misterio-do-voo-828/t/BWy2KLJXjr/"]
+);
+
+let serie32 = new Serie(
+  "Anne with an E", 
+  "img/posters/series/anne.jpg",
+  "https://www.youtube.com/embed/bBervTlBurY",
+  "2017",
+  ["Drama"],
+  ["Netflix"],
+  "3 temporadas",
+  classificacao_12anos,
+  "Depois de treze anos sofrendo no sistema de assistência social, a orfã Anne é mandada para morar com uma solteirona e seu irmão. Munida de sua imaginação e de seu intelecto, a pequena Anne vai transformar a vida de sua família adotiva e da cidade que lhe abrigou, lutando pela sua aceitação e pelo seu lugar no mundo.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/80136311?source=35"]
+);
+
+let serie33 = new Serie(
+  "Round 6 (Squid Game)", 
+  "img/posters/series/round6.jpg",
+  "https://www.youtube.com/embed/1bXuJn77Cfc",
+  "2021",
+  ["Drama", "Suspense"],
+  ["Netflix"],
+  "1 temporada",
+  classificacao_18anos,
+  "Um grupo de pessoas passando por dificuldades financeiras aceita um estranho convite para um jogo de sobrevivência. Um prêmio bilionário os aguarda, mas as apostas são altas e mortais.",
+  ["img/icons/plataformas/netflix.png"],
+  ["https://www.netflix.com/watch/81040344?source=35"]
+);
+
 let series = [serie0, serie1, serie2, serie3, serie4, serie5, serie6, serie7, serie8, serie9, serie10, serie11];
 let series0 = [serie12, serie13, serie14, serie15, serie16, serie17, serie18, serie19, serie20]
-let series1 = [serie21, serie22, serie23, serie24, serie25, serie26, serie27]
+let series1 = [serie21, serie22, serie23, serie24, serie25, serie26, serie27, serie28, serie29, serie30, serie31, serie32, serie33]
 let series_all = [series, series0, series1]
 
 let idJogos = 0;
